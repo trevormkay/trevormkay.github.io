@@ -1,0 +1,20 @@
+$background: #2A2A29;
+$background-dark: #252524;
+$primary: #9B8E84;
+$highlight: #FF002B;
+
+.pizzahut {
+	background: $background;
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+}

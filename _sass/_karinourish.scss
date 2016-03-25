@@ -1,0 +1,20 @@
+$background: #FFFEFB;
+$background-dark: #F7F3E9;
+$primary: #755F1F;
+$highlight: #005B9F;
+
+.karinourish {
+	background: $background;
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+}

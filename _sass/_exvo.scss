@@ -1,0 +1,20 @@
+$background: #EEEFF2;
+$background-dark: #E9EBEE;
+$primary: #869AA5;
+$highlight: #00A5F0;
+
+.exvo {
+	background: $background;
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+}

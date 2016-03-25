@@ -1,0 +1,20 @@
+$background: #181818;
+$background-dark: #000000;
+$primary: #6A6A6A;
+$highlight: #CA4750;
+
+.retailerportal {
+	background: $background;
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+}

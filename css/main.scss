@@ -43,11 +43,36 @@ $on-laptop:        800px;
     }
 }
 
+@mixin dinpro {
+	font-family: 'DIN Pro', helvetica, arial, sans-serif;
+}
+
+@mixin dincond {
+	font-family: 'DIN Pro Cond', helvetica, arial, sans-serif;
+}
+
+@mixin dinalt {
+	font-family: 'DIN Alternate', helvetica, arial, sans-serif;
+}
+
+
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
+        "fonts",
         "base",
         "layout",
-        "syntax-highlighting"
+        "syntax-highlighting",
+        "eastland",
+        "retailerportal",
+        "neutron",
+        "karinourish",
+        "aptapro",
+        "tolq",
+        "epoch",
+        "exvo",
+        "arc",
+        "pizzahut",
+        "portfolio"
 ;

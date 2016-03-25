@@ -1,0 +1,20 @@
+$background: #F9F9F9;
+$background-dark: #F2F0EE;
+$primary: #9F9D9A;
+$highlight: #4E738B;
+
+.eastland {
+	background: $background;
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+}

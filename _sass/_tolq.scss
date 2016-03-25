@@ -1,0 +1,20 @@
+$background: #173541;
+$background-dark: #122E39;
+$primary: #8D999D;
+$highlight: #00AF5B;
+
+.tolq {
+	background: $background;
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+}

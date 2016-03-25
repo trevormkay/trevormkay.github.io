@@ -1,0 +1,21 @@
+$background: #243739;
+$background-dark: #182D2F;
+$primary: #EAE4CA;
+$highlight: #A2DFA8;
+$accent: #75ECE1;
+
+.neutron {
+	background: $background;
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+}
