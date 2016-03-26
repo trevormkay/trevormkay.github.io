@@ -5,6 +5,14 @@ $highlight: #DADC4A;
 .portfolio {
 	background: $background;
 	
+	.cover {
+		background: rgba($background,0.9);
+	}
+	
+	h1 {
+		color: $highlight;
+	}
+	
 	.name {
 		h1	{
 			color: $highlight;
@@ -12,6 +20,30 @@ $highlight: #DADC4A;
 		
 		h2 {
 			color: $primary;
+		}
+	}
+	
+	.main-nav {
+		border-bottom: 2px solid rgba($primary, 0.2);
+		
+		.sitename span {
+			display: none;
+		}
+		
+		.sitename, li a {
+			color: $primary;
+		}
+		
+		#logo {
+			stroke: $primary
+		}
+		
+		li a.active {
+			color: $highlight;
+		}
+		
+		.hamburger span {
+			background: $highlight;
 		}
 	}
 }
