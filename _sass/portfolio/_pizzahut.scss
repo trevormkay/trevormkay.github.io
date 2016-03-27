@@ -1,0 +1,44 @@
+$background: #2A2A29;
+$background-dark: #252524;
+$primary: #9B8E84;
+$highlight: #FF002B;
+
+.pizzahut {
+	background: $background;
+	
+	.cover {
+		background: rgba($background,0.8);
+	}
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+	
+	.main-nav {
+		border-bottom: 2px solid rgba($primary, 0.2);
+		
+		.sitename, li a {
+			color: $primary;
+		}
+		
+		#logo {
+			stroke: $primary
+		}
+		
+		li a.active {
+			color: $highlight;
+		}
+		
+		.hamburger span {
+			background: $highlight;
+		}
+	}
+}

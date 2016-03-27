@@ -1,0 +1,24 @@
+$background: #332E2D;
+$primary: #909090;
+$highlight: #349DF0;
+
+.idmg {
+	background: $background;
+	
+	.cover {
+		background: rgba($background,0.8);
+	}
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+	
+}

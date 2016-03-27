@@ -1,0 +1,24 @@
+$background: #33342F;
+$primary: #977C73;
+$highlight: #DED9D8;
+
+.compressor {
+	background: $background;
+	
+	.cover {
+		background: rgba($background,0.8);
+	}
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+	
+}

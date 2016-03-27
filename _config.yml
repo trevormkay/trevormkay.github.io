@@ -23,3 +23,5 @@ collections:
     output: true
   thoughts:
     output: true
+  downloads:
+    output: true

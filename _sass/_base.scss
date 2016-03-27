@@ -305,6 +305,7 @@ body {
 		
 		@media (min-width:$desktop-lrg) {
 			width: calc(100%/3 - 20px);
+			flex-grow: 1;
 		}
 		
 		&:nth-child(even) {
@@ -316,6 +317,12 @@ body {
 			
 			@media (min-width:$desktop-lrg) {
 				margin-right: 20px;
+			}
+		}
+		
+		&:nth-child(3n+3) {
+			@media (min-width:$desktop-lrg) {
+				margin-right: 0px;
 			}
 		}
 		
@@ -335,9 +342,7 @@ body {
 				bottom: 30px;
 			}
 			margin: 0px;
-			font: {
-				size: 2.2em;
-			}
+			font-size: 53px;
 		}
 		
 		p {

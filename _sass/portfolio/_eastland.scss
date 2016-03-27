@@ -1,0 +1,44 @@
+$background: #F9F9F9;
+$background-dark: #F2F0EE;
+$primary: #9F9D9A;
+$highlight: #4E738B;
+
+.eastland {
+	background: $background;
+	
+	.cover {
+		background: rgba($background,0.8);
+	}
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+	
+	.main-nav {
+		border-bottom: 2px solid rgba($primary, 0.2);
+		
+		.sitename, li a {
+			color: $primary;
+		}
+		
+		#logo {
+			stroke: $primary
+		}
+		
+		li a.active {
+			color: $highlight;
+		}
+		
+		.hamburger span {
+			background: $highlight;
+		}
+	}
+}
