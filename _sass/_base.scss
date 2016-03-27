@@ -305,7 +305,6 @@ body {
 		
 		@media (min-width:$desktop-lrg) {
 			width: calc(100%/3 - 20px);
-			flex-grow: 1;
 		}
 		
 		&:nth-child(even) {
