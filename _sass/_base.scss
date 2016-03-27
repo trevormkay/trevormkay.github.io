@@ -369,14 +369,32 @@ body {
 
 .spin {
 	position: fixed;
-	top: -900px;
-	right: -700px;
-	width: 2000px;
-	height: 2000px;
+	top: -250px;
+	right: -300px;
+	width: 600px;
+	height: 600px;
 	z-index: -1;
 	
+	@media (min-width:$tablet) {
+		top: -400px;
+		right: -400px;
+		width: 1000px;
+		height: 1000px;
+	}
+	
+	@media (min-width:$desktop) {
+		top: -900px;
+		right: -700px;
+		width: 2000px;
+		height: 2000px;
+	}
+	
 	#logo {
-		stroke-width: 0.1;
+		stroke-width: 0.2;
+		
+		@media (min-width:$tablet) {
+			stroke-width: 0.1;
+		}
 	}
 	
 	&.one {
