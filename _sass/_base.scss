@@ -412,7 +412,60 @@ body {
 	
  }
 
-
+header {
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	height: 736px;
+	
+	.coverimage {
+		opacity: 0.2;
+		background-size: cover;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		width: 100%;
+		height: 100%;
+	}
+	
+	.constrained {
+		height: calc(100% - 80px);
+		top: 80px;
+		position: relative;
+		display: flex;
+		align-items: center;
+		z-index: 2;
+	}
+	
+	.copy {
+		width: 50%;
+	}
+	
+	h1 {
+		font-size: 5.18em;
+	}
+	
+	.description {
+		margin: 0px;
+		@include dinpro;
+		font-size: 1.75em;
+		line-height: 31px;
+	}
+	
+	.visit-link {
+		margin-top: 60px;
+		display: block;
+		text-transform: uppercase;
+		@include dinalt;
+		font-size: 20px;
+		display: flex;
+		align-items: center;
+		
+		svg {
+			margin-left: 10px;
+		}
+	}
+}
 
 
 

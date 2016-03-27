@@ -1,12 +1,18 @@
 ---
 layout: default
 ---
-<div class="constrained">
-	<header>
-		<p class="type">{{ page.type }}</p>
-		<h1>{{ page.title }}</h1>
-		<p>{{ page.description }}</p>
-	</header>
-	
-	{{ content }}
-</div>
+<header>
+	<div class="constrained">
+		<div class="copy">
+			<p class="type">{{ page.type }}</p>
+			<h1>{{ page.title }}</h1>
+			<p class="description">{{ page.description }}</p>
+			<a href="{{ page.link }}" class="visit-link" target="_blank">
+				{{ page.cta }} 
+				{% include arrowRight.svg %}				
+			</a>
+		</div>
+	</div>
+	<div class="coverimage"></div>
+</header>
+{{ content }}

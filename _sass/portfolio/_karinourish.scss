@@ -22,6 +22,14 @@ $highlight: #005B9F;
 		background: $primary;
 	}
 	
+	.visit-link {
+		color: $highlight;
+	}
+	
+	#arrow {
+		fill: $highlight;
+	}
+	
 	.main-nav {
 		border-bottom: 2px solid rgba($primary, 0.2);
 		
@@ -39,6 +47,15 @@ $highlight: #005B9F;
 		
 		.hamburger span {
 			background: $highlight;
+		}
+	}
+	
+	header {
+		background-color: $background-dark;
+		
+		.coverimage {
+			background-image: url(../images/portfolio/karinourish/header-background.jpg);
+			opacity: 0.5;
 		}
 	}
 }

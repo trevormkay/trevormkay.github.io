@@ -22,6 +22,14 @@ $highlight: #56A421;
 		background: $primary;
 	}
 	
+	.visit-link {
+		color: $highlight;
+	}
+	
+	#arrow {
+		fill: $highlight;
+	}
+	
 	.main-nav {
 		border-bottom: 2px solid rgba($primary, 0.2);
 		
@@ -39,6 +47,19 @@ $highlight: #56A421;
 		
 		.hamburger span {
 			background: $highlight;
+		}
+	}
+	
+	header {
+		background-color: $background-dark;
+		
+		.coverimage {
+			background-image: url(../images/portfolio/arc/header-background.jpg);
+			opacity: 1;
+		}
+		
+		.visit-link {
+			display: none;
 		}
 	}
 }
