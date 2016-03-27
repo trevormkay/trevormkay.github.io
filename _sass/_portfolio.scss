@@ -46,4 +46,18 @@ $highlight: #DADC4A;
 			background: $highlight;
 		}
 	}
+	
+	.spin {
+		&.one {
+			#logo {
+				stroke: $highlight;
+			}
+		}
+		
+		&.two {
+			#logo {
+				stroke: $primary;
+			}
+		}
+	}
 }

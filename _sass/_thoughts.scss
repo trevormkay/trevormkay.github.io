@@ -46,4 +46,18 @@ $highlight: #C669DF;
 			background: $highlight;
 		}
 	}
+	
+	.spin {
+		&.one {
+			#logo {
+				stroke: $highlight;
+			}
+		}
+		
+		&.two {
+			#logo {
+				stroke: $primary;
+			}
+		}
+	}
 }
