@@ -31,6 +31,10 @@ $tablet: 740px;
 $desktop: 1120px;
 $desktop-lrg: 1800px;
 
+@mixin debug {
+	border: 1px solid red;
+}
+
 
 // Use media queries like this:
 // @include media-query($on-palm) {

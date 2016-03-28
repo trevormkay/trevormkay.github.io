@@ -57,4 +57,12 @@ $highlight: #00AF5B;
 			background-image: url(../images/portfolio/tolq/header-background.jpg);
 		}
 	}
+	
+	.anchors {
+		border-top: 2px solid rgba($primary, 0.2);
+		
+		li a {
+			color: $primary;
+		}
+	}
 }

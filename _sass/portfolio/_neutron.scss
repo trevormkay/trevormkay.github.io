@@ -59,4 +59,12 @@ $accent: #75ECE1;
 			opacity: 1;
 		}
 	}
+	
+	.anchors {
+		border-top: 2px solid rgba($primary, 0.2);
+		
+		li a {
+			color: $primary;
+		}
+	}
 }

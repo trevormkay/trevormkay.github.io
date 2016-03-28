@@ -58,4 +58,12 @@ $highlight: #005B9F;
 			opacity: 0.5;
 		}
 	}
+	
+	.anchors {
+		border-top: 2px solid rgba($primary, 0.2);
+		
+		li a {
+			color: $primary;
+		}
+	}
 }

@@ -62,4 +62,12 @@ $highlight: #56A421;
 			display: none;
 		}
 	}
+	
+	.anchors {
+		border-top: 2px solid rgba($primary, 0.2);
+		
+		li a {
+			color: $primary;
+		}
+	}
 }
