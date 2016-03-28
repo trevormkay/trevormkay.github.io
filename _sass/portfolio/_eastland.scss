@@ -1,7 +1,7 @@
 $background: #F9F9F9;
 $background-dark: #F2F0EE;
 $primary: #9F9D9A;
-$highlight: #4E738B;
+$highlight: #BC441C;
 
 .eastland {
 	background: $background;
@@ -64,5 +64,9 @@ $highlight: #4E738B;
 		li a {
 			color: $primary;
 		}
+	}
+	
+	#solution {
+		background: $background-dark;
 	}
 }
