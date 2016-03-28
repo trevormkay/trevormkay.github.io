@@ -573,8 +573,52 @@ header {
 	position: relative;
 }
 
+#other-works {
+	.links {
+		@media (min-width:$desktop) {
+			display: flex;
+		}
+	}
+}
+
 .link {
 	padding: 20px;
+	margin-bottom: 20px;
+	
+	@media (min-width:$desktop) {
+		width: calc(50% - 20px);
+		margin-right: 20px;
+		margin-bottom: 0px;
+	}
+	
+	a {
+		display: flex;
+		flex-direction: row wrap;
+		align-items: center;
+		text-decoration: none !important;
+		
+		img {
+			margin-right: 20px;
+			min-width: 84px;
+		}
+	}
+	
+	h3 {
+		font-size: 20px;
+		@include dinalt;
+		display: flex;
+		align-items: center;
+		margin-bottom: 0px;
+		
+		svg {
+			margin-left: 10px;
+		}
+	}
+	
+	.description {
+		font-size: 16px;
+		margin-bottom: 0px;
+	}
 }
 
 
