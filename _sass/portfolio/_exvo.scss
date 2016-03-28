@@ -70,7 +70,11 @@ $highlight: #00A5F0;
 		}
 	}
 	
-	#solution {
+	#solution, #other-works {
 		background: $background-dark;
+	}
+	
+	.link {
+		background: $background;
 	}
 }

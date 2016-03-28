@@ -68,7 +68,11 @@ $accent: #75ECE1;
 		}
 	}
 	
-	#solution {
+	#solution, #other-works {
 		background: $background-dark;
+	}
+	
+	.link {
+		background: $background;
 	}
 }

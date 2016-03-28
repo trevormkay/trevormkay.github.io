@@ -71,7 +71,11 @@ $highlight: #56A421;
 		}
 	}
 	
-	#solution {
+	#solution, #other-works {
 		background: $background-dark;
+	}
+	
+	.link {
+		background: $background;
 	}
 }

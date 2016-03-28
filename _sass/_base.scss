@@ -549,12 +549,33 @@ header {
 	}
 }
 
+.case-study {
+	section {
+		padding: {
+			top: 80px;
+			bottom: 80px;
+		}
+	}
+	
+	h2 {
+		font-size: 53px;
+	}
+	
+	.description {
+		font-size: 28px;
+		@include dinpro;
+		line-height: 31px;
+	}
+}
+
 #challenge {
 	margin-top: 700px;
 	position: relative;
 }
 
-
+.link {
+	padding: 20px;
+}
 
 
 

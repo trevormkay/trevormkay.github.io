@@ -1,7 +1,7 @@
 $background: #F9F9F9;
 $background-dark: #F2F0EE;
 $primary: #9F9D9A;
-$highlight: #BC441C;
+$highlight: #4E738B;
 
 .eastland {
 	background: $background;
@@ -66,7 +66,11 @@ $highlight: #BC441C;
 		}
 	}
 	
-	#solution {
+	#solution, #other-works {
 		background: $background-dark;
+	}
+	
+	.link {
+		background: $background;
 	}
 }
