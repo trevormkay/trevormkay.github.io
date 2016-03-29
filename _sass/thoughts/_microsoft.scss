@@ -21,4 +21,59 @@ $highlight: #2C7DA9;
 		background: $primary;
 	}
 	
+	.visit-link {
+		color: $highlight;
+	}
+	
+	#arrow {
+		fill: $highlight;
+	}
+	
+	.main-nav {
+		border-bottom: 2px solid rgba($primary, 0.2);
+		
+		.sitename, li a {
+			color: $primary;
+		}
+		
+		#logo {
+			stroke: $primary
+		}
+		
+		li a.active {
+			color: $highlight;
+		}
+		
+		.hamburger span {
+			background: $highlight;
+		}
+	}
+	
+	header {
+		background-color: $background-dark;
+		
+		.coverimage {
+			background-image: url(../images/portfolio/aptapro/header-background.jpg);
+		}
+	}
+	
+	.anchors {
+		border-top: 2px solid rgba($primary, 0.2);
+		
+		li a {
+			color: $primary;
+		}
+	}
+	
+	#solution, #other-works {
+		background: $background-dark;
+	}
+	
+	.link {
+		background: $background;
+	}
+	
+	a {
+		color: $highlight;
+	}
 }

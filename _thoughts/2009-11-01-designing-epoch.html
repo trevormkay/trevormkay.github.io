@@ -1,0 +1,34 @@
+---
+layout: thought
+title:  "Designing Epoch"
+date: "2009-11-01 21:27:50 +1100"
+class: "epoch"
+description: "Transistioning an app to a different platform"
+---
+<p>Epoch, developed by Gabe Shahbazian, has just been released so I thought I'd give you a little insight into the design process for Epoch. This little app started it's life not on the iPhone but on OS X as a widget. Back then it had the name of Percount and its' feature list included: Custom picture, custom title, different coloured frames, and to have the time fade. Multiple countdowns were achieved by creating multiple instances of the widget.</p>
+<h2>Percount grows up</h2>
+<img src="../../assets/img/blog_percount.png" class="noborder" />
+<p>The original brief for Epoch was to take Percount and redesign it to work as an iPhone app that was functionally similar to the Weather app. Completing this goal was simple enough. The original design of the widget flowed much like the iPhone Weather app. It was just a matter of resizing the layout to fit the size of the iPhone screen. My goal was to improve the usability of the countdown. In the Human Interface Guidelines for iPhone apps, Apple states that the most important features should be the most promiment. In the case of Epoch, it was the countdown timer followed by the title of the countdown. So I used an easy to read font at a large size. A further improvement was adding labels to the countdown and adding space between each interval.</p>
+<h2>Features, Features, Features</h2>
+<div class="row portfolio">
+	<div class="col-xs-12">
+		<div class="phone">
+			<div class="speaker"></div>
+			<img src="../../assets/img/screenshotEpoch4.gif" class="screen" />
+			<div class="home"></div>
+		</div>
+		<p>The process the countdown card design went through</p>
+	</div>
+</div>
+<p>In a crowded market, how do you beat the competition? Is it price? Nope. Is it looks? Somewhat. Is it features? You bet ya. When designing an app you should see not what the competition has, but where it is lacking, fill that void and then wrap it up in a slick UI. This is how you will attract customers who are new to the market as well as ones who have purchased from the competition.</p>
+<p>What sets off Epoch from the competition is its use of Events instead of Countdowns. Now this may seem small, but it is big overall. Countdowns have a date, time, and title. But Events can have a date, time, title, associated image and a location. Countdowns are abstract whereas Events have meaning. Location is one of the core features of the iPhone and should be used wherever possible. Users expect it and users want it. To our benefit, no other countdown app used location. So it was a feature we could use to set ourselves apart from the rest. MapKit made the user experience for location exactly how I wanted.</p>
+<p>Most other countdown apps with multiple countdowns use list-based UIs. While this fits in with the iPhone it doesn't display artwork off nicely. The card based UI of the Weather app allowed me to use a large display both for the artwork and countdown. The two features we culled were the fading countdown display and the different coloured frames. There is no hover event on the iPhone, so no need to have the countdown fade and there is heaps of room for the image to be displayed. Different coloured frames just didn't make sense. Black shows off the countdown the best so there was no need to add extra colours.</p>
+<h2>What's in a Name</h2>
+<p>The name of your app means a lot. And when it comes to countdown apps, there are plenty that are named "Countdown". I wanted something that wouldn't cause this app to drown in the sea of countdown apps. Epoch is the right fit and this is why:</p>
+<p class="callout">A period of time in history or a person's life, typically one marked by notable events or particular characteristics</p>
+<p>This definition fits in perfectly with the Events-focused theme of the app. It's also completely different compared to the other countdown apps and doesn't get truncated by the iPhone OS. Searching for "Epoch" brings up the app as the first result. It does come up for the term "Countdown" but far down the list. It will take time for it to become more relavent but this can be handled with marketing and sales.</p>
+<h2>Running the Gauntlet</h2>
+<p>The App Store approval process has to be the worst Black Box I've come across. There are a ton of undocumented rules that will cause your app to be rejected. While designing Epoch, the story about <a href="http://web.archive.org/web/20090830165851/http://tapbots.com/blog/app-store/a-well-timed-letter-of-rejection">Convertbot being rejected</a> for improper use of the Recents icon hit the headlines. This affected us big time, Epoch used the Recents clock in the icon and in the blank states. I had to go over the app with a fine tooth comb and change the clocks as well as some icons used in the Settings.</p>
+<p>The next hurdle was getting the app approved. Epoch was submitted to Apple around the start of October but wasn't approved until the end of October. The problem with this is Apple says the app was posted on the 3rd of October but the app didn't show up in iTunes until the 31st of October. Where do you think Epoch gets shown in the release date list? With all the apps that were released on the 3rd of October, back on page 50 or whatever. So we lost exposure because Apple took too long to approve the app. Apple needs to change posted date from Date Submitted to Date Approved. I'm surprised it isn't like this to begin with.</p>
+<h2>Satisfaction</h2>
+<p>Even though Apple took their time, I'm so happy to see Epoch for sale. Even more happy to see Epoch on my own iPhone. Playing around with the App in the Simulator is one thing, but actually using it on the device is another. To any buding iPhone designers out there add <a href="http://www.zambetti.com/projects/liveview/">LiveView Screencaster</a> to your arsenal of tools. It allows you to show your design on the iPhone screen via VNC. This allows you to equate for the difference in resolution. Well I hope you enjoyed this post and I hope you take a look at Epoch. You can find Epoch in the <a href="http://bit.ly/3yI7gB">App Store</a>.</p>

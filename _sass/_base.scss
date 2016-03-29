@@ -621,7 +621,55 @@ header {
 	}
 }
 
+.slide {
+	padding: 20px;
+	margin-bottom: 20px;
+	
+	a {
+		text-decoration: none !important;
+	}
+	
+	h2 {
+		@include dinalt;
+		font-size: 33px;
+		margin-bottom: 0px;
+	}
+	
+	.description {
+		@include dinpro;
+		font-size: 18px;
+	}
+}
 
+.thought {
+	margin-top: 190px;
+	
+	.intro {
+		margin-bottom: 110px;
+		font-size: 28px;
+	}
+	
+	h1 {
+		font-size: 83px;
+		margin-bottom: -20px;
+	}
+	
+	h2 {
+		font-size: 36px;
+	}
+	
+	p {
+		font-size: 22px;
+		@include dinpro;
+		line-height: 33px;
+		margin-bottom: 33px;
+	}
+	
+	.type {
+		font-size: 15px;
+		margin-bottom: 0px;
+	}
+}
 
 
 
