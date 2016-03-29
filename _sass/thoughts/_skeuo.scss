@@ -1,0 +1,24 @@
+$background: #2C2927;
+$primary: #A39789;
+$highlight: #E7D9C8;
+
+.skeuo {
+	background: $background;
+	
+	.cover {
+		background: rgba($background,0.8);
+	}
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+	
+}

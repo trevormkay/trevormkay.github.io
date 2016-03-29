@@ -33,9 +33,8 @@ link: "http://www.neutroncss.com/"
 	<div class="constrained">
 		<p class="type">Other Works</p>
 		<div class="links">
-			{% include link-eastland.html %}
-			
-			{% include link-arc.html %}
+			{% include related.html item="eastland" collection=site.portfolio %}
+			{% include related.html item="arc" collection=site.portfolio %}
 		</div>
 	</div>
 </section>

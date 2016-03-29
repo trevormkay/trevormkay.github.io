@@ -16,9 +16,8 @@ link: "https://itunes.apple.com/au/app/pizza-hut-australia/id353096574?mt=8"
 	<div class="constrained">
 		<p class="type">Other Works</p>
 		<div class="links">
-			{% include link-neutron.html %}
-			
-			{% include link-eastland.html %}
+			{% include related.html item="neutron" collection=site.portfolio %}
+			{% include related.html item="eastland" collection=site.portfolio %}
 		</div>
 	</div>
 </section>

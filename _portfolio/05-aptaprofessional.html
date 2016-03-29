@@ -32,9 +32,8 @@ link: "http://www.aptaprofessional.com.au/"
 	<div class="constrained">
 		<p class="type">Other Works</p>
 		<div class="links">
-			{% include link-karinourish.html %}
-			
-			{% include link-retailerportal.html %}
+			{% include related.html item="karinourish" collection=site.portfolio %}
+			{% include related.html item="retailerportal" collection=site.portfolio %}
 		</div>
 	</div>
 </section>

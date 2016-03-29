@@ -1,0 +1,24 @@
+$background: #E6E6E6;
+$primary: #2D2D2D;
+$highlight: #2C7DA9;
+
+.microsoft {
+	background: $background;
+	
+	.cover {
+		background: rgba($background,0.8);
+	}
+	
+	h1, h2, h3 {
+		color: $highlight;
+	}
+	
+	p, caption {
+		color: $primary !important;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+	
+}
