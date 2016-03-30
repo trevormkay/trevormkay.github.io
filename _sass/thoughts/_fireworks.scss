@@ -13,7 +13,7 @@ $highlight: #FAB96D;
 		color: $highlight;
 	}
 	
-	p, caption {
+	p, caption, li {
 		color: $primary !important;
 	}
 	
@@ -73,7 +73,25 @@ $highlight: #FAB96D;
 		background: $background;
 	}
 	
-	a {
-		color: $highlight;
+	.thought a {
+		color: $primary;
+		border-bottom: 2px solid $highlight;
+		
+		&:hover {
+			text-decoration: none;
+			color: $highlight;
+		}
+	}
+	
+	.callout {
+		 border-left: 4px solid $primary;
+		 background: rgba($primary,0.05);
+	}
+	
+	code {
+		background: $highlight;
+		border: none;
+		color: $background;
+		padding: 5px 10px;
 	}
 }

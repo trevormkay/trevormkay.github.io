@@ -78,7 +78,13 @@ $highlight: #FFD56F;
 		background: $background;
 	}
 	
-	a {
-		color: $highlight;
+	.thought a {
+		color: $primary;
+		border-bottom: 2px solid $highlight;
+		
+		&:hover {
+			text-decoration: none;
+			color: $highlight;
+		}
 	}
 }
