@@ -1,7 +1,7 @@
 {% for p in include.collection %}
     {% if p.class == include.item %}
 <div class="link">
-	<a href="{{ site.url/p.url }}">
+	<a href="/portfolio/{{ p.class }}.html">
 		<img src="../images/portfolio/link{{ p.class }}.png" srcset="../images/portfolio/link{{ p.class }}.png, ../images/portfolio/link{{ p.class }}@2x.png 2x">
 		<div class="copy">
 			<h3>{{ p.title }} {% include arrowRight.svg %}</h3>
