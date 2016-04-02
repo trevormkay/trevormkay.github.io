@@ -1,6 +1,0 @@
----
-title:  "Final Cut Studio"
-type: "Wallpaper"
-class: "fcs"
-category: "item"
----
