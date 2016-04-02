@@ -52,19 +52,65 @@ $highlight: #56A421;
 	
 	header {
 		background-color: $background-dark;
+		overflow: hidden;
+		
+		@media (min-width:$tablet) {
+			height: 656px;
+		}
 		
 		.coverimage {
-			background-image: url(../images/portfolio/arc/header-background.jpg);
+			//background-image: url(../images/portfolio/arc/header-background.jpg);
 			opacity: 1;
 		}
 		
 		.visit-link {
 			display: none;
 		}
+		
+		.content {
+			height: 100%;
+		}
+		
+		#radar {
+			display: block;
+			right: 550px;
+			top: 100px;
+			background: red;
+			position: absolute;
+		}
+		
+		#radar span {
+			position:absolute;
+			width:550px;
+			height:550px;
+			border: 1px solid rgba(black,0.1);
+			border-radius:50%;
+			animation: radar 4s infinite linear;
+			opacity: 0;
+		}
+		
+		#radar-5 span:nth-child(1) {
+			animation-delay: 0s;
+		}	
+		#radar span:nth-child(2) {
+			animation-delay: 1.33s;
+		}
+		#radar span:nth-child(3) {
+			animation-delay: 2.66s;
+		}
+								
+		@keyframes radar {
+			0% {transform: scale(0); opacity: 0;}
+			25% {transform: scale(0); opacity: 0.5;}
+			50% {transform: scale(1); opacity: 1;}
+			75% {transform: scale(1.5); opacity: 0.5;}
+			100% {transform: scale(2); opacity: 0;}
+		}
 	}
 	
 	.anchors {
 		border-top: 2px solid rgba($primary, 0.2);
+		display: none;
 		
 		li a {
 			color: $primary;
@@ -77,5 +123,30 @@ $highlight: #56A421;
 	
 	.link {
 		background: $background;
+	}
+	
+	#challenge {
+		display: flex;
+		overflow: hidden;
+		flex-flow: column;
+		
+		@media (min-width:$desktop) {
+			flex-flow: row;
+			height: 600px;
+		}
+		
+		.copy {
+			margin-bottom: 30px;
+			
+			@media (min-width:$desktop) {
+				width: 60%;
+				padding-right: 30px;
+				margin-bottom: 0px;
+			}
+		}
+		
+		img	 {
+			max-width: 100%;
+		}
 	}
 }
