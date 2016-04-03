@@ -14,7 +14,7 @@ $highlight: #56A421;
 		color: $highlight;
 	}
 	
-	p, caption {
+	p, caption, .type {
 		color: $primary !important;
 	}
 	
@@ -71,22 +71,70 @@ $highlight: #56A421;
 			height: 100%;
 		}
 		
+		.logo {
+			position: relative;
+			z-index: 3;
+		}
+		
 		#radar {
 			display: block;
-			right: 550px;
-			top: 100px;
-			background: red;
-			position: absolute;
+			width: 200px;
+			height: 200px;
+			margin: 0px auto;
+			margin-top: -220px;
+			z-index: 2;
+			position: relative;
+			
+			@media (min-width:375px) {
+				width: 250px;
+				height: 250px;
+				margin-top: -260px;
+			}
+			
+			@media (min-width:414px) {
+				margin-top: -270px;
+			}
+			
+			@media (min-width:$tablet) {
+				position: absolute;
+				margin: 0px;
+				right: -100px;
+				bottom: 0px;
+				width: 550px;
+				height: 550px;
+			}
+			
+			@media (min-width:1024px) {
+				right: -40px;
+			}
+			
+			@media (min-width:1080px) {
+				right: -20px;
+			}
+					
+			@media (min-width:$desktop) {
+				right: 0px;
+			}
 		}
 		
 		#radar span {
 			position:absolute;
-			width:550px;
-			height:550px;
+			width:200px;
+			height:200px;
 			border: 1px solid rgba(black,0.1);
 			border-radius:50%;
 			animation: radar 4s infinite linear;
 			opacity: 0;
+			
+			@media (min-width:375px) {
+				width: 250px;
+				height: 250px;
+			}
+			
+			@media (min-width:$tablet) {
+				width:550px;
+				height:550px;
+			}
 		}
 		
 		#radar-5 span:nth-child(1) {
@@ -144,9 +192,11 @@ $highlight: #56A421;
 				margin-bottom: 0px;
 			}
 		}
-		
+
 		img	 {
 			max-width: 100%;
+			display: block;
+			margin: 0px auto;
 		}
 	}
 }
