@@ -74,4 +74,78 @@ $highlight: #005B9F;
 	.link {
 		background: $background;
 	}
+	
+	.browserBar {
+		background: rgba($primary,0.2);
+		
+		li {
+			background: $background;
+		}
+	}
+	
+	.browserWindow {
+		border: 1px solid rgba($primary,0.2);
+	}
+	
+	.phone {
+		background: rgba($primary,0.2);
+		
+		.speaker, .home {
+			background: $background;
+		}
+		
+		@media (min-width:$tablet) {
+			display: none;
+		}
+	}
+	
+	.browser {
+		display: none;
+		
+		@media (min-width:$tablet) {
+			display: block;
+		}
+	}
+	
+	#challenge {
+		overflow: hidden;
+		
+		@media (min-width:$desktop) {
+			height: 1000px;
+		}
+	}
+	
+	#solution {
+		.styleguide {
+			margin-top: 30px;
+			margin-bottom: 140px;
+			display: flex;
+			flex-direction: column;
+			
+			@media (min-width:$tablet) {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+		
+		.images {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin-top: 30px;
+			
+			img {
+				max-width: 75%;
+				margin-bottom: 20px;
+				
+				@media (min-width:$tablet) {
+					width: 50%;
+				}
+			}
+			
+			@media (min-width:$tablet) {
+				flex-direction: row;
+			}
+		}
+	}
 }

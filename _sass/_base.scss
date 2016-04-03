@@ -769,6 +769,36 @@ header {
 	}
 }
 
+.browserBar {
+	height: 43px;
+	border-top-left-radius: 13px;
+	border-top-right-radius: 13px;
+	margin-top: 60px;
+	
+	ul {
+		list-style: none;
+		margin-left: 20px;
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+	
+	li	{
+		float: left;
+		border-radius: 50%;
+		width: 19px;
+		height: 19px;
+		margin-right: 10px;
+	}
+}
+
+
+.browserWindow {
+	max-width: 100%;
+	border-bottom-left-radius: 10px;
+	border-bottom-right-radius: 10px;
+	margin-bottom: 60px;
+}
 
 
 
