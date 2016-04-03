@@ -53,17 +53,22 @@ $highlight: #FF002B;
 	header {
 		background-color: $background-dark;
 		
+		@media (min-width:$tablet) {
+			height: 656px;
+		}
+		
 		.coverimage {
 			background-image: url(../images/portfolio/pizzahut/header-background.jpg);
 		}
 		
-		.logo img {
-			height: 400px;
+		.content {
+			height: 100%;
 		}
 	}
 	
 	.anchors {
 		border-top: 2px solid rgba($primary, 0.2);
+		display: none;
 		
 		li a {
 			color: $primary;
@@ -76,5 +81,43 @@ $highlight: #FF002B;
 	
 	.link {
 		background: $background;
+	}
+	
+	#challenge {
+		display: flex;
+		overflow: hidden;
+		flex-flow: column;
+		
+		@media (min-width:$desktop) {
+			flex-flow: row;
+			height: 550px;
+		}
+		
+		.copy, .image {
+			width: 100%;
+			
+			@media (min-width:$desktop) {
+				width: 50%;
+			}
+		}
+		
+		.image {
+			margin-top: 30px;
+			
+			@media (min-width:$desktop) {
+				margin-top: 0px;
+			}
+		}
+		
+		.phone {
+			display: block;
+			margin: 0px auto;
+			width: 330px;
+			background: rgba(black, 0.3);
+			
+			.speaker, .home {
+				background: $background;
+			}
+		}
 	}
 }
