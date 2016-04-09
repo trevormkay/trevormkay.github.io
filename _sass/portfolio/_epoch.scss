@@ -10,12 +10,30 @@ $highlight: #FFD56F;
 		background: rgba($background,0.8);
 	}
 	
-	h1, h2, h3 {
-		color: $highlight;
+	h1, h2, h3, .quote {
+		color: $highlight !important;
 	}
 	
 	p, caption, .type {
 		color: $primary !important;
+	}
+	
+	.quote {
+		text-transform: uppercase;
+		@include dinalt;
+		font-size: 20px;
+		
+		&::before {
+			content: url(../images/portfolio/epoch/quote.svg);
+			margin-right: 30px
+		}
+		
+		&::after {
+			content: url(../images/portfolio/epoch/quote.svg);
+			transform: rotate(180deg);
+			 display: inline-block;
+			 margin-left: 30px;
+		}
 	}
 	
 	.type::after {
@@ -85,6 +103,95 @@ $highlight: #FFD56F;
 		&:hover {
 			text-decoration: none;
 			color: $highlight;
+		}
+	}
+	
+	#challenge {
+		display: flex;
+		overflow: hidden;
+		flex-flow: column;
+		
+		@media (min-width:$desktop) {
+			flex-flow: row;
+			height: 600px;
+		}
+		
+		.copy, .image {
+			width: 100%;
+			
+			@media (min-width:$desktop) {
+				width: 50%;
+			}
+		}
+		
+		.image {
+			margin-top: 30px;
+			
+			@media (min-width:$desktop) {
+				margin-top: 0px;
+			}
+		}
+		
+		.phone {
+			display: block;
+			margin: 0px auto;
+			width: 330px;
+			background: rgba(black, 0.3);
+			
+			.speaker, .home {
+				background: $background;
+			}
+		}
+	}
+	
+	#solution {
+		.phone {
+			display: block;
+			margin: 0px auto;
+			width: 330px;
+			background: rgba(black, 0.3);
+			
+			.speaker, .home {
+				background: $background-dark;
+			}
+		}
+	}
+	
+	#process {
+		display: flex;
+		overflow: hidden;
+		flex-flow: column;
+		
+		@media (min-width:$desktop) {
+			flex-flow: row;
+			height: 620px;
+		}
+		
+		.copy, .image {
+			width: 100%;
+			
+			@media (min-width:$desktop) {
+				width: 50%;
+			}
+		}
+		
+		.image {
+			margin-top: 30px;
+			
+			@media (min-width:$desktop) {
+				margin-top: 0px;
+			}
+		}		
+		
+		.phone {
+			display: block;
+			margin: 0px auto;
+			width: 330px;
+			background: rgba(black, 0.3);
+			
+			.speaker, .home {
+				background: $background;
+			}
 		}
 	}
 }
