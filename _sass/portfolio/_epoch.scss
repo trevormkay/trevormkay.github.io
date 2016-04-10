@@ -110,6 +110,7 @@ $highlight: #FFD56F;
 		display: flex;
 		overflow: hidden;
 		flex-flow: column;
+		position: relative;	
 		
 		@media (min-width:$desktop) {
 			flex-flow: row;
@@ -126,6 +127,9 @@ $highlight: #FFD56F;
 		
 		.image {
 			margin-top: 30px;
+			//display: flex;
+			align-items: center;
+			flex-flow: column;
 			
 			@media (min-width:$desktop) {
 				margin-top: 0px;
@@ -142,9 +146,15 @@ $highlight: #FFD56F;
 				background: $background;
 			}
 		}
+		
+		#clockdiv {
+			bottom: 265px;
+		}
 	}
 	
 	#solution {
+		position: relative;
+		
 		.phone {
 			display: block;
 			margin: 0px auto;
@@ -192,6 +202,37 @@ $highlight: #FFD56F;
 			.speaker, .home {
 				background: $background;
 			}
+		}
+	}
+	
+	#clockdiv {
+		display: flex;
+		flex-direction: row;
+		width: calc(70px * 4);
+		position: absolute;
+		margin: 0px auto;
+		left: 0px;
+		right: 0px;
+			
+		.time {
+			width: 70px;
+			align-items: center;
+			display: flex;
+			flex-direction: column;
+		}
+		
+		.smalltext {
+			color: white;
+			opacity: 0.5;
+			text-transform: uppercase;
+			font-size: 10px;			
+		}
+		
+		.largetext {
+			color: white;
+			opacity: 0.8;
+			font-size: 34px;
+			font-weight: bold;
 		}
 	}
 }
