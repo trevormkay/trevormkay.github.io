@@ -147,7 +147,7 @@ $highlight: #FFD56F;
 			}
 		}
 		
-		#clockdiv {
+		.countdown {
 			bottom: 265px;
 		}
 	}
@@ -205,7 +205,7 @@ $highlight: #FFD56F;
 		}
 	}
 	
-	#clockdiv {
+	.countdown {
 		display: flex;
 		flex-direction: row;
 		width: calc(70px * 4);
