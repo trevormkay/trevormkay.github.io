@@ -83,9 +83,11 @@ $(document).ready(function(){
 
     var birthdayDeadline = getDeadline('01', '06') // Jan 6th
     var christmasDeadline = getDeadline('12', '25') // Dec 25th
+    var holidayDeadline = getDeadline('05', '13') // Apr 13th
         
     initializeClock('christmas', christmasDeadline);  
     initializeClock('birthday', birthdayDeadline);
+    initializeClock('holiday', holidayDeadline);
 	
 				
 });

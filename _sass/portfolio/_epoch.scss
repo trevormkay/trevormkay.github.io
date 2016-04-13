@@ -14,7 +14,7 @@ $highlight: #FFD56F;
 		color: $highlight !important;
 	}
 	
-	p, caption, .type {
+	p, caption, .type, .caption {
 		color: $primary !important;
 	}
 	
@@ -22,21 +22,26 @@ $highlight: #FFD56F;
 		text-transform: uppercase;
 		@include dinalt;
 		font-size: 20px;
+		position: relative;
+		margin-left: 50px;
+		margin-top: 20px;
+		margin-bottom: 20px;
 		
 		&::before {
 			content: url(../images/portfolio/epoch/quote.svg);
-			margin-right: 30px
+			position: absolute;
+			left: -50px;
 		}
 		
 		&::after {
 			content: url(../images/portfolio/epoch/quote.svg);
 			transform: rotate(180deg);
-			 display: inline-block;
-			 margin-left: 30px;
+			position: absolute;
+			right: 10px;
 		}
 	}
 	
-	.type::after {
+	.type::after, .caption::before {
 		background: $primary;
 	}
 	
@@ -127,7 +132,6 @@ $highlight: #FFD56F;
 		
 		.image {
 			margin-top: 30px;
-			//display: flex;
 			align-items: center;
 			flex-flow: column;
 			
@@ -148,7 +152,12 @@ $highlight: #FFD56F;
 		}
 		
 		.countdown {
-			bottom: 265px;
+			bottom: 260px;
+			
+			@media (min-width:$desktop) {
+				right: 135px;
+				bottom: 75px;
+			}
 		}
 	}
 	
@@ -163,6 +172,27 @@ $highlight: #FFD56F;
 			
 			.speaker, .home {
 				background: $background-dark;
+			}
+		}
+		
+		.image {
+			position: relative;
+		}
+		
+		@media (min-width:$desktop) {
+			height: 1040px;
+			overflow: hidden;
+		}
+		
+		.countdown {
+			bottom: 180px;
+			
+			@media (min-width:$desktop) {
+				right: 0px !important;
+				left: 0px !important;
+				bottom: 185px;
+				position: absolute;
+				margin: 0px auto !important;
 			}
 		}
 	}
@@ -205,34 +235,70 @@ $highlight: #FFD56F;
 		}
 	}
 	
-	.countdown {
+	.row {
 		display: flex;
-		flex-direction: row;
-		width: calc(70px * 4);
-		position: absolute;
-		margin: 0px auto;
-		left: 0px;
-		right: 0px;
-			
-		.time {
-			width: 70px;
-			align-items: center;
-			display: flex;
-			flex-direction: column;
-		}
+		flex-flow: column;
 		
-		.smalltext {
-			color: white;
-			opacity: 0.5;
-			text-transform: uppercase;
-			font-size: 10px;			
-		}
-		
-		.largetext {
-			color: white;
-			opacity: 0.8;
-			font-size: 34px;
-			font-weight: bold;
+		@media (min-width:$desktop) {
+			flex-flow: row;
 		}
 	}
+	
+	.widget {
+		@media (min-width:$tablet) {
+			flex-flow: row;
+			margin-bottom: 60px;
+			align-items: center;
+			
+			.copy {
+				width: 60%;
+			}
+			
+			.image {
+				width: 40%;
+			}
+		}
+		
+		.image {
+			position: relative;
+		}
+		
+		img {
+			max-width: 100%;
+			width: 378px;
+			margin: 0px auto;
+			display: block;
+		}
+	}
+	
+	.location {
+		@media (min-width:$desktop) {
+			align-items: flex-end;
+			
+			.image {
+				order: 1;
+				width: 40%;
+			}
+			
+			.copy {
+				order: 2;
+				margin-bottom: 150px;
+				width: 60%;
+			}
+		}
+	}
+
+	.minicountdown {
+		position: absolute;
+		left: 0px;
+		right: 0px;
+		top: 74%;
+		
+		p {
+			color: white !important;
+			font-family: helvetica, arial, sans-serif;
+			text-align: center;
+		}
+	}
+	
 }
