@@ -125,6 +125,11 @@ $highlight: #00B5DC;
 		}
 	}
 	
+	article.video {
+		background: rgba(#585C68,0.3);
+		border-radius: 0px;
+	}
+	
 	article.video .control-bar .seek .watched:after {
 		box-shadow: 0px 0 3px 0px $highlight;
 		background: $highlight;
@@ -154,5 +159,39 @@ $highlight: #00B5DC;
 	
 	article.video .large-play {
 		text-shadow: 0px 0px 30px rgba(black,0.5);
+	}
+	
+	.colours {
+		max-width: 100%;
+	}
+	
+	.styleguide {
+		display: flex;
+		flex-flow: column;
+		margin-top: -5px;
+		
+		img {
+			max-width: 100%;
+			height: auto;
+			margin: 10px 0px;
+			width: 100%;
+		}
+		
+		@media (min-width:$tablet) {
+			flex-flow: row;
+			justify-content: space-between;
+			align-items: center;
+			
+			img {
+				width: 50%;
+				margin: 0px;
+			}
+		}
+	}
+	
+	#solution {
+		.phone {
+			display: block;
+		}
 	}
 }
