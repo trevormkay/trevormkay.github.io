@@ -147,14 +147,26 @@ $accent: #75ECE1;
 	}
 	
 	#solution {
-		background-image: url(../images/portfolio/neutron/results.png);
-		height: 850px;
-		background-position: center top;
-		background-repeat: no-repeat;
+		img {
+			margin: 0px auto;
+			display: block;
+			padding-top: 30px;
+		}
 		
-		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-			background-image: url(../images/portfolio/neutron/results@2x.png);
-			background-size: 1015px;
+		@media (min-width:$tablet) {
+			background-image: url(../images/portfolio/neutron/results.png);
+			height: 850px;
+			background-position: center top;
+			background-repeat: no-repeat;
+			
+			img {
+				display: none;
+			}
+			
+			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+				background-image: url(../images/portfolio/neutron/results@2x.png);
+				background-size: 1015px;
+			}
 		}
 	}
 	
@@ -168,8 +180,19 @@ $accent: #75ECE1;
 			justify-content: space-between;
 			
 			p {
-				width: 48%;
+				width: 49%;
 			}
+		}
+	}
+	
+	.colours {
+		margin: 60px 0px;
+		display: flex;
+		flex-flow: column;
+		
+		img {
+			max-width: 100%;
+			margin-bottom: 10px;
 		}
 	}
 }
