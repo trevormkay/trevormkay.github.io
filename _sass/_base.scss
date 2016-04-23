@@ -99,7 +99,8 @@ body {
 			li {
 				float: left;
 				margin: {
-					left: 20px;
+					//left: 20px;
+					left: 40px;
 					bottom: 0px;
 				}
 				font-size: 1.2em;
@@ -281,6 +282,7 @@ body {
 		bottom: 60px;
 	}
 	z-index: 2;
+	position: relative;
 	
 	.card {
 		width: 100%;
@@ -393,7 +395,7 @@ body {
 	right: -300px;
 	width: 600px;
 	height: 600px;
-	z-index: -1;
+	z-index: 1;
 	
 	@media (min-width:$tablet) {
 		top: -400px;
