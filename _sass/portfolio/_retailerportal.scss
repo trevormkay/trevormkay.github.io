@@ -14,11 +14,11 @@ $highlight: #CA4750;
 		color: $highlight;
 	}
 	
-	p, caption, .type {
+	p, caption, .type, .caption {
 		color: $primary !important;
 	}
 	
-	.type::after {
+	.type::after, .caption::before {
 		background: $primary;
 	}
 	
@@ -31,7 +31,7 @@ $highlight: #CA4750;
 	}
 	
 	.main-nav {
-		border-bottom: 2px solid rgba($primary, 0.2);
+		border-bottom: 2px solid rgba($primary, 0.5);
 		
 		.sitename, li a {
 			color: $primary;
@@ -63,7 +63,7 @@ $highlight: #CA4750;
 	}
 	
 	.anchors {
-		border-top: 2px solid rgba($primary, 0.2);
+		border-top: 2px solid rgba($primary, 0.5);
 		
 		li a {
 			color: $primary;
@@ -76,5 +76,33 @@ $highlight: #CA4750;
 	
 	.link {
 		background: $background;
+	}
+	
+	.browserBar {
+		background: rgba($primary,0.3);
+		
+		li {
+			background: $background;
+		}
+	}
+	
+	.phone {
+		background: rgba($primary,0.3);
+		
+		.speaker, .home {
+			background: $background;
+		}
+		
+		@media (min-width:$tablet) {
+			display: none;
+		}
+	}
+	
+	.browser {
+		display: none;
+		
+		@media (min-width:$tablet) {
+			display: block;
+		}
 	}
 }

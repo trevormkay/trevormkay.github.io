@@ -379,6 +379,7 @@ body {
 	@include dinalt;
 	text-transform: uppercase;
 	font-size: 15px;
+	margin-top: 10px;
 }
 
 .caption::before {
@@ -386,7 +387,7 @@ body {
 	width: 40px;
 	height: 2px;
 	display: block;
-	margin-bottom: 10px;
+	margin-bottom: 5px;
 }
 
 .spin {
