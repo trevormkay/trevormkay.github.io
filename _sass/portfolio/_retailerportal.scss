@@ -105,4 +105,29 @@ $highlight: #CA4750;
 			display: block;
 		}
 	}
+	
+	#challenge {
+		overflow: hidden;
+		
+		@media (min-width:$tablet) {
+			height: 800px;
+		}
+		
+		@media (min-width:$desktop) {
+			height: 1000px;
+		}
+	}
+	
+	#solution {
+		.row {
+			@media (min-width:$tablet) {
+				display: flex;
+				justify-content: space-between;
+				
+				p {
+					width: 49%;
+				}
+			}
+		}
+	}
 }
