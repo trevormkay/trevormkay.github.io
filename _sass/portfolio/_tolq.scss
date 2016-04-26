@@ -113,14 +113,10 @@ $highlight: #00AF5B;
 	}
 	
 	#solution {
-		@media (min-width:$tablet) {
-			height: 950px;
-			overflow: hidden;
-		}
+		overflow: hidden;
 		
-		@media (min-width:$desktop) {
-			height: 1050px;
-			overflow: hidden;
+		.browser {
+			margin-bottom: -100px;
 		}
 	}
 	
@@ -144,6 +140,44 @@ $highlight: #00AF5B;
 			
 			div {
 				width: 48%;
+			}
+		}
+	}
+	
+	#process {
+		overflow: hidden;
+		
+		.browser.new {
+			margin-bottom: -100px;
+		}
+	}
+	
+	.logo {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		flex-flow: column;
+		
+		img {
+			max-width: 300px;
+			margin: 0px auto;
+			display: block;
+			margin-bottom: 20px;
+		}
+		
+		@media (min-width:$tablet) {
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			
+			img {
+				width: 492px;
+				max-width: 492px;
+				margin-right: 30px;
+				margin-bottom: 0px;
+			}
+			
+			p {
+				width: 50%;
 			}
 		}
 	}
