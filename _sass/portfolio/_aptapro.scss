@@ -106,12 +106,8 @@ $highlight: #00B5DC;
 	#challenge {
 		overflow: hidden;
 		
-		@media (min-width:$tablet) {
-			height: 850px;
-		}
-		
-		@media (min-width:$desktop) {
-			height: 1020px;
+		.browser {
+			margin-bottom: -100px;
 		}
 	}
 	
@@ -186,6 +182,14 @@ $highlight: #00B5DC;
 				width: 50%;
 				margin: 0px;
 			}
+		}
+	}
+	
+	#solution {
+		overflow: hidden;
+		
+		.browser.article {
+			margin-bottom: -100px;
 		}
 	}
 }

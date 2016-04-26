@@ -14,11 +14,11 @@ $highlight: #00AF5B;
 		color: $highlight;
 	}
 	
-	p, caption, .type {
+	p, caption, .type, .caption {
 		color: $primary !important;
 	}
 	
-	.type::after {
+	.type::after, .caption::before {
 		background: $primary;
 	}
 	
@@ -72,5 +72,79 @@ $highlight: #00AF5B;
 	
 	.link {
 		background: $background;
+	}
+		
+	.browserBar {
+		background: rgba(black,0.3);
+		max-width: 1024px;
+		
+		li {
+			background: $background;
+		}
+	}
+	
+	.phone {
+		background: rgba(black,0.3);
+		
+		.speaker, .home {
+			background: $background;
+		}
+		
+		@media (min-width:$tablet) {
+			display: none;
+		}
+	}
+	
+	.browser {
+		display: none;
+		
+		@media (min-width:$tablet) {
+			display: block;
+			margin-left: auto;
+			margin-right: auto;
+			max-width: 1024px
+		}
+	}
+	
+	#challenge {
+		img {
+			max-width: 100%;
+		}
+	}
+	
+	#solution {
+		@media (min-width:$tablet) {
+			height: 950px;
+			overflow: hidden;
+		}
+		
+		@media (min-width:$desktop) {
+			height: 1050px;
+			overflow: hidden;
+		}
+	}
+	
+	.interfaces {
+		display: flex;
+		flex-flow: column;
+		margin-top: 30px;
+		margin-bottom: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 512px;
+		
+		img {
+			max-width: 100%;
+		}
+		
+		@media (min-width:$tablet) {
+			flex-flow: row;
+			justify-content: space-between;
+			max-width: 100%;
+			
+			div {
+				width: 48%;
+			}
+		}
 	}
 }

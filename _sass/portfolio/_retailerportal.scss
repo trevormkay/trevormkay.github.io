@@ -109,12 +109,8 @@ $highlight: #CA4750;
 	#challenge {
 		overflow: hidden;
 		
-		@media (min-width:$tablet) {
-			height: 800px;
-		}
-		
-		@media (min-width:$desktop) {
-			height: 1000px;
+		.browser {
+			margin-bottom: -100px;
 		}
 	}
 	

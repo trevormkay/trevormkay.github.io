@@ -146,6 +146,14 @@ $accent: #75ECE1;
 		}
 	}
 	
+	#challenge {
+		overflow: hidden;
+		
+		.browser {
+			margin-bottom: -110px;
+		}
+	}
+	
 	#solution {
 		img {
 			margin: 0px auto;

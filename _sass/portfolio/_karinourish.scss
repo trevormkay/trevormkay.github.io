@@ -111,12 +111,8 @@ $highlight: #005B9F;
 	#challenge {
 		overflow: hidden;
 		
-		@media (min-width:$tablet) {
-			height: 750px;
-		}
-		
-		@media (min-width:$desktop) {
-			height: 950px;
+		.browser {
+			margin-bottom: -100px;
 		}
 	}
 	
@@ -174,5 +170,13 @@ $highlight: #005B9F;
 				flex-direction: row;
 			}
 		}
+	}
+	
+	#process {
+		overflow: hidden;
+	}
+	
+	.browser.careline {
+		margin-bottom: -100px;
 	}
 }
