@@ -119,6 +119,15 @@ $highlight: #CA4750;
 	}
 	
 	#solution {
+		.card {
+			margin: 30px auto;
+			max-width: 940px;
+			
+			img {
+				max-width: 100%;
+			}
+		}
+		
 		.row {
 			@media (min-width:$tablet) {
 				display: flex;
@@ -126,6 +135,74 @@ $highlight: #CA4750;
 				
 				p {
 					width: 49%;
+				}
+			}
+		}
+	}
+	
+	.styleguide {
+		height: 1249px;
+		position: relative;
+		
+		.baseline {
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			background: url(../images/portfolio/retailerportal/lines.png);
+			z-index: 2;
+		}
+				
+		.image {
+			background: url(../images/portfolio/retailerportal/styleguide-mobile.png);
+			width: 303px;
+			height: 1197px;
+			margin: 26px auto;
+			padding-top: 0px;
+			position: absolute;
+			left: 0px;
+			right: 0px;
+			z-index: 1;
+		}
+		
+		@media (min-width:$tablet) {
+			height: 1015px;
+			
+			.image {
+				background: url(../images/portfolio/retailerportal/styleguide-tablet.png);
+				width: 492px;
+				height: 911px;
+				margin: 52px auto;
+			}
+		}
+		
+		@media (min-width:$desktop) {
+			height: 573px;
+			
+			.image {
+				background: url(../images/portfolio/retailerportal/styleguide-desktop.png);
+				width: 1054px;
+				height: 469px;
+				margin: 52px auto;
+			}
+		}
+		
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+			.image {
+				background: url(../images/portfolio/retailerportal/styleguide-mobile@2x.png);
+				background-size: 303px 1197px;
+			}
+			
+			@media (min-width:$tablet) {
+				.image {
+					background: url(../images/portfolio/retailerportal/styleguide-tablet@2x.png);
+					background-size: 492px 911px;
+				}
+			}
+			
+			@media (min-width:$desktop) {
+				.image {
+					background: url(../images/portfolio/retailerportal/styleguide-desktop@2x.png);
+					background-size: 1054px 469px;
 				}
 			}
 		}
