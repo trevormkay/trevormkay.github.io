@@ -14,12 +14,25 @@ $highlight: #00A5F0;
 		color: $highlight;
 	}
 	
-	p, caption, .type {
+	p, caption, .type, .caption {
 		color: $primary !important;
 	}
 	
 	.type::after {
 		background: $primary;
+	}
+	
+	.caption {
+		margin-top: 0px;
+		margin-bottom: 0px;
+		
+		@media (min-width:$tablet) {
+			margin-bottom: -10px;	
+		}
+	}
+	
+	.caption + p {
+		font-size: 15px;
 	}
 	
 	.visit-link {
@@ -77,5 +90,93 @@ $highlight: #00A5F0;
 	
 	.link {
 		background: $background;
+	}
+	
+	#challenge {
+		img {
+			max-width: 80%;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			margin-top: 60px;
+		}
+		
+		@media (min-width:$desktop) {
+			display: flex;
+			align-items: center;
+			
+			.copy {
+				width: 48%;
+			}
+			
+			img {
+				max-width: 50%;
+				margin-top: 0px;
+			}
+		}
+	}
+	
+	.styleguide {
+		img {
+			max-width: 100%;
+			display: block;
+			margin: 0px auto 10px auto;
+		}
+		
+		@media (min-width:$tablet) {
+			img {
+				max-width: 48%;
+				margin: 0px;
+				display: inline;
+			}
+		}
+	}
+	
+	.platform {
+		margin: 0px auto;
+		max-width: 512px;
+		
+		div {
+			margin-bottom: 20px;
+		}
+		
+		img {
+			max-width: 100%;
+		}
+		
+		@media (min-width:$tablet) {
+			overflow: auto;
+			zoom: 1;
+			max-width: 100%;			
+			
+			div {
+				float: left;
+				width: calc(50% - 40px);
+				margin: 20px;
+			}
+		}
+	}
+	
+	.icons {
+		display: block;
+		margin: 60px 0px 30px -15px;
+		width: 775px;
+		
+		@media (min-width:$tablet) {
+			margin: 60px 0px 30px -100px;
+			width: 1550px;
+		}
+				
+		@media (min-width:$desktop) {
+			margin: 60px auto 30px auto;
+		}
+	}
+	
+	#process {
+		overflow: hidden;
+	}
+	
+	p.constrained {
+		text-align: center;
 	}
 }
