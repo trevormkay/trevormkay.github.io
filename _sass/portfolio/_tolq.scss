@@ -55,6 +55,7 @@ $highlight: #00AF5B;
 		
 		.coverimage {
 			background-image: url(../images/portfolio/tolq/header-background.jpg);
+			background-position: center bottom;
 		}
 	}
 	
@@ -152,7 +153,7 @@ $highlight: #00AF5B;
 		}
 	}
 	
-	.logo {
+	.whitelogo {
 		margin-top: 60px;
 		margin-bottom: 60px;
 		flex-flow: column;
