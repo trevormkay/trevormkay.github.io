@@ -1,0 +1,158 @@
+$background: #F8F8F8;
+$primary: #7B7B7B;
+$highlight: #F78A60;
+
+.resume {
+	background: $background;
+	
+	.cover {
+		background: rgba($background,0.9);
+	}
+	
+	h1, h3 {
+		color: $highlight;
+	}
+	
+	h3 {
+		text-transform: none;
+		@include dinalt;
+		font-size: 26px;
+	}
+	
+	p, caption, .type, .caption {
+		color: $primary !important;
+	}
+	
+	p {
+		@include dinpro;
+		font-size: 16px;
+		line-height: 24px;
+	}
+	
+	a {
+		color: $highlight;
+	}
+	
+	.collapsible {
+		@include dinalt;
+		color: $primary;
+		text-transform: uppercase;
+	}
+	
+	.type::after {
+		background: $primary;
+	}
+	
+	.name {
+		h1	{
+			color: $highlight;
+		}
+		
+		h2 {
+			color: $primary;
+		}
+	}
+	
+	.main-nav {
+		border-bottom: 2px solid rgba($primary, 0.2);
+		
+		.sitename span {
+			display: none;
+		}
+		
+		.sitename, li a {
+			color: $primary;
+		}
+		
+		#logo {
+			stroke: $primary
+		}
+		
+		li a.active {
+			color: $highlight;
+		}
+		
+		.hamburger span {
+			background: $highlight;
+		}
+	}
+	
+	.spin {
+		opacity: 0.06;
+		
+		&.one {
+			#logo {
+				stroke: $highlight;
+			}
+		}
+		
+		&.two {
+			#logo {
+				stroke: $primary;
+			}
+		}
+	}
+	
+	.details {
+		display: none;
+	}
+	
+	.job {
+		margin-bottom: 40px;
+		border-bottom: 1px solid rgba($primary,0.2);
+		
+		ul {
+			list-style: none;
+			margin-left: -10px;
+			@include clearfix;
+			
+			li {
+				float: left;
+				margin: 10px;
+			}
+		}
+		
+		@media (min-width:$tablet) {
+			display: flex;
+			margin-bottom: 100px;
+			border: none;
+			
+			.date {
+				width: 200px;
+				position: relative;
+				
+				p {
+					text-align: right;
+					padding-right: 30px;
+					padding-top: 9px;
+				}
+			}
+			
+			.position {
+				width: calc(100% - 200px);
+				padding-left: 30px;
+			}
+		}
+	}
+	
+	.type {
+		@media (min-width:$tablet) {
+			margin-left: 230px;
+		}
+	}
+	
+	.dot {
+		display: none;
+		
+		@media (min-width:$tablet) {
+			display: block;
+			background: $highlight;
+			width: 10px;
+			height: 10px;
+			border-radius: 50%;
+			position: absolute;
+			right: 0px;
+			top: 15px;
+		}
+	}
+}

@@ -61,6 +61,10 @@ $desktop-lrg: 1800px;
 	font-family: 'DIN Alternate', helvetica, arial, sans-serif;
 }
 
+@mixin clearfix {
+	overflow: auto;
+	zoom: 1;
+}
 
 
 
@@ -74,6 +78,7 @@ $desktop-lrg: 1800px;
         "portfolio",
         "thoughts",
         "downloads",
+        "resume",
         "../_sass/portfolio/eastland",
         "../_sass/portfolio/retailerportal",
         "../_sass/portfolio/neutron",
