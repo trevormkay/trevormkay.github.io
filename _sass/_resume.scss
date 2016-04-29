@@ -5,6 +5,10 @@ $highlight: #F78A60;
 .resume {
 	background: $background;
 	
+	.constrained {
+		max-width: 900px;
+	}
+	
 	.cover {
 		background: rgba($background,0.9);
 	}
@@ -17,6 +21,13 @@ $highlight: #F78A60;
 		text-transform: none;
 		@include dinalt;
 		font-size: 26px;
+		margin: 0px;
+	}
+	
+	h4 {
+		@include dinalt;
+		font-size: 16px;
+		color: $primary;
 	}
 	
 	p, caption, .type, .caption {
@@ -37,6 +48,12 @@ $highlight: #F78A60;
 		@include dinalt;
 		color: $primary;
 		text-transform: uppercase;
+		margin-bottom: 0px;
+		
+		 img {
+			 margin-left: 10px;
+			 margin-top: -23px;
+		 }
 	}
 	
 	.type::after {
@@ -113,46 +130,24 @@ $highlight: #F78A60;
 		}
 		
 		@media (min-width:$tablet) {
-			display: flex;
-			margin-bottom: 100px;
 			border: none;
+			margin-bottom: 100px;
 			
-			.date {
-				width: 200px;
-				position: relative;
-				
-				p {
-					text-align: right;
-					padding-right: 30px;
-					padding-top: 9px;
+			.collapsible {
+				img {
+					display: none;
 				}
 			}
-			
-			.position {
-				width: calc(100% - 200px);
-				padding-left: 30px;
-			}
 		}
 	}
 	
-	.type {
-		@media (min-width:$tablet) {
-			margin-left: 230px;
-		}
-	}
-	
-	.dot {
-		display: none;
+	.education {
+		margin-bottom: 20px;
+		border-bottom: 1px solid rgba($primary,0.2);
 		
 		@media (min-width:$tablet) {
-			display: block;
-			background: $highlight;
-			width: 10px;
-			height: 10px;
-			border-radius: 50%;
-			position: absolute;
-			right: 0px;
-			top: 15px;
+			border: none;
+			margin-bottom: 40px;
 		}
 	}
 }
