@@ -20,7 +20,7 @@ $highlight: #F78A60;
 	h3 {
 		text-transform: none;
 		@include dinalt;
-		font-size: 26px;
+		font-size: 28px;
 		margin: 0px;
 	}
 	
@@ -42,18 +42,6 @@ $highlight: #F78A60;
 	
 	a {
 		color: $highlight;
-	}
-	
-	.collapsible {
-		@include dinalt;
-		color: $primary;
-		text-transform: uppercase;
-		margin-bottom: 0px;
-		
-		 img {
-			 margin-left: 10px;
-			 margin-top: -23px;
-		 }
 	}
 	
 	.type::after {
@@ -95,7 +83,7 @@ $highlight: #F78A60;
 	}
 	
 	.spin {
-		opacity: 0.06;
+		opacity: 0.03;
 		
 		&.one {
 			#logo {
@@ -118,26 +106,9 @@ $highlight: #F78A60;
 		margin-bottom: 40px;
 		border-bottom: 1px solid rgba($primary,0.2);
 		
-		ul {
-			list-style: none;
-			margin-left: -10px;
-			@include clearfix;
-			
-			li {
-				float: left;
-				margin: 10px;
-			}
-		}
-		
 		@media (min-width:$tablet) {
 			border: none;
-			margin-bottom: 100px;
-			
-			.collapsible {
-				img {
-					display: none;
-				}
-			}
+			margin-bottom: 80px;
 		}
 	}
 	
