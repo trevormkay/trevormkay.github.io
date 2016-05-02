@@ -619,6 +619,12 @@ header {
 			font-size: 22px;
 			line-height: 33px;
 		}
+		
+		@media (min-width:$desktop) {
+			font-size: 28px;
+			line-height: 42px;
+			padding-bottom: 40px;
+		}
 	}
 }
 
@@ -627,6 +633,11 @@ header {
 		@media (min-width:$desktop) {
 			display: flex;
 		}
+	}
+	
+	p {
+		padding: 0px;
+		line-height: 22px;
 	}
 }
 
