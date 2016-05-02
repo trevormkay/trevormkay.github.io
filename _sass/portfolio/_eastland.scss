@@ -73,4 +73,37 @@ $highlight: #4E738B;
 	.link {
 		background: $background;
 	}
+	
+	.phone {
+		background: rgba($primary,0.3);
+		
+		.speaker, .home {
+			background: $background;
+		}
+	}
+	
+	#challenge {
+		overflow: hidden;
+		
+		br {
+			display: none;
+		}
+		
+		@media (min-width:$desktop) {
+			display: flex;
+			
+			br {
+				display: block;
+			}
+			
+			.copy {
+				width: 50%;
+			}
+			
+			.phone {
+				margin-top: 0px;
+				margin-bottom: -250px;
+			}
+		}
+	}
 }
