@@ -55,6 +55,8 @@ $highlight: #BC441C;
 		
 		.coverimage {
 			background-image: url(../images/portfolio/eastland/header-background.jpg);
+			opacity: 0.07;
+			background-position: center bottom;
 		}
 	}
 	
@@ -158,12 +160,29 @@ $highlight: #BC441C;
 			
 			div {
 				width: 50%;
+				margin-bottom: 60px;
 			}
 		}
 		
-		@media (min-width:$desktop) {
+		@media (min-width:1024px) {
 			div {
 				width: auto;
+			}
+		}
+	}
+	
+	#solution {
+		img {
+			max-width: 100%;
+			margin-top: 30px;
+			margin-bottom: -20px;
+			margin-left: auto;
+			margin-right: auto;
+			display: block;
+			
+			@media (min-width:$tablet) {
+				margin-bottom: -80px;
+				margin-top: 60px;
 			}
 		}
 	}
