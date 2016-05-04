@@ -1,4 +1,5 @@
 $background: #40212B;
+$background-dark: #351822;
 $primary: #914C65;
 $highlight: #D9B72C;
 
@@ -21,4 +22,8 @@ $highlight: #D9B72C;
 		background: $primary;
 	}
 	
+}
+
+.card.color:hover {
+	background: $background-dark;
 }

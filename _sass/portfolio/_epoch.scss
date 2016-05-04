@@ -204,7 +204,7 @@ $highlight: #FFD56F;
 		
 		@media (min-width:$desktop) {
 			flex-flow: row;
-			height: 620px;
+			align-items: center;
 		}
 		
 		.copy, .image {
@@ -300,5 +300,8 @@ $highlight: #FFD56F;
 			text-align: center;
 		}
 	}
-	
+}
+
+.card.epoch:hover {
+	background: $background-dark;
 }

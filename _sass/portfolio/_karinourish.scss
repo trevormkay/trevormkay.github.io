@@ -95,7 +95,7 @@ $highlight: #005B9F;
 			background: $background;
 		}
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$phone-landscape) {
 			display: none;
 		}
 	}
@@ -103,7 +103,7 @@ $highlight: #005B9F;
 	.browser {
 		display: none;
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$phone-landscape) {
 			display: block;
 		}
 	}
@@ -126,7 +126,7 @@ $highlight: #005B9F;
 			
 			img {
 				max-width: 100%;
-				margin-bottom: 60px;
+				//margin-bottom: 60px;
 				
 				&:last-child {
 					margin-bottom: 0px;
@@ -179,4 +179,8 @@ $highlight: #005B9F;
 	.browser.careline {
 		margin-bottom: -100px;
 	}
+}
+
+.card.karinourish:hover {
+	background: $background-dark;
 }

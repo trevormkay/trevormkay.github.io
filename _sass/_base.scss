@@ -291,7 +291,7 @@ body {
 			bottom: 20px;
 		}
 		
-		@media (min-width:550px) {
+		@media (min-width:$phone-landscape) {
 			width: 400px;
 			margin: {
 				left: auto;
@@ -439,6 +439,10 @@ header {
 	margin-top: -80px;
 	
 	@media (min-width:$tablet) {
+		height: 616px;
+	}
+	
+	@media (min-width:$desktop) {
 		height: 736px;
 	}
 	
@@ -521,7 +525,8 @@ header {
 		
 		@media (min-width:$tablet) {
 			font-size: 5.18em;
-			margin-bottom: -20px;
+			margin-bottom: 20px;
+			line-height: 90px;
 		}
 	}
 	
@@ -632,6 +637,12 @@ header {
 	.links {
 		@media (min-width:$desktop) {
 			display: flex;
+		}
+		
+		.link:hover {
+			h3 {
+				text-decoration: underline;
+			}
 		}
 	}
 	
@@ -809,14 +820,14 @@ header {
 }
 
 .browserBar {
-	height: 43px;
-	border-top-left-radius: 13px;
-	border-top-right-radius: 13px;
+	height: 34px;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
 	margin-top: 30px;
 	
 	ul {
 		list-style: none;
-		margin-left: 20px;
+		margin-left: 15px;
 		display: flex;
 		align-items: center;
 		height: 100%;
@@ -825,9 +836,24 @@ header {
 	li	{
 		float: left;
 		border-radius: 50%;
-		width: 19px;
-		height: 19px;
+		width: 12px;
+		height: 12px;
 		margin-right: 10px;
+	}
+	
+	@media (min-width:$tablet) {
+		height: 43px;
+		border-top-left-radius: 13px;
+		border-top-right-radius: 13px;
+		
+		ul {
+			margin-left: 20px;
+		}
+		
+		li {
+			width: 19px;
+			height: 19px;
+		}
 	}
 }
 

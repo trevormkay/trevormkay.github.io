@@ -5,7 +5,7 @@ $highlight: #56A421;
 
 .arc {
 	background: $background;
-	
+		
 	.cover {
 		background: rgba($background,0.8);
 	}
@@ -76,7 +76,7 @@ $highlight: #56A421;
 		}
 		
 		#radar {
-			display: block;
+			
 			width: 200px;
 			height: 200px;
 			margin: 0px auto;
@@ -95,6 +95,7 @@ $highlight: #56A421;
 			}
 			
 			@media (min-width:$tablet) {
+				display: block;
 				position: absolute;
 				margin: 0px;
 				right: -100px;
@@ -198,4 +199,8 @@ $highlight: #56A421;
 			margin: 0px auto;
 		}
 	}
+}
+
+.card.arc:hover {
+	background: $background-dark;
 }

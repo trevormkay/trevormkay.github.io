@@ -1,4 +1,5 @@
 $background: #122B12;
+$background-dark: #0A1D0A;
 $primary: #2E5030;
 $highlight: #76C258;
 
@@ -21,4 +22,8 @@ $highlight: #76C258;
 		background: $primary;
 	}
 	
+}
+
+.card.motion:hover {
+	background: $background-dark;
 }

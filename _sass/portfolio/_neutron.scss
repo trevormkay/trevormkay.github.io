@@ -73,7 +73,6 @@ $accent: #75ECE1;
 		background-color: $background-dark;
 		
 		.coverimage {
-			//background-image: url(../images/portfolio/neutron/header-background.jpg);
 			opacity: 1;
 			background-image: linear-gradient(-30deg, rgba(#4DF1FF,0.15) 0%, rgba(#FFCE55,0.15) 100%);
 		}
@@ -133,7 +132,7 @@ $accent: #75ECE1;
 			background: $background;
 		}
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$phone-landscape) {
 			display: none;
 		}
 	}
@@ -141,7 +140,7 @@ $accent: #75ECE1;
 	.browser {
 		display: none;
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$phone-landscape) {
 			display: block;
 		}
 	}
@@ -150,7 +149,7 @@ $accent: #75ECE1;
 		overflow: hidden;
 		
 		.browser {
-			margin-bottom: -110px;
+			margin-bottom: -50px;
 		}
 	}
 	
@@ -183,7 +182,7 @@ $accent: #75ECE1;
 	}
 	
 	.row {
-		@media (min-width:$tablet) {
+		@media (min-width:$desktop) {
 			display: flex;
 			justify-content: space-between;
 			
@@ -203,4 +202,8 @@ $accent: #75ECE1;
 			margin-bottom: 10px;
 		}
 	}
+}
+
+.card.neutron:hover {
+	background: $background-dark;
 }

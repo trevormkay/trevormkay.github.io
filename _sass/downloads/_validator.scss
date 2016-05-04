@@ -1,4 +1,5 @@
 $background: #161616;
+$background-dark: #111010;
 $primary: #70869E;
 $highlight: #F95E30;
 
@@ -20,5 +21,8 @@ $highlight: #F95E30;
 	.type::after {
 		background: $primary;
 	}
-	
+}
+
+.card.validator:hover {
+	background: $background-dark;
 }

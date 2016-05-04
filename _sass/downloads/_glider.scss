@@ -1,4 +1,5 @@
 $background: #948C6B;
+$background-dark: #827A58;
 $primary: #C9C3AA;
 $highlight: #FFFFFF;
 
@@ -21,4 +22,8 @@ $highlight: #FFFFFF;
 		background: $primary;
 	}
 	
+}
+
+.card.glider:hover {
+	background: $background-dark;
 }

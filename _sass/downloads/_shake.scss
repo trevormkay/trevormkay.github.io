@@ -1,4 +1,5 @@
 $background: #222427;
+$background-dark: #17191C;
 $primary: #51565C;
 $highlight: #B7C1D7;
 
@@ -21,4 +22,8 @@ $highlight: #B7C1D7;
 		background: $primary;
 	}
 	
+}
+
+.card.shake:hover {
+	background: $background-dark;
 }

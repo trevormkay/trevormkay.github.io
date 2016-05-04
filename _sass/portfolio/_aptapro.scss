@@ -90,7 +90,7 @@ $highlight: #00B5DC;
 			background: $background;
 		}
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$phone-landscape) {
 			display: none;
 		}
 	}
@@ -98,7 +98,7 @@ $highlight: #00B5DC;
 	.browser {
 		display: none;
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$phone-landscape) {
 			display: block;
 		}
 	}
@@ -192,4 +192,8 @@ $highlight: #00B5DC;
 			margin-bottom: -100px;
 		}
 	}
+}
+
+.card.aptapro:hover {
+	background: $background-dark;
 }

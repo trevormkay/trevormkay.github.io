@@ -93,7 +93,7 @@ $highlight: #CA4750;
 			background: $background;
 		}
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$phone-landscape) {
 			display: none;
 		}
 	}
@@ -101,7 +101,7 @@ $highlight: #CA4750;
 	.browser {
 		display: none;
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$phone-landscape) {
 			display: block;
 		}
 	}
@@ -203,4 +203,8 @@ $highlight: #CA4750;
 			}
 		}
 	}
+}
+
+.card.retailerportal:hover {
+	background: $background-dark;
 }

@@ -22,8 +22,13 @@ $highlight: #F78A60;
 	h3 {
 		text-transform: none;
 		@include dinalt;
-		font-size: 28px;
+		font-size: 25px;
 		margin: 0px;
+		line-height: 26px;
+		
+		@media (min-width:$tablet) {
+			font-size: 28px;
+		}
 	}
 	
 	h4 {

@@ -1,4 +1,5 @@
 $background: #213C44;
+$background-dark: #173038;
 $primary: #597481;
 $highlight: #EFA786;
 
@@ -21,4 +22,8 @@ $highlight: #EFA786;
 		background: $primary;
 	}
 	
+}
+
+.card.soundtrack:hover {
+	background: $background-dark;
 }

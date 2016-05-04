@@ -110,7 +110,11 @@ $highlight: #BC441C;
 	}
 	
 	.row {
-		margin-bottom: 100px;
+		margin-bottom: 30px;
+		
+		@media (min-width:$tablet) {
+			margin-bottom: 100px;
+		}
 		
 		@media (min-width:$desktop) {
 			display: flex;
@@ -132,9 +136,12 @@ $highlight: #BC441C;
 	
 	.appgrid {
 		margin-top: 30px;
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
 		
 		div {
-			width: 100%;
+			width: 45%;
 			margin-bottom: 20px;
 			
 			img {
@@ -154,10 +161,6 @@ $highlight: #BC441C;
 		}
 		
 		@media (min-width:$tablet) {
-			display: flex;
-			justify-content: space-between;
-			flex-wrap: wrap;
-			
 			div {
 				width: 50%;
 				margin-bottom: 60px;
@@ -186,4 +189,8 @@ $highlight: #BC441C;
 			}
 		}
 	}
+}
+
+.card.eastland:hover {
+	background: $background-dark;
 }

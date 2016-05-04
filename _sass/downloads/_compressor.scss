@@ -1,4 +1,5 @@
 $background: #33342F;
+$background-dark: #2A2B24;
 $primary: #977C73;
 $highlight: #DED9D8;
 
@@ -21,4 +22,8 @@ $highlight: #DED9D8;
 		background: $primary;
 	}
 	
+}
+
+.card.compressor:hover {
+	background: $background-dark;
 }

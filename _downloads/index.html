@@ -16,7 +16,7 @@ exclude: true
 		{% for item in featuredItems %}
 			{% unless item.exclude %}
 				<div class="card {{ item.class }}">
-					<a href="/downloads/{{ item.class }}.zip">
+					<a href="/downloads/{{ item.class }}.zip" onclick="_gaq.push(['_trackEvent','{{ item.event }}','{{ item.event }}',this.href]);" target="_blank">
 						<img src="../images/downloads/tile{{ item.class }}.jpg" srcset="../images/downloads/tile{{ item.class }}.jpg, ../images/downloads/tile{{ item.class }}@2x.jpg 2x">
 						<p class="type">{{ item.type }}</p>
 						<h2>{{ item.title }}</h2>

@@ -1,4 +1,5 @@
 $background: #435E65;
+$background-dark: #365158;
 $primary: #77949D;
 $highlight: #80BCCD;
 
@@ -21,4 +22,8 @@ $highlight: #80BCCD;
 		background: $primary;
 	}
 	
+}
+
+.card.dvdstudio:hover {
+	background: $background-dark;
 }

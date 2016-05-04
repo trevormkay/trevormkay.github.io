@@ -1,4 +1,5 @@
 $background: #0F9DEE;
+$background-dark: #0789D3;
 $primary: #F3F3F3;
 $highlight: #F6D989;
 
@@ -21,4 +22,8 @@ $highlight: #F6D989;
 		background: $primary;
 	}
 	
+}
+
+.card.airmail:hover {
+	background: $background-dark;
 }
