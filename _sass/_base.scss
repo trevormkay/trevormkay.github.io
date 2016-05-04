@@ -896,7 +896,7 @@ header {
 .countdown {
 	display: flex;
 	flex-direction: row;
-	width: calc(70px * 4);
+	width: calc(60px * 4);
 	position: absolute;
 	margin: 0px auto;
 	left: 0px;
@@ -910,7 +910,7 @@ header {
 	
 		
 	.time {
-		width: 70px;
+		width: 60px;
 		align-items: center;
 		display: flex;
 		flex-direction: column;
@@ -926,8 +926,9 @@ header {
 	.largetext {
 		color: white;
 		opacity: 0.8;
-		font-size: 34px;
+		font-size: 30px;
 		font-weight: bold;
+		height: 40px;
 	}
 }
 
