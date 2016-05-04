@@ -276,8 +276,7 @@ body {
 	display:flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-content: flex-start;
-	align-items: flex-start;
+	align-items: stretch;
 	margin: {
 		bottom: 60px;
 	}
@@ -498,6 +497,8 @@ header {
 	}
 	
 	.content {
+		@include clearfix;
+		
 		@media (min-width:$tablet) {
 			display: flex;
 			align-items: center;

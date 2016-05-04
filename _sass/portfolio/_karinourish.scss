@@ -58,6 +58,12 @@ $highlight: #005B9F;
 			opacity: 0.5;
 			background-position: center bottom;
 		}
+		
+		.logo img {
+			@media (min-width:$tablet) and (max-width:1119px) {
+				max-width: 80%;
+			}
+		}
 	}
 	
 	.anchors {
