@@ -192,6 +192,12 @@ $highlight: #56A421;
 				margin-bottom: 0px;
 			}
 		}
+		
+		.image {
+			@media (min-width:$desktop) {
+				width: 40%;
+			}
+		}
 
 		img	 {
 			max-width: 100%;
