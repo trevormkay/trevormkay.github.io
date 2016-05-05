@@ -182,6 +182,14 @@ $highlight: #00B5DC;
 		text-shadow: 0px 0px 30px rgba(black,0.5);
 	}
 	
+	article.video .spinner {
+		display: none;
+	}
+	
+	article.video .loading {
+		display: none;
+	}
+	
 	.colours {
 		max-width: 100%;
 	}
