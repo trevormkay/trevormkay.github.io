@@ -1,33 +1,31 @@
 ---
 layout: default
-title:  "Portfolio"
-class: "portfolio"
+title:  "404"
+class: "notfound"
 exclude: true
-theme: "#0D0D0D"
+theme: "#13222D"
 description: "Interactive Designer from Sydney"
+permalink: /404.html
 ---
 
-<div class="constrained extra">
+<div class="link">
+	<h1>Uh oh! That page went missing</h1>
 	
-	{% include name.html %}
-	<section class="card-list">
-		{% assign featuredItems = site.portfolio %}
-		{% assign featuredItems = featuredItems | sort: "weight" %}
-		
-		{% for item in featuredItems %}
-			{% unless item.exclude %}
-				<div class="card {{ item.class }}">
-					<a class="post-link" href="{{ item.url | prepend: site.baseurl }}">
-						<img src="../images/portfolio/tile{{ item.class }}.jpg" srcset="../images/portfolio/tile{{ item.class }}.jpg, ../images/portfolio/tile{{ item.class }}@2x.jpg 2x">
-						<p class="type">{{ item.type }}</p>
-						<h2>{{ item.title }}</h2>
-					</a>
-				</div>
-			{% endunless %}
-		{% endfor %}
-	</section>
-
-
+	<a href="/">
+		View my work 
+		<svg width="53px" height="53px" viewBox="0 0 26 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+		    <g id="Assets" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+		        <g id="arrow" fill="#000000" stroke-width="2">
+		            <path d="M16.4710312,14 L6.99850233,14 C6.44704472,14 6,13.5561352 6,13 C6,12.4477153 6.44748943,12 6.99850233,12 L16.2857376,12 L12.4038035,8.11806593 C12.0150766,7.729339 12.013811,7.10035374 12.407058,6.70710678 C12.7975822,6.31658249 13.4363681,6.32220338 13.8180171,6.70385237 L19.4813802,12.3672154 C19.6812436,12.5670788 19.7786821,12.8304543 19.7727372,13.0926468 C19.7786821,13.3548393 19.6812436,13.6182147 19.4813802,13.8180781 L13.8180171,19.4814412 C13.4363681,19.8630902 12.7975822,19.8687111 12.407058,19.4781868 C12.013811,19.0849398 12.0150766,18.4559546 12.4038035,18.0672276 L16.4710312,14 Z M13,26 C20.1797017,26 26,20.1797017 26,13 C26,5.82029825 20.1797017,0 13,0 C5.82029825,0 0,5.82029825 0,13 C0,20.1797017 5.82029825,26 13,26 Z M13,24 C19.0751322,24 24,19.0751322 24,13 C24,6.92486775 19.0751322,2 13,2 C6.92486775,2 2,6.92486775 2,13 C2,19.0751322 6.92486775,24 13,24 Z" id="Oval-1"></path>
+		        </g>
+		    </g>
+		</svg>
+	</a>
 </div>
 
-{% include spin.html %}
+<div class="flex">
+	
+	<img src="../images/404/404.svg" class="ghost" />
+</div>
+
+<div class="backing"></div>
