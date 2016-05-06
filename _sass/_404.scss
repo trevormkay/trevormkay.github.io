@@ -1,5 +1,5 @@
 $background: #13222D;
-$primary: #87A2BC;
+$primary: #9bbad8;
 $highlight: #BABCEA;
 
 .notfound {
@@ -10,8 +10,17 @@ $highlight: #BABCEA;
 		color: $primary;
 		@include dinalt;
 		text-transform: none;
-		font-size: 70px;
+		font-size: 31px;
+		line-height: 46px;
 		text-align: center;
+		
+		@media (min-width:$tablet) {
+			font-size: 70px;
+			
+			br {
+				display: none;
+			}
+		}
 	}
 	
 	a {
