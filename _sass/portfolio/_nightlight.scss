@@ -54,9 +54,9 @@ $highlight: #D7B48D;
 		background-color: $background-dark;
 		
 		.coverimage {
-			//background-image: url(../images/portfolio/karinourish/header-background.jpg);
+			background-image: url(../images/portfolio/nightlight/header-background.jpg);
 			opacity: 1;
-			background-image: linear-gradient(-180deg, #332E3F 0%, #928E9A 100%);
+			//background-image: linear-gradient(-180deg, #332E3F 0%, #928E9A 100%);
 			
 			&::before {
 				content: "";
@@ -71,10 +71,8 @@ $highlight: #D7B48D;
 			}
 		}
 		
-		.logo img {
-			@media (min-width:$tablet) and (max-width:1119px) {
-				max-width: 80%;
-			}
+		.visit-link {
+			display: none;
 		}
 	}
 	
@@ -188,6 +186,7 @@ $highlight: #D7B48D;
 			
 			p {
 				flex: 1;
+				padding: 0px;
 			}
 		}
 	}
@@ -197,7 +196,52 @@ $highlight: #D7B48D;
 			max-width: 100%;
 			margin: 0px auto 100px auto;
 			display: block;
+		}
+		
+		.styleguide {
+			background: #2F2D35;
+			padding: 30px;
 			
+			.copy {
+				display: flex;
+				justify-content: space-between;
+				padding-bottom: 30px;
+				padding-top: 30px;
+				align-items: flex-end;
+				
+				.fonts {
+					max-width: 463px;
+				}
+				
+				.colours {
+					max-width: 518px;
+					height: 68px;
+					flex: 1;
+					//padding-left: 30px;
+				}
+			}
+			
+			.icons {
+				display: flex;
+				justify-content: space-between;
+				padding-top: 30px;
+				padding-bottom: 10px;
+				border-top: 1px solid rgba($primary, 0.1);
+			}
+		}
+		
+		.sidebar {
+			display: flex;
+			align-items: center;
+			margin-top: 100px;
+			
+			img {
+				margin-right: 30px;
+			}
+			
+			.copy {
+				flex: 1;
+			}
 		}
 	}
 	
