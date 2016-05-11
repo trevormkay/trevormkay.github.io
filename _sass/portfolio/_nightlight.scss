@@ -237,11 +237,11 @@ $highlight: #D7B48D;
 					align-items: flex-end;
 					
 					.fonts {
-						max-width: 400px;
+						max-width: 50%;
 					}
 					
 					.colours {
-						max-width: 518px;
+						max-width: 50%;
 						height: 68px;
 						flex: 1;
 						padding-left: 30px;
@@ -252,11 +252,15 @@ $highlight: #D7B48D;
 					.fonts {
 						max-width: 463px;
 					}
+					
+					.colours {
+						max-width: 518px;
+					}
 				}
 			}
 			
 			.icons {
-				display: flex;
+				
 				padding-top: 30px;
 				margin-bottom: -10px;
 				border-top: 1px solid rgba($primary, 0.1);
@@ -266,9 +270,17 @@ $highlight: #D7B48D;
 					width: calc(100%/3);
 				}
 				
-				@media (min-width:$tablet) {
+				@media (min-width:321px) {
 					justify-content: space-between;
 					flex-wrap: nowrap;
+					
+					img {
+						width: calc(100%/6.5);
+					}
+				}
+				
+				@media (min-width:$tablet) {
+					display: flex;
 					
 					img {
 						width: auto;
