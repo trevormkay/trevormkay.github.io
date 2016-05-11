@@ -190,6 +190,10 @@ $highlight: #00B5DC;
 		display: none;
 	}
 	
+	article.video .control-bar .seek {
+		z-index: 2;
+	}
+	
 	.colours {
 		max-width: 100%;
 	}
