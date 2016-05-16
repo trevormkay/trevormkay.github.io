@@ -17,7 +17,7 @@ description: "Interactive Designer from Sydney"
 		{% for item in featuredItems %}
 			{% unless item.exclude %}
 				<div class="card {{ item.class }}">
-					<a class="post-link" href="{{ item.url | prepend: site.baseurl }}">
+					<a class="post-link" href="../portfolio/{{ item.class }}.html">
 						<img src="../images/portfolio/tile{{ item.class }}.jpg" srcset="../images/portfolio/tile{{ item.class }}.jpg, ../images/portfolio/tile{{ item.class }}@2x.jpg 2x">
 						<p class="type">{{ item.type }}</p>
 						<h2>{{ item.title }}</h2>
