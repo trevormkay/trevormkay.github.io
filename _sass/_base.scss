@@ -180,6 +180,24 @@ body {
 			display: none;
 		}
 	}
+	
+	&.not-top.pinned {
+		position: fixed;
+		z-index: 20;
+		top: 0px;
+		width: 100%;
+		padding: 0px 10px;
+		border: none;
+
+		
+		.hamburger {
+			right: 10px;
+		}
+		
+		@media (min-width:$tablet) {
+			padding: 0px 30px;
+		}
+	}
 }
 
 .cover {

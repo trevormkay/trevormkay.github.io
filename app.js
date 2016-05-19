@@ -21,5 +21,8 @@ $(document).ready(function(){
 	    });
 	});
 	
+	//HEADROOM NAV
+	$(".main-nav").headroom();
+	
 				
 });

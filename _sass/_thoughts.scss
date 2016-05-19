@@ -7,6 +7,10 @@ $highlight: #C669DF;
 	
 	.cover {
 		background: rgba($background,0.8);
+		
+		@supports not (-webkit-backdrop-filter:blur(40px)) {
+			background: $background;
+		}
 	}
 	
 	h1 {
@@ -44,6 +48,10 @@ $highlight: #C669DF;
 		
 		.hamburger span {
 			background: $highlight;
+		}
+		
+		&.not-top.pinned {
+			background: $background;
 		}
 	}
 	

@@ -7,7 +7,12 @@ $highlight: #4ADC90;
 	
 	.cover {
 		background: rgba($background,0.9);
+		
+		@supports not (-webkit-backdrop-filter:blur(40px)) {
+			background: $background;
+		}
 	}
+	
 	
 	h1 {
 		color: $highlight;
@@ -45,8 +50,12 @@ $highlight: #4ADC90;
 		.hamburger span {
 			background: $highlight;
 		}
+		
+		&.not-top.pinned {
+			background: $background;
+		}
 	}
-	
+		
 	.spin {
 		&.one {
 			#logo {
