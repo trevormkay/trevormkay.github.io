@@ -452,7 +452,7 @@
       notTop : 'not-top',
       bottom : 'bottom',
       notBottom : 'not-bottom',
-      initial : 'headroom'
+      initial : 'animated'
     }
   };
   Headroom.cutsTheMustard = typeof features !== 'undefined' && features.rAF && features.bind && features.classList;
