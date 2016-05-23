@@ -244,10 +244,6 @@ body {
 		}
 	}
 */
-	
-	&.displayed {
-		background: none !important;
-	}
 }
 
 .cover {
@@ -294,7 +290,7 @@ body {
 
 .name {
 	margin: {
-		top: 30px;
+		top: 110px;
 		bottom: 60px;
 	}
 	
@@ -329,13 +325,13 @@ body {
 	
 	@media (min-width:$desktop) {
 		margin: {
-			top: 150px;
+			top: 230px;
 		}
 	}
 	
 	@media (min-width:$desktop-lrg) {
 		margin: {
-			top: 200px;
+			top: 280px;
 		}
 	}
 }
@@ -566,6 +562,7 @@ header {
 	
 	.content {
 		@include clearfix;
+		overflow: hidden;
 		
 		@media (min-width:$tablet) {
 			display: flex;
