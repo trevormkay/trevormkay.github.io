@@ -3,7 +3,7 @@ $(document).ready(function(){
 	
 	//MOBILE MENU TOGGLE
 	$( ".hamburger, .cover" ).click(function() {
-	  $( ".hamburger, .cover, .categories" ).toggleClass( "displayed" );
+	  $( ".hamburger, .cover, .categories, .main-nav" ).toggleClass( "displayed" );
 	});
 	
 	
@@ -20,9 +20,6 @@ $(document).ready(function(){
 	        window.location.hash = target;
 	    });
 	});
-	
-	//HEADROOM NAV
-	$(".main-nav").headroom();
 	
 				
 });

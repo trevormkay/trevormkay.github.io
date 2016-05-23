@@ -50,7 +50,7 @@ $highlight: #C669DF;
 			background: $highlight;
 		}
 		
-		&.not-top.pinned {
+		&.not-top.pinned, &.xunpinned, &.bottom {
 			background: $background;
 		}
 	}

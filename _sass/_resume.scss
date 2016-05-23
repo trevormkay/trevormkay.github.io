@@ -92,8 +92,8 @@ $highlight: #F78A60;
 			background: $highlight;
 		}
 		
-		&.not-top.pinned {
-			background: $background;
+		&.not-top.pinned, &.xunpinned, &.bottom {
+			background: linear-gradient(-180deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.03) 100%), $background;
 		}
 	}
 	

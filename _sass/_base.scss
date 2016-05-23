@@ -52,7 +52,11 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	z-index: 4;
-	position: relative;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	will-change: transform;
 	
 	@media (min-width:740px) {
 		width: calc(100% - 60px);
@@ -204,13 +208,13 @@ body {
 		}
 	}
 	
-	&.not-top.pinned {
+	&.not-top.pinned, &.bottom {
 		position: fixed;
 		z-index: 20;
 		top: 0px;
 		width: 100%;
 		padding: 0px 10px;
-		border: none;
+		border: none !important;
 		animation-name: slideInDown;
 		animation-duration: 0.5s;
 
@@ -223,7 +227,8 @@ body {
 			padding: 0px 30px;
 		}
 	}
-	
+		
+/*
 	&.unpinned {
 		animation-name: slideOutUp;
 		animation-duration: 0.5s;
@@ -237,6 +242,11 @@ body {
 		@media (min-width:$tablet) {
 			padding: 0px 30px;
 		}
+	}
+*/
+	
+	&.displayed {
+		background: none !important;
 	}
 }
 
@@ -304,7 +314,7 @@ body {
 	
 	@media (min-width:$tablet) {
 		margin: {
-			top: 100px;
+			top: 180px;
 		}
 		
 		h1 {
@@ -522,7 +532,7 @@ header {
 	top: 0px;
 	width: 100%;
 	height: auto;
-	margin-top: -80px;
+	//margin-top: -80px;
 	
 	@media (min-width:$tablet) {
 		height: 616px;

@@ -53,7 +53,7 @@ $highlight: #56A421;
 			background: $highlight;
 		}
 		
-		&.not-top.pinned {
+		&.not-top.pinned, &.xunpinned, &.bottom {
 			background: linear-gradient(-180deg, rgba(0,0,0,0.02) 0%, rgba(0,0,0,0.02) 100%), $background-dark;
 		}
 	}
