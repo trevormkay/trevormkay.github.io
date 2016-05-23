@@ -7,6 +7,29 @@ dl, dd, ol, ul, figure {
 }
 
 
+@keyframes slideInDown {
+    0% {
+        transform: translateY(-100%)
+    }
+
+    100% {
+        transform: translateY(0)
+    }
+}
+
+@keyframes slideOutUp {
+    0% {
+        -o-transform: translateY(0)
+    }
+
+    100% {
+        -o-transform: translateY(-100%)
+    }
+}
+
+
+
+
 * {
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
@@ -29,7 +52,11 @@ body {
 	align-items: center;
 	justify-content: space-between;
 	z-index: 4;
-	position: relative;
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	will-change: transform;
 	
 	@media (min-width:740px) {
 		width: calc(100% - 60px);
@@ -180,6 +207,43 @@ body {
 			display: none;
 		}
 	}
+	
+	&.not-top.pinned, &.bottom {
+		position: fixed;
+		z-index: 20;
+		top: 0px;
+		width: 100%;
+		padding: 0px 10px;
+		border: none !important;
+		animation-name: slideInDown;
+		animation-duration: 0.5s;
+
+		
+		.hamburger {
+			right: 10px;
+		}
+		
+		@media (min-width:$tablet) {
+			padding: 0px 30px;
+		}
+	}
+		
+/*
+	&.unpinned {
+		animation-name: slideOutUp;
+		animation-duration: 0.5s;
+		position: fixed;
+		z-index: 20;
+		top: 0px;
+		width: 100%;
+		padding: 0px 10px;
+		border: none !important;
+		
+		@media (min-width:$tablet) {
+			padding: 0px 30px;
+		}
+	}
+*/
 }
 
 .cover {
@@ -226,7 +290,7 @@ body {
 
 .name {
 	margin: {
-		top: 30px;
+		top: 110px;
 		bottom: 60px;
 	}
 	
@@ -246,7 +310,7 @@ body {
 	
 	@media (min-width:$tablet) {
 		margin: {
-			top: 100px;
+			top: 180px;
 		}
 		
 		h1 {
@@ -261,13 +325,13 @@ body {
 	
 	@media (min-width:$desktop) {
 		margin: {
-			top: 150px;
+			top: 230px;
 		}
 	}
 	
 	@media (min-width:$desktop-lrg) {
 		margin: {
-			top: 200px;
+			top: 280px;
 		}
 	}
 }
@@ -464,7 +528,7 @@ header {
 	top: 0px;
 	width: 100%;
 	height: auto;
-	margin-top: -80px;
+	//margin-top: -80px;
 	
 	@media (min-width:$tablet) {
 		height: 616px;
@@ -498,6 +562,7 @@ header {
 	
 	.content {
 		@include clearfix;
+		overflow: hidden;
 		
 		@media (min-width:$tablet) {
 			display: flex;

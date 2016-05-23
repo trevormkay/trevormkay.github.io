@@ -8,6 +8,10 @@ $highlight: #FFD56F;
 	
 	.cover {
 		background: rgba($background,0.8);
+		
+		@supports not (-webkit-backdrop-filter:blur(40px)) {
+			background: $background;
+		}
 	}
 	
 	h1, h2, h3, .quote {
@@ -70,6 +74,10 @@ $highlight: #FFD56F;
 		
 		.hamburger span {
 			background: $highlight;
+		}
+		
+		&.not-top.pinned, &.xunpinned, &.bottom {
+			background: linear-gradient(-180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.10) 100%), $background-dark;
 		}
 	}
 	

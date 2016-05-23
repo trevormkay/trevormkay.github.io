@@ -10,6 +10,17 @@
     {{ content }}
     
 	<script type="text/javascript">
+		// grab an element
+		var myElement = document.querySelector("nav");
+		
+		var headroom = new Headroom(myElement, {
+		  "offset": 0,
+		});
+		headroom.init();
+	</script>
+    
+    
+	<script type="text/javascript">
 	
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-9531677-11']);
