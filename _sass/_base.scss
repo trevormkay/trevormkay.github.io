@@ -38,6 +38,7 @@ dl, dd, ol, ul, figure {
 h1, h2, h3 {
 	@include dincond;
 	text-transform: uppercase;
+	font-weight: 600;
 }
 
 body {
@@ -1078,9 +1079,11 @@ li {
 /**
  * Headings
  */
+/*
 h1, h2, h3, h4, h5, h6 {
     font-weight: $base-font-weight;
 }
+*/
 
 
 
