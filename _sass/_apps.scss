@@ -1,0 +1,88 @@
+$background: #0D0D0D;
+$primary: #7B7B7B;
+$highlight: #00CCF8;
+
+.apps {
+	background: $background;
+	
+	.cover {
+		background: rgba($background,0.9);
+		
+		@supports not (-webkit-backdrop-filter:blur(40px)) {
+			background: $background;
+		}
+	}
+	
+	h1 {
+		color: $highlight;
+	}
+	
+	.name {
+		h1	{
+			color: $highlight;
+		}
+		
+		h2 {
+			color: $primary;
+		}
+	}
+	
+	.main-nav {
+		border-bottom: 2px solid rgba($primary, 0.2);
+		
+		.sitename span {
+			display: none;
+		}
+		
+		.sitename, li a {
+			color: $primary;
+		}
+		
+		#logo {
+			stroke: $primary
+		}
+		
+		li a.active {
+			color: $highlight;
+		}
+		
+		.hamburger span {
+			background: $highlight;
+		}
+		
+		&.not-top.pinned, &.xunpinned, &.bottom {
+			background: $background;
+		}
+	}
+	
+	.spin {
+		z-index: 1;
+		
+		&.one {
+			#logo {
+				stroke: $highlight;
+			}
+		}
+		
+		&.two {
+			#logo {
+				stroke: $primary;
+			}
+		}
+	}
+	
+	.constrained {
+		z-index: 2;
+		position: relative;
+	}
+	
+	.phone {
+		background: #1F1F1F;
+		border: 1px solid rgba(#7B7B7B, 0.13);
+		
+		.speaker, .home {
+			background: $background;
+			border: 1px solid rgba(#7B7B7B, 0.4);
+		}
+	}
+}
