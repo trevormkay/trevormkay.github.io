@@ -74,15 +74,51 @@ $highlight: #00CCF8;
 	.constrained {
 		z-index: 2;
 		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	
+	.appContainer {
+		position: relative;
+		width: calc(100% / 3);
+		overflow: hidden;
+		margin-bottom: 50px;
+		display: flex;
+		align-content: center;
+	}
+	
+	.appLink {
+		width: 100%;
 	}
 	
 	.phone {
 		background: #1F1F1F;
 		border: 1px solid rgba(#7B7B7B, 0.13);
+		margin: 0px auto !important;
+		max-width: none;
 		
 		.speaker, .home {
 			background: $background;
 			border: 1px solid rgba(#7B7B7B, 0.4);
 		}
+		
+		.home {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	
+	.icon {
+		margin: 0px auto;
+		display: block;
+		margin-top: -80px;
+	}
+	
+	h3 {
+		color: $primary;
+		text-align: center;
+		font-size: 22px;
+		@include dinalt;
 	}
 }
