@@ -1,0 +1,157 @@
+$background: #0D0D0D;
+$primary: #7B7B7B;
+$highlight: #00CCF8;
+
+.apps {
+	background: $background;
+	
+	.cover {
+		background: rgba($background,0.9);
+		
+		@supports not (-webkit-backdrop-filter:blur(40px)) {
+			background: $background;
+		}
+	}
+	
+	h1 {
+		color: $highlight;
+	}
+	
+	.name {
+		h1	{
+			color: $highlight;
+		}
+		
+		h2 {
+			color: $primary;
+		}
+	}
+	
+	.main-nav {
+		border-bottom: 2px solid rgba($primary, 0.2);
+		
+		.sitename span {
+			display: none;
+		}
+		
+		.sitename, li a {
+			color: $primary;
+		}
+		
+		#logo {
+			stroke: $primary
+		}
+		
+		li a.active {
+			color: $highlight;
+		}
+		
+		.hamburger span {
+			background: $highlight;
+		}
+		
+		&.not-top.pinned, &.xunpinned, &.bottom {
+			background: $background;
+		}
+	}
+	
+	.spin {
+		z-index: 1;
+		
+		&.one {
+			#logo {
+				stroke: $highlight;
+			}
+		}
+		
+		&.two {
+			#logo {
+				stroke: $primary;
+			}
+		}
+	}
+	
+	.constrained {
+		z-index: 2;
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+	}
+	
+	.appsList {
+		@media (max-width:$tablet) {
+			margin-top: -60px;
+		}
+	}
+	
+	.appContainer {
+		position: relative;
+		width: calc(100% / 2);
+		overflow: hidden;
+		display: flex;
+		align-content: center;
+		
+		@media (min-width:$tablet) {
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 50px;
+			width: calc(100% / 2 - 40px);
+		}
+		
+		@media (min-width:$desktop-lrg) {
+			width: calc(100% / 3);
+			border: none;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
+	}
+	
+	.appLink {
+		width: 100%;
+	}
+	
+	.phone {
+		background: #1F1F1F;
+		border: 1px solid rgba(#7B7B7B, 0.13);
+		margin: 0px auto !important;
+		max-width: 100%;
+		display: none !important;
+		
+		@media (min-width:$tablet) {
+			display: block !important;
+		}
+		
+		.speaker, .home {
+			background: $background;
+			border: 1px solid rgba(#7B7B7B, 0.4);
+		}
+		
+		.home {
+			width: 20px;
+			height: 20px;
+		}
+	}
+	
+	.icon {
+		margin: 0px auto;
+		display: block;
+		max-width: 100%;
+		
+		@media (min-width:$tablet) {
+			margin-top: -80px;
+			max-width: auto;
+		}
+	}
+	
+	h3 {
+		color: $primary;
+		text-align: center;
+		font-size: 16px;
+		@include dinalt;
+		
+		@media (min-width:$tablet) {
+			font-size: 22px;
+		}
+	}
+}
