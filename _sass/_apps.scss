@@ -79,13 +79,32 @@ $highlight: #00CCF8;
 		align-items: center;
 	}
 	
+	.appsList {
+		@media (max-width:$tablet) {
+			margin-top: -60px;
+		}
+	}
+	
 	.appContainer {
 		position: relative;
-		width: calc(100% / 3);
+		width: calc(100% / 2);
 		overflow: hidden;
-		margin-bottom: 50px;
 		display: flex;
 		align-content: center;
+		
+		@media (min-width:$tablet) {
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 50px;
+			width: calc(100% / 2 - 40px);
+		}
+		
+		@media (min-width:$desktop-lrg) {
+			width: calc(100% / 3);
+			border: none;
+			margin-left: 0px;
+			margin-right: 0px;
+		}
 	}
 	
 	.appLink {
@@ -96,7 +115,12 @@ $highlight: #00CCF8;
 		background: #1F1F1F;
 		border: 1px solid rgba(#7B7B7B, 0.13);
 		margin: 0px auto !important;
-		max-width: none;
+		max-width: 100%;
+		display: none !important;
+		
+		@media (min-width:$tablet) {
+			display: block !important;
+		}
 		
 		.speaker, .home {
 			background: $background;
@@ -112,13 +136,22 @@ $highlight: #00CCF8;
 	.icon {
 		margin: 0px auto;
 		display: block;
-		margin-top: -80px;
+		max-width: 100%;
+		
+		@media (min-width:$tablet) {
+			margin-top: -80px;
+			max-width: auto;
+		}
 	}
 	
 	h3 {
 		color: $primary;
 		text-align: center;
-		font-size: 22px;
+		font-size: 16px;
 		@include dinalt;
+		
+		@media (min-width:$tablet) {
+			font-size: 22px;
+		}
 	}
 }
