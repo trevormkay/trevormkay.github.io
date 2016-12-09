@@ -119,8 +119,12 @@ $highlight: #00B5DC;
 	.phone {
 		background: rgba(#585C68,0.3);
 		
-		.speaker, .home {
+		.speaker {
 			background: $background;
+		}
+		
+		.home {
+			border: 4px solid $background;
 		}
 		
 		@media (min-width:$phone-landscape) {
