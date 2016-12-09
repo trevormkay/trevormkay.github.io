@@ -133,6 +133,16 @@ $highlight: #00CCF8;
 		}
 	}
 	
+	.watch {
+		display: none !important;
+		max-width: 100%;
+		margin: 0px auto;
+		
+		@media (min-width:$tablet) {
+			display: block !important;
+		}
+	}
+	
 	.icon {
 		margin: 0px auto;
 		display: block;
