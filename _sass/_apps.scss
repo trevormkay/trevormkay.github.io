@@ -92,6 +92,10 @@ $highlight: #00CCF8;
 		display: flex;
 		align-content: center;
 		
+		@media (min-width:$phone-landscape) {
+		 width: calc(100% / 3);	
+		}
+		
 		@media (min-width:$tablet) {
 			margin-left: 20px;
 			margin-right: 20px;
