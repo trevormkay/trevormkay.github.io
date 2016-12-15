@@ -1,5 +1,5 @@
-$background: #0D0D0D;
-$primary: #7B7B7B;
+$background: #0A0220;
+$primary: #766d8e;
 $highlight: #00CCF8;
 
 .apps {
@@ -116,8 +116,7 @@ $highlight: #00CCF8;
 	}
 	
 	.phone {
-		background: #1F1F1F;
-		border: 1px solid rgba(#7B7B7B, 0.13);
+		background: #f3f3f3;
 		margin: 0px auto !important;
 		max-width: 100%;
 		display: none !important;
@@ -128,7 +127,6 @@ $highlight: #00CCF8;
 		
 		.speaker, .home {
 			background: $background;
-			border: 1px solid rgba(#7B7B7B, 0.4);
 		}
 		
 		.home {
