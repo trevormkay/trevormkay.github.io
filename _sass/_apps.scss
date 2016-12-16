@@ -103,11 +103,18 @@ $highlight: #00CCF8;
 			width: calc(100% / 2 - 40px);
 		}
 		
+		@media (min-width:$tablet-landscape) {
+			margin-left: 20px;
+			margin-right: 20px;
+			margin-bottom: 50px;
+			width: calc(100% / 3 - 40px);
+		}
+		
 		@media (min-width:$desktop-lrg) {
-			width: calc(100% / 3);
+			width: calc(100% / 4 - 40px);
 			border: none;
-			margin-left: 0px;
-			margin-right: 0px;
+			margin-left: 20px;
+			margin-right: 20px;
 		}
 	}
 	
@@ -142,6 +149,12 @@ $highlight: #00CCF8;
 		
 		@media (min-width:$tablet) {
 			display: block !important;
+		}
+	}
+	
+	.watch + .icon {
+		@media (min-width:$tablet) and (max-width:$desktop-lrg) {
+			margin-top: -50px;
 		}
 	}
 	
