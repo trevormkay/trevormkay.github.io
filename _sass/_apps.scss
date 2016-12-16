@@ -140,6 +140,11 @@ $highlight: #4AB4DC;
 			width: 20px;
 			height: 20px;
 		}
+		
+		.screen {
+			outline: 1px solid rgba(0, 0, 0, 0.1);
+			outline-offset: -1px;
+		}
 	}
 	
 	.watch {
