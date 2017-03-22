@@ -1,6 +1,6 @@
-$background: #09031F;
-$primary: #747EA8;
-$highlight: #4AB4DC;
+$background: #F8F8F8;
+$primary: #254A63;
+$highlight: #65D3DE;
 
 .apps {
 	background: $background;
@@ -57,6 +57,7 @@ $highlight: #4AB4DC;
 	
 	.spin {
 		z-index: 1;
+		opacity: 0.02 !important;
 		
 		&.one {
 			#logo {
@@ -88,7 +89,6 @@ $highlight: #4AB4DC;
 	.appContainer {
 		position: relative;
 		width: calc(100% / 2);
-		overflow: hidden;
 		display: flex;
 		align-content: center;
 		
@@ -118,60 +118,37 @@ $highlight: #4AB4DC;
 		}
 	}
 	
+	.screen {
+		display: none;
+		max-width: 100%;
+		border-radius: 10px;
+		//box-shadow: 0 12px 24px 0 rgba(0,0,0,0.08);
+		border: 1px solid rgba(0,0,0,0.1);
+		
+		@media (min-width:$tablet) {
+			display: block;
+		}
+	}
+	
 	.appLink {
 		width: 100%;
+		text-decoration: none;
 	}
-	
-	.phone {
-		background: #f3f3f3;
-		margin: 0px auto !important;
-		max-width: 100%;
-		display: none !important;
 		
-		@media (min-width:$tablet) {
-			display: block !important;
-		}
-		
-		.speaker, .home {
-			background: $background;
-		}
-		
-		.home {
-			width: 20px;
-			height: 20px;
-		}
-		
-		.screen {
-			outline: 1px solid rgba(0, 0, 0, 0.1);
-			outline-offset: -1px;
-		}
-	}
-	
-	.watch {
-		display: none !important;
-		max-width: 100%;
-		margin: 0px auto;
-		
-		@media (min-width:$tablet) {
-			display: block !important;
-		}
-	}
-	
-	.watch + .icon {
-		@media (min-width:$tablet) and (max-width:$desktop-lrg) {
-			margin-top: -50px;
-		}
-	}
-	
 	.icon {
 		margin: 0px auto;
 		display: block;
 		max-width: 100%;
 		
 		@media (min-width:$tablet) {
-			margin-top: -80px;
-			max-width: auto;
+			max-width: 40px;
+			margin: 0px;
+			display: inline;
+			vertical-align: middle;
+			margin-top: -5px;
 		}
+		
+		
 	}
 	
 	h3 {
@@ -179,9 +156,10 @@ $highlight: #4AB4DC;
 		text-align: center;
 		font-size: 16px;
 		@include dinalt;
-		
+				
 		@media (min-width:$tablet) {
 			font-size: 22px;
+			margin-top: 20px;
 		}
 	}
 }
