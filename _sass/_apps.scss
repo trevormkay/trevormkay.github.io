@@ -121,6 +121,7 @@ $highlight: #65D3DE;
 	.border {
 		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
 		border-radius: 10px;
+		transition: box-shadow 1s ease;
 	}
 	
 	.screen {
@@ -142,6 +143,11 @@ $highlight: #65D3DE;
 		
 		&:hover .screen {
 			box-shadow: 0 12px 34px 0 rgba(0,0,0,0.15);
+			transition: box-shadow 1s ease;
+		}
+		
+		&:hover .border {
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2);
 			transition: box-shadow 1s ease;
 		}
 	}
