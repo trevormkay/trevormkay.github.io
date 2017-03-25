@@ -148,6 +148,10 @@ $highlight: #65D3DE;
 		&:hover .screen {
 			box-shadow: 0 12px 34px 0 rgba(0,0,0,0.15);
 			transition: box-shadow 1s ease;
+			
+			&.watch {
+				box-shadow: none;
+			}
 		}
 		
 		&:hover .border {
