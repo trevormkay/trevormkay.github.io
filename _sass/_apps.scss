@@ -98,10 +98,10 @@ $highlight: #65D3DE;
 		}
 		
 		@media (min-width:$tablet) {
-			margin-left: 20px;
-			margin-right: 20px;
-			margin-bottom: 50px;
-			width: calc(100% / 2 - 40px);
+			margin-left: 15px;
+			margin-right: 15px;
+			margin-bottom: 20px;
+			width: calc(100% / 3 - 30px);
 			padding: 0px;
 		}
 		
@@ -166,14 +166,17 @@ $highlight: #65D3DE;
 		max-width: 100%;
 		
 		@media (min-width:$tablet) {
-			max-width: 40px;
+			max-width: 30px;
 			margin: 0px;
 			display: inline;
 			vertical-align: middle;
-			margin-top: -5px;
+			margin-top: -2px;
 		}
 		
-		
+		@media (min-width:$tablet-landscape) {
+			max-width: 40px;
+			margin-top: -5px;
+		}
 	}
 	
 	h3 {
@@ -183,8 +186,12 @@ $highlight: #65D3DE;
 		@include dinalt;
 				
 		@media (min-width:$tablet) {
-			font-size: 22px;
+			font-size: 18px;
 			margin-top: 20px;
+		}
+		
+		@media (min-width:$tablet-landscape) {
+			font-size: 22px;
 		}
 	}
 }
