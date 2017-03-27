@@ -1,6 +1,6 @@
-$background: #09031F;
-$primary: #747EA8;
-$highlight: #4AB4DC;
+$background: #F8F8F8;
+$primary: #254A63;
+$highlight: #65D3DE;
 
 .apps {
 	background: $background;
@@ -57,6 +57,7 @@ $highlight: #4AB4DC;
 	
 	.spin {
 		z-index: 1;
+		opacity: 0.02 !important;
 		
 		&.one {
 			#logo {
@@ -88,9 +89,9 @@ $highlight: #4AB4DC;
 	.appContainer {
 		position: relative;
 		width: calc(100% / 2);
-		overflow: hidden;
 		display: flex;
 		align-content: center;
+		padding: 10px;
 		
 		@media (min-width:$phone-landscape) {
 		 width: calc(100% / 3);	
@@ -101,6 +102,7 @@ $highlight: #4AB4DC;
 			margin-right: 20px;
 			margin-bottom: 50px;
 			width: calc(100% / 2 - 40px);
+			padding: 0px;
 		}
 		
 		@media (min-width:$tablet-landscape) {
@@ -108,6 +110,7 @@ $highlight: #4AB4DC;
 			margin-right: 20px;
 			margin-bottom: 50px;
 			width: calc(100% / 3 - 40px);
+			padding: 0px;
 		}
 		
 		@media (min-width:$desktop-lrg) {
@@ -115,63 +118,62 @@ $highlight: #4AB4DC;
 			border: none;
 			margin-left: 20px;
 			margin-right: 20px;
+			padding: 0px;
+		}
+	}
+	
+	.border {
+		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+		border-radius: 10px;
+		transition: box-shadow 1s ease;
+	}
+	
+	.screen {
+		display: none;
+		max-width: 100%;
+		border-radius: 10px;
+		z-index: -1;
+		transition: box-shadow 1s ease;
+		
+		@media (min-width:$tablet) {
+			display: block;
+			position: relative;
 		}
 	}
 	
 	.appLink {
 		width: 100%;
-	}
-	
-	.phone {
-		background: #f3f3f3;
-		margin: 0px auto !important;
-		max-width: 100%;
-		display: none !important;
+		text-decoration: none;
 		
-		@media (min-width:$tablet) {
-			display: block !important;
+		&:hover .screen {
+			box-shadow: 0 12px 34px 0 rgba(0,0,0,0.15);
+			transition: box-shadow 1s ease;
+			
+			&.watch {
+				box-shadow: none;
+			}
 		}
 		
-		.speaker, .home {
-			background: $background;
-		}
-		
-		.home {
-			width: 20px;
-			height: 20px;
-		}
-		
-		.screen {
-			outline: 1px solid rgba(0, 0, 0, 0.1);
-			outline-offset: -1px;
+		&:hover .border {
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+			transition: box-shadow 1s ease;
 		}
 	}
-	
-	.watch {
-		display: none !important;
-		max-width: 100%;
-		margin: 0px auto;
 		
-		@media (min-width:$tablet) {
-			display: block !important;
-		}
-	}
-	
-	.watch + .icon {
-		@media (min-width:$tablet) and (max-width:$desktop-lrg) {
-			margin-top: -50px;
-		}
-	}
-	
 	.icon {
 		margin: 0px auto;
 		display: block;
 		max-width: 100%;
 		
 		@media (min-width:$tablet) {
-			margin-top: -80px;
-			max-width: auto;
+			max-width: 40px;
+			margin: 0px;
+			display: inline;
+			vertical-align: middle;
+			margin-top: -5px;
 		}
+		
+		
 	}
 	
 	h3 {
@@ -179,9 +181,10 @@ $highlight: #4AB4DC;
 		text-align: center;
 		font-size: 16px;
 		@include dinalt;
-		
+				
 		@media (min-width:$tablet) {
 			font-size: 22px;
+			margin-top: 20px;
 		}
 	}
 }
