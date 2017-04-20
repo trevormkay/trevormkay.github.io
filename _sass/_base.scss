@@ -365,18 +365,24 @@ body {
 		}
 		border-radius: 10px;
 		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2);
-		background-size: 100%;
 		background-position: center center;
-		height: 0;
-    	padding-bottom: 15%;
-    	transition: transform 0.2s ease, box-shadow 0.2s ease, background-size 0.2s ease;
+    	transition: transform 0.2s ease, box-shadow 0.2s ease;
     	cursor: pointer;
-    	display: flex;
-    	justify-content: center;
+    	background: none !important;
     	
     	img {
-	    	margin-top: 120px;
+	    	border-radius: 10px;
+	    	width: 100%;
+			display: block;
+			position: relative;
+			z-index: -1;  	
     	}
+    	
+		.border {
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.1);
+			border-radius: 10px;
+			transition: box-shadow 1s ease;
+		}
     		
 		@media (min-width:$phone-landscape) {
 			width: calc(100%/2 - 20px);
@@ -409,30 +415,6 @@ body {
 				left: 20px;
 				bottom: 40px;
 			}
-		}
-		
-/*
-		&:nth-child(even) {
-			@media (min-width:$tablet) {
-				margin: {
-					right: 0px;
-				}
-			}
-			
-			@media (min-width:$desktop-lrg) {
-				margin-right: 20px;
-			}
-		}
-		
-		&:nth-child(3n+3) {
-			@media (min-width:$desktop-lrg) {
-				margin-right: 0px;
-			}
-		}
-		
-*/
-		img {
-			max-width: 100%;
 		}
 		
 		a:hover {
@@ -491,55 +473,10 @@ body {
 		}
 		
 		&:hover {
-			transform: scale(1.05);
-			transition: transform 0.5s ease, box-shadow 0.5s ease, background-size 0.5s ease;
+			transform: scale(1.05) translateY(-3px);
+			transition: transform 0.5s ease, box-shadow 0.5s ease;
 			cursor: hand;
 			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3), 0px 2px 4px rgba(0,0,0,0.1), 0px 2px 44px rgba(0,0,0,0.2);
-			background-size: 120%;
-		}
-		
-		&.eastland {
-			background-image: url(../images/portfolio/tiles/backgroundEastland.png);
-		}
-		
-		&.retailerportal {
-			background-image: url(../images/portfolio/tiles/backgroundRetailerportal.png);
-		}
-		
-		&.nightlight {
-			background-image: url(../images/portfolio/tiles/backgroundNightlight.png);
-		}
-		
-		&.karinourish {
-			background-image: url(../images/portfolio/tiles/backgroundKarinourish.png);
-		}
-		
-		&.aptapro {
-			background-image: url(../images/portfolio/tiles/backgroundAptapro.png);
-		}
-		
-		&.neutron {
-			background-image: url(../images/portfolio/tiles/backgroundNeutron.png);
-		}
-
-		&.tolq {
-			background-image: url(../images/portfolio/tiles/backgroundTolq.png);
-		}
-
-		&.epoch {
-			background-image: url(../images/portfolio/tiles/backgroundEpoch.png);
-		}
-
-		&.exvo {
-			background-image: url(../images/portfolio/tiles/backgroundExvo.png);
-		}
-		
-		&.arc {
-			background-image: url(../images/portfolio/tiles/backgroundArc.png);
-		}
-		
-		&.pizzahut {
-			background-image: url(../images/portfolio/tiles/backgroundPizzahut.png);
 		}
 	}
 }

@@ -18,7 +18,9 @@ description: "Interactive Designer from Sydney"
 			{% unless item.exclude %}
 				<div class="card {{ item.class }}">
 					<a class="post-link" href="../portfolio/{{ item.class }}.html">
-						<img src="../images/portfolio/tiles/logo-{{ item.class }}.png" srcset="../images/portfolio/tiles/logo-{{ item.class }}.png, ../images/portfolio/tiles/logo-{{ item.class }}@2x.png 2x">
+						<div class="border">
+							<img src="../images/portfolio/tile{{ item.class }}.jpg" srcset="../images/portfolio/tile{{ item.class }}.jpg, ../images/portfolio/tile{{ item.class }}@2x.jpg 2x">
+						</div>
 					</a>
 				</div>
 			{% endunless %}
