@@ -284,8 +284,20 @@ body {
 	}
 	
 	&.extra {
+		width: 100%;
+		
+		@media (min-width:$tablet) {
+			padding: {
+				left: 10px;
+				right: 10px;
+			}
+		}
+				
 		@media (min-width:$desktop-lrg) {
-			width: 1650px;
+			padding: {
+				left: 60px;
+				right: 60px;
+			}
 		}
 	}
 }
@@ -342,20 +354,30 @@ body {
 	display:flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	align-items: stretch;
 	margin: {
 		bottom: 60px;
 	}
 	z-index: 2;
-	position: relative;
 	
 	.card {
-		width: 100%;
-		flex-grow: 0;
 		margin: {
 			bottom: 20px;
 		}
-		
+		border-radius: 10px;
+		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+		background-size: 100%;
+		background-position: center center;
+		height: 0;
+    	padding-bottom: 15%;
+    	transition: transform 0.2s ease, box-shadow 0.2s ease, background-size 0.2s ease;
+    	cursor: pointer;
+    	display: flex;
+    	justify-content: center;
+    	
+    	img {
+	    	margin-top: 120px;
+    	}
+    		
 		@media (min-width:$phone-landscape) {
 			width: calc(100%/2 - 20px);
 			margin: {
@@ -365,17 +387,31 @@ body {
 		}
 		
 		@media (min-width:$tablet) {
-			width: calc(100%/2 - 10px);
+			width: calc(100%/2 - 20px);
 			margin: {
-				right: 20px;
-				left: 0px;
+				right: 10px;
+				left: 10px;
+			}
+		}
+		
+		@media (min-width:$tablet-landscape) {
+			width: calc(100%/3 - 20px);
+			margin: {
+				right: 10px;
+				left: 10px;
 			}
 		}
 		
 		@media (min-width:$desktop-lrg) {
-			width: calc(100%/3 - 20px);
+			width: calc(100%/4 - 40px);
+			margin: {
+				right: 20px;
+				left: 20px;
+				bottom: 40px;
+			}
 		}
 		
+/*
 		&:nth-child(even) {
 			@media (min-width:$tablet) {
 				margin: {
@@ -394,6 +430,7 @@ body {
 			}
 		}
 		
+*/
 		img {
 			max-width: 100%;
 		}
@@ -451,6 +488,58 @@ body {
 		
 		.description {
 			display: none;
+		}
+		
+		&:hover {
+			transform: scale(1.05);
+			transition: transform 0.5s ease, box-shadow 0.5s ease, background-size 0.5s ease;
+			cursor: hand;
+			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3), 0px 2px 4px rgba(0,0,0,0.1), 0px 2px 44px rgba(0,0,0,0.2);
+			background-size: 120%;
+		}
+		
+		&.eastland {
+			background-image: url(../images/portfolio/tiles/backgroundEastland.png);
+		}
+		
+		&.retailerportal {
+			background-image: url(../images/portfolio/tiles/backgroundRetailerportal.png);
+		}
+		
+		&.nightlight {
+			background-image: url(../images/portfolio/tiles/backgroundNightlight.png);
+		}
+		
+		&.karinourish {
+			background-image: url(../images/portfolio/tiles/backgroundKarinourish.png);
+		}
+		
+		&.aptapro {
+			background-image: url(../images/portfolio/tiles/backgroundAptapro.png);
+		}
+		
+		&.neutron {
+			background-image: url(../images/portfolio/tiles/backgroundNeutron.png);
+		}
+
+		&.tolq {
+			background-image: url(../images/portfolio/tiles/backgroundTolq.png);
+		}
+
+		&.epoch {
+			background-image: url(../images/portfolio/tiles/backgroundEpoch.png);
+		}
+
+		&.exvo {
+			background-image: url(../images/portfolio/tiles/backgroundExvo.png);
+		}
+		
+		&.arc {
+			background-image: url(../images/portfolio/tiles/backgroundArc.png);
+		}
+		
+		&.pizzahut {
+			background-image: url(../images/portfolio/tiles/backgroundPizzahut.png);
 		}
 	}
 }
