@@ -364,9 +364,8 @@ body {
 			bottom: 20px;
 		}
 		border-radius: 10px;
-		box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2);
 		background-position: center center;
-    	transition: transform 0.2s ease, box-shadow 0.2s ease;
+    	transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
     	cursor: pointer;
     	background: none !important;
     	
@@ -474,9 +473,13 @@ body {
 		
 		&:hover {
 			transform: scale(1.05) translateY(-3px);
-			transition: transform 0.5s ease, box-shadow 0.5s ease;
+			transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 			cursor: hand;
 			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3), 0px 2px 4px rgba(0,0,0,0.1), 0px 2px 44px rgba(0,0,0,0.2);
+			
+			.border {
+				box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3);
+			}
 		}
 	}
 }
