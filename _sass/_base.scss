@@ -472,13 +472,13 @@ body {
 		}
 		
 		&:hover {
-			transform: scale(1.05) translateY(-3px);
+			transform: scale3d(1.05, 1.05, 1.05);
 			transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.5s ease;
 			cursor: hand;
 			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3), 0px 2px 4px rgba(0,0,0,0.1), 0px 2px 44px rgba(0,0,0,0.2);
 			
 			.border {
-				box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3);
+				box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2);
 			}
 		}
 	}
