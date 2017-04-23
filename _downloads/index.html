@@ -19,10 +19,9 @@ description: "Interactive Designer from Sydney"
 			{% unless item.exclude %}
 				<div class="card {{ item.class }}">
 					<a href="/downloads/{{ item.class }}.zip" onclick="_gaq.push(['_trackEvent','{{ item.event }}','{{ item.event }}',this.href]);" target="_blank">
-						<img src="../images/downloads/tile{{ item.class }}.jpg" srcset="../images/downloads/tile{{ item.class }}.jpg, ../images/downloads/tile{{ item.class }}@2x.jpg 2x">
-						<p class="type">{{ item.type }}</p>
-						<h2>{{ item.title }}</h2>
-						<p class="description">{{ item.description }}</p>
+						<div class="border">
+							<img src="../images/downloads/tile{{ item.class }}.jpg" srcset="../images/downloads/tile{{ item.class }}.jpg, ../images/downloads/tile{{ item.class }}@2x.jpg 2x">
+						</div>
 					</a>
 				</div>
 			{% endunless %}
@@ -30,5 +29,3 @@ description: "Interactive Designer from Sydney"
 	</section>
 
 </div>
-
-{% include spin.html %}

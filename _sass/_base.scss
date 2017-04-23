@@ -285,11 +285,22 @@ body {
 	
 	&.extra {
 		width: 100%;
+		padding: {
+			left: 10px;
+			right: 10px;
+		}
 		
 		@media (min-width:$tablet) {
 			padding: {
 				left: 10px;
 				right: 10px;
+			}
+		}
+		
+		@media (min-width:$tablet-landscape) {
+			padding: {
+				left: 20px;
+				right: 20px;
 			}
 		}
 				
@@ -325,6 +336,7 @@ body {
 	@media (min-width:$tablet) {
 		margin: {
 			top: 180px;
+			left: 10px;
 		}
 		
 		h1 {
@@ -340,12 +352,14 @@ body {
 	@media (min-width:$desktop) {
 		margin: {
 			top: 230px;
+			left: 15px;
 		}
 	}
 	
 	@media (min-width:$desktop-lrg) {
 		margin: {
 			top: 280px;
+			left: 20px;
 		}
 	}
 }
@@ -361,11 +375,11 @@ body {
 	
 	.card {
 		margin: {
-			bottom: 20px;
+			bottom: 10px;
 		}
 		border-radius: 10px;
 		background-position: center center;
-    	transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    	transition: transform 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55), ease;
     	cursor: pointer;
     	background: none !important;
     	
@@ -388,6 +402,7 @@ body {
 			margin: {
 				right: 10px;
 				left: 10px;
+				bottom: 20px;
 			}
 		}
 		
@@ -400,13 +415,14 @@ body {
 		}
 		
 		@media (min-width:$tablet-landscape) {
-			width: calc(100%/3 - 20px);
+			width: calc(100%/3 - 30px);
 			margin: {
-				right: 10px;
-				left: 10px;
+				right: 15px;
+				left: 15px;
+				bottom: 30px;
 			}
 		}
-		
+				
 		@media (min-width:$desktop-lrg) {
 			width: calc(100%/4 - 40px);
 			margin: {
@@ -471,16 +487,19 @@ body {
 			display: none;
 		}
 		
-		&:hover {
-			transform: scale3d(1.05, 1.05, 1.05);
-			transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.5s ease;
-			cursor: hand;
-			box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.3), 0px 2px 4px rgba(0,0,0,0.1), 0px 2px 44px rgba(0,0,0,0.2);
-			
-			.border {
-				box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+		@media (min-width: $tablet) {
+			&:hover {
+				transform: scale3d(1.05, 1.05, 1.05);
+				transition: transform 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55), box-shadow 0.5s ease;
+				cursor: hand;
+				box-shadow: 0 12px 34px 0 rgba(0,0,0,0.15);
+				
+				.border {
+					box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2);
+				}
 			}
 		}
+		
 	}
 }
 
