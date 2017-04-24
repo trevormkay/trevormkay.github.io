@@ -55,18 +55,4 @@ $highlight: #4ADC90;
 			background: $background;
 		}
 	}
-		
-	.spin {
-		&.one {
-			#logo {
-				stroke: $highlight;
-			}
-		}
-		
-		&.two {
-			#logo {
-				stroke: $primary;
-			}
-		}
-	}
 }

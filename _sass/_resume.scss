@@ -100,22 +100,6 @@ $highlight: #F78A60;
 		}
 	}
 	
-	.spin {
-		opacity: 0.03;
-		
-		&.one {
-			#logo {
-				stroke: $highlight;
-			}
-		}
-		
-		&.two {
-			#logo {
-				stroke: $primary;
-			}
-		}
-	}
-	
 	.details {
 		display: none;
 		margin-bottom: 40px;
