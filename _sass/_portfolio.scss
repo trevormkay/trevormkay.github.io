@@ -1,6 +1,6 @@
-$background: #1E042B;
-$primary: #938095;
-$highlight: #FDBD3C;
+$background: #F8F8F8;
+$primary: #1E042B;
+$highlight: #B779D6;
 
 .portfolio {
 	background: $background;
@@ -52,20 +52,6 @@ $highlight: #FDBD3C;
 		
 		&.not-top.pinned, &.xunpinned, &.bottom {
 			background: $background;
-		}
-	}
-	
-	.spin {
-		&.one {
-			#logo {
-				stroke: $highlight;
-			}
-		}
-		
-		&.two {
-			#logo {
-				stroke: $primary;
-			}
 		}
 	}
 }

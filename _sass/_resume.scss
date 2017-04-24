@@ -61,6 +61,8 @@ $highlight: #F78A60;
 	}
 	
 	.name {
+		margin-left: 0px;
+		
 		h1	{
 			color: $highlight;
 		}
@@ -95,22 +97,6 @@ $highlight: #F78A60;
 		
 		&.not-top.pinned, &.xunpinned, &.bottom {
 			background: linear-gradient(-180deg, rgba(0,0,0,0.03) 0%, rgba(0,0,0,0.03) 100%), $background;
-		}
-	}
-	
-	.spin {
-		opacity: 0.03;
-		
-		&.one {
-			#logo {
-				stroke: $highlight;
-			}
-		}
-		
-		&.two {
-			#logo {
-				stroke: $primary;
-			}
 		}
 	}
 	
