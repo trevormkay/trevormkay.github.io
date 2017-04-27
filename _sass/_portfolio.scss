@@ -1,6 +1,6 @@
 $background: #F8F8F8;
 $primary: #1E042B;
-$highlight: #B779D6;
+$highlight: #FD9F3C;
 
 .portfolio {
 	background: $background;
@@ -28,7 +28,7 @@ $highlight: #B779D6;
 	}
 	
 	.main-nav {
-		border-bottom: 2px solid rgba($primary, 0.2);
+		border-color: rgba($primary, 0.2);
 		
 		.sitename span {
 			display: none;

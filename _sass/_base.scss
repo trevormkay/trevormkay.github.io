@@ -46,7 +46,8 @@ body {
 }
 
 .main-nav {
-	width: calc(100% - 20px);
+	width: 100%;
+	padding: 10px;
 	margin: 0px auto;
 	height: 80px;
 	display: flex;
@@ -57,10 +58,10 @@ body {
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	will-change: transform;
+	border-bottom: 1px solid black;
 	
-	@media (min-width:740px) {
-		width: calc(100% - 60px);
+	@media (min-width: $tablet) {
+		padding: 20px;
 	}
 	
 	.sitename {
@@ -152,7 +153,7 @@ body {
 	
 	.hamburger {
 		position: absolute;
-		right: 0px;
+		right: 10px;
 		top: 27px;
 		width: 40px;
 		height: 26px;
@@ -229,23 +230,6 @@ body {
 			padding: 0px 30px;
 		}
 	}
-		
-/*
-	&.unpinned {
-		animation-name: slideOutUp;
-		animation-duration: 0.5s;
-		position: fixed;
-		z-index: 20;
-		top: 0px;
-		width: 100%;
-		padding: 0px 10px;
-		border: none !important;
-		
-		@media (min-width:$tablet) {
-			padding: 0px 30px;
-		}
-	}
-*/
 }
 
 .cover {
@@ -314,6 +298,7 @@ body {
 }
 
 .name {
+	text-align: center;
 	margin: {
 		top: 110px;
 		bottom: 60px;
@@ -331,35 +316,45 @@ body {
 		font-size: 1.5em;
 		@include dinalt;
 		line-height: 1.2em;
+		
+		span {
+			display: none;
+		}
 	}
 	
 	@media (min-width:$tablet) {
 		margin: {
-			top: 180px;
-			left: 10px;
+			top: 130px;
+			bottom: 100px;
 		}
 		
 		h1 {
-			font-size: 5.2em;
+			font-size: 100px;
 			margin-bottom: -20px;
 		}
 		
 		h2 {
-			font-size: 2.3em;
+			font-size: 25px;
+			
+			span{
+				display: inline;
+			}
 		}
 	}
 	
 	@media (min-width:$desktop) {
 		margin: {
-			top: 230px;
-			left: 15px;
+			top: 130px;
+			bottom: 100px;
 		}
-	}
-	
-	@media (min-width:$desktop-lrg) {
-		margin: {
-			top: 280px;
-			left: 20px;
+		
+		h1 {
+			font-size: 140px;
+			margin-bottom: -40px;
+		}
+		
+		h2 {
+			font-size: 34px;
 		}
 	}
 }

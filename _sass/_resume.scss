@@ -62,6 +62,7 @@ $highlight: #F78A60;
 	
 	.name {
 		margin-left: 0px;
+		text-align: left;
 		
 		h1	{
 			color: $highlight;
@@ -73,7 +74,7 @@ $highlight: #F78A60;
 	}
 	
 	.main-nav {
-		border-bottom: 2px solid rgba($primary, 0.2);
+		border-color: rgba($primary, 0.2);
 		
 		.sitename span {
 			display: none;
