@@ -18,6 +18,12 @@ $highlight: #65D3DE;
 	}
 	
 	.name {
+		padding-bottom: 20px;
+		
+		@media (min-width: $tablet) {
+			padding-bottom: 0px;
+		}
+		
 		h1	{
 			color: $highlight;
 		}
@@ -28,7 +34,7 @@ $highlight: #65D3DE;
 	}
 	
 	.main-nav {
-		border-bottom: 2px solid rgba($primary, 0.2);
+		border-color: rgba($primary, 0.2);
 		
 		.sitename span {
 			display: none;
