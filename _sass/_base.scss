@@ -306,19 +306,34 @@ body {
 	
 	h1 {
 		text-transform: uppercase;
-		font-size: 4em;
+		font-size: 20vw;
 		@include dincond;
-		margin-bottom: -10px;
+		margin-bottom: -20px;
 	}
 	
 	h2 {
 		text-transform: uppercase;
-		font-size: 1.5em;
+		font-size: 8vw;
 		@include dinalt;
 		line-height: 1.2em;
 		
 		span {
 			display: none;
+		}
+	}
+	
+	@media (min-width:567px) {
+		h1 {
+			font-size: 100px;
+			margin-bottom: -20px;
+		}
+		
+		h2 {
+			font-size: 25px;
+			
+			span{
+				display: inline;
+			}
 		}
 	}
 	
@@ -393,7 +408,7 @@ body {
 			transition: box-shadow 1s ease;
 		}
     		
-		@media (min-width:$phone-landscape) {
+		@media (min-width:567px) {
 			width: calc(100%/2 - 20px);
 			margin: {
 				right: 10px;
