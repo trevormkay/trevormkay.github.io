@@ -563,6 +563,7 @@ header {
 	width: 100%;
 	height: auto;
 	//margin-top: -80px;
+	min-height: 200px;
 	
 	@media (min-width:$tablet) {
 		height: 616px;
@@ -616,9 +617,11 @@ header {
 	
 	.copy {
 		width: 100%;
+		padding: 50px 0px 70px 0px;
 		
 		@media (min-width:$tablet) {
 			width: 50%;
+			padding: 0px;
 		}
 	}
 	
@@ -628,10 +631,12 @@ header {
 			top: 30px;
 			bottom: 30px;
 		}
+		display: none;
 		
 		@media (min-width:$tablet) {
 			width: 50%;
 			margin: 0px;
+			display: block;
 		}
 		
 		img {
