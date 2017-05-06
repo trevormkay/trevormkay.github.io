@@ -1035,17 +1035,38 @@ header {
 	margin-bottom: 60px;
 	
 	img {
-		width: calc(50% - 5px);
-		padding: 5px;
+		width: 100%;
+		padding-bottom: 5px;
 	}
 	
-	@media (min-width:$tablet) {
+	@media (min-width:567px) {
 		img {
 			width: calc(50% - 10px);
 			padding: 10px;
 		}
 	}
 }
+
+.grid3 {
+	margin-bottom: 60px;
+	
+	img {
+		width: 100%;
+		padding-bottom: 5px;
+	}
+	
+	@media (min-width:567px) {
+		img {
+			width: calc(100% / 3 - 10px);
+			padding-right: 10px;
+			
+			&:last-child {
+				padding: 0px;
+			}
+		}
+	}
+}
+
 
 .videoWrapper {
 	position: relative;

@@ -84,8 +84,20 @@ $highlight: #2196F3;
 		background: $background;
 	}
 	
+	.browserBar {
+		background: rgba($primary,0.2);
+		
+		li {
+			background: $background;
+		}
+	}
+	
+	.browserWindow {
+		border: 1px solid rgba($primary,0.2);
+	}
+	
 	.phone {
-		background: rgba($primary,0.3);
+		background: rgba($primary,0.2);
 		
 		.speaker {
 			background: $background;
@@ -93,6 +105,18 @@ $highlight: #2196F3;
 		
 		.home {
 			border: 4px solid $background;
+		}
+		
+		@media (min-width:$phone-landscape) {
+			display: none;
+		}
+	}
+	
+	.browser {
+		display: none;
+		
+		@media (min-width:$phone-landscape) {
+			display: block;
 		}
 	}
 	
@@ -200,5 +224,56 @@ $highlight: #2196F3;
 				margin-top: 60px;
 			}
 		}
+	}
+	
+	#process {
+		overflow: hidden;
+	}
+	
+	.cards {
+		margin-bottom: 20px;
+		
+		img {
+			max-width: 100%;
+		}
+	}
+	
+	.styleguide {
+		margin-top: 30px;
+		margin-bottom: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		img {
+			max-width: 100%;
+			margin-bottom: 20px;
+			
+			&:last-child {
+				margin-bottom: 0px;
+			}
+		}
+		
+		@media (min-width:$tablet) {
+			flex-direction: row;
+			justify-content: space-between;
+			
+			img {
+				width: 48%;
+				margin-bottom: 0px;
+			}
+		}
+		
+		@media (min-width:$desktop) {
+			margin-bottom: 140px;
+			
+			img {
+				width: auto;
+			}
+		}
+	}
+	
+	.nodata {
+		margin-bottom: -100px;
 	}
 }
