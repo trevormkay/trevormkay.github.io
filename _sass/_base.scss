@@ -88,9 +88,8 @@ body {
 	.categories {
 		list-style: none;
 		position: absolute;
-		top: 130px;
+		top: 120px;
 		margin: 0px auto;
-		text-align: center;
 		width: 100%;
 		left: 0px;
 		opacity: 0;
@@ -105,12 +104,13 @@ body {
 		
 		li {
 			margin: {
-				bottom: 50px; 
+				bottom: 20px;
+				left: 20px;
 			}
 			@include dinalt;
 			text-transform: uppercase;
 			font: {
-				size: 2.5em;
+				size: 2em;
 			}
 		}
 		
