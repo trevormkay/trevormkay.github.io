@@ -2,19 +2,24 @@ $background: #F6F8F8;
 $background-dark: #EDF0F0;
 $primary: #212121;
 $highlight: #2196F3;
+$accent: #FFBD4B;
 
 .mediaportal {
 	background: $background;
 	
 	.cover {
-		background: rgba($background,0.8);
+		background: rgba($primary,0.8);
 		
 		@supports not (-webkit-backdrop-filter:blur(40px)) {
-			background: $background;
+			background: $primary;
 		}
 	}
 	
-	h1, h2, h3 {
+	h1 {
+		color: $accent;
+	}
+	
+	h2, h3 {
 		color: $highlight;
 	}
 	
@@ -22,35 +27,39 @@ $highlight: #2196F3;
 		color: $primary !important;
 	}
 	
+	.description {
+		color: $background !important;
+	}
+	
 	.type::after, .caption::before {
 		background: $primary;
 	}
 	
 	.visit-link {
-		color: $highlight;
+		color: $accent;
 	}
 	
 	#arrow {
-		fill: $highlight;
+		fill: $accent;
 	}
 	
 	.main-nav {
-		border-color: rgba($primary, 0.2);
+		border-color: rgba($background, 0.2);
 		
 		.sitename, li a {
-			color: $primary;
+			color: $background;
 		}
 		
 		#logo {
-			stroke: $primary
+			stroke: $background
 		}
 		
 		li a.active {
-			color: $highlight;
+			color: $accent;
 		}
 		
 		.hamburger span {
-			background: $highlight;
+			background: $accent;
 		}
 		
 		&.not-top.pinned, &.xunpinned, &.bottom {
@@ -59,7 +68,7 @@ $highlight: #2196F3;
 	}
 	
 	header {
-		background-color: $background-dark;
+		background-color: $primary;
 		
 		.coverimage {
 			background-image: url(../images/portfolio/mediaportal/header-background.jpg);
@@ -69,10 +78,10 @@ $highlight: #2196F3;
 	}
 	
 	.anchors {
-		border-top: 2px solid rgba($primary, 0.2);
+		border-top: 2px solid rgba($background, 0.2);
 		
 		li a {
-			color: $primary;
+			color: $background;
 		}
 	}
 	
@@ -211,7 +220,21 @@ $highlight: #2196F3;
 	}
 	
 	#solution {
-
+		.browserBar {
+			li {
+				background: $background-dark;
+			}
+		}
+		
+		.phone {
+			.speaker {
+				background: $background-dark;
+			}
+			
+			.home {
+				border: 4px solid $background-dark;
+			}
+		}
 	}
 	
 	#process {
