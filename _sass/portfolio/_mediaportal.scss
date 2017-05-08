@@ -241,6 +241,16 @@ $accent: #FFBD4B;
 		overflow: hidden;
 	}
 	
+	#other-works {
+		#arrow {
+			fill: $highlight;
+		}
+		
+		.description {
+			color: $primary !important;
+		}
+	}
+	
 	.cards {
 		margin-bottom: 20px;
 		
