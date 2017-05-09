@@ -2,24 +2,19 @@ $background: #F6F8F8;
 $background-dark: #EDF0F0;
 $primary: #212121;
 $highlight: #2196F3;
-$accent: #FFBD4B;
 
 .mediaportal {
 	background: $background;
 	
 	.cover {
-		background: rgba($primary,0.8);
+		background: rgba($background,0.8);
 		
 		@supports not (-webkit-backdrop-filter:blur(40px)) {
-			background: $primary;
+			background: $background;
 		}
 	}
 	
-	h1 {
-		color: $accent;
-	}
-	
-	h2, h3 {
+	h1, h2, h3 {
 		color: $highlight;
 	}
 	
@@ -27,39 +22,35 @@ $accent: #FFBD4B;
 		color: $primary !important;
 	}
 	
-	.description {
-		color: $background !important;
-	}
-	
 	.type::after, .caption::before {
 		background: $primary;
 	}
 	
 	.visit-link {
-		color: $accent;
+		color: $highlight;
 	}
 	
 	#arrow {
-		fill: $accent;
+		fill: $highlight;
 	}
 	
 	.main-nav {
-		border-color: rgba($background, 0.2);
+		border-color: rgba($primary, 0.2);
 		
 		.sitename, li a {
-			color: $background;
+			color: $primary;
 		}
 		
 		#logo {
-			stroke: $background
+			stroke: $primary;
 		}
 		
 		li a.active {
-			color: $accent;
+			color: $highlight;
 		}
 		
 		.hamburger span {
-			background: $accent;
+			background: $highlight;
 		}
 		
 		&.not-top.pinned, &.xunpinned, &.bottom {
@@ -68,7 +59,7 @@ $accent: #FFBD4B;
 	}
 	
 	header {
-		background-color: $primary;
+		background-color: $background-dark;
 		
 		.coverimage {
 			background-image: url(../images/portfolio/mediaportal/header-background.jpg);
@@ -78,10 +69,10 @@ $accent: #FFBD4B;
 	}
 	
 	.anchors {
-		border-top: 2px solid rgba($background, 0.2);
+		border-top: 2px solid rgba($primary, 0.2);
 		
 		li a {
-			color: $background;
+			color: $primary;
 		}
 	}
 	
