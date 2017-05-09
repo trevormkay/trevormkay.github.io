@@ -109,6 +109,10 @@ $highlight: #65D3DE;
 			margin-right: 20px;
 			padding: 0px;
 		}
+		
+		&.notlinked {
+			pointer-events: none;
+		}
 	}
 	
 	.border {
@@ -153,7 +157,6 @@ $highlight: #65D3DE;
 				box-shadow: inset 0px 0px 0px 1px rgba(0,0,0,0.2);
 			}
 		}
-		
 	}
 		
 	.icon {

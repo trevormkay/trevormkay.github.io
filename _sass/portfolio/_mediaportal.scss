@@ -294,12 +294,15 @@ $highlight: #2196F3;
 	.app {
 		p {
 			text-align: center;
-			width: 80%;
 			display: block;
 			margin-left: auto;
 			margin-right: auto;
 			padding: 0px !important;
 			margin-bottom: 0px !important;
+			
+			@media (min-width:$tablet-landscape) {
+				width: 80%;
+			}
 		}
 		
 		section {
