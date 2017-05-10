@@ -6,11 +6,7 @@ $highlight: #4ADC90;
 	background: $background;
 	
 	.cover {
-		background: rgba($background,0.9);
-		
-		@supports not (-webkit-backdrop-filter:blur(40px)) {
-			background: $background;
-		}
+		background: $background;
 	}
 	
 	
