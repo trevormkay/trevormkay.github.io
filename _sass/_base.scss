@@ -565,12 +565,19 @@ header {
 	//margin-top: -80px;
 	min-height: 200px;
 	
-	@media (min-width:$tablet) {
+	@media (min-width:$tablet-landscape) {
 		height: 616px;
 	}
 	
 	@media (min-width:$desktop) {
 		height: 736px;
+	}
+	
+	@media (max-width: 320px) {
+		h1 {
+			line-height: 50px !important;
+			margin-bottom: 5px !important;
+		}
 	}
 	
 	.coverimage {
@@ -589,17 +596,13 @@ header {
 		position: relative;
 		z-index: 2;
 		padding-top: 80px;
-		
-		@media (min-width:$tablet) {
-			//margin-top: 80px;
-		}
 	}
 	
 	.content {
 		@include clearfix;
 		overflow: hidden;
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$tablet-landscape) {
 			display: flex;
 			align-items: center;
 			flex-flow: row wrap;
@@ -620,6 +623,10 @@ header {
 		padding: 50px 0px 70px 0px;
 		
 		@media (min-width:$tablet) {
+			padding: 50px 0px 140px 0px;
+		}
+		
+		@media (min-width:$tablet-landscape) {
 			width: 50%;
 			padding: 0px;
 		}
@@ -633,7 +640,7 @@ header {
 		}
 		display: none;
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$tablet-landscape) {
 			width: 50%;
 			margin: 0px;
 			display: block;
@@ -645,7 +652,7 @@ header {
 			max-height: 300px;
 			max-width: 60%;
 			
-			@media (min-width:$tablet) {
+			@media (min-width:$tablet-landscape) {
 				height: auto !important;
 				max-width: 100%;
 				max-height: 100%;
