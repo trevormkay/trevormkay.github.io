@@ -43,14 +43,13 @@ h1, h2, h3 {
 
 body {
 	font-size: 28px;
+	transition: 0.6s transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 body.displayed {
-	margin: 0;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-	position: fixed;
+	border-right: 1px solid rgba(0,0,0,0.1);
+	transform: translateX(-82vw);
+	transition: 0.6s transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
 .main-nav {
@@ -96,22 +95,14 @@ body.displayed {
 	.categories {
 		list-style: none;
 		position: absolute;
-		top: 130px;
-		margin: 0px auto;
-		text-align: center;
-		width: 100%;
-		left: 0px;
-		opacity: 0;
-		transition: 0.2s opacity ease;
+		top: 20px;
 		pointer-events: none;
-		transform: translateY(-560px);
+		transform: translateX(100vw);
+		margin: 0px;
+		left: 20px;
 		
 		&.displayed {
-			opacity: 1;
-			transition: 0.4s opacity ease;
 			pointer-events: all;
-			transition-delay: 0.4s;
-			transform: translateY(0px);
 		}
 		
 		li {
@@ -126,13 +117,8 @@ body.displayed {
 		}
 		
 		@media (orientation:landscape) {
-			top: 110px;
-			
 			li {
 				font-size: 11vh;
-				float: left;
-				width: 50%;
-				margin-bottom: 8vh;
 			}
 		}
 		
@@ -148,6 +134,7 @@ body.displayed {
 			opacity: 1;
 			pointer-events: all;
 			transform: translateY(0px);
+			margin-right: 20px;
 			
 			li {
 				float: left;
@@ -321,7 +308,7 @@ body.displayed {
 
 .name {
 	text-align: center;
-	margin: {
+	padding: {
 		top: 110px;
 		bottom: 60px;
 	}
@@ -360,7 +347,7 @@ body.displayed {
 	}
 	
 	@media (min-width:$tablet) {
-		margin: {
+		padding: {
 			top: 130px;
 			bottom: 100px;
 		}
@@ -379,12 +366,7 @@ body.displayed {
 		}
 	}
 	
-	@media (min-width:$desktop) {
-		margin: {
-			top: 130px;
-			bottom: 100px;
-		}
-		
+	@media (min-width:$desktop) {		
 		h1 {
 			font-size: 140px;
 			margin-bottom: -40px;
