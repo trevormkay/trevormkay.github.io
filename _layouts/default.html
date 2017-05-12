@@ -4,11 +4,15 @@
   {% include head.html %}
 
   <body class="{{ page.class }}">
+	  
+	  <div class="sitewrapper">
+		  <div class="sitecanvas">
 
     {% include nav.html %}
     
     {{ content }}
-    
+		  </div>
+	  </div>
 	<script type="text/javascript">
 	
 	  var _gaq = _gaq || [];
