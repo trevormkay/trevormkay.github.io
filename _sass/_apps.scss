@@ -15,12 +15,6 @@ $highlight: #65D3DE;
 	}
 	
 	.name {
-		padding-bottom: 20px;
-		
-		@media (min-width: $tablet) {
-			padding-bottom: 0px;
-		}
-		
 		h1	{
 			color: $highlight;
 		}

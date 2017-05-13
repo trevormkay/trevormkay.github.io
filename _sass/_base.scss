@@ -113,7 +113,7 @@ body.displayed .sitename {
 		
 		transition: 0.6s left ease;
 		width: 250px;
-		left: -270px;
+		
 		background: red;
 		position: fixed;
 		top: 0px;
@@ -140,20 +140,25 @@ body.displayed .sitename {
 				font-size: 24px;
 			}
 		}
+		
+		@media (max-width:740px) {
+			left: -270px;
+		}
 				
 		@media (min-width:$tablet) {
 			float: right;
 			display: flex;
 			align-items: center;
-			position: relative;
+			position: absolute;
 			right: 0px;
 			margin: 0px;
 			width: auto;
 			top: 0px;
 			opacity: 1;
-			pointer-events: all;
-			transform: translateY(0px);
 			margin-right: 20px;
+			background: none !important;
+			box-shadow: none;
+			padding: 0px;
 			
 			li {
 				float: left;
