@@ -46,14 +46,18 @@ body {
 	transition: 0.6s transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
 }
 
-body.displayed {
-	border-right: 1px solid rgba(0,0,0,0.1);
-	transform: translateX(-250px);
-	transition: 0.8s transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
+body.displayed .categories {
+	//border-right: 1px solid rgba(0,0,0,0.1);
+	//transform: translateX(-250px);
+	//transition: 0.8s transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	
 	.sitewrapper {
-		overflow: visible;
+		//overflow: visible;
 	}
+}
+
+body.displayed .sitename {
+	position: fixed;
 }
 
 .sitewrapper {
@@ -95,6 +99,8 @@ body.displayed {
 		align-items: center;
 		font-weight: 600;
 		
+		z-index: 20;
+		
 		svg {
 			margin: {
 				right: 10px;
@@ -111,14 +117,33 @@ body.displayed {
 	.categories {
 		list-style: none;
 		position: absolute;
-		top: 20px;
+		//top: 20px;
 		pointer-events: none;
-		transform: translateX(100vw);
+		//transform: translateX(100vw);
 		margin: 0px;
-		left: 20px;
+		//left: 20px;
+		
+		transition: 0.6s left ease;
+		width: 250px;
+		left: -260px;
+		background: red;
+		position: fixed;
+		top: 0px;
+		height: 100%;
+		padding-left: 10px;
+		padding-top: 100px;
+		background: #F8F8F8;
+		box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+		
 		
 		&.displayed {
 			pointer-events: all;
+			
+			//transform: translateX(0vw);
+			transition: 0.8s left ease;
+			left: 0px;
+			
+			
 		}
 		
 		li {
