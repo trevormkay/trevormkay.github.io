@@ -129,6 +129,10 @@ body.displayed .sitename {
 			left: 0px;
 		}
 		
+		.resumelink {
+			display: none;
+		}
+		
 		li {
 			margin-bottom: 20px; 
 			@include dinalt;

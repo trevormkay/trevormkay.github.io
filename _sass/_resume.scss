@@ -14,6 +14,10 @@ $highlight: #F78A60;
 	
 	.categories {
 		background: $background-dark;
+		
+		.resumelink {
+			display: block;
+		}
 	}
 	
 	h1, h3 {
