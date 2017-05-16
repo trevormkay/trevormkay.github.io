@@ -63,6 +63,10 @@ $highlight: #00B5DC;
 		}
 		
 		@media (min-width:$tablet) and (max-width:1300px) {
+			h1 {
+				font-size: 98px;
+			}
+			
 			.copy {
 				width: 100%;
 			}
@@ -79,7 +83,7 @@ $highlight: #00B5DC;
 		
 		@media (min-width:1300px) {
 			.copy {
-				width: 55%;
+				width: 75%;
 			}
 			
 			.logo {
