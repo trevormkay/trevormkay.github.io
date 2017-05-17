@@ -124,6 +124,10 @@ $highlight: #65D3DE;
 		}
 	}
 	
+	.tablet {
+		margin-top: 40px;
+	}
+	
 	.tablet .appContainer {
 		@media (min-width:$tablet) {
 			margin-left: 15px;
