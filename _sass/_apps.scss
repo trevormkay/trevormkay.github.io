@@ -119,6 +119,14 @@ $highlight: #65D3DE;
 			padding: 0px;
 		}
 		
+		@media (min-width:2000px) {
+			width: calc(100% / 6 - 80px);
+			border: none;
+			margin-left: 40px;
+			margin-right: 40px;
+			padding: 0px;
+		}
+		
 		&.notlinked {
 			pointer-events: none;
 		}
