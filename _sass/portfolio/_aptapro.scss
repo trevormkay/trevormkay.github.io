@@ -6,12 +6,8 @@ $highlight: #00B5DC;
 .aptapro {
 	background: $background;
 	
-	.cover {
-		background: rgba($background,0.8);
-		
-		@supports not (-webkit-backdrop-filter:blur(40px)) {
-			background: $background;
-		}
+	.categories {
+		background: $background-dark;
 	}
 	
 	h1, h2, h3 {
@@ -67,6 +63,10 @@ $highlight: #00B5DC;
 		}
 		
 		@media (min-width:$tablet) and (max-width:1300px) {
+			h1 {
+				font-size: 98px;
+			}
+			
 			.copy {
 				width: 100%;
 			}
@@ -83,7 +83,7 @@ $highlight: #00B5DC;
 		
 		@media (min-width:1300px) {
 			.copy {
-				width: 55%;
+				width: 75%;
 			}
 			
 			.logo {
