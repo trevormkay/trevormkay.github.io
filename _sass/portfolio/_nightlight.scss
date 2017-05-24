@@ -6,12 +6,8 @@ $highlight: #D7B48D;
 .nightlight {
 	background: $background;
 	
-	.cover {
-		background: rgba($background,0.8);
-		
-		@supports not (-webkit-backdrop-filter:blur(40px)) {
-			background: $background;
-		}
+	.categories {
+		background: $background-dark;
 	}
 	
 	h1, h2, h3 {

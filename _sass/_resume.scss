@@ -1,4 +1,5 @@
 $background: #F8F8F8;
+$background-dark: #F3F3F3;
 $primary: #7B7B7B;
 $highlight: #F78A60;
 
@@ -11,11 +12,11 @@ $highlight: #F78A60;
 		position: relative;
 	}
 	
-	.cover {
-		background: rgba($background,0.9);
+	.categories {
+		background: $background-dark;
 		
-		@supports not (-webkit-backdrop-filter:blur(40px)) {
-			background: $background;
+		.resumelink {
+			display: block;
 		}
 	}
 	
@@ -60,9 +61,18 @@ $highlight: #F78A60;
 		background: $primary;
 	}
 	
+	.type {
+		margin-left: 10px;
+		
+		@media (min-width:$desktop) {
+			margin-left: 18px;
+		}
+	}
+	
 	.name {
 		margin-left: 0px;
 		text-align: left;
+		padding-bottom: 0px;
 		
 		h1	{
 			color: $highlight;
@@ -70,6 +80,7 @@ $highlight: #F78A60;
 		
 		h2 {
 			color: $primary;
+			display: none;
 		}
 	}
 	
@@ -102,9 +113,9 @@ $highlight: #F78A60;
 	}
 	
 	.details {
-		display: none;
 		margin-bottom: 40px;
-		
+		margin-left: 10px;
+				
 		ul {
 			list-style: none;
 			@include clearfix;
@@ -114,29 +125,41 @@ $highlight: #F78A60;
 				float: left;
 				@include dinalt;
 				margin-right: 40px;
-				font-size: 18px;
+				font-size: 22px;
 				color: $primary;
+				
+				&:first-child {
+					display: none;
+				}
 			}
+		}
+		
+		@media (min-width: $desktop) {
+			margin-left: 18px;
 		}
 	}
 	
 	.job {
 		margin-bottom: 50px;
+		margin-left: 10px;
 		
 		@media (min-width:$tablet) {
 			border: none;
 			margin-bottom: 80px;
 			padding: 0px;
 		}
+		
+		@media (min-width:$desktop) {
+			margin-left: 18px;
+		}
 	}
 	
 	.education {
-		margin-bottom: 20px;
-		border-bottom: 1px solid rgba($primary,0.2);
+		margin-bottom: 40px;
+		margin-left: 10px;
 		
-		@media (min-width:$tablet) {
-			border: none;
-			margin-bottom: 40px;
+		@media (min-width:$desktop) {
+			margin-left: 18px;
 		}
 	}
 	
@@ -162,16 +185,28 @@ $highlight: #F78A60;
 			color: black !important;
 		}
 		
-		.details {
+		.details ul li:first-child {
 			display: block;
+		}
+		
+		h1 {
+			margin-left: 10px;
+		}
+		
+		.details {
+			padding-top: 20px;
 		}
 		
 		.spin {
 			display: none;
 		}
 		
+		.type {
+			margin-bottom: 0px;
+		}
+		
 		.job {
-			margin-bottom: 30px;
+			margin-bottom: 20px;
 			
 			h3 {
 				font-size: 20px;

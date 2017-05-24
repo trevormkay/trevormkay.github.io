@@ -1,16 +1,13 @@
-$background: #0D0D0D;
+$background: #F8F8F8;
+$background-dark: #F3F3F3;
 $primary: #7B7B7B;
 $highlight: #C669DF;
 
 .thoughts {
 	background: $background;
 	
-	.cover {
-		background: rgba($background,0.8);
-		
-		@supports not (-webkit-backdrop-filter:blur(40px)) {
-			background: $background;
-		}
+	.categories {
+		background: $background-dark;
 	}
 	
 	h1 {
