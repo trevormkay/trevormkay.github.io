@@ -705,20 +705,10 @@ header {
 		svg {
 			margin-left: 10px;
 			transition: 0.3s transform ease;
-			transform: translateX(0px);
 			
 			@media (min-width:$tablet) {
 				position: relative;
 				top: 5px;	
-			}
-		}
-		
-		&:hover {
-			text-decoration: none;
-			
-			svg {
-				transform: translateX(10px);
-				transition: 0.6s transform ease;
 			}
 		}
 	}
@@ -853,8 +843,6 @@ header {
 		
 		svg {
 			margin-left: 10px;
-			transform: translateX(0px);
-			transition: 0.3s transform ease;
 		}
 	}
 	
@@ -863,11 +851,8 @@ header {
 		margin-bottom: 0px;
 	}
 	
-	&:hover {
-		svg {
-			transform: translateX(10px);
-			transition: 0.6s transform ease;
-		}
+	&:hover h3 {
+		text-decoration: underline !important
 	}
 }
 
