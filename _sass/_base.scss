@@ -603,6 +603,8 @@ header {
 	
 	@media (min-width:$desktop) {
 		height: 736px;
+		max-height: 90vh;
+		min-height: 500px;
 	}
 	
 	@media (max-width: 739px) {
