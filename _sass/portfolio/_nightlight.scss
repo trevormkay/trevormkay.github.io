@@ -94,14 +94,6 @@ $highlight: #D7B48D;
 	.phone {
 		background: rgba(black,0.2);
 		
-		.speaker {
-			background: $background;
-		}
-		
-		.home {
-			border: 4px solid $background;
-		}
-		
 		@media (min-width:$phone-landscape) {
 			display: none;
 		}
