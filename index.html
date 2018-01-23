@@ -14,14 +14,6 @@ description: "Interactive Designer from Sydney"
 		{% assign featuredItems = site.portfolio %}
 		{% assign featuredItems = featuredItems | sort: "weight" %}
 		
-		<div class="card toast">
-			<a class="post-link" href="http://www.toast-studio.com/" target="_blank">
-				<div class="border">
-					<img src="../images/portfolio/tiletoast.jpg" srcset="../images/portfolio/tiletoast.jpg, ../images/portfolio/tiletoast@2x.jpg 2x">
-				</div>
-			</a>
-		</div>
-		
 		{% for item in featuredItems %}
 			{% unless item.exclude %}
 				<div class="card {{ item.class }}">
