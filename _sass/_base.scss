@@ -1,5 +1,7 @@
 /* Reset some basic elements */
-body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
     margin: 0px;
     padding: 0;
 }
@@ -34,7 +36,8 @@ body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
 }
 
 h1, h2, h3 {
-	@include font-header;
+	@include dincond;
+	text-transform: uppercase;
 	font-weight: 600;
 }
 
@@ -79,7 +82,8 @@ body.displayed .sitename {
 	}
 	
 	.sitename {
-		@include font-header;
+		@include dincond;
+		text-transform: uppercase;
 		font-size: 2em;
 		display: flex;
 		align-items: center;
@@ -131,7 +135,8 @@ body.displayed .sitename {
 		
 		li {
 			margin-bottom: 20px; 
-			@include font-header;
+			@include dinalt;
+			text-transform: uppercase;
 			font-size: 30px;
 			
 			@media (max-height: 375px) {
@@ -337,14 +342,16 @@ body.displayed .sitename {
 	}
 	
 	h1 {
+		text-transform: uppercase;
 		font-size: 20vw;
-		@include font-header;
+		@include dincond;
 		margin-bottom: -20px;
 	}
 	
 	h2 {
+		text-transform: uppercase;
 		font-size: 8vw;
-		@include font-header;
+		@include dinalt;
 		line-height: 1.2em;
 		
 		span {
@@ -482,7 +489,7 @@ body.displayed .sitename {
 		
 		h2 {
 			text-transform: uppercase;
-			@include font-header;
+			@include dincond;
 			padding: {
 				left: 20px;
 				bottom: 10px;
@@ -554,7 +561,7 @@ body.displayed .sitename {
 }
 
 .type {
-	@include font-header;
+	@include dinalt;
 	text-transform: uppercase;
 	font-size: 15px;
 }
@@ -568,7 +575,8 @@ body.displayed .sitename {
 }
 
 .caption {
-	@include font-header;
+	@include dinalt;
+	text-transform: uppercase;
 	font-size: 15px;
 	margin-top: 10px;
 }
@@ -672,9 +680,10 @@ header {
 	
 	.description {
 		margin: 0px;
-		@include font-header;
+		@include dinalt;
 		font-size: 1.35em;
 		line-height: 27px;
+		text-transform: uppercase;
 		
 		@media (min-width:$tablet) {
 			font-size: 1.75em;
@@ -684,7 +693,8 @@ header {
 	
 	.visit-link {
 		margin-top: 30px;
-		@include font-header;
+		text-transform: uppercase;
+		@include dinalt;
 		font-size: 20px;
 		display: flex;
 		align-items: center;
@@ -721,7 +731,7 @@ header {
 		li {
 			margin: 0px 44px; 
 			text-transform: uppercase;
-			@include font-header;
+			@include dinalt;
 			font-size: 20px;
 		}
 		
@@ -762,14 +772,14 @@ header {
 	
 	.description {
 		font-size: 28px;
-		@include font-body;
+		@include dinpro;
 		line-height: 31px;
 	}
 	
 	p {
 		font-size: 16px;
 		line-height: 22px;
-		@include font-body;
+		@include dinpro;
 		
 		@media (min-width:$tablet) {
 			font-size: 22px;
@@ -827,7 +837,7 @@ header {
 	
 	h3 {
 		font-size: 20px;
-		@include font-header;
+		@include dinalt;
 		display: flex;
 		align-items: center;
 		margin-bottom: 0px;
@@ -857,13 +867,13 @@ header {
 	}
 	
 	h2 {
-		@include font-header;
+		@include dinalt;
 		font-size: 33px;
 		margin-bottom: 0px;
 	}
 	
 	.description {
-		@include font-body;
+		@include dinpro;
 		font-size: 18px;
 	}
 }
@@ -907,7 +917,7 @@ header {
 	
 	p, li {
 		font-size: 16px;
-		@include font-body;
+		@include dinpro;
 		line-height: 22px;
 		margin-bottom: 22px;
 		
