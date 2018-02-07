@@ -51,16 +51,16 @@ $desktop-lrg: 1800px;
     }
 }
 
-@mixin dinpro {
-	font-family: 'DIN Pro', helvetica, arial, sans-serif;
+@mixin font-body {
+	font-family: 'Circular Std', helvetica, arial, sans-serif;
+	font-weight: normal;
+	border: 1px solid green;
 }
 
-@mixin dincond {
-	font-family: 'DIN Pro Cond', helvetica, arial, sans-serif;
-}
-
-@mixin dinalt {
-	font-family: 'DIN Alternate', helvetica, arial, sans-serif;
+@mixin font-header {
+	font-family: 'Circular Std', helvetica, arial, sans-serif;
+	font-weight: bold;
+	border: 1px solid red;
 }
 
 @mixin clearfix {
@@ -82,7 +82,6 @@ $desktop-lrg: 1800px;
         "downloads",
         "resume",
         "404",
-        "apps",
         "../_sass/portfolio/eastland",
         "../_sass/portfolio/retailerportal",
         "../_sass/portfolio/neutron",
