@@ -48,7 +48,7 @@ $highlight: #F78A60;
 	}
 	
 	p {
-		@include font-book;
+		@include font-body;
 		font-size: 16px;
 		line-height: 24px;
 	}

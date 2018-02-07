@@ -762,14 +762,14 @@ header {
 	
 	.description {
 		font-size: 28px;
-		@include font-book;
+		@include font-body;
 		line-height: 31px;
 	}
 	
 	p {
 		font-size: 16px;
 		line-height: 22px;
-		@include font-book;
+		@include font-body;
 		
 		@media (min-width:$tablet) {
 			font-size: 22px;
@@ -863,7 +863,7 @@ header {
 	}
 	
 	.description {
-		@include font-book;
+		@include font-body;
 		font-size: 18px;
 	}
 }
@@ -907,7 +907,7 @@ header {
 	
 	p, li {
 		font-size: 16px;
-		@include font-book;
+		@include font-body;
 		line-height: 22px;
 		margin-bottom: 22px;
 		
