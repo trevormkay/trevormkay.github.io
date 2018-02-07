@@ -52,15 +52,18 @@ $desktop-lrg: 1800px;
 }
 
 @mixin dinpro {
-	font-family: 'DIN Pro', helvetica, arial, sans-serif;
+	font-family: 'Circular Std Book', helvetica, arial, sans-serif;
+	border: 1px solid red;
 }
 
 @mixin dincond {
-	font-family: 'DIN Pro Cond', helvetica, arial, sans-serif;
+	font-family: 'Circular Std', helvetica, arial, sans-serif;
+	border: 1px solid green;
 }
 
 @mixin dinalt {
-	font-family: 'DIN Alternate', helvetica, arial, sans-serif;
+	font-family: 'Circular Std', helvetica, arial, sans-serif;
+	border: 1px solid blue;
 }
 
 @mixin clearfix {
