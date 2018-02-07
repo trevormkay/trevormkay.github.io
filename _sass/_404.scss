@@ -8,7 +8,7 @@ $highlight: #BABCEA;
 	
 	h1 {
 		color: $primary;
-		@include dinalt;
+		@include font-header;
 		text-transform: none;
 		font-size: 31px;
 		line-height: 39px;
@@ -31,7 +31,7 @@ $highlight: #BABCEA;
 	
 	a {
 		color: $highlight;
-		@include dinalt;
+		@include font-header;
 		text-transform: uppercase;
 		font-size: 20px;
 		margin: 0px auto;

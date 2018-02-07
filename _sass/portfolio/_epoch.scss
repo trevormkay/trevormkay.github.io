@@ -19,8 +19,7 @@ $highlight: #FFD56F;
 	}
 	
 	.quote {
-		text-transform: uppercase;
-		@include dinalt;
+		@include font-header;
 		font-size: 20px;
 		position: relative;
 		margin-left: 50px;

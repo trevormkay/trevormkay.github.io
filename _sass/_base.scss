@@ -36,7 +36,7 @@ dl, dd, ol, ul, figure {
 }
 
 h1, h2, h3 {
-	@include dincond;
+	@include font-header;
 	font-weight: 600;
 }
 
@@ -81,7 +81,7 @@ body.displayed .sitename {
 	}
 	
 	.sitename {
-		@include dincond;
+		@include font-header;
 		font-size: 2em;
 		display: flex;
 		align-items: center;
@@ -133,7 +133,7 @@ body.displayed .sitename {
 		
 		li {
 			margin-bottom: 20px; 
-			@include dinalt;
+			@include font-header;
 			font-size: 30px;
 			
 			@media (max-height: 375px) {
@@ -340,13 +340,13 @@ body.displayed .sitename {
 	
 	h1 {
 		font-size: 20vw;
-		@include dincond;
+		@include font-header;
 		margin-bottom: -20px;
 	}
 	
 	h2 {
 		font-size: 8vw;
-		@include dinalt;
+		@include font-header;
 		line-height: 1.2em;
 		
 		span {
@@ -483,7 +483,7 @@ body.displayed .sitename {
 		}
 		
 		h2 {
-			@include dincond;
+			@include font-header;
 			padding: {
 				left: 20px;
 				bottom: 10px;
@@ -555,7 +555,7 @@ body.displayed .sitename {
 }
 
 .type {
-	@include dinalt;
+	@include font-header;
 	text-transform: uppercase;
 	font-size: 15px;
 }
@@ -569,7 +569,7 @@ body.displayed .sitename {
 }
 
 .caption {
-	@include dinalt;
+	@include font-header;
 	font-size: 15px;
 	margin-top: 10px;
 }
@@ -673,7 +673,7 @@ header {
 	
 	.description {
 		margin: 0px;
-		@include dinalt;
+		@include font-header;
 		font-size: 1.35em;
 		line-height: 27px;
 		
@@ -685,7 +685,7 @@ header {
 	
 	.visit-link {
 		margin-top: 30px;
-		@include dinalt;
+		@include font-header;
 		font-size: 20px;
 		display: flex;
 		align-items: center;
@@ -721,7 +721,7 @@ header {
 		
 		li {
 			margin: 0px 44px; 
-			@include dinalt;
+			@include font-header;
 			font-size: 20px;
 		}
 		
@@ -762,14 +762,14 @@ header {
 	
 	.description {
 		font-size: 28px;
-		@include dinpro;
+		@include font-book;
 		line-height: 31px;
 	}
 	
 	p {
 		font-size: 16px;
 		line-height: 22px;
-		@include dinpro;
+		@include font-book;
 		
 		@media (min-width:$tablet) {
 			font-size: 22px;
@@ -827,7 +827,7 @@ header {
 	
 	h3 {
 		font-size: 20px;
-		@include dinalt;
+		@include font-header;
 		display: flex;
 		align-items: center;
 		margin-bottom: 0px;
@@ -857,13 +857,13 @@ header {
 	}
 	
 	h2 {
-		@include dinalt;
+		@include font-header;
 		font-size: 33px;
 		margin-bottom: 0px;
 	}
 	
 	.description {
-		@include dinpro;
+		@include font-book;
 		font-size: 18px;
 	}
 }
@@ -907,7 +907,7 @@ header {
 	
 	p, li {
 		font-size: 16px;
-		@include dinpro;
+		@include font-book;
 		line-height: 22px;
 		margin-bottom: 22px;
 		

@@ -51,19 +51,12 @@ $desktop-lrg: 1800px;
     }
 }
 
-@mixin dinpro {
+@mixin font-book {
 	font-family: 'Circular Std Book', helvetica, arial, sans-serif;
-	border: 1px solid red;
 }
 
-@mixin dincond {
+@mixin font-header {
 	font-family: 'Circular Std', helvetica, arial, sans-serif;
-	border: 1px solid green;
-}
-
-@mixin dinalt {
-	font-family: 'Circular Std', helvetica, arial, sans-serif;
-	border: 1px solid blue;
 }
 
 @mixin clearfix {
@@ -108,9 +101,5 @@ $desktop-lrg: 1800px;
         "../_sass/downloads/motion",
         "../_sass/downloads/shake",
         "../_sass/downloads/soundtrack",
-        "../_sass/downloads/validator",
-        "../_sass/thoughts/appnet",
-        "../_sass/thoughts/fireworks",
-        "../_sass/thoughts/microsoft",
-        "../_sass/thoughts/skeuo"
+        "../_sass/downloads/validator"
 ;
