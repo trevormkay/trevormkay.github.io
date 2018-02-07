@@ -62,8 +62,7 @@ body.displayed .sitename {
 }
 
 .main-nav {
-	width: 100%;
-	padding: 20px;
+	width: calc(100% - 60px);
 	margin: 0px auto;
 	height: 80px;
 	display: flex;
@@ -74,11 +73,7 @@ body.displayed .sitename {
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	border-bottom: 1px solid black;
-	
-	@media (min-width: $tablet) {
-		padding: 20px;
-	}
+	border-bottom: 2px solid black;
 	
 	.sitename {
 		@include font-header;
@@ -156,7 +151,6 @@ body.displayed .sitename {
 			width: auto;
 			top: 0px;
 			opacity: 1;
-			margin-right: 20px;
 			background: none !important;
 			box-shadow: none;
 			padding: 0px;
@@ -753,9 +747,10 @@ header {
 	h2 {
 		font-size: 43px;
 		line-height: 44px;
+		margin-bottom: 0px;
 		
 		@media (min-width:$tablet) {
-			font-size: 53px;
+			font-size: 40px;
 			line-height: 64px;
 		}
 	}
@@ -777,8 +772,8 @@ header {
 		}
 		
 		@media (min-width:$desktop) {
-			font-size: 28px;
-			line-height: 42px;
+			font-size: 23px;
+			line-height: 34px;
 			padding-bottom: 40px;
 		}
 	}
