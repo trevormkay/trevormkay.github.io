@@ -7,25 +7,80 @@ theme: "#F8F8F8"
 description: "Interactive Designer from Sydney"
 ---
 
-<div class="constrained extra">
+<div class="constrained">
 	
-	{% include name.html %}
-	<section class="card-list">
-		{% assign featuredItems = site.portfolio %}
-		{% assign featuredItems = featuredItems | sort: "weight" %}
-		
-		{% for item in featuredItems %}
-			{% unless item.exclude %}
-				<div class="card {{ item.class }}">
-					<a class="post-link" href="../portfolio/{{ item.class }}.html">
-						<div class="border">
-							<img src="../images/portfolio/tile{{ item.class }}.jpg" srcset="../images/portfolio/tile{{ item.class }}.jpg, ../images/portfolio/tile{{ item.class }}@2x.jpg 2x">
-						</div>
-					</a>
-				</div>
-			{% endunless %}
-		{% endfor %}
-	</section>
+	
+		<div class="tile eastland">
+			<a href="/portfolio/eastland.html">
+				<h2>Eastland</h2>
+				<h3>Shopping centre app</h3>
+			</a>
+		</div>
+	
+
+	
+		<div class="tile simplescales">
+			<a href="/portfolio/simplescales.html">
+				<h2>Simple Scales</h2>
+				<h3>Weight tracking app</h3>
+			</a>
+		</div>
+
+	
+		<div class="tile nightlight">
+			<a href="/portfolio/nightlight.html">
+				<h2>Nightlight</h2>
+				<h3>Chatroom</h3>
+			</a>
+		</div>
+
+	
+		<div class="tile neutron">
+			<a href="/portfolio/neutron.html">
+				<h2>Neutron</h2>
+				<h3>Branding</h3>
+			</a>
+		</div>
+
+	
+		<div class="tile mediaportal">
+			<a href="/portfolio/mediaportal.html">
+				<h2>Mediaportal</h2>
+				<h3>Media intelligence service</h3>
+			</a>
+		</div>
+
+	
+		<div class="tile epoch">
+			<a href="/portfolio/epoch.html">
+				<h2>Epoch</h2>
+				<h3>Countdown app</h3>
+			</a>
+		</div>
+
+	
+		<div class="tile aptapro">
+			<a href="/portfolio/aptapro.html">
+				<h2>Aptaprofessional</h2>
+				<h3>Infant care webapp</h3>
+			</a>
+		</div>
+
+	
+		<div class="tile karinourish">
+			<a href="/portfolio/karinourish.html">
+				<h2>Karinourish</h2>
+				<h3>Brand website</h3>
+			</a>
+		</div>
+
+	
+		<div class="tile retailerportal">
+			<a href="/portfolio/retailerportal.html">
+				<h2>Retailer Portal</h2>
+				<h3>Shopping centre CMS</h3>
+			</a>
+		</div>
 
 
 </div>

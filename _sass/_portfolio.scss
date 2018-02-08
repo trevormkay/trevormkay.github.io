@@ -51,4 +51,71 @@ $highlight: #FD9F3C;
 			background: $background;
 		}
 	}
+	
+	.constrained {
+		padding-top: 160px;
+		padding-bottom: 160px;
+		width: 1763px;
+		display: grid;
+		grid-gap: 40px;
+		grid-template-columns: 561px 561px 561px;
+		grid-template-rows: 415px 415px 415px 415px 415px;
+		
+		grid-template-areas: 	"eastland eastland simplescales"
+								"nightlight neutron simplescales"
+								"nightlight mediaportal mediaportal"
+								"epoch aptapro karinourish"
+								"retailerportal retailerportal karinourish";										
+		
+		.tile {
+			border-radius: 20px;
+			padding: 30px;
+			border: 1px solid rgba(0,0,0,0.2);
+			
+			h2 {
+				font-size: 35px;
+				margin-bottom: -5px;
+			}
+			
+			h3 {
+				font-size: 15px;
+			}
+		}
+	}
+	
+	.eastland {
+		grid-area: eastland;
+	}
+	
+	.simplescales {
+		grid-area: simplescales;
+	}
+	
+	.nightlight {
+		grid-area: nightlight;
+	}
+	
+	.neutron {
+		grid-area: neutron;
+	}
+	
+	.mediaportal {
+		grid-area: mediaportal;
+	}
+	
+	.epoch {
+		grid-area: epoch;
+	}
+	
+	.aptapro {
+		grid-area: aptapro;
+	}
+	
+	.karinourish {
+		grid-area: karinourish;
+	}
+	
+	.retailerportal {
+		grid-area: retailerportal;
+	}
 }
