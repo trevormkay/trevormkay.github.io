@@ -72,11 +72,27 @@ $highlight: #FD9F3C;
 		.tile {
 			border-radius: 20px;
 			padding: 30px;
-			border: 1px solid rgba(0,0,0,0.2);
+			position: relative;
+			overflow: hidden;
+			transition: 0.5s transform ease;
+			
+			img {
+				transform: scale(1);
+			}
+			
+			&:hover img {
+				transform: scale(1.1);
+				transition: 0.8s transform ease;
+			}
+			
+			&:hover a {
+				text-decoration: none !important;
+			}
 			
 			h2 {
 				font-size: 35px;
 				margin-bottom: -5px;
+				text-decoration: none !important;
 			}
 			
 			h3 {
@@ -87,6 +103,13 @@ $highlight: #FD9F3C;
 	
 	.eastland {
 		grid-area: eastland;
+		background: #F2F0EE;
+		
+		img {
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+		}
 	}
 	
 	.simplescales {
