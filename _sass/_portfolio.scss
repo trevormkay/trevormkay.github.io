@@ -25,7 +25,9 @@ $highlight: #FD9F3C;
 	}
 	
 	.main-nav {
-		border-color: rgba($primary, 0.2);
+		border: none;
+		width: 1763px;
+		margin-top: 60px;
 		
 		.sitename span {
 			display: none;
