@@ -214,6 +214,14 @@ $highlight: #FD9F3C;
 			bottom: 0px;
 			right: 0px;
 		}
+		
+		.countdown {
+			z-index: 10;
+			position: absolute;
+			transform: rotate(23deg) scale(1.35) skew(-40deg);
+			bottom: 112px;
+			right: 83px;
+		}
 	}
 	
 	.aptapro {
