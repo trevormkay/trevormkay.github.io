@@ -143,10 +143,10 @@ $highlight: #FD9F3C;
 									"retailerportal retailerportal";										
 		}
 		
-		@media (min-width:$desktop) {
+		@media (min-width:1803px) {
 			width: 1763px;
 			grid-gap: 40px;
-			grid-template-columns: 561px 561px 561px;
+			grid-template-columns: 1fr 1fr 1fr;
 			grid-template-rows: 415px 415px 415px 415px 415px;
 			grid-template-areas: 	"eastland eastland simplescales"
 									"nightlight neutron simplescales"
@@ -184,7 +184,7 @@ $highlight: #FD9F3C;
 	.neutron {
 		grid-area: neutron;
 		background: url(../images/portfolio/background-neutron.png);
-		background-size: contain;
+		background-size: cover;
 		
 		img {
 			position: absolute;
@@ -207,7 +207,7 @@ $highlight: #FD9F3C;
 	.epoch {
 		grid-area: epoch;
 		background: url(../images/portfolio/background-epoch.png);
-		background-size: contain;
+		background-size: cover;
 		
 		.promo {
 			position: absolute;
@@ -228,7 +228,7 @@ $highlight: #FD9F3C;
 		grid-area: aptapro;
 		background: #F7F9FB;
 		background: url(../images/portfolio/background-aptapro.png);
-		background-size: contain;
+		background-size: cover;
 		
 		img {
 			position: absolute;
@@ -251,7 +251,7 @@ $highlight: #FD9F3C;
 	.retailerportal {
 		grid-area: retailerportal;
 		background: url(../images/portfolio/background-retailerportal.png);
-		background-size: contain;
+		background-size: cover;
 		
 		img {
 			position: absolute;
