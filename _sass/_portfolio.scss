@@ -57,27 +57,32 @@ $highlight: #FD9F3C;
 	.constrained {
 		padding-top: 160px;
 		padding-bottom: 160px;
-		width: 1763px;
+		width: calc(100% - 20px);
 		display: grid;
-		grid-gap: 40px;
-		grid-template-columns: 561px 561px 561px;
-		grid-template-rows: 415px 415px 415px 415px 415px;
-		
-		grid-template-areas: 	"eastland eastland simplescales"
-								"nightlight neutron simplescales"
-								"nightlight mediaportal mediaportal"
-								"epoch aptapro karinourish"
-								"retailerportal retailerportal karinourish";										
+		grid-gap: 10px;
+		grid-template-columns: 1fr;
+		grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+		grid-template-areas: 	"eastland"
+								"simplescales"
+								"neutron"
+								"nightlight"
+								"epoch"
+								"mediaportal"
+								"aptapro"
+								"karinourish"
+								"retailerportal";										
 		
 		.tile {
-			border-radius: 20px;
-			padding: 30px;
+			border-radius: 10px;
+			padding: 15px;
 			position: relative;
 			overflow: hidden;
-			transition: 0.5s transform ease;
+			-webkit-mask-image: -webkit-radial-gradient(white, black);
 			
 			img {
 				transform: scale(1);
+				z-index: 1;
+				transition: 0.5s transform ease;
 			}
 			
 			&:hover img {
@@ -90,14 +95,64 @@ $highlight: #FD9F3C;
 			}
 			
 			h2 {
-				font-size: 35px;
+				font-size: 22px;
 				margin-bottom: -5px;
-				text-decoration: none !important;
+				z-index: 2;
 			}
 			
 			h3 {
-				font-size: 15px;
+				font-size: 13px;
+				z-index: 2;
 			}
+			
+			@media (min-width:$tablet) {
+				padding: 20px;
+				
+				h2 {
+					font-size: 30px;
+					margin-bottom: -5px;
+				}
+			}
+			
+			@media (min-width:$desktop) {
+				border-radius: 20px;
+				padding: 15px 30px;
+				
+				h2 {
+					font-size: 35px;
+					margin-bottom: -5px;
+				}
+				
+				h3 {
+					font-size: 15px;
+				}
+			}
+		}
+		
+		@media (min-width:$tablet) {
+			width: calc(100% - 40px);
+			grid-gap: 20px;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
+			grid-template-areas: 	"eastland eastland"
+									"simplescales neutron"
+									"simplescales nightlight"
+									"epoch nightlight"
+									"mediaportal mediaportal"
+									"aptapro karinourish"
+									"retailerportal retailerportal";										
+		}
+		
+		@media (min-width:$desktop) {
+			width: 1763px;
+			grid-gap: 40px;
+			grid-template-columns: 561px 561px 561px;
+			grid-template-rows: 415px 415px 415px 415px 415px;
+			grid-template-areas: 	"eastland eastland simplescales"
+									"nightlight neutron simplescales"
+									"nightlight mediaportal mediaportal"
+									"epoch aptapro karinourish"
+									"retailerportal retailerportal karinourish";										
 		}
 	}
 	
@@ -114,6 +169,12 @@ $highlight: #FD9F3C;
 	
 	.simplescales {
 		grid-area: simplescales;
+		
+		img {
+			position: absolute;
+			bottom: 20px;
+			right: 30px;
+		}
 	}
 	
 	.nightlight {
@@ -122,25 +183,72 @@ $highlight: #FD9F3C;
 	
 	.neutron {
 		grid-area: neutron;
+		background: url(../images/portfolio/background-neutron.png);
+		background-size: contain;
+		
+		img {
+			position: absolute;
+			bottom: 55px;
+			right: 73px;
+		}
 	}
 	
 	.mediaportal {
 		grid-area: mediaportal;
+		background: #EDF0F0;
+		
+		img {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+		}
 	}
 	
 	.epoch {
 		grid-area: epoch;
+		background: url(../images/portfolio/background-epoch.png);
+		background-size: contain;
+		
+		img {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+		}
 	}
 	
 	.aptapro {
 		grid-area: aptapro;
+		background: #F7F9FB;
+		background: url(../images/portfolio/background-aptapro.png);
+		background-size: contain;
+		
+		img {
+			position: absolute;
+			bottom: 35px;
+			right: 10px;
+		}
 	}
 	
 	.karinourish {
 		grid-area: karinourish;
+		background: #F3EDE0;
+		
+		img {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+		}
 	}
 	
 	.retailerportal {
 		grid-area: retailerportal;
+		background: url(../images/portfolio/background-retailerportal.png);
+		background-size: contain;
+		
+		img {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+		}
 	}
 }
