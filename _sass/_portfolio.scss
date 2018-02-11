@@ -242,7 +242,7 @@ $highlight: #FD9F3C;
 			}
 			
 			@media (min-width:$desktop-lrg) {
-				bottom: -80px;
+				bottom: -40px;
 				left: 30px;
 			}
 			
@@ -259,6 +259,11 @@ $highlight: #FD9F3C;
 			
 			@media (min-width:$tablet) {
 				transform: rotate(23deg) scale(1.35) skew(-40deg);
+				bottom: 195px;
+				left: 213px;
+			}
+			
+			@media (min-width:$desktop-lrg) {
 				bottom: 195px;
 				left: 213px;
 			}
