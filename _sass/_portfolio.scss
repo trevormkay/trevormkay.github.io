@@ -80,14 +80,14 @@ $highlight: #FD9F3C;
 			-webkit-mask-image: -webkit-radial-gradient(white, black);
 			
 			.promo {
-				transform: scale(1);
+				//transform: scale(1);
 				z-index: 1;
 				transition: 0.5s transform ease;
 			}
 			
 			&:hover .promo {
-				transform: scale(1.1);
 				transition: 0.8s transform ease;
+				transform: scale(1.1);
 			}
 			
 			&:hover a {
@@ -203,10 +203,27 @@ $highlight: #FD9F3C;
 		grid-area: mediaportal;
 		background: #EDF0F0;
 		
-		img {
+		.promo {
 			position: absolute;
-			bottom: 0px;
-			right: 0px;
+			top: 30px;
+			left: 50px;
+		}
+		
+		
+		@media (min-width:$tablet) {
+			.promo {
+				width: 837px;
+				top: 30px;
+				left: 100px;
+			}
+		}
+		
+		@media (min-width:$desktop-lrg) {
+			.promo {
+				width: auto;
+				top: 30px;
+				left: 50px;
+			}
 		}
 	}
 	
