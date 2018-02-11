@@ -209,7 +209,6 @@ $highlight: #FD9F3C;
 			left: 50px;
 		}
 		
-		
 		@media (min-width:$tablet) {
 			.promo {
 				width: 837px;
@@ -295,10 +294,26 @@ $highlight: #FD9F3C;
 		background: url(../images/portfolio/background-retailerportal.png);
 		background-size: cover;
 		
-		img {
+		.promo {
 			position: absolute;
-			bottom: 0px;
-			right: 0px;
+			top: 30px;
+			left: 60px;
+		}
+		
+		@media (min-width:$tablet) {
+			.promo {
+				width: 837px;
+				top: 30px;
+				left: 100px;
+			}
+		}
+		
+		@media (min-width:$desktop-lrg) {
+			.promo {
+				width: auto;
+				top: 30px;
+				left: 60px;
+			}
 		}
 	}
 }
