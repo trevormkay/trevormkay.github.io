@@ -74,7 +74,7 @@ $highlight: #FD9F3C;
 		
 		.tile {
 			border-radius: 10px;
-			padding: 15px;
+			padding: 10px 15px;
 			position: relative;
 			overflow: hidden;
 			-webkit-mask-image: -webkit-radial-gradient(white, black);
@@ -106,7 +106,7 @@ $highlight: #FD9F3C;
 			}
 			
 			@media (min-width:$tablet) {
-				padding: 20px;
+				padding: 10px 20px;
 				
 				h2 {
 					font-size: 30px;
@@ -114,7 +114,7 @@ $highlight: #FD9F3C;
 				}
 			}
 			
-			@media (min-width:$desktop) {
+			@media (min-width:$desktop-lrg) {
 				border-radius: 20px;
 				padding: 15px 30px;
 				
@@ -129,12 +129,12 @@ $highlight: #FD9F3C;
 			}
 		}
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$phone-landscape) {
 			width: calc(100% - 40px);
 			max-width: 1000px;
 			grid-gap: 20px;
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
+			grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
 			grid-template-areas: 	"eastland eastland"
 									"simplescales neutron"
 									"simplescales nightlight"
@@ -144,7 +144,11 @@ $highlight: #FD9F3C;
 									"retailerportal retailerportal";										
 		}
 		
-		@media (min-width:1803px) {
+		@media (min-width:$tablet) {
+			grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
+		}
+		
+		@media (min-width:$desktop-lrg) {
 			width: 1763px;
 			max-width: 1763px;
 			grid-gap: 40px;
@@ -213,16 +217,35 @@ $highlight: #FD9F3C;
 		
 		.promo {
 			position: absolute;
-			bottom: -10px;
-			right: 0px;
+			bottom: -80px;
+			left: 30px;
+			
+			@media (min-width:$tablet) {
+				bottom: -120px;
+				left: 20px;
+			}
+			
+			@media (min-width:$desktop-lrg) {
+				bottom: -80px;
+				left: 30px;
+			}
+			
+			
 		}
 		
 		.countdown {
 			z-index: 10;
 			position: absolute;
-			transform: rotate(23deg) scale(1.35) skew(-40deg);
-			bottom: 120px;
-			right: 83px;
+			transform: rotate(23deg) scale(0.7) skew(-40deg);
+			bottom: 95px;
+			left: 60px;
+			margin: 0px;
+			
+			@media (min-width:$tablet) {
+				transform: rotate(23deg) scale(1.35) skew(-40deg);
+				bottom: 195px;
+				left: 213px;
+			}
 		}
 	}
 	
