@@ -131,6 +131,7 @@ $highlight: #FD9F3C;
 		
 		@media (min-width:$tablet) {
 			width: calc(100% - 40px);
+			max-width: 1000px;
 			grid-gap: 20px;
 			grid-template-columns: 1fr 1fr;
 			grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
@@ -145,6 +146,7 @@ $highlight: #FD9F3C;
 		
 		@media (min-width:1803px) {
 			width: 1763px;
+			max-width: 1763px;
 			grid-gap: 40px;
 			grid-template-columns: 1fr 1fr 1fr;
 			grid-template-rows: 415px 415px 415px 415px 415px;
@@ -162,8 +164,8 @@ $highlight: #FD9F3C;
 		
 		img {
 			position: absolute;
-			bottom: 0px;
-			left: 0px;
+			top: 50px;
+			right: 20px;
 		}
 	}
 	
