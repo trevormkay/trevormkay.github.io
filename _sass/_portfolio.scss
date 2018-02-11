@@ -94,6 +94,11 @@ $highlight: #FD9F3C;
 				text-decoration: none !important;
 			}
 			
+			&:active {
+				transform: scale(0.95);
+				transition: 0.2s transform ease;
+			}
+			
 			h2 {
 				font-size: 22px;
 				margin-bottom: -5px;
