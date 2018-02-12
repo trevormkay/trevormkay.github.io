@@ -189,6 +189,7 @@ $highlight: #FD9F3C;
 		grid-area: simplescales;
 		
 		.promo {
+/*
 			position: absolute;
 			top: -20px;
 			left: 120px;
@@ -196,11 +197,34 @@ $highlight: #FD9F3C;
 			@media (min-width:568px) {
 				left: 220px;
 			}
+*/
 			
+/*
 			@media (min-width:$tablet) {
 				width: 880px;
 				top: 30px;
 				left: 20px;
+			}
+*/
+
+			@media (min-width:$phone-landscape) {
+				width: 160px;
+				margin-top: 10px;
+			}
+
+			@media (min-width:$tablet) {
+				width: 310px;
+				margin-top: 40px;
+			}
+
+			@media (min-width:$desktop) {
+				width: 350px;
+				margin-top: 20px;
+			}
+
+			@media (min-width:$desktop-lrg) {
+				margin-top: 50px;
+				width: auto;
 			}
 		}
 	}
@@ -327,14 +351,6 @@ $highlight: #FD9F3C;
 				margin-left: 35px;
 			}
 		}
-		
-/*
-		img {
-			position: absoacalute;
-			bottom: 35px;
-			right: 10px;
-		}
-*/
 	}
 	
 	.karinourish {
