@@ -61,7 +61,7 @@ $highlight: #FD9F3C;
 		display: grid;
 		grid-gap: 10px;
 		grid-template-columns: 1fr;
-		grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+		grid-template-rows: repeat(9, 150px);
 		grid-template-areas: 	"eastland"
 								"simplescales"
 								"neutron"
@@ -139,7 +139,7 @@ $highlight: #FD9F3C;
 			max-width: 1200px;
 			grid-gap: 20px;
 			grid-template-columns: 1fr 1fr;
-			grid-template-rows: 150px 150px 150px 150px 150px 150px 150px;
+			grid-template-rows: repeat(7, 150px);
 			grid-template-areas: 	"eastland eastland"
 									"simplescales neutron"
 									"simplescales nightlight"
@@ -150,7 +150,7 @@ $highlight: #FD9F3C;
 		}
 		
 		@media (min-width:$tablet) {
-			grid-template-rows: 300px 300px 300px 300px 300px 300px 300px;
+			grid-template-rows: repeat(7, 300px);
 		}
 		
 		@media (min-width:$desktop-lrg) {
@@ -158,7 +158,7 @@ $highlight: #FD9F3C;
 			max-width: 1763px;
 			grid-gap: 40px;
 			grid-template-columns: 1fr 1fr 1fr;
-			grid-template-rows: 415px 415px 415px 415px 415px;
+			grid-template-rows: repeat(5, 415px);
 			grid-template-areas: 	"eastland eastland simplescales"
 									"nightlight neutron simplescales"
 									"nightlight mediaportal mediaportal"
@@ -210,24 +210,40 @@ $highlight: #FD9F3C;
 		
 		.promo {
 			position: absolute;
+			width: 420px;
 			top: 30px;
 			left: 50px;
-		}
-		
-		@media (min-width:$tablet) {
-			.promo {
-				width: 837px;
+			
+			@media (min-width:568px) {
+				width: 510px;
+				top: -30px;
+				left: 160px;
+			}
+			
+			@media (min-width:$tablet) {
+				width: 880px;
 				top: 30px;
+				left: 20px;
+			}
+			
+			@media (min-width:$tablet-landscape) {
+				left: 100px;
+				top: -40px;
+			}
+			
+			@media (min-width:$desktop) {
+				width: 1060px;
+				top: -80px;
 				left: 100px;
 			}
-		}
-		
-		@media (min-width:$desktop-lrg) {
-			.promo {
+			
+			@media (min-width:$desktop-lrg) {
 				width: auto;
 				top: 30px;
 				left: 50px;
 			}
+			
+			
 		}
 	}
 	
