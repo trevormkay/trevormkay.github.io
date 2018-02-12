@@ -24,7 +24,13 @@ description: "Interactive Designer from Sydney"
 			<a href="/portfolio/simplescales.html">
 				<h2>Simple Scales</h2>
 				<h3>Weight tracking app</h3>
-				<img src="../images/portfolio/promo-simplescales.png" srcset="../images/portfolio/promo-simplescales.png, ../images/portfolio/promo-simplescales@2x.png 2x" class="promo">
+<!-- 				<img src="../images/portfolio/promo-simplescales.png" srcset="../images/portfolio/promo-simplescales.png, ../images/portfolio/promo-simplescales@2x.png 2x" class="promo"> -->
+			
+				<picture>
+					<source media="(min-width: 569px)" srcset="./images/portfolio/promo-simplescales.png, ./images/portfolio/promo-simplescales@2x.png 2x">
+					<source media="(min-width: 0px)" srcset="./images/portfolio/promo-simplescales-phone.png, ./images/portfolio/promo-simplescales-phone@2x.png 2x">
+					<img src="./images/portfolio/promo-simplescales-phone.png" class="promo">
+				</picture>		
 			</a>
 		</div>
 

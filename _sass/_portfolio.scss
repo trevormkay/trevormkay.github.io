@@ -181,10 +181,14 @@ $highlight: #FD9F3C;
 	.simplescales {
 		grid-area: simplescales;
 		
-		img {
+		.promo {
 			position: absolute;
-			bottom: 20px;
-			right: 30px;
+			top: -20px;
+			left: 120px;
+			
+			@media (min-width:568px) {
+				left: 220px;
+			}
 		}
 	}
 	
@@ -354,23 +358,5 @@ $highlight: #FD9F3C;
 				left: 60px;
 			}
 		}
-		
-/*
-		@media (min-width:$tablet) {
-			.promo {
-				width: 837px;
-				top: 30px;
-				left: 100px;
-			}
-		}
-		
-		@media (min-width:$desktop-lrg) {
-			.promo {
-				width: auto;
-				top: 30px;
-				left: 60px;
-			}
-		}
-*/
 	}
 }
