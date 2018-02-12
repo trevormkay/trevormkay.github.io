@@ -243,7 +243,6 @@ $highlight: #FD9F3C;
 				left: 50px;
 			}
 			
-			
 		}
 	}
 	
@@ -322,10 +321,41 @@ $highlight: #FD9F3C;
 		
 		.promo {
 			position: absolute;
+			width: 420px;
 			top: 30px;
 			left: 60px;
+			
+			@media (min-width:568px) {
+				width: 510px;
+				top: -10px;
+				left: 150px;
+			}
+			
+			@media (min-width:$tablet) {
+				width: 880px;
+				top: 30px;
+				left: 20px;
+			}
+			
+			@media (min-width:$tablet-landscape) {
+				left: 150px;
+				top: 30px;
+			}
+			
+			@media (min-width:$desktop) {
+				width: 1060px;
+				top: -40px;
+				left: 170px;
+			}
+			
+			@media (min-width:$desktop-lrg) {
+				width: auto;
+				top: 30px;
+				left: 60px;
+			}
 		}
 		
+/*
 		@media (min-width:$tablet) {
 			.promo {
 				width: 837px;
@@ -341,5 +371,6 @@ $highlight: #FD9F3C;
 				left: 60px;
 			}
 		}
+*/
 	}
 }
