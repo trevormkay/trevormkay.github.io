@@ -138,7 +138,7 @@ $highlight: #FD9F3C;
 			width: calc(100% - 40px);
 			max-width: 1200px;
 			grid-gap: 20px;
-			grid-template-columns: 1fr 1fr;
+			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(7, 150px);
 			grid-template-areas: 	"eastland eastland"
 									"simplescales neutron"
@@ -157,7 +157,7 @@ $highlight: #FD9F3C;
 			width: 1763px;
 			max-width: 1763px;
 			grid-gap: 40px;
-			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(5, 415px);
 			grid-template-areas: 	"eastland eastland simplescales"
 									"nightlight neutron simplescales"
