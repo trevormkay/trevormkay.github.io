@@ -110,6 +110,13 @@ $highlight: #FD9F3C;
 				z-index: 2;
 			}
 			
+			.flexwrapper {
+				width: 100%;
+				height: auto;
+				display: flex;
+				justify-content: center;
+			}
+			
 			@media (min-width:$tablet) {
 				padding: 10px 20px;
 				
@@ -188,6 +195,12 @@ $highlight: #FD9F3C;
 			
 			@media (min-width:568px) {
 				left: 220px;
+			}
+			
+			@media (min-width:$tablet) {
+				width: 880px;
+				top: 30px;
+				left: 20px;
 			}
 		}
 	}
@@ -300,11 +313,28 @@ $highlight: #FD9F3C;
 		background: url(../images/portfolio/background-aptapro.png);
 		background-size: cover;
 		
+		.promo {
+			width: 400px;
+			
+			@media (min-width:$desktop) {
+				width: auto;
+				margin-left: 35px;
+			}
+			
+			@media (min-width:$desktop-lrg) {
+				width: auto;
+				margin-top: 50px;
+				margin-left: 35px;
+			}
+		}
+		
+/*
 		img {
-			position: absolute;
+			position: absoacalute;
 			bottom: 35px;
 			right: 10px;
 		}
+*/
 	}
 	
 	.karinourish {
