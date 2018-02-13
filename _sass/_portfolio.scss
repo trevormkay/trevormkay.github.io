@@ -189,27 +189,13 @@ $highlight: #FD9F3C;
 		grid-area: simplescales;
 		
 		.promo {
-/*
-			position: absolute;
-			top: -20px;
-			left: 120px;
+			margin-top: -95px;
+			margin-left: 130px;
 			
-			@media (min-width:568px) {
-				left: 220px;
-			}
-*/
-			
-/*
-			@media (min-width:$tablet) {
-				width: 880px;
-				top: 30px;
-				left: 20px;
-			}
-*/
-
 			@media (min-width:$phone-landscape) {
 				width: 160px;
 				margin-top: 10px;
+				margin-left: 0px;
 			}
 
 			@media (min-width:$tablet) {
