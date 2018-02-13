@@ -160,6 +160,10 @@ $highlight: #FD9F3C;
 			grid-template-rows: repeat(7, 300px);
 		}
 		
+		@media (min-width:$desktop) {
+			grid-template-rows: repeat(7, 415px);
+		}
+		
 		@media (min-width:$desktop-lrg) {
 			width: 1763px;
 			max-width: 1763px;
@@ -188,6 +192,16 @@ $highlight: #FD9F3C;
 				top: 20px;
 				left: 0px;
 				width: 570px;
+			}
+			
+			@media (min-width:$tablet) {
+				top: 40px;
+				left: -320px;
+				width: 1030px;
+			}
+			
+			@media (min-width:$tablet-landscape) {
+				left: -120px;
 			}
 			
 			@media (min-width:$desktop-lrg) {
