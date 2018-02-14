@@ -237,11 +237,6 @@ $highlight: #FD9F3C;
 			}
 
 			@media (min-width:$desktop) {
-				width: 350px;
-				margin-top: 20px;
-			}
-
-			@media (min-width:$desktop-lrg) {
 				margin-top: 50px;
 				width: auto;
 			}
@@ -292,12 +287,6 @@ $highlight: #FD9F3C;
 			}
 			
 			@media (min-width:$desktop) {
-				width: 1060px;
-				top: -80px;
-				left: 100px;
-			}
-			
-			@media (min-width:$desktop-lrg) {
 				width: auto;
 				top: 30px;
 				left: 50px;
@@ -412,12 +401,6 @@ $highlight: #FD9F3C;
 			}
 			
 			@media (min-width:$desktop) {
-				width: 1060px;
-				top: -40px;
-				left: 170px;
-			}
-			
-			@media (min-width:$desktop-lrg) {
 				width: auto;
 				top: 30px;
 				left: 60px;
