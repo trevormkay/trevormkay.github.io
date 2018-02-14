@@ -196,12 +196,18 @@ $highlight: #FD9F3C;
 			
 			@media (min-width:$tablet) {
 				top: 40px;
-				left: -320px;
+				left: -300px;
 				width: 1030px;
 			}
 			
 			@media (min-width:$tablet-landscape) {
 				left: -120px;
+			}
+			
+			@media (min-width:$desktop) {
+				width: auto;
+				top: 50px;
+				left: -400px;
 			}
 			
 			@media (min-width:$desktop-lrg) {
