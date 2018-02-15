@@ -680,24 +680,24 @@ header {
 	.visit-link {
 		margin-top: 30px;
 		@include font-header;
-		font-size: 20px;
+		font-size: 25px;
 		display: flex;
 		align-items: center;
+		border: 2px solid var(--highlight);
+		border-radius: 10px;
+		padding: 10px 20px;
 		
 		@media (min-width:$tablet) {
 			margin-top: 60px;
 			display: inline-block;
 		}
 		
-		svg {
-			margin-left: 10px;
-			transition: 0.3s transform ease;
-			
-			@media (min-width:$tablet) {
-				position: relative;
-				top: 5px;	
-			}
+		&:hover {
+			background: var(--highlight);
+			color: var(--background);
+			text-decoration: none !important;
 		}
+
 	}
 	
 	.anchors {
