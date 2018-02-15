@@ -318,13 +318,16 @@ $highlight: #FD9F3C;
 			bottom: -80px;
 			left: 30px;
 			
+			@media (min-width:568px) {
+				left: 50px;
+			}
 			
 			@media (min-width:$tablet) {
 				bottom: -120px;
 				left: 20px;
 			}
 			
-			@media (min-width:$desktop-lrg) {
+			@media (min-width:$desktop) {
 				bottom: -40px;
 				left: 30px;
 			}
