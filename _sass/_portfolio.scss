@@ -349,13 +349,13 @@ $highlight: #FD9F3C;
 			width: 170px;
 			margin-left: 5px;
 			
-			@media (min-width:568px) {
-				width: 260px;
-				margin-left: 205px;
-				margin-top: -40px;
+			@media (min-width:321px) {
+				width: 210px;
+				margin-left: 165px;
+				margin-top: -26px;
 			}
 			
-			@media (min-width:667px) {
+			@media (min-width:569px) {
 				width: 170px;
 				margin-left: 35px;
 				margin-top: 0px;
@@ -370,6 +370,7 @@ $highlight: #FD9F3C;
 			@media (min-width:$desktop) {
 				width: auto;
 				margin-left: 35px;
+				margin-top: 60px;
 			}
 			
 			@media (min-width:$desktop-lrg) {
