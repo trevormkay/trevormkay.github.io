@@ -807,11 +807,25 @@ header {
 .link {
 	padding: 20px;
 	margin-bottom: 20px;
+	border-radius: 10px;
 	
 	@media (min-width:$desktop) {
 		width: calc(50% - 20px);
 		margin-right: 20px;
-		margin-bottom: 0px;
+		padding-bottom: 30px;
+	}
+	
+	&:hover {
+		background: var(--highlight) !important;
+		
+		h3, p {
+			color: var(--background) !important;
+		}
+	}
+	
+	&:active {
+		transform: scale(0.95);
+		transition: 0.3s transform ease;
 	}
 	
 	a {
@@ -845,7 +859,7 @@ header {
 	}
 	
 	&:hover h3 {
-		text-decoration: underline !important
+		//text-decoration: underline !important
 	}
 }
 
