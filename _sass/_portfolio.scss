@@ -252,10 +252,22 @@ $highlight: #FD9F3C;
 		background: url(../images/portfolio/background-neutron.png);
 		background-size: cover;
 		
-		img {
+		.promo {
 			position: absolute;
-			bottom: 55px;
-			right: 73px;
+			top: 28px;
+			right: 20%;
+			width: 100px;
+			
+			@media (min-width:$tablet) {
+				width: 190px;
+				top: 70px;
+			}
+			
+			@media (min-width:$desktop) {
+				width: auto;
+				bottom: 55px;
+				right: 73px;
+			}
 		}
 	}
 	
@@ -291,7 +303,6 @@ $highlight: #FD9F3C;
 				top: 30px;
 				left: 50px;
 			}
-			
 		}
 	}
 	
