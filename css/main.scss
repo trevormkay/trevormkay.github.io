@@ -33,6 +33,11 @@ $tablet-landscape: 1023px;
 $desktop: 1120px;
 $desktop-lrg: 1800px;
 
+:root {
+  --highlight: black;
+  --primary: black;
+}
+
 @mixin debug {
 	border: 1px solid red;
 }

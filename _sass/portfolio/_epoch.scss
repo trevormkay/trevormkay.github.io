@@ -4,6 +4,9 @@ $primary: #ACA8A2;
 $highlight: #FFD56F;
 
 .epoch {
+	--primary: #ACA8A2;
+	--highlight: #FFD56F;
+	
 	background: $background;
 	
 	.categories {
@@ -11,11 +14,11 @@ $highlight: #FFD56F;
 	}
 	
 	h1, h2, h3, .quote {
-		color: $highlight !important;
+		color: $highlight;
 	}
 	
 	p, caption, .type, .caption {
-		color: $primary !important;
+		color: $primary;
 	}
 	
 	.quote {

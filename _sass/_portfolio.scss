@@ -103,11 +103,13 @@ $highlight: #FD9F3C;
 				font-size: 22px;
 				margin-bottom: -5px;
 				z-index: 2;
+				color: var(--highlight);
 			}
 			
 			h3 {
 				font-size: 13px;
 				z-index: 2;
+				color: var(--primary);
 			}
 			
 			.flexwrapper {
