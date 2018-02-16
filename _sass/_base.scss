@@ -828,6 +828,7 @@ header {
 	padding: 20px;
 	margin-bottom: 20px;
 	border-radius: 10px;
+	background: var(--background);
 	
 	@media (min-width:$desktop) {
 		width: calc(50% - 20px);
