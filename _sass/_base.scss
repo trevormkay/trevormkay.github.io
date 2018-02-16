@@ -801,6 +801,11 @@ header {
 
 #solution {
 	background: var(--background-dark);
+	overflow: hidden;
+}
+
+#process {
+	overflow: hidden;
 }
 
 #other-works {
@@ -976,26 +981,16 @@ header {
 	}
 }
 
-.phone {
-	border-radius: 40px;
-	margin: 30px auto 60px auto;
-	width: 100%;
-	padding: 8px;
-	padding-bottom: 2px;
-	max-width: 404px;
-		
-	.screen {
-		width: 100%;
-		border-radius: 32px;
-	}
-	
-	.home {
-		display: none;
-	}
-}
-
-.browser {
+.screenshot {
+	border-radius: 12px;
+	max-width: 100%;
 	margin-bottom: 60px;
+	box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+	border: 1px solid rgba(0, 0, 0, 0.2);
+	
+	&.sunken {
+		margin-bottom: -140px;
+	}
 }
 
 .browserBar {
@@ -1003,6 +998,7 @@ header {
 	border-top-left-radius: 10px;
 	border-top-right-radius: 10px;
 	margin-top: 30px;
+	background: rgba(0,0,0,0.2);
 	
 	ul {
 		list-style: none;
@@ -1018,6 +1014,11 @@ header {
 		width: 12px;
 		height: 12px;
 		margin-right: 10px;
+		background: var(--background-dark);
+	}
+	
+	@media (max-width:$phone-landscape) {
+		display: none;
 	}
 	
 	@media (min-width:$tablet) {
@@ -1034,12 +1035,6 @@ header {
 			height: 19px;
 		}
 	}
-}
-
-.browserWindow {
-	max-width: 100%;
-	border-bottom-left-radius: 10px;
-	border-bottom-right-radius: 10px;
 }
 
 .countdown {
