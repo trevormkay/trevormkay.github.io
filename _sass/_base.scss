@@ -799,6 +799,10 @@ header {
 	}
 }
 
+#challenge {
+	overflow: hidden;
+}
+
 #solution {
 	background: var(--background-dark);
 	overflow: hidden;
@@ -990,50 +994,6 @@ header {
 	
 	&.sunken {
 		margin-bottom: -140px;
-	}
-}
-
-.browserBar {
-	height: 34px;
-	border-top-left-radius: 10px;
-	border-top-right-radius: 10px;
-	margin-top: 30px;
-	background: rgba(0,0,0,0.2);
-	
-	ul {
-		list-style: none;
-		margin-left: 15px;
-		display: flex;
-		align-items: center;
-		height: 100%;
-	}
-	
-	li	{
-		float: left;
-		border-radius: 50%;
-		width: 12px;
-		height: 12px;
-		margin-right: 10px;
-		background: var(--background-dark);
-	}
-	
-	@media (max-width:$phone-landscape) {
-		display: none;
-	}
-	
-	@media (min-width:$tablet) {
-		height: 43px;
-		border-top-left-radius: 13px;
-		border-top-right-radius: 13px;
-		
-		ul {
-			margin-left: 20px;
-		}
-		
-		li {
-			width: 19px;
-			height: 19px;
-		}
 	}
 }
 
