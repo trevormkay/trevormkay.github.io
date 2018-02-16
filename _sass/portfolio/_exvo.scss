@@ -9,6 +9,15 @@ $highlight: #00A5F0;
 	--primary: #6A8A9C;
 	--highlight: #00A5F0;
 	
+	.coverimage {
+		background-image: url(../images/portfolio/exvo/header-background.jpg);
+		background-position: center bottom;
+	}
+	
+	.visit-link {
+		display: none;
+	}
+	
 /*
 	background: $background;
 	

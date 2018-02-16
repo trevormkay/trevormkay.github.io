@@ -9,6 +9,15 @@ $highlight: #D7B48D;
 	--primary: #9B9CA6;
 	--highlight: #D7B48D;
 	
+	.coverimage {
+		background-image: url(../images/portfolio/nightlight/header-background.jpg);
+		opacity: 1;
+	}
+	
+	.visit-link {
+		display: none;
+	}
+	
 /*
 	background: $background;
 	

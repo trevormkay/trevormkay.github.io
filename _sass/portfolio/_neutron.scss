@@ -29,6 +29,30 @@ $accent: #75ECE1;
 	--highlight: #A2DFA8;
 	--accent: #75ECE1;
 	
+	.coverimage {
+		opacity: 1;
+		background-image: linear-gradient(-30deg, rgba(#4DF1FF,0.15) 0%, rgba(#FFCE55,0.15) 100%);
+	}
+	
+	.pattern {
+		width: 100%;
+		height: 100%;
+		background-image: url(../images/portfolio/neutron/pattern.svg);
+		position: absolute;
+		top: 0px;
+		animation: slide 70s linear infinite;
+		opacity: 0.1;
+		z-index: 1;
+		pointer-events: none;
+		background-size: 100px;
+		
+		@media (min-width:$tablet) {
+			background-size: 200px;
+			opacity: 0.05;
+			animation: slide 50s linear infinite;
+		}
+	}
+	
 /*
 	background: $background;
 	
