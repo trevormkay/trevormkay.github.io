@@ -47,7 +47,6 @@ p, caption, .type, .caption {
 
 body {
 	font-size: 28px;
-	//transition: 0.6s transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	background-color: var(--background) !important;
 }
 
@@ -1049,6 +1048,8 @@ header {
 	padding-bottom: 56.25%; /* 16:9 */
 	/* padding-top: 25px; */
 	height: 0;
+	-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
+	border-radius: 12px;
 }
 
 .videoWrapper iframe {
