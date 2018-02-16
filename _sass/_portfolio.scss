@@ -247,6 +247,21 @@ $highlight: #FD9F3C;
 	
 	.nightlight {
 		grid-area: nightlight;
+		background: #4B444C;
+		
+		.promo {
+			margin-top: 10px;
+		}
+		
+		.chatbar {
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			
+			@media (max-width:766px) {
+				display: none;
+			}
+		}
 	}
 	
 	.neutron {
