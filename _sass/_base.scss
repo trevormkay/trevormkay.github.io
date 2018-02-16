@@ -38,11 +38,17 @@ dl, dd, ol, ul, figure {
 h1, h2, h3 {
 	@include font-header;
 	font-weight: 600;
+	color: var(--highlight);
+}
+
+p, caption, .type, .caption {
+	color: var(--primary);
 }
 
 body {
 	font-size: 28px;
-	transition: 0.6s transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	//transition: 0.6s transform cubic-bezier(0.68, -0.55, 0.265, 1.55);
+	background-color: var(--background) !important;
 }
 
 body.displayed .sitename {
@@ -73,7 +79,7 @@ body.displayed .sitename {
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	border-bottom: 2px solid black;
+	//border-bottom: 2px solid var(--primary);
 	
 	.sitename {
 		@include font-header;
@@ -81,10 +87,10 @@ body.displayed .sitename {
 		display: flex;
 		align-items: center;
 		font-weight: 600;
-		
 		z-index: 20;
 		position: absolute;
 		top: 8px;
+		color: var(--primary);
 		
 		svg {
 			margin: {
@@ -97,17 +103,18 @@ body.displayed .sitename {
 				}
 			}
 		}
+		
+		#logo {
+			stroke: var(--primary);
+		}
 	}
 	
 	.categories {
 		list-style: none;
 		position: absolute;
 		margin: 0px;
-		
 		transition: 0.6s left ease;
 		width: 250px;
-		
-		background: red;
 		position: fixed;
 		top: 0px;
 		height: 100%;
@@ -134,6 +141,10 @@ body.displayed .sitename {
 			@media (max-height: 375px) {
 				margin-bottom: 10px;
 				font-size: 24px;
+			}
+			
+			a {
+				color: var(--primary);
 			}
 		}
 		
@@ -560,6 +571,7 @@ body.displayed .sitename {
 	height: 2px;
 	display: block;
 	margin-top: 5px;
+	background: var(--primary);
 }
 
 .caption {
@@ -574,6 +586,7 @@ body.displayed .sitename {
 	height: 2px;
 	display: block;
 	margin-bottom: 5px;
+	background: var(--primary);
 }
 
 header {
@@ -581,8 +594,8 @@ header {
 	top: 0px;
 	width: 100%;
 	height: auto;
-	//margin-top: -80px;
 	min-height: 200px;
+	background: var(--background-dark);
 	
 	@media (min-width:$tablet-landscape) {
 		height: 616px;
@@ -613,7 +626,6 @@ header {
 	
 	.constrained {
 		height: 100%;
-		//margin-top: 110px;
 		position: relative;
 		z-index: 2;
 		padding-top: 80px;
@@ -684,9 +696,11 @@ header {
 		display: flex;
 		align-items: center;
 		border: 2px solid var(--highlight);
+		color: var(--highlight);
 		border-radius: 10px;
 		padding: 10px 20px;
 		transition: 0.3s background ease, 0.3s color ease;
+		text-decoration: none;
 		
 		@media (min-width:$tablet) {
 			margin-top: 60px;
@@ -785,7 +799,13 @@ header {
 	}
 }
 
+#solution {
+	background: var(--background-dark);
+}
+
 #other-works {
+	background: var(--background-dark);
+	
 	.links {
 		@media (min-width:$desktop) {
 			display: flex;
@@ -1160,16 +1180,10 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-    color: $brand-color;
     text-decoration: none;
 
-    &:visited {
-        color: darken($brand-color, 15%);
-    }
-
     &:hover {
-        color: $text-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
 }
 
