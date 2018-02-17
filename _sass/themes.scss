@@ -871,19 +871,17 @@
 		background-position: center bottom;
 	}
 	
-	#solution {
-		img {
-			max-width: 100%;
-			margin-top: 30px;
-			margin-bottom: -20px;
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
-			
-			@media (min-width:$tablet) {
-				margin-bottom: -80px;
-				margin-top: 60px;
-			}
+	#solution img {
+		max-width: 100%;
+		margin-top: 30px;
+		margin-bottom: -20px;
+		margin-left: auto;
+		margin-right: auto;
+		display: block;
+		
+		@media (min-width:$tablet) {
+			margin-bottom: -80px;
+			margin-top: 60px;
 		}
 	}
 	
