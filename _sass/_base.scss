@@ -992,7 +992,9 @@ header {
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	
 	&.sunken {
-		margin-bottom: -140px;
+		@media (min-width:$phone-landscape) {
+			margin-bottom: -140px;
+		}
 	}
 }
 
