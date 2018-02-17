@@ -9,27 +9,14 @@ $highlight: #FFD56F;
 	--primary: #ACA8A2;
 	--highlight: #FFD56F;
 	
-	.coverimage {
-		background-image: url(../images/portfolio/epoch/header-background.jpg);
-	}
-	
-	.visit-link {
-		display: none;
-	}
-	
-/*
-	background: $background;
-	
-	.categories {
-		background: $background-dark;
-	}
-	
-	h1, h2, h3, .quote {
-		color: $highlight;
-	}
-	
-	p, caption, .type, .caption {
-		color: $primary;
+	header {
+		.coverimage {
+			background-image: url(../images/portfolio/epoch/header-background.jpg);
+		}
+		
+		.visit-link {
+			display: none;
+		}
 	}
 	
 	.quote {
@@ -39,6 +26,7 @@ $highlight: #FFD56F;
 		margin-left: 50px;
 		margin-top: 20px;
 		margin-bottom: 20px;
+		color: var(--highlight);
 		
 		&::before {
 			content: url(../images/portfolio/epoch/quote.svg);
@@ -51,80 +39,6 @@ $highlight: #FFD56F;
 			transform: rotate(180deg);
 			position: absolute;
 			right: 10px;
-		}
-	}
-	
-	.type::after, .caption::before {
-		background: $primary;
-	}
-	
-	.visit-link {
-		color: $highlight;
-	}
-	
-	#arrow {
-		fill: $highlight;
-	}
-	
-	.main-nav {
-		border-color: rgba($primary, 0.2);
-		
-		.sitename, li a {
-			color: $primary;
-		}
-		
-		#logo {
-			stroke: $primary
-		}
-		
-		li a.active {
-			color: $highlight;
-		}
-		
-		.hamburger span {
-			background: $highlight;
-		}
-		
-		&.not-top.pinned, &.xunpinned, &.bottom {
-			background: linear-gradient(-180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.10) 100%), $background-dark;
-		}
-	}
-	
-	header {
-		background-color: $background-dark;
-		
-		.coverimage {
-			background-image: url(../images/portfolio/epoch/header-background.jpg);
-		}
-		
-		.visit-link {
-			display: none;
-		}
-	}
-	
-	.anchors {
-		border-top: 2px solid rgba($primary, 0.2);
-		
-		li a {
-			color: $primary;
-		}
-	}
-	
-	#solution, #other-works {
-		background: $background-dark;
-	}
-	
-	.link {
-		background: $background;
-	}
-	
-	.thought a {
-		color: $primary;
-		border-bottom: 2px solid $highlight;
-		
-		&:hover {
-			text-decoration: none;
-			color: $highlight;
 		}
 	}
 	
@@ -245,7 +159,7 @@ $highlight: #FFD56F;
 			}
 		}		
 		
-		.phone {
+		.screenshot {
 			display: block;
 			margin: 0px auto;
 			background: rgba(black, 0.3);
@@ -329,5 +243,4 @@ $highlight: #FFD56F;
 			text-align: center;
 		}
 	}
-*/
 }
