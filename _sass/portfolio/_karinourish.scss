@@ -15,187 +15,56 @@ $highlight: #005B9F;
 		background-position: center bottom;
 	}
 	
-/*
-	background: $background;
-	
-	.categories {
-		background: $background-dark;
-	}
-	
-	h1, h2, h3 {
-		color: $highlight;
-	}
-	
-	p, caption, .type {
-		color: $primary !important;
-	}
-	
-	.type::after {
-		background: $primary;
-	}
-	
-	.visit-link {
-		color: $highlight;
-	}
-	
-	#arrow {
-		fill: $highlight;
-	}
-	
-	.main-nav {
-		border-color: rgba($primary, 0.2);
+	.styleguide {
+		margin-top: 30px;
+		margin-bottom: 60px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		
-		.sitename, li a {
-			color: $primary;
-		}
-		
-		#logo {
-			stroke: $primary
-		}
-		
-		li a.active {
-			color: $highlight;
-		}
-		
-		.hamburger span {
-			background: $highlight;
-		}
-		
-		&.not-top.pinned, &.xunpinned, &.bottom {
-			background: linear-gradient(-180deg, rgba(#755F1F,0.10) 0%, rgba(#755F1F,0.10) 100%), $background-dark;
-		}
-	}
-	
-	header {
-		background-color: $background-dark;
-		
-		.coverimage {
-			background-image: url(../images/portfolio/karinourish/header-background.jpg);
-			opacity: 0.5;
-			background-position: center bottom;
-		}
-		
-		.logo img {
-			@media (min-width:$tablet) and (max-width:1119px) {
-				max-width: 80%;
+		img {
+			max-width: 100%;
+			
+			&:last-child {
+				margin-bottom: 0px;
 			}
 		}
-	}
-	
-	.anchors {
-		border-top: 2px solid rgba($primary, 0.2);
 		
-		li a {
-			color: $primary;
-		}
-	}
-	
-	#solution, #other-works {
-		background: $background-dark;
-	}
-	
-	.link {
-		background: $background;
-	}
-	
-	.browserBar {
-		background: rgba($primary,0.2);
-		
-		li {
-			background: $background;
-		}
-	}
-	
-	.browserWindow {
-		border: 1px solid rgba($primary,0.2);
-	}
-	
-	.phone {
-		background: rgba($primary,0.2);
-		
-		@media (min-width:$phone-landscape) {
-			display: none;
-		}
-	}
-	
-	.browser {
-		display: none;
-		
-		@media (min-width:$phone-landscape) {
-			display: block;
-		}
-	}
-	
-	#challenge {
-		overflow: hidden;
-		
-		.browser {
-			margin-bottom: -100px;
-		}
-	}
-	
-	#solution {
-		.styleguide {
-			margin-top: 30px;
-			margin-bottom: 60px;
-			display: flex;
-			flex-direction: column;
-			align-items: center;
+		@media (min-width:$tablet) {
+			flex-direction: row;
+			justify-content: space-between;
 			
 			img {
-				max-width: 100%;
-				//margin-bottom: 60px;
-				
-				&:last-child {
-					margin-bottom: 0px;
-				}
-			}
-			
-			@media (min-width:$tablet) {
-				flex-direction: row;
-				justify-content: space-between;
-				
-				img {
-					width: 48%;
-				}
-			}
-			
-			@media (min-width:$desktop) {
-				margin-bottom: 140px;
-				
-				img {
-					width: auto;
-				}
+				width: 48%;
 			}
 		}
 		
-		.images {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			margin-top: 30px;
+		@media (min-width:$desktop) {
+			margin-bottom: 140px;
 			
 			img {
-				max-width: 75%;
-				margin-bottom: 20px;
-				
-				@media (min-width:$tablet) {
-					width: 50%;
-				}
-			}
-			
-			@media (min-width:$tablet) {
-				flex-direction: row;
+				width: auto;
 			}
 		}
 	}
 	
-	#process {
-		overflow: hidden;
+	.images {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		margin-top: 30px;
+		
+		img {
+			max-width: 75%;
+			margin-bottom: 20px;
+			
+			@media (min-width:$tablet) {
+				width: 50%;
+			}
+		}
+		
+		@media (min-width:$tablet) {
+			flex-direction: row;
+		}
 	}
-	
-	.browser.careline {
-		margin-bottom: -100px;
-	}
-*/
 }
