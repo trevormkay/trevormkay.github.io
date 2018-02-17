@@ -31,7 +31,7 @@ $highlight: #F78A60;
 	
 	h3 {
 		text-transform: none;
-		@include font-header;
+		font-family: var(--font-header);
 		font-size: 25px;
 		margin: 0px;
 		margin-bottom: 5px;
@@ -43,7 +43,7 @@ $highlight: #F78A60;
 	}
 	
 	h4 {
-		@include font-header;
+		font-family: var(--font-header);
 		font-size: 16px;
 		color: $primary;
 	}
@@ -53,7 +53,7 @@ $highlight: #F78A60;
 	}
 	
 	p {
-		@include font-body;
+		font-family: var(--font-body);
 		font-size: 16px;
 		line-height: 24px;
 	}
@@ -128,7 +128,7 @@ $highlight: #F78A60;
 			
 			li {
 				float: left;
-				@include font-header;
+				font-family: var(--font-header);
 				margin-right: 40px;
 				font-size: 22px;
 				color: $primary;

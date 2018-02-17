@@ -15,7 +15,7 @@
 	}
 	
 	.quote {
-		@include font-header;
+		font-family: var(--font-header);
 		font-size: 20px;
 		position: relative;
 		margin-left: 50px;
