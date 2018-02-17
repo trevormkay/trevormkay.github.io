@@ -3,22 +3,19 @@
 ---
 @charset "utf-8";
 
-
-
-
-// Width of the content area
-$phone-landscape: 569px;
-$tablet: 740px;
-$tablet-landscape: 1023px;
-$desktop: 1120px;
-$desktop-lrg: 1800px;
-
 :root {
   --highlight: black;
   --primary: black;
   --font-body: 'Circular Std Book', helvetica, arial, sans-serif;
   --font-header: 'Circular Std', helvetica, arial, sans-serif;
+  --phone-landscape: 569px;
 }
+
+$phone-landscape: 569px;
+$tablet: 740px;
+$tablet-landscape: 1023px;
+$desktop: 1120px;
+$desktop-lrg: 1800px;
 
 @mixin clearfix {
 	overflow: auto;
