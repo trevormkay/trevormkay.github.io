@@ -6,30 +6,6 @@ dl, dd, ol, ul, figure {
     padding: 0;
 }
 
-
-@keyframes slideInDown {
-    0% {
-        transform: translateY(-100%)
-    }
-
-    100% {
-        transform: translateY(0)
-    }
-}
-
-@keyframes slideOutUp {
-    0% {
-        -o-transform: translateY(0)
-    }
-
-    100% {
-        -o-transform: translateY(-100%)
-    }
-}
-
-
-
-
 * {
 	-webkit-font-smoothing: antialiased;
 	box-sizing: border-box;
@@ -585,6 +561,7 @@ body.displayed .sitename {
 	@include font-header;
 	font-size: 15px;
 	margin-top: 10px;
+	text-transform: uppercase;
 }
 
 .caption::before {
