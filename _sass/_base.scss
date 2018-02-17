@@ -106,6 +106,14 @@ body.displayed .sitename {
 		#logo {
 			stroke: var(--primary);
 		}
+		
+		&:hover {
+			color: var(--highlight);
+			
+			#logo {
+				stroke: var(--highlight);
+			}
+		}
 	}
 	
 	.categories {

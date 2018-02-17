@@ -17,135 +17,22 @@ $highlight: #CA4750;
 		display: none;
 	}
 	
-/*
-	background: $background;
-	
-	.categories {
-		background: $background-dark;
-	}
-	
-	h1, h2, h3 {
-		color: $highlight;
-	}
-	
-	p, caption, .type, .caption {
-		color: $primary !important;
-	}
-	
-	.type::after, .caption::before {
-		background: $primary;
-	}
-	
-	.visit-link {
-		color: $highlight;
-	}
-	
-	#arrow {
-		fill: $highlight;
-	}
-	
-	.main-nav {
-		border-color: rgba($primary, 0.5);
+	.card {
+		margin: 30px auto;
+		max-width: 940px;
 		
-		.sitename, li a {
-			color: $primary;
-		}
-		
-		#logo {
-			stroke: $primary
-		}
-		
-		li a.active {
-			color: $highlight;
-		}
-		
-		.hamburger span {
-			background: $highlight;
-		}
-		
-		&.not-top.pinned, &.xunpinned, &.bottom {
-			background: linear-gradient(-180deg, rgba(0,0,0,0.10) 0%, rgba(0,0,0,0.10) 100%), $background-dark;
+		img {
+			max-width: 100%;
 		}
 	}
 	
-	header {
-		background-color: $background-dark;
-		
-		.coverimage {
-			background-image: url(../images/portfolio/retailerportal/header-background.jpg);
-		}
-		
-		.visit-link {
-			display: none;
-		}
-	}
-	
-	.anchors {
-		border-top: 2px solid rgba($primary, 0.5);
-		
-		li a {
-			color: $primary;
-		}
-	}
-	
-	#solution, #other-works {
-		background: $background-dark;
-	}
-	
-	.link {
-		background: $background;
-	}
-	
-	.browserBar {
-		background: rgba($primary,0.3);
-		
-		li {
-			background: $background;
-		}
-	}
-	
-	.phone {
-		background: rgba($primary,0.3);
-		
-		@media (min-width:$phone-landscape) {
-			display: none;
-		}
-	}
-	
-	.browser {
-		display: none;
-		
-		@media (min-width:$phone-landscape) {
-			display: block;
-		}
-	}
-	
-	#challenge {
-		overflow: hidden;
-		
-		.browser {
-			margin-bottom: -100px;
-		}
-	}
-	
-	#solution {
-		.card {
-			margin: 30px auto;
-			max-width: 940px;
+	.row {
+		@media (min-width:$tablet) {
+			display: flex;
+			justify-content: space-between;
 			
-			img {
-				max-width: 100%;
-			}
-		}
-		
-		.row {
-			@media (min-width:$tablet) {
-				display: flex;
-				justify-content: space-between;
-				
-				p {
-					width: 49%;
-				}
+			p {
+				width: 49%;
 			}
 		}
 	}
@@ -217,5 +104,4 @@ $highlight: #CA4750;
 			}
 		}
 	}
-*/
 }
