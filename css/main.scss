@@ -4,11 +4,14 @@
 @charset "utf-8";
 
 :root {
-  --highlight: black;
-  --primary: black;
-  --font-body: 'Circular Std Book', helvetica, arial, sans-serif;
-  --font-header: 'Circular Std', helvetica, arial, sans-serif;
-  --phone-landscape: 569px;
+	--background: black;
+	--background-dark: black;
+	--primary: black;
+	--highlight: black;
+	--accent: black;
+	--font-body: 'Circular Std Book', helvetica, arial, sans-serif;
+	--font-header: 'Circular Std', helvetica, arial, sans-serif;
+	--phone-landscape: 569px;
 }
 
 $phone-landscape: 569px;
@@ -23,7 +26,7 @@ $desktop-lrg: 1800px;
 }
 
 @import
-        "fonts",
-        "components",
-        "themes"
+	"fonts",
+	"components",
+	"themes"
 ;
