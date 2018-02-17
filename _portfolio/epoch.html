@@ -1,0 +1,184 @@
+---
+layout: portfolio
+title:  "Epoch"
+type: "Mobile App"
+class: "epoch"
+description: "Making countdowns beautiful"
+weight: 10
+theme: "#37332C"
+---
+<section id="challenge" class="constrained">
+	<div class="copy">
+		<h4 class="type">The Challenge</h4>
+		<h2>MAKE MY WIDGET GROW</h2>
+		<p>Epoch started out life as a widget for Mac OS X called Percount, developed by Gabe Shabazian. Gabe was looking to take that widget and make it a native iPhone app.</p>
+	</div>
+	<div class="image">
+		<div id="christmas" class="countdown">
+			<div class="time">
+				<span class="days largetext"></span>
+				<div class="smalltext">Days</div>
+			</div>
+			<div class="time">
+				<span class="hours largetext"></span>
+				<div class="smalltext">Hours</div>
+			</div>
+			<div class="time">
+				<span class="minutes largetext"></span>
+				<div class="smalltext">Mins</div>
+			</div>
+			<div class="time">
+				<span class="seconds largetext"></span>
+				<div class="smalltext">Secs</div>
+			</div>
+		</div>	
+		
+		<div class="phone">
+			<img class="screen" src="../images/portfolio/epoch/christmas.jpg" srcset="../images/portfolio/epoch/christmas.jpg, ../images/portfolio/epoch/christmas@2x.jpg 2x" alt="Screenshot of the app">
+		</div>
+	</div>
+</section>
+<section id="solution">
+	<div class="constrained">
+		<div class="row widget">
+			<div class="copy">
+				<h4 class="type">The Solution</h4>
+				<h2>PERCOUNT GROWS UP</h2>
+				<p>Bringing Percount to the iPhone meant taking full advantage of the beautiful screen and hardware. Not only was the interface of Percount scaled up, it became iOS appropriate by using a card based design to swipe through all your countdowns.</p>
+			</div>
+			<div class="image">
+				<div id="birthday" class="minicountdown">
+					<div class="time">
+						<p><span class="days"></span> : <span class="hours"></span> : <span class="minutes"></span> : <span class="seconds"></span></p>
+					</div>
+				</div>	
+				<img src="../images/portfolio/epoch/widget.png" srcset="../images/portfolio/epoch/widget.png, ../images/portfolio/epoch/widget@2x.png 2x" alt="Screenshot of the widget">
+			</div>
+		</div>
+		<div class="row location">
+			<div class="copy">
+				<h2>Location, Location, Location</h2>
+				<p>Location pinning was another feature made available to us based on the hardware of the iPhone. It was a defining feature that other countdown apps did not have.</p>
+			</div>
+			<div class="image">
+				<div id="holiday" class="countdown">
+					<div class="time">
+						<span class="days largetext"></span>
+						<div class="smalltext">Days</div>
+					</div>
+					<div class="time">
+						<span class="hours largetext"></span>
+						<div class="smalltext">Hours</div>
+					</div>
+					<div class="time">
+						<span class="minutes largetext"></span>
+						<div class="smalltext">Mins</div>
+					</div>
+					<div class="time">
+						<span class="seconds largetext"></span>
+						<div class="smalltext">Secs</div>
+					</div>
+				</div>	
+				<div class="phone">
+					<img class="screen" src="../images/portfolio/epoch/map.jpg" srcset="../images/portfolio/epoch/map.jpg, ../images/portfolio/epoch/map@2x.jpg 2x" alt="Screenshot of the app showing location pinning">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section id="process" class="constrained">
+	<div class="copy">
+		<h4 class="type">The Process</h4>
+		<h2>GOING NATIVE</h2>
+		<p>The brief for Epoch was to use the card based layout of the original iPhone Weather app. Cards worked really well for Epoch, it allowed for multiple countdowns while making full use of the screen for user images.</p>
+		<p class="quote">A period of time in history or a person's life, typically one marked by notable events</p>
+		<p>Transitioning to the App Store I felt like Percount needed a more appropriate name. Something that was easy to search and stood out amongst its’ contemporaries. Epoch was a perfect fit.</p>
+	</div>
+	<div class="image">
+		<div class="phone">
+			<img class="screen" src="../images/portfolio/epoch/animated.gif" alt="Animated slideshow of the design process of the app">
+		</div>
+	</div>
+</section>
+<section id="other-works">
+	<div class="constrained">
+		<h4 class="type">Other Works</h4>
+		<div class="links">
+			{% include related.html item="exvo" collection=site.portfolio %}
+			{% include related.html item="mediaportal" collection=site.portfolio %}
+		</div>
+	</div>
+</section>
+
+<script>
+	$(document).ready(function(){
+		//COUNTDOWN
+		function getTimeRemaining(endtime) {
+	      var t = Date.parse(endtime) - Date.parse(new Date());
+	      var seconds = Math.floor((t / 1000) % 60);
+	      var minutes = Math.floor((t / 1000 / 60) % 60);
+	      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
+	      var days = Math.floor(t / (1000 * 60 * 60 * 24));
+	      return {
+	        'total': t,
+	        'days': days,
+	        'hours': hours,
+	        'minutes': minutes,
+	        'seconds': seconds
+	      };
+	    }
+	    
+	    function initializeClock(id, endtime) {
+	      var clock = document.getElementById(id);
+	      var daysSpan = clock.querySelector('.days');
+	      var hoursSpan = clock.querySelector('.hours');
+	      var minutesSpan = clock.querySelector('.minutes');
+	      var secondsSpan = clock.querySelector('.seconds');
+	    
+	      function updateClock() {
+	        var t = getTimeRemaining(endtime);
+	    
+	        daysSpan.innerHTML = t.days;
+	        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
+	        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
+	        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
+	    
+	        if (t.total <= 0) {
+	          clearInterval(timeinterval);
+	        }
+	      }
+	    
+	      updateClock();
+	      var timeinterval = setInterval(updateClock, 1000);
+	    }
+	
+	    function getDeadline(month, day) {
+	
+	        var monthNames = ["January", "February", "March", "April", "May", "June",
+	          "July", "August", "September", "October", "November", "December"
+	        ];
+	
+	        var currentDate = new Date();
+	        var targetYear = currentDate.getFullYear();
+	        
+	        var targetDate = new Date(targetYear + '/' + month + '/' + day);
+	        
+	        if (Number(currentDate) >= Number(targetDate)) {
+	            targetYear += 1;
+	        }
+	        
+	        return monthNames[targetDate.getMonth()] + ' ' + day + ' ' + targetYear;
+	
+	    }
+	
+	    var birthdayDeadline = getDeadline('01', '06') // Jan 6th
+	    var christmasDeadline = getDeadline('12', '25') // Dec 25th
+	    var holidayDeadline = getDeadline('05', '16') // Apr 16th
+	        
+	    initializeClock('christmas', christmasDeadline);  
+	    initializeClock('birthday', birthdayDeadline);
+	    initializeClock('holiday', holidayDeadline);
+		
+					
+	});	
+</script>
