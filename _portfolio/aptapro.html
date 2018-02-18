@@ -1,12 +1,10 @@
 ---
 layout: portfolio
 title:  "Aptaprofessional"
-type: "Responsive Website"
 class: "aptapro"
 description: "Helping Healthcare Professionals by providing a suite of tools to find the right formula for every infant"
 cta: "Visit Aptaprofessional"
 link: "http://www.aptaprofessional.com.au/"
-weight: 6
 theme: "#F2F2F2"
 ---
 <section id="challenge">
@@ -65,8 +63,8 @@ theme: "#F2F2F2"
 	<div class="constrained">
 		<h4 class="type">Other Works</h4>
 		<div class="links">
+			{% include related.html item="mediaportal" collection=site.portfolio %}
 			{% include related.html item="karinourish" collection=site.portfolio %}
-			{% include related.html item="neutron" collection=site.portfolio %}
 		</div>
 	</div>
 </section>
