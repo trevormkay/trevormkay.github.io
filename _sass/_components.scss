@@ -319,14 +319,11 @@ header {
 	background: var(--background-dark);
 	
 	.links {
-		@media (min-width:$desktop) {
-			display: flex;
-		}
+		display: grid;
+		grid-gap: 20px;
 		
-		.link:hover {
-			h3 {
-				text-decoration: underline;
-			}
+		@media (min-width:$tablet-landscape) {
+			grid-template-columns: 1fr 1fr;
 		}
 	}
 	
@@ -338,14 +335,12 @@ header {
 
 .link {
 	padding: 20px;
-	margin-bottom: 20px;
-	border-radius: 10px;
+	padding-bottom: 25px;
+	border-radius: 12px;
 	background: var(--background);
 	
 	@media (min-width:$desktop) {
-		width: calc(50% - 20px);
-		margin-right: 20px;
-		padding-bottom: 30px;
+		padding-bottom: 20px;
 	}
 	
 	&:hover {
@@ -356,34 +351,10 @@ header {
 		}
 	}
 	
-	&:active {
-		transform: scale(0.95);
-		transition: 0.3s transform ease;
-	}
-	
-	a {
-		display: flex;
-		flex-direction: row wrap;
-		align-items: center;
-		text-decoration: none !important;
-		
-		img {
-			margin-right: 20px;
-			min-width: 84px;
-		}
-	}
-	
 	h3 {
 		font-size: 20px;
 		font-family: var(--font-header);
-		display: flex;
-		align-items: center;
 		margin-bottom: 0px;
-		text-decoration: none !important;
-		
-		svg {
-			margin-left: 10px;
-		}
 	}
 	
 	.description {
@@ -396,6 +367,9 @@ header {
 	border-radius: 12px;
 	max-width: 100%;
 	margin-bottom: 60px;
+	margin-left: auto;
+	margin-right: auto;
+	display: block;
 	box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
 	border: 1px solid rgba(0, 0, 0, 0.2);
 	
