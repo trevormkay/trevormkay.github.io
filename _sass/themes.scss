@@ -970,7 +970,7 @@
 		
 		@media (min-width:$desktop) {
 			flex-flow: row;
-			height: 470px;
+			height: 480px;
 		}
 		
 		.copy, .image {
@@ -994,7 +994,6 @@
 		.phone {
 			display: block;
 			margin: 0px auto;
-			background: rgba(black, 0.3);
 			max-width: 280px;
 			
 			@media(min-width:$tablet) {
@@ -1004,10 +1003,10 @@
 		}
 		
 		.countdown {
-			bottom: 113px;
+			bottom: 160px;
 			
 			@media (min-width:$tablet) {
-				bottom: 172px;
+				bottom: 229px;
 			}
 			
 			@media (min-width:$desktop) {
@@ -1024,7 +1023,6 @@
 			display: block;
 			margin: 0px auto;
 			max-width: 280px;
-			background: rgba(black, 0.3);
 			
 			@media(min-width:$tablet) {
 				width: 300px;
@@ -1037,12 +1035,16 @@
 		}
 		
 		@media (min-width:$desktop) {
-			height: 926px;
+			height: 1000px;
 			overflow: hidden;
 		}
 		
 		.countdown {
-			bottom: 93px;
+			bottom: 144px;
+			
+			@media (min-width:$tablet) {
+				bottom: 149px;
+			}
 			
 			@media (min-width:$desktop) {
 				right: 0px !important;
