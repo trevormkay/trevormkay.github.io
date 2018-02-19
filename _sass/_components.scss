@@ -230,18 +230,17 @@ header {
 		margin-top: 30px;
 		font-family: var(--font-header);
 		font-size: 25px;
-		display: flex;
-		align-items: center;
+		margin-top: 30px;
 		border: 2px solid var(--highlight);
 		color: var(--highlight);
 		border-radius: 10px;
 		padding: 10px 20px;
 		transition: 0.3s background ease, 0.3s color ease;
-		text-decoration: none;
+		display: inline-block;
 		
 		@media (min-width:$tablet) {
 			margin-top: 60px;
-			display: inline-block;
+			
 		}
 		
 		&:hover {
@@ -465,11 +464,7 @@ header {
 	margin-top: 40px;
 	transform: translate3d(0, 0, 0);
 	animation: moveSlideshow 60s linear infinite;
-	
-	@media (min-width:$tablet) {
-		grid-template-columns: repeat(16, 500px);
-	}
-	
+		
 	.screenshot {
 		margin-bottom: 20px;
 	}
@@ -482,7 +477,7 @@ header {
 	}
 	
 	span {
-		margin-top: 8px;
+		margin-top: 14px;
 		font-size: 23px !important;
 	}
 	
@@ -490,5 +485,13 @@ header {
 		width: 50px;
 		height: 50px;
 		margin-right: 10px;
+	}
+	
+	@media (min-width:$tablet) {
+		grid-template-columns: repeat(16, 500px);
+		
+		span {
+			margin-top: 8px;
+		}
 	}
 }
