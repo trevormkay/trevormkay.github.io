@@ -1,3 +1,9 @@
+@keyframes moveSlideshow {  
+  100% { 
+    -webkit-transform: translateX(-4280px);  
+  }
+}
+
 body, h1, h2, h3, h4, h5, h6, p, blockquote, pre, hr, dl, dd, ol, ul, figure {
     margin: 0px;
     padding: 0;
@@ -449,5 +455,40 @@ header {
 		height: 100%;
 		-webkit-mask-image: -webkit-radial-gradient(circle, white 100%, black 100%);
 		border-radius: 12px;
+	}
+}
+
+.appgrid {
+	display: grid;
+	grid-template-columns: repeat(16, 250px);
+	grid-gap: 40px;
+	margin-top: 40px;
+	transform: translate3d(0, 0, 0);
+	animation: moveSlideshow 60s linear infinite;
+	
+	@media (min-width:$tablet) {
+		grid-template-columns: repeat(16, 500px);
+	}
+	
+	.screenshot {
+		margin-bottom: 20px;
+	}
+	
+	p {
+		text-align: center;
+		display: flex;
+		justify-content: center;
+		padding: 0px;
+	}
+	
+	span {
+		margin-top: 8px;
+		font-size: 23px !important;
+	}
+	
+	.icon {
+		width: 50px;
+		height: 50px;
+		margin-right: 10px;
 	}
 }
