@@ -90,6 +90,8 @@ nav {
 
 .constrained {
 	width: calc(100% - 40px);
+	padding-left: env(safe-area-inset-left);
+    padding-right: env(safe-area-inset-right);
 	margin: 0px auto;
 	display: block;
 	z-index: 1;
@@ -390,13 +392,14 @@ header {
 	display: block;
 	z-index: -1;
 	position: relative;
-	
-	&.sunken {
-		@media (min-width:$phone-landscape) {
-			margin-bottom: -140px;
-		}
+}
+
+.sunken {
+	@media (min-width:$phone-landscape) {
+		margin-bottom: -140px;
 	}
 }
+
 
 .countdown {
 	display: flex;
