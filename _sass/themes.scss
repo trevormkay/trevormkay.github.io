@@ -796,6 +796,10 @@
 	--primary: #20419A;
 	--highlight: #00B5DC;
 	
+	nav {
+		border-color: rgba(#20419A,0.2);
+	}
+	
 	header {
 		.coverimage {
 			background-image: url(../images/portfolio/aptapro/header-background.jpg);
@@ -877,6 +881,10 @@
 	--primary: #9F9D9A;
 	--highlight: #BC441C;
 	
+	nav {
+		border-color: rgba(#9F9D9A,0.2);
+	}
+	
 	.coverimage {
 		background-image: url(../images/portfolio/eastland/header-background.jpg);
 		opacity: 0.07;
@@ -928,6 +936,10 @@
 	--background-dark: #37332C;
 	--primary: #ACA8A2;
 	--highlight: #FFD56F;
+	
+	nav {
+		border-color: rgba(#ACA8A2,0.2);
+	}
 	
 	header {
 		.coverimage {
@@ -1173,6 +1185,10 @@
 	--primary: #755F1F;
 	--highlight: #005B9F;
 	
+	nav {
+		border-color: rgba(#755F1F,0.2);
+	}
+	
 	.coverimage {
 		background-image: url(../images/portfolio/karinourish/header-background.jpg);
 		opacity: 0.5;
@@ -1239,6 +1255,9 @@
 	--primary: #212121;
 	--highlight: #2196F3;
 	
+	nav {
+		border-color: rgba(#212121,0.2);
+	}
 	
 	.coverimage {
 		background-image: url(../images/portfolio/mediaportal/header-background.jpg);
@@ -1295,7 +1314,10 @@
 	--background-dark: #182D2F;
 	--primary: #EAE4CA;
 	--highlight: #A2DFA8;
-	--accent: #75ECE1;
+	
+	nav {
+		border-color: rgba(#EAE4CA,0.2);
+	}
 	
 	.coverimage {
 		opacity: 1;
@@ -1373,6 +1395,10 @@
 	--background-dark: #2D2731;
 	--primary: #9B9CA6;
 	--highlight: #D7B48D;
+	
+	nav {
+		border-color: rgba(#9B9CA6,0.2);
+	}
 	
 	.coverimage {
 		background-image: url(../images/portfolio/nightlight/header-background.jpg);
@@ -1529,6 +1555,10 @@
 	--primary: #6A6A6A;
 	--highlight: #CA4750;
 	
+	nav {
+		border-color: rgba(#6A6A6A,0.2);
+	}
+	
 	.coverimage {
 		background-image: url(../images/portfolio/retailerportal/header-background.jpg);
 	}
@@ -1631,4 +1661,9 @@
 	--background-dark: #E1E1E1;
 	--primary: #665B49;
 	--highlight: #FF9E2A;
+	
+	nav {
+		border-color: rgba(#665B49,0.2);
+	}
+	
 }
