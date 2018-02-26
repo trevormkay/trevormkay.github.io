@@ -651,6 +651,14 @@
 				font-size: 22px;
 				color: var(--primary);
 				
+				a {
+					color: var(--primary);
+					
+					&:hover {
+						color: var(--highlight);
+					}
+				}
+				
 				&:first-child {
 					display: none;
 				}
