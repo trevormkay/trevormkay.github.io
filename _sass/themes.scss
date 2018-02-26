@@ -524,11 +524,70 @@
 	--primary: #7B7B7B;
 	--highlight: #F78A60;
 	
+	nav {
+		border: none;
+		padding-left: 20px;
+		padding-right: 20px;
+		
+		a {
+			color: var(--primary);
+		}
+		
+		.contact-link {
+			display: none;
+		}
+		
+		@media (min-width:$phone-landscape) {
+			max-width: 900px;
+			padding-left: calc(20px + env(safe-area-inset-left));
+		    padding-right: calc(20px + env(safe-area-inset-right));
+		}
+		
+		@media (min-width:$tablet) {
+			height: 120px;
+			padding-left: calc(30px + env(safe-area-inset-left));
+		    padding-right: calc(30px + env(safe-area-inset-right));
+			
+		}
+		
+		
+		@media (min-width:$tablet-landscape) {
+			padding-left: calc(0px + env(safe-area-inset-left));
+		    padding-right: calc(0px + env(safe-area-inset-right));
+			
+		}
+		
+		@media (min-width:$desktop) {
+			height: 212px;
+			
+			.sitename {
+				transform: scale(1.3);
+			}
+			
+			.contact-link {
+				font-size: 30px;
+			}
+		}
+		
+		@media (min-width: 1224px) {
+			padding-left: 0px;
+		    padding-right: 0px;
+		}
+	}
 	
 	.constrained {
 		max-width: 900px;
 		z-index: 2;
 		position: relative;
+		padding-top: 70px;
+		
+		@media (min-width:$tablet) {
+			padding-top: 120px;
+		}
+		
+		@media (min-width:$desktop) {
+			padding-top: 212px;
+		}
 	}
 	
 	.categories {
@@ -561,6 +620,7 @@
 		font-family: var(--font-body);
 		font-size: 16px;
 		line-height: 24px;
+		padding-bottom: 30px;
 	}
 	
 	a {
@@ -572,12 +632,6 @@
 		
 		@media (min-width:$desktop) {
 			margin-left: 18px;
-		}
-	}
-	
-	.main-nav {		
-		.sitename span {
-			display: none;
 		}
 	}
 	
@@ -595,6 +649,7 @@
 				font-family: var(--font-header);
 				margin-right: 40px;
 				font-size: 22px;
+				color: var(--primary);
 				
 				&:first-child {
 					display: none;
@@ -608,12 +663,10 @@
 	}
 	
 	.job {
-		margin-bottom: 50px;
+		margin-bottom: 40px;
 		margin-left: 10px;
 		
 		@media (min-width:$tablet) {
-			border: none;
-			margin-bottom: 80px;
 			padding: 0px;
 		}
 		
@@ -623,7 +676,7 @@
 	}
 	
 	.education {
-		margin-bottom: 40px;
+		margin-bottom: 20px;
 		margin-left: 10px;
 		
 		@media (min-width:$desktop) {
@@ -632,25 +685,26 @@
 	}
 	
 	@media print {
-		.main-nav {
-			display: none;
-		}
+		--background: black;
+		--background-dark: black;
+		--primary: black;
+		--highlight: black;
 		
-		.name {
-			margin-top: 0px;
-			margin-bottom: 10px;
+		nav {
+			height: 40px;
 			
-			h1 {
-				font-size: 63px;
+			.sitename {
+				transform: scale(1);
+				margin-left: 20px;
 			}
 			
-			h2 {
+			svg {
 				display: none;
 			}
 		}
 		
-		h1, h3, a, p {
-			color: black !important;
+		.constrained {
+			padding-top: 40px;
 		}
 		
 		.details ul li:first-child {
@@ -665,16 +719,14 @@
 			padding-top: 20px;
 		}
 		
-		.spin {
-			display: none;
-		}
-		
 		.type {
-			margin-bottom: 0px;
+			margin-bottom: 15px;
+			margin-top: 30px;
+			border-bottom: 1px solid var(--primary);
 		}
 		
 		.job {
-			margin-bottom: 20px;
+			margin-bottom: 0px;
 			
 			h3 {
 				font-size: 20px;
@@ -693,10 +745,11 @@
 		
 		
 		.education {
-			margin-bottom: 10px;
+			margin-bottom: 0px;
 			
 			h3 {
 				font-size: 20px;
+				margin-bottom: 0px;
 			}
 			
 			h4 {
@@ -707,6 +760,7 @@
 			p {
 				font-size: 12px;
 				line-height: 18px;
+				padding-bottom: 20px;
 			}
 		}
 	}
