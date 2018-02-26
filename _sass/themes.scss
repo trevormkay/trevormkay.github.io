@@ -625,6 +625,10 @@
 	
 	a {
 		color: var(--highlight);
+		
+		&:hover {
+			text-decoration: underline;
+		}
 	}
 	
 	.type {
