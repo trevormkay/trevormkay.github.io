@@ -41,6 +41,8 @@
 		
 		@media (min-width:$tablet) {
 			height: 120px;
+			padding-left: calc(20px + env(safe-area-inset-left));
+		    padding-right: calc(20px + env(safe-area-inset-right));
 		}
 		
 		@media (min-width:$desktop) {
@@ -53,6 +55,11 @@
 			.contact-link {
 				font-size: 30px;
 			}
+		}
+		
+		@media (min-width: 1195px) {
+			padding-left: calc(0px + env(safe-area-inset-left));
+		    padding-right: calc(0px + env(safe-area-inset-right));
 		}
 		
 		@media (min-width:$desktop-lrg) {
