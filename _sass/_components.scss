@@ -38,7 +38,10 @@ a {
 }
 
 nav {
-	width: calc(100% - 20px);
+	width: 100%;
+	padding-left: calc(20px + env(safe-area-inset-left));
+    padding-right: calc(20px + env(safe-area-inset-right));
+	
 	margin: 0px auto;
 	height: 70px;
 	display: flex;
@@ -52,7 +55,6 @@ nav {
 	border-bottom: 2px solid black;
 	
 	@media (min-width:$tablet) {
-		width: calc(100% - 60px);
 		height: 90px;
 	}
 	
@@ -95,7 +97,6 @@ nav {
 	.contact-link {
 		font-family: var(--font-header);
 		float: right;
-		position: absolute;
 		right: 0px;
 		color: var(--primary);
 		font-size: 20px;
