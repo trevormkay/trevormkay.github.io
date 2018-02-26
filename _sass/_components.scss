@@ -240,9 +240,13 @@ header {
 		margin-bottom: -10px;
 		
 		@media (min-width:$tablet) {
-			font-size: 113px;
+			font-size: 80px;
 			margin-bottom: 20px;
 			line-height: 90px;
+		}
+		
+		@media (min-width:$desktop) {
+			font-size: 113px;
 		}
 	}
 	

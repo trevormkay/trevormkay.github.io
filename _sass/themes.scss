@@ -901,11 +901,7 @@
 			background-position: center bottom;
 		}
 		
-		@media (min-width:$tablet) and (max-width:1300px) {
-			h1 {
-				font-size: 98px;
-			}
-			
+		@media (min-width:$tablet) and (max-width:1300px) {			
 			.copy {
 				width: 100%;
 			}
