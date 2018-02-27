@@ -137,6 +137,10 @@
 				height: auto;
 				display: flex;
 				justify-content: center;
+				
+				div {
+					//width: 100%;
+				}
 			}
 			
 			@media (min-width:$tablet) {
@@ -531,6 +535,10 @@
 		
 		a {
 			color: var(--primary);
+			
+			 &:hover {
+				 text-decoration: none;
+			 }
 		}
 		
 		.contact-link {
@@ -1733,4 +1741,10 @@
 	nav {
 		border-color: rgba(#665B49,0.2);
 	}
+}
+
+@-moz-document url-prefix() { 
+  .portfolio .flexwrapper div {
+     width: 100%;
+  }
 }
