@@ -1742,18 +1742,89 @@
 		border-color: rgba(#665B49,0.2);
 	}
 	
+/*
 	.coverimage {
 		background-image: url(../images/portfolio/simplescales/header.jpg);
 		opacity: 0.6;
 	}
+*/
 	
 	#challenge {
 		.constrained {
 			display: flex;
 			align-items: center;
+			flex-direction: column;
 			
 			img {
-				transform: translateY(5px);
+				max-width: 100%;
+			}
+			
+			@media (min-width:$tablet-landscape) {
+				flex-direction: row;
+				
+				img {
+					transform: translateY(5px) translateX(50px);
+				}
+			}
+		}
+	}
+	
+	.phone {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		img {
+			max-width: 100%;
+			margin-top: 30px;
+		}
+		
+		@media (min-width:$tablet-landscape) {
+			flex-direction: row;
+			align-items: flex-start;
+			
+			img {
+				max-width: 350px;
+				margin-top: 0px;
+			}
+		}
+		
+		@media (min-width:$desktop) {
+			img {
+				max-width: 525px;
+			}
+		}
+	}
+	
+	.watch {
+		display: flex;
+		flex-direction: column-reverse;
+		align-items: center;
+		margin-top: 60px;
+		
+		img {
+			max-width: 100%;
+			margin-top: 30px;
+		}
+				
+		@media (min-width:$tablet-landscape) {
+			flex-direction: row;
+			margin-top: -150px;
+			
+			img {
+				margin-right: 40px;
+				margin-top: 0px;
+				max-width: 250px;
+			}
+			
+			p {
+				margin-top: 150px;
+			}
+		}
+		
+		@media (min-width:$desktop) {
+			img {
+				max-width: 392px;
 			}
 		}
 	}
