@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="418" height="418" viewBox="0 0 418 418" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <defs>
+    <linearGradient id="c" x1="50%" x2="50%" y1="0%" y2="100%">
+      <stop stop-color="#FFC202" offset="0%"/>
+      <stop stop-color="#FFA300" offset="100%"/>
+    </linearGradient>
+    <circle id="b" cx="132" cy="132" r="132"/>
+    <filter id="a" width="206.1%" height="206.1%" x="-53%" y="-44.7%" filterUnits="objectBoundingBox">
+      <feOffset dy="20" in="SourceAlpha" result="shadowOffsetOuter1"/>
+      <feGaussianBlur stdDeviation="40" in="shadowOffsetOuter1" result="shadowBlurOuter1"/>
+      <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter1" result="shadowMatrixOuter1"/>
+      <feOffset dy="2" in="SourceAlpha" result="shadowOffsetOuter2"/>
+      <feGaussianBlur stdDeviation="5" in="shadowOffsetOuter2" result="shadowBlurOuter2"/>
+      <feComposite in="shadowBlurOuter2" in2="SourceAlpha" operator="out" result="shadowBlurOuter2"/>
+      <feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.1 0" in="shadowBlurOuter2" result="shadowMatrixOuter2"/>
+      <feMerge>
+        <feMergeNode in="shadowMatrixOuter1"/>
+        <feMergeNode in="shadowMatrixOuter2"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <g fill="none" fill-rule="evenodd" transform="translate(77 57)">
+    <use fill="black" filter="url(#a)" xlink:href="#b"/>
+    <use fill="url(#c)" xlink:href="#b"/>
+    <circle cx="132" cy="132" r="131.5" stroke="#000000" stroke-opacity=".2"/>
+    <path fill="#FFFFFF" d="M116.959156,203.219978 C115.946253,208.427677 110.898922,211.834339 105.687007,210.821875 C100.485697,209.811471 97.0716214,204.764397 98.0851428,199.553521 L113.713476,119.20267 C114.159923,110.996381 109.842149,109.338518 107.453102,109.044704 L68.9847649,109.044704 C64.574901,109.044704 61,105.490951 61,101.038318 C61,96.6165126 64.5559324,93.0319313 68.9847649,93.0319313 L194.015235,93.0319313 C198.425099,93.0319313 202,96.5856846 202,101.038318 C202,105.460123 198.444068,109.044704 194.015235,109.044704 L154.845885,109.044704 C152.485337,109.335013 148.241803,110.957022 148.571557,118.911778 L164.256468,199.553521 C165.26999,204.764397 161.855914,209.811471 156.654604,210.821875 C151.442689,211.834339 146.395358,208.427677 145.382455,203.219978 L137.026534,160.259201 C137.026534,160.259201 133.565728,144.272803 131.5,144.272803 C129.681748,144.272803 126.691091,153.55095 125.5658,158.970142 L116.959156,203.219978 Z M131.5,88.2280996 C121.765981,88.2280996 113.875,80.3420209 113.875,70.6140498 C113.875,60.8860787 121.765981,53 131.5,53 C141.234019,53 149.125,60.8860787 149.125,70.6140498 C149.125,80.3420209 141.234019,88.2280996 131.5,88.2280996 Z"/>
+  </g>
+</svg>
