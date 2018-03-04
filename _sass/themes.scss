@@ -1850,10 +1850,10 @@
 			max-width: 100%;
 			margin-top: 30px;
 		}
-				
+						
 		@media (min-width:$tablet-landscape) {
 			flex-direction: row;
-			margin-top: -300px;
+			margin-top: -150px;
 			
 			img {
 				margin-right: 40px;
@@ -1867,6 +1867,8 @@
 		}
 		
 		@media (min-width:$desktop) {
+			margin-top: -300px;
+			
 			img {
 				max-width: 392px;
 			}
