@@ -1746,7 +1746,7 @@
 		background-image: url(../images/portfolio/simplescales/header.jpg);
 		opacity: 0.6;
 	}
-	
+		
 	#challenge {
 		.constrained {
 			display: flex;
@@ -1756,7 +1756,7 @@
 			img {
 				max-width: 100%;
 			}
-			
+						
 			@media (min-width:$tablet-landscape) {
 				flex-direction: row;
 				
@@ -1766,6 +1766,23 @@
 			}
 		}
 	}
+	
+	
+	.demo {
+		position: relative;
+		
+		img {
+			z-index: 2;
+			position: relative;				
+		}
+		
+		video {
+			position: absolute;
+			left: 58px;
+			top: 24px;				
+		}
+	}
+	
 	
 	.phone {
 		display: flex;
@@ -1807,7 +1824,7 @@
 				
 		@media (min-width:$tablet-landscape) {
 			flex-direction: row;
-			margin-top: -150px;
+			margin-top: -300px;
 			
 			img {
 				margin-right: 40px;
