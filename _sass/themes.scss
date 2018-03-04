@@ -1744,7 +1744,8 @@
 	
 	.coverimage {
 		background-image: url(../images/portfolio/simplescales/header.jpg);
-		opacity: 0.6;
+		opacity: 0.2;
+		background-position: right top;
 	}
 		
 	#challenge {
@@ -1764,6 +1765,12 @@
 					transform: translateY(5px) translateX(50px);
 				}
 			}
+		}
+	}
+	
+	#solution .copy {
+		@media (min-width:$tablet-landscape) {
+			margin-top: 100px;
 		}
 	}
 	
@@ -1906,8 +1913,9 @@
 			flex-direction: column;
 		}
 		
-		.health p {
-			margin-top: -40px;
+		img {
+			margin-bottom: 30px;
+			margin-top: 60px;
 		}
 		
 		@media (min-width:$tablet-landscape) {
@@ -1916,7 +1924,11 @@
 			max-width: 100%;
 			
 			img {
-				height: 329px;
+				height: 298px;
+			}
+			
+			.health img {
+				transform: scale(0.8);
 			}
 			
 			.health p {
