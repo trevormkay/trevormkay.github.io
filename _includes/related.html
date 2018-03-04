@@ -1,12 +1,12 @@
 {% for p in include.collection %}
     {% if p.class == include.item %}
-<div class="link">
-	<a href="../portfolio/{{ p.class }}.html">
+<a href="../portfolio/{{ p.class }}.html">
+	<div class="link">
 		<div class="copy">
-			<h3>{{ p.title }} {% include arrowRight.svg %}</h3>
+			<h3>{{ p.title }}</h3>
 			<p class="description">{{ p.description }}</p>
 		</div>
-	</a>
-</div>
+	</div>
+</a>
     {% endif %}
 {% endfor %}

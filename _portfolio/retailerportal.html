@@ -1,34 +1,26 @@
 ---
 layout: portfolio
 title:  "Retailer Portal"
-type: "Custom CMS"
 class: "retailerportal"
 description: "Managing an omni-channel retail experience for sixteen shopping centres"
-weight: 3
 theme: "#000000"
 ---
-<section id="challenge" class="constrained">
-	<h4 class="type">The Challenge</h4>
-	<h2>FRICTION-FREE RETAIL MANAGEMENT</h2>
-	<p>As part of a redevelopment effort, beginning with the Eastland Shopping Centre, QIC were looking to create a next generation retail platform allowing retailers to manage all of their stores with QIC centres.</p>
-	<div class="phone" style="margin-bottom: 0px;">
-		<img class="screen" src="../images/portfolio/retailerportal/mockup_mobile.png" srcset="../images/portfolio/retailerportal/mockup_mobile.png, ../images/portfolio/retailerportal/mockup_mobile@2x.png 2x" alt="Mobile screenshot of the Retailer Portal">
-	</div>
-	<div class="browser">
-		<div class="browserBar">
-			<ul>
-				<li></li>
-				<li></li>
-				<li></li>	
-			</ul>
-		</div>
-		<img class="browserWindow" src="../images/portfolio/retailerportal/mockup.png" srcset="../images/portfolio/retailerportal/mockup.png, ../images/portfolio/retailerportal/mockup@2x.png 2x" alt="Desktop screenshot of the Retailer Portal">
+<section id="challenge">
+	<div class="constrained">
+		<h4 class="type">The Challenge</h4>
+		<h2>Friction-Free retail management</h2>
+		<p>As part of a redevelopment effort, beginning with the Eastland Shopping Centre, QIC were looking to create a next generation retail platform allowing retailers to manage all of their stores with QIC centres.</p>
+		<picture>
+			<source media="(min-width: 568px)" srcset="../images/portfolio/retailerportal/mockup.png, ../images/portfolio/retailerportal/mockup@2x.png 2x">
+			<source media="(min-width: 0px)" srcset="../images/portfolio/retailerportal/mockup_mobile.png, ../images/portfolio/retailerportal/mockup_mobile@2x.png 2x">
+			<img src="../images/portfolio/retailerportal/mockup_mobile.png" alt="Screenshot of the Retailer Portal homepage" class="screenshot sunken">
+		</picture>
 	</div>
 </section>
 <section id="solution">
 	<div class="constrained">
 		<h4 class="type">The Solution</h4>
-		<h2>FROM SMALL OUTLET TO GLOBAL RETAILER</h2>
+		<h2>From small outlet to global retailer</h2>
 		<p>A custom CMS was developed that focuses on retailers instead of centre management. A retailer can easily log in and see all the information relevant to their brand and each of their stores within QIC centres.</p>
 		<div class="card">
 			<img src="../images/portfolio/retailerportal/job.png" srcset="../images/portfolio/retailerportal/job.png, ../images/portfolio/retailerportal/job@2x.png 2x" alt="Screenshot of an offer card">
@@ -40,7 +32,7 @@ theme: "#000000"
 <section id="process">
 	<div class="constrained">
 		<h4 class="type">The Process</h4>
-		<h2>BRIDGING BRANDS ACROSS PLATFORMS</h2>
+		<h2>Bridging brands across platforms</h2>
 		<p>Making the retailer portal a really fluid experience was important to me. I wanted users who came to the portal to feel like they could accomplish any edits they needed to do. This lead me to use a more app-like paradigm which made it easy to accomodate the breadth of options available for a user.</p>
 		<div class="grid">
 			<img src="../images/portfolio/retailerportal/photo1.jpg" srcset="../images/portfolio/retailerportal/photo1.jpg, ../images/portfolio/retailerportal/photo1@2x.jpg 2x" alt="Sketch of the UI frame">
@@ -60,8 +52,8 @@ theme: "#000000"
 	<div class="constrained">
 		<h4 class="type">Other Works</h4>
 		<div class="links">
+			{% include related.html item="karinourish" collection=site.portfolio %}
 			{% include related.html item="eastland" collection=site.portfolio %}
-			{% include related.html item="nightlight" collection=site.portfolio %}
 		</div>
 	</div>
 </section>

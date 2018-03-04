@@ -22,7 +22,3 @@ exclude: [node_modules, gulpfile.js, _thoughts]
 collections:
   portfolio:
     output: true
-  thoughts:
-    output: true
-  downloads:
-    output: true
