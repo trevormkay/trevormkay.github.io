@@ -1073,55 +1073,21 @@
 	}
 	
 	#challenge {
-		display: flex;
-		overflow: hidden;
-		flex-flow: column;
-		position: relative;	
-		
-		@media (min-width:$desktop) {
-			flex-flow: row;
-			height: 480px;
-		}
-		
-		.copy, .image {
-			width: 100%;
-			
-			@media (min-width:$desktop) {
-				width: 50%;
-			}
-		}
-		
-		.image {
-			margin-top: 30px;
+		.constrained {
+			display: flex;
 			align-items: center;
-			flex-flow: column;
+			flex-direction: column;
 			
-			@media (min-width:$desktop) {
-				margin-top: 0px;
+			img {
+				max-width: 100%;
 			}
-		}
-		
-		.phone {
-			display: block;
-			margin: 0px auto;
-			max-width: 280px;
-			
-			@media(min-width:$tablet) {
-				width: 300px;
-				max-width: 300px;
-			}
-		}
-		
-		.countdown {
-			bottom: 160px;
-			
-			@media (min-width:$tablet) {
-				bottom: 229px;
-			}
-			
-			@media (min-width:$desktop) {
-				right: 155px;
-				bottom: 55px;
+						
+			@media (min-width:$tablet-landscape) {
+				flex-direction: row;
+				
+				img {
+					transform: translateY(5px) translateX(50px);
+				}
 			}
 		}
 	}
