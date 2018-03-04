@@ -1851,6 +1851,8 @@
 	
 	.grid {
 		grid-template-columns: 1fr;
+		max-width: 600px;
+		margin: 0px auto;
 		
 		div {
 			display: flex;
@@ -1858,16 +1860,21 @@
 			flex-direction: column;
 		}
 		
-		p {
-			margin-top: -20px;
+		.health p {
+			margin-top: -40px;
 		}
 		
 		@media (min-width:$tablet-landscape) {
 			grid-template-columns: 1fr 1fr;
-			grid-gap: 40px;
+			grid-gap: 100px;
+			max-width: 100%;
 			
 			img {
 				height: 300px;
+			}
+			
+			.health p {
+				margin-top: 0px;
 			}
 		}
 	}
