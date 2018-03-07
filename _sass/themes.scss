@@ -1290,17 +1290,6 @@
 			}
 		}
 	}
-		
-	.row {
-		@media (min-width:$desktop) {
-			display: flex;
-			justify-content: space-between;
-			
-			p {
-				width: 49%;
-			}
-		}
-	}
 }
 
 .nightlight {
@@ -1481,18 +1470,7 @@
 		}
 	}
 	
-	.row {
-		@media (min-width:$tablet) {
-			display: flex;
-			justify-content: space-between;
-			
-			p {
-				width: 49%;
-			}
-		}
-	}
-	
-	.styleguide {
+	.artdirection {
 		height: 1249px;
 		position: relative;
 		
