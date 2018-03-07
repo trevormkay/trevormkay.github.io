@@ -551,3 +551,21 @@ header {
 		}
 	}
 }
+
+.icon-promo {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+	img {
+		max-width: 100%;
+	}
+				
+	@media (min-width:$tablet-landscape) {
+		flex-direction: row;
+		
+		img {
+			transform: translateY(5px) translateX(50px);
+		}
+	}
+}

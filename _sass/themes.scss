@@ -1067,27 +1067,7 @@
 			right: 10px;
 		}
 	}
-	
-	#challenge {
-		.constrained {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			
-			img {
-				max-width: 100%;
-			}
-						
-			@media (min-width:$tablet-landscape) {
-				flex-direction: row;
-				
-				img {
-					transform: translateY(5px) translateX(50px);
-				}
-			}
-		}
-	}
-	
+		
 	#solution {
 		position: relative;
 		
@@ -1701,27 +1681,7 @@
 		opacity: 0.2;
 		background-position: right top;
 	}
-		
-	#challenge {
-		.constrained {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
 			
-			img {
-				max-width: 100%;
-			}
-						
-			@media (min-width:$tablet-landscape) {
-				flex-direction: row;
-				
-				img {
-					transform: translateY(5px) translateX(50px);
-				}
-			}
-		}
-	}
-	
 	#solution .copy {
 		@media (min-width:$tablet-landscape) {
 			margin-top: 100px;
