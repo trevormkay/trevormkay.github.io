@@ -569,3 +569,20 @@ header {
 		}
 	}
 }
+
+.styleguide {
+	display: grid;
+	grid-gap: 10px;
+	margin-bottom: 60px;
+	
+	img {
+		max-width: 100%;
+		width: 100%;
+	}
+	
+	@media (min-width:$tablet) {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 40px;
+		align-items: center;
+	}
+}
