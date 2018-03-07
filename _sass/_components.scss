@@ -577,13 +577,16 @@ header {
 	
 	img {
 		max-width: 100%;
-		width: 100%;
 	}
 	
-	@media (min-width:$tablet) {
+	@media (min-width:$phone-landscape) {
 		grid-template-columns: 1fr 1fr;
 		grid-gap: 40px;
 		align-items: center;
+		
+		img {
+			width: 100%;
+		}
 	}
 }
 
