@@ -943,34 +943,6 @@
 			margin-bottom: 30px;
 		}
 	}
-	
-	.colours {
-		max-width: 100%;
-	}
-	
-	.styleguide {
-		display: flex;
-		flex-flow: column;
-		margin-top: -5px;
-		
-		img {
-			max-width: 100%;
-			height: auto;
-			margin: 10px 0px;
-			width: 100%;
-		}
-		
-		@media (min-width:$tablet) {
-			flex-flow: row;
-			justify-content: space-between;
-			align-items: center;
-			
-			img {
-				width: 50%;
-				margin: 0px;
-			}
-		}
-	}
 }
 
 .eastland {
@@ -1043,10 +1015,6 @@
 		.coverimage {
 			background-image: url(../images/portfolio/epoch/header-background.jpg);
 		}
-		
-		.visit-link {
-			display: none;
-		}
 	}
 	
 	.quote {
@@ -1071,27 +1039,7 @@
 			right: 10px;
 		}
 	}
-	
-	#challenge {
-		.constrained {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
-			
-			img {
-				max-width: 100%;
-			}
-						
-			@media (min-width:$tablet-landscape) {
-				flex-direction: row;
-				
-				img {
-					transform: translateY(5px) translateX(50px);
-				}
-			}
-		}
-	}
-	
+		
 	#solution {
 		position: relative;
 		
@@ -1258,39 +1206,6 @@
 		opacity: 0.5;
 		background-position: center bottom;
 	}
-	
-	.styleguide {
-		margin-top: 30px;
-		margin-bottom: 60px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		
-		img {
-			max-width: 100%;
-			
-			&:last-child {
-				margin-bottom: 0px;
-			}
-		}
-		
-		@media (min-width:$tablet) {
-			flex-direction: row;
-			justify-content: space-between;
-			
-			img {
-				width: 48%;
-			}
-		}
-		
-		@media (min-width:$desktop) {
-			margin-bottom: 140px;
-			
-			img {
-				width: auto;
-			}
-		}
-	}
 }
 
 .mediaportal {
@@ -1314,39 +1229,6 @@
 		
 		img {
 			max-width: 100%;
-		}
-	}
-	
-	.styleguide {
-		margin-top: 30px;
-		margin-bottom: 60px;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		
-		img {
-			max-width: 100%;
-			margin-bottom: 20px;
-			
-			&:last-child {
-				margin-bottom: 0px;
-			}
-		}
-		
-		@media (min-width:$tablet) {
-			flex-direction: row;
-			justify-content: space-between;
-			
-			img {
-				width: 48%;
-				margin-bottom: 0px;
-			}
-		}
-		
-		@media (min-width:$desktop) {
-			img {
-				width: auto;
-			}
 		}
 	}
 }
@@ -1408,28 +1290,6 @@
 			}
 		}
 	}
-		
-	.row {
-		@media (min-width:$desktop) {
-			display: flex;
-			justify-content: space-between;
-			
-			p {
-				width: 49%;
-			}
-		}
-	}
-	
-	.colours {
-		margin: 60px 0px;
-		display: flex;
-		flex-flow: column;
-		
-		img {
-			max-width: 100%;
-			margin-bottom: 10px;
-		}
-	}
 }
 
 .nightlight {
@@ -1445,10 +1305,6 @@
 	.coverimage {
 		background-image: url(../images/portfolio/nightlight/header-background.jpg);
 		opacity: 1;
-	}
-	
-	.visit-link {
-		display: none;
 	}
 	
 	.screenshotWrapper {
@@ -1497,7 +1353,7 @@
 		}
 	}
 	
-	.styleguide {
+	.artdirection {
 		background: #2F2D35;
 		padding: 20px;
 		margin-bottom: 10px;
@@ -1605,10 +1461,6 @@
 		background-image: url(../images/portfolio/retailerportal/header-background.jpg);
 	}
 	
-	.visit-link {
-		display: none;
-	}
-	
 	.card {
 		margin: 30px auto;
 		max-width: 940px;
@@ -1618,18 +1470,7 @@
 		}
 	}
 	
-	.row {
-		@media (min-width:$tablet) {
-			display: flex;
-			justify-content: space-between;
-			
-			p {
-				width: 49%;
-			}
-		}
-	}
-	
-	.styleguide {
+	.artdirection {
 		height: 1249px;
 		position: relative;
 		
@@ -1713,27 +1554,7 @@
 		opacity: 0.2;
 		background-position: right top;
 	}
-		
-	#challenge {
-		.constrained {
-			display: flex;
-			align-items: center;
-			flex-direction: column;
 			
-			img {
-				max-width: 100%;
-			}
-						
-			@media (min-width:$tablet-landscape) {
-				flex-direction: row;
-				
-				img {
-					transform: translateY(5px) translateX(50px);
-				}
-			}
-		}
-	}
-	
 	#solution .copy {
 		@media (min-width:$tablet-landscape) {
 			margin-top: 100px;

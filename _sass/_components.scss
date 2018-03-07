@@ -551,3 +551,47 @@ header {
 		}
 	}
 }
+
+.icon-promo {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	
+	img {
+		max-width: 100%;
+	}
+				
+	@media (min-width:$tablet-landscape) {
+		flex-direction: row;
+		
+		img {
+			transform: translateY(5px) translateX(50px);
+		}
+	}
+}
+
+.styleguide {
+	display: grid;
+	grid-gap: 10px;
+	margin-bottom: 60px;
+	
+	img {
+		max-width: 100%;
+	}
+	
+	@media (min-width:$phone-landscape) {
+		grid-template-columns: 1fr 1fr;
+		grid-gap: 40px;
+		align-items: center;
+		
+		img {
+			width: 100%;
+		}
+	}
+}
+
+.colours {
+	max-width: 100%;
+	width: 100%;
+	height: 100px;
+}

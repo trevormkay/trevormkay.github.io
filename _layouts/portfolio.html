@@ -7,7 +7,7 @@ layout: default
 			<div class="copy">
 				<h1>{{ page.title }}</h1>
 				<p class="description">{{ page.description }}</p>
-				<a href="{{ page.link }}" class="visit-link" target="_blank">{{ page.cta }}</a>
+				{% if page.visitlink %}<a href="{{ page.link }}" class="visit-link" target="_blank">{{ page.cta }}</a>{% endif %}
 			</div>
 		</div>
 	</div>
