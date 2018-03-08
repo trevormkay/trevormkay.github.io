@@ -286,16 +286,12 @@ header {
 
 .case-study {
 	section {
-		padding: {
-			top: 20px;
-			bottom: 20px;
-		}
+		padding-top: 20px;
+		padding-bottom: 20px;
 		
 		@media (min-width:$tablet) {
-			padding: {
-				top: 80px;
-				bottom: 80px;
-			}
+			padding-top: 80px;
+			padding-bottom: 80px;
 		}
 	}
 	
