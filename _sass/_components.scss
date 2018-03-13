@@ -350,7 +350,7 @@ header {
 		display: grid;
 		grid-gap: 20px;
 		
-		@media (min-width:$tablet-landscape) {
+		@media (min-width:$tablet) {
 			grid-template-columns: 1fr 1fr;
 		}
 	}
@@ -363,15 +363,11 @@ header {
 
 .link {
 	padding: 20px;
-	padding-bottom: 25px;
 	border-radius: var(--radius);
 	background: var(--background);
 	height: 100%;
-	
-	@media (min-width:$desktop) {
-		padding-bottom: 20px;
-	}
-	
+	text-align: center;
+		
 	&:hover {
 		background: var(--highlight) !important;
 		
