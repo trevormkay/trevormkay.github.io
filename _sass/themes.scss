@@ -391,12 +391,12 @@
 			@media (min-width:$tablet) {
 				transform: rotate(23deg) scale(1.35) skew(-40deg);
 				bottom: 195px;
-				left: 213px;
+				left: 200px !important;
 			}
 			
-			@media (min-width:$desktop-lrg) {
+			@media (min-width:$desktop) {
 				bottom: 195px;
-				left: 213px;
+				left: -391px !important;
 			}
 		}
 	}
