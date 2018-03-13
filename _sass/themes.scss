@@ -1021,117 +1021,66 @@
 		}
 	}
 	
-	.quote {
-		font-family: var(--font-header);
-		font-size: 20px;
-		position: relative;
-		margin-left: 50px;
-		margin-top: 20px;
-		margin-bottom: 20px;
-		color: var(--highlight);
-		
-		&::before {
-			content: url(../images/portfolio/epoch/quote.svg);
-			position: absolute;
-			left: -50px;
-		}
-		
-		&::after {
-			content: url(../images/portfolio/epoch/quote.svg);
-			transform: rotate(180deg);
-			position: absolute;
-			right: 10px;
-		}
-	}
-		
-	#solution {
-		position: relative;
-		
-		.phone {
-			display: block;
-			margin: 0px auto;
-			max-width: 280px;
-			
-			@media(min-width:$tablet) {
-				width: 300px;
-				max-width: 300px;
-			}
-		}
-		
-		.image {
-			position: relative;
-		}
-		
-		@media (min-width:$desktop) {
-			height: 1000px;
-			overflow: hidden;
-		}
-		
-		.countdown {
-			bottom: 144px;
-			
-			@media (min-width:$tablet) {
-				bottom: 149px;
-			}
-			
-			@media (min-width:$desktop) {
-				right: 0px !important;
-				left: 0px !important;
-				position: absolute;
-				margin: 0px auto !important;
-			}
-		}
+	.appgrid {
+		margin-top: 0px;
 	}
 	
-	#process {
-		display: flex;
-		overflow: hidden;
-		flex-flow: column;
+	.appgrid > div {
+		position: relative;
+	}
+	
+	.screenshotWrapper {
+		box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
+	}
+		
+	.countdown {
+		bottom: 100px;
+		
+		@media (min-width:$tablet) {
+			bottom: 165px;
+			transform: scale(1.5);
+		}
 		
 		@media (min-width:$desktop) {
-			flex-flow: row;
-			align-items: center;
-		}
-		
-		.copy, .image {
-			width: 100%;
-			
-			@media (min-width:$desktop) {
-				width: 50%;
-			}
-		}
-		
-		.image {
-			margin-top: 30px;
-			
-			@media (min-width:$desktop) {
-				margin-top: 0px;
-			}
-		}		
-		
-		.screenshot {
-			display: block;
-			margin: 0px auto;
-			background: rgba(black, 0.3);
-			max-width: 280px;
-			
-			@media(min-width:$tablet) {
-				width: 330px;
-			}
+			right: 0px !important;
+			left: 0px !important;
+			position: absolute;
+			margin: 0px auto !important;
 		}
 	}
 	
 	.row {
 		display: flex;
 		flex-flow: column;
+		justify-content: center;
 		
-		@media (min-width:$desktop) {
+		.image {
+			position: relative;
+			width:378px;
+			transform: scale(0.75);
+			transform-origin: left top;
+			margin-bottom: -100px;
+			
+			@media (min-width:$tablet) {
+				transform: none;
+				margin-bottom: 0px;
+			}
+			
+			@media (min-width:$desktop) {
+				transform: translateY(26px);
+			}
+		}
+		
+		@media (min-width:$tablet) and (max-width:1022px) {
+			align-items: center;
+		}
+		
+		@media (min-width:$tablet-landscape) {
 			flex-flow: row;
 		}
 	}
 	
 	.widget {
-		@media (min-width:$tablet) {
 			flex-flow: row;
 			margin-bottom: 60px;
 			align-items: center;
@@ -1143,7 +1092,6 @@
 			.image {
 				width: 40%;
 			}
-		}
 		
 		.image {
 			position: relative;
@@ -1163,33 +1111,16 @@
 			}
 		}
 	}
-	
-	.location {
-		@media (min-width:$desktop) {
-			align-items: center;
-			
-			.image {
-				order: 1;
-				width: 40%;
-			}
-			
-			.copy {
-				order: 2;
-				margin-bottom: 30px;
-				width: 60%;
-			}
-		}
-	}
 
 	.minicountdown {
 		position: absolute;
 		left: 0px;
 		right: 0px;
-		top: 74%;
+		bottom: 60px;
 		
 		p {
 			color: white !important;
-			font-family: helvetica, arial, sans-serif;
+			font-family: -apple-system, helvetica, arial, sans-serif;
 			text-align: center;
 		}
 	}
