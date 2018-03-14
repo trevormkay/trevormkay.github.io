@@ -1,6 +1,6 @@
 @keyframes moveSlideshow {  
   100% { 
-    -webkit-transform: translateX(-185%);  
+     -webkit-transform: translateX(-100%);  
   }
 }
 
@@ -34,6 +34,10 @@ a {
     &:hover {
         text-decoration: none;
     }
+}
+
+.center {
+	text-align: center;
 }
 
 nav {
@@ -473,7 +477,7 @@ header {
 		max-width: 100%;
 	}
 	
-	.caption {
+	.caption, .center {
 		grid-column-end: span 2;
 	}
 }
@@ -527,22 +531,14 @@ header {
 	}
 	
 	span {
-		margin-top: 14px;
-		font-size: 23px !important;
+		margin-top: 4px;
+		font-size: 19px !important;
 	}
 	
 	.icon {
-		width: 50px;
-		height: 50px;
+		width: 40px;
+		height: 40px;
 		margin-right: 10px;
-	}
-	
-	@media (min-width:$tablet) {
-		grid-template-columns: repeat(16, 414px);
-		
-		span {
-			margin-top: 8px;
-		}
 	}
 }
 
