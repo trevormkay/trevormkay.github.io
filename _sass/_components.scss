@@ -299,6 +299,7 @@ header {
 	section {
 		padding-top: 20px;
 		padding-bottom: 20px;
+		overflow: hidden;
 		
 		@media (min-width:$tablet) {
 			padding-top: 40px;
@@ -308,6 +309,10 @@ header {
 		@media (min-width:$desktop) {
 			padding-top: 80px;
 			padding-bottom: 80px;
+		}
+		
+		&:nth-child(even) {
+			background: var(--background-dark);
 		}
 	}
 	
@@ -346,22 +351,7 @@ header {
 	}
 }
 
-#challenge {
-	overflow: hidden;
-}
-
-#solution {
-	background: var(--background-dark);
-	overflow: hidden;
-}
-
-#process {
-	overflow: hidden;
-}
-
 #other-works {
-	background: var(--background-dark);
-	
 	.links {
 		display: grid;
 		grid-gap: 20px;
