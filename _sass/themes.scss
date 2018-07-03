@@ -314,7 +314,8 @@
 	
 	.mediaportal {
 		grid-area: mediaportal;
-		background: #EDF0F0;
+		background: url(../images/portfolio/background-mediaportal.png);
+		background-size: cover;
 		
 		.promo {
 			position: absolute;
@@ -1165,7 +1166,7 @@
 	
 	.coverimage {
 		background-image: url(../images/portfolio/mediaportal/header-background.jpg);
-		opacity: 0.2;
+		opacity: 0.3;
 		background-position: right center;
 	}
 	
