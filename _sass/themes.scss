@@ -245,7 +245,9 @@
 	
 	.simplescales {
 		grid-area: simplescales;
-		background: var(--background);
+		//background: var(--background);
+		background: url(../images/portfolio/background-simplescales.jpg);
+		background-size: cover;
 		
 		.promo {
 			margin-top: -95px;
