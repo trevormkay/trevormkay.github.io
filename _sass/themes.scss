@@ -1185,7 +1185,11 @@
 	.subhead {
 		color: var(--primary);
 		margin: 0px;
-		font-size: 34px;
+		font-size: 30px;
+		
+		@media (min-width:$tablet) {
+			font-size: 34px;
+		}
 	}
 	
 	.subhead + p {
