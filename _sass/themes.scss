@@ -1188,14 +1188,54 @@
 		padding-bottom: 20px;
 	}
 	
-	section a {
+	#solution a {
 		color: var(--highlight);
 		padding: 10px 20px;
 		border: 2px solid var(--highlight);
 		border-radius: var(--radius);
 		font-family: var(--font-header);
 		font-size: 16px;
-		margin-right: 15px;		
+		margin-right: 15px;
+		margin-bottom: 20px;
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+		
+		@media (min-width:$phone-landscape) {
+			width: auto;
+		}
+		
+		&:hover {
+			background: var(--highlight);
+			color: var(--background);
+		}
+	}
+	
+	@media (min-width:$tablet-landscape) {
+		.report {
+			position: relative;
+			
+			.copy {
+				position: absolute;
+				width: 48%;
+				right: 0px;
+				top: 50px;
+			}
+		}
+	}
+	
+	.mobileapp {
+		display: flex;
+		flex-direction: column;
+		
+		@media (min-width:$tablet-landscape) {
+			align-items: center;
+			flex-direction: row;
+		}
+		
+		img {
+			margin-bottom: 0px;
+		}
 	}
 }
 
