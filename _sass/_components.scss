@@ -274,10 +274,11 @@ header {
 		font-family: var(--font-header);
 		font-size: 16px;
 		margin-top: 30px;
-		border: 2px solid var(--highlight);
-		color: var(--highlight);
+		//border: 2px solid var(--highlight);
+		color: var(--background);
+		background: var(--highlight);
 		border-radius: var(--radius);
-		padding: 10px 20px;
+		padding: 20px 40px;
 		transition: 0.3s background ease, 0.3s color ease;
 		display: inline-block;
 		
@@ -299,6 +300,7 @@ header {
 	section {
 		padding-top: 20px;
 		padding-bottom: 20px;
+		overflow: hidden;
 		
 		@media (min-width:$tablet) {
 			padding-top: 40px;
@@ -308,6 +310,10 @@ header {
 		@media (min-width:$desktop) {
 			padding-top: 80px;
 			padding-bottom: 80px;
+		}
+		
+		&:nth-child(even) {
+			background: var(--background-dark);
 		}
 	}
 	
@@ -346,22 +352,7 @@ header {
 	}
 }
 
-#challenge {
-	overflow: hidden;
-}
-
-#solution {
-	background: var(--background-dark);
-	overflow: hidden;
-}
-
-#process {
-	overflow: hidden;
-}
-
 #other-works {
-	background: var(--background-dark);
-	
 	.links {
 		display: grid;
 		grid-gap: 20px;

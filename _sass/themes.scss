@@ -245,7 +245,9 @@
 	
 	.simplescales {
 		grid-area: simplescales;
-		background: var(--background);
+		//background: var(--background);
+		background: url(../images/portfolio/background-simplescales.jpg);
+		background-size: cover;
 		
 		.promo {
 			margin-top: -95px;
@@ -314,7 +316,8 @@
 	
 	.mediaportal {
 		grid-area: mediaportal;
-		background: #EDF0F0;
+		background: url(../images/portfolio/background-mediaportal.png);
+		background-size: cover;
 		
 		.promo {
 			position: absolute;
@@ -622,6 +625,7 @@
 		font-family: var(--font-header);
 		font-size: 16px;
 		color: var(--primary);
+		margin-bottom: 10px;
 	}
 	
 	p {
@@ -1164,15 +1168,81 @@
 	
 	.coverimage {
 		background-image: url(../images/portfolio/mediaportal/header-background.jpg);
-		opacity: 0.2;
+		opacity: 0.3;
 		background-position: right center;
 	}
 	
 	.cards {
 		margin-bottom: 20px;
+		padding-bottom: 0px;
+		padding-top: 0px;
 		
 		img {
 			max-width: 100%;
+		}
+	}
+	
+	.subhead {
+		color: var(--primary);
+		margin: 0px;
+		font-size: 30px;
+		
+		@media (min-width:$tablet) {
+			font-size: 34px;
+		}
+	}
+	
+	.subhead + p {
+		padding-bottom: 20px;
+	}
+	
+	#solution a {
+		color: var(--highlight);
+		padding: 10px 20px;
+		border: 2px solid var(--highlight);
+		border-radius: var(--radius);
+		font-family: var(--font-header);
+		font-size: 16px;
+		margin-right: 15px;
+		margin-bottom: 20px;
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+		
+		@media (min-width:$phone-landscape) {
+			width: auto;
+		}
+		
+		&:hover {
+			background: var(--highlight);
+			color: var(--background);
+		}
+	}
+	
+	@media (min-width:$tablet-landscape) {
+		.report {
+			position: relative;
+			
+			.copy {
+				position: absolute;
+				width: 48%;
+				right: 0px;
+				top: 50px;
+			}
+		}
+	}
+	
+	.mobileapp {
+		display: flex;
+		flex-direction: column;
+		
+		@media (min-width:$tablet-landscape) {
+			align-items: center;
+			flex-direction: row;
+		}
+		
+		img {
+			margin-bottom: 0px;
 		}
 	}
 }
