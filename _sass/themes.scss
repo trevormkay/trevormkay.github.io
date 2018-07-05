@@ -245,7 +245,6 @@
 	
 	.simplescales {
 		grid-area: simplescales;
-		//background: var(--background);
 		background: url(../images/portfolio/background-simplescales.jpg);
 		background-size: cover;
 		
@@ -448,7 +447,9 @@
 	
 	.karinourish {
 		grid-area: karinourish;
-		background: #F3EDE0;
+		//background: #F3EDE0;
+		background: url(../images/portfolio/background-karinourish.jpg);
+		background-size: cover;		
 		
 		.promo {
 			position: absolute;
@@ -458,7 +459,7 @@
 			
 			@media (min-width:568px) {
 				top: -90px;
-				left: 200px;
+				left: 150px;
 			}
 			
 			@media (min-width:667px) {

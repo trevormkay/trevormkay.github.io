@@ -274,9 +274,8 @@ header {
 		font-family: var(--font-header);
 		font-size: 16px;
 		margin-top: 30px;
-		//border: 2px solid var(--highlight);
-		color: var(--background);
-		background: var(--highlight);
+		border: 3px solid var(--highlight);
+		color: var(--highlight);
 		border-radius: var(--radius);
 		padding: 20px 40px;
 		transition: 0.3s background ease, 0.3s color ease;
