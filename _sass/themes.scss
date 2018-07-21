@@ -1737,6 +1737,98 @@
 	}
 }
 
+.tolq {
+	--background: #173541;
+	--background-dark: #122E39;
+	--primary: #8D999D;
+	--highlight: #00AF5B;
+	
+	nav {
+		border-color: rgba(#8D999D,0.2);
+	}
+	
+	header {
+		
+		.coverimage {
+			background-image: url(../images/portfolio/tolq/header-background.jpg);
+			background-position: center bottom;
+		}
+	}
+	
+	.screenshotWrapper {
+		box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1)
+	}
+	
+	#challenge img {
+		max-width: 100%;
+	}
+	
+	#solution img {
+		@media (min-width:$desktop) {
+			width: 100%;
+		}
+	}		
+	
+	.interfaces {
+		display: flex;
+		flex-flow: column;
+		margin-top: 30px;
+		margin-bottom: 60px;
+		margin-left: auto;
+		margin-right: auto;
+		max-width: 512px;
+		
+		img {
+			max-width: 100%;
+		}
+		
+		h4 {
+			margin-bottom: 40px;
+		}
+		
+		@media (min-width:$tablet) {
+			flex-flow: row;
+			justify-content: space-between;
+			max-width: 100%;
+			
+			div {
+				width: 48%;
+			}
+		}
+	}
+
+	
+	.whitelogo {
+		margin-top: 60px;
+		margin-bottom: 60px;
+		flex-flow: column;
+		
+		img {
+			max-width: 300px;
+			margin: 0px auto;
+			display: block;
+			margin-bottom: 20px;
+		}
+		
+		@media (min-width:$tablet) {
+			display: flex;
+			flex-flow: row;
+			align-items: center;
+			
+			img {
+				width: 492px;
+				max-width: 492px;
+				margin-right: 30px;
+				margin-bottom: 0px;
+			}
+			
+			p {
+				width: 50%;
+			}
+		}
+	}
+}
+
 @-moz-document url-prefix() { 
   .portfolio .flexwrapper div {
      width: 100%;
