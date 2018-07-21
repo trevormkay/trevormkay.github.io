@@ -416,6 +416,10 @@ header {
 	position: relative;
 }
 
+.screenshotWrapper + .center {
+	margin-top: -40px;
+}
+
 .sunken {
 	margin-bottom: -140px;
 }
