@@ -352,22 +352,6 @@ header {
 	}
 }
 
-#other-works {
-	.links {
-		display: grid;
-		grid-gap: 20px;
-		
-		@media (min-width:$tablet) {
-			grid-template-columns: 1fr 1fr;
-		}
-	}
-	
-	p {
-		padding: 0px;
-		line-height: 22px;
-	}
-}
-
 .link {
 	padding: 20px;
 	border-radius: var(--radius);
@@ -600,4 +584,24 @@ header {
 	max-width: 100%;
 	width: 100%;
 	height: 100px;
+}
+
+#otherworks {
+	display: flex;
+	justify-content: center;
+}
+
+#otherworks a {
+	color: var(--highlight);
+	text-align: center;
+	font-family: var(--font-header);
+	font-size: 30px;
+	border: 3px solid var(--highlight);
+	border-radius: var(--radius);
+	padding: 10px 20px;
+	
+	&:hover {
+		background: var(--highlight);
+		color: var(--background-dark);
+	}
 }
