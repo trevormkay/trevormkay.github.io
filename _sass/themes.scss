@@ -1199,9 +1199,8 @@
 	}
 	
 	#solution a {
-		color: var(--highlight);
+		color: var(--background);
 		padding: 10px 20px;
-		border: 2px solid var(--highlight);
 		border-radius: var(--radius);
 		font-family: var(--font-header);
 		font-size: 16px;
@@ -1210,14 +1209,15 @@
 		width: 100%;
 		text-align: center;
 		display: inline-block;
+		background: var(--highlight);
+		transition: 0.3s opacity ease;
 		
 		@media (min-width:$phone-landscape) {
 			width: auto;
 		}
 		
 		&:hover {
-			background: var(--highlight);
-			color: var(--background);
+			opacity: 0.8;
 		}
 	}
 	
