@@ -992,27 +992,26 @@
 	}
 	
 	.row {
-		margin-bottom: 30px;
-		
-		@media (min-width:$tablet) {
-			margin-bottom: 100px;
-		}
-		
-		@media (min-width:$desktop) {
-			display: flex;
-			align-items: flex-end;
-			
-			p {
-				width: 50%;
-				padding-left: 30px;
-			}
-		}
+		position: relative;
+		margin-bottom: 40px;
 		
 		img {
 			max-width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-			display: block;
+		}
+
+		@media (min-width:$tablet-landscape) {
+			margin-bottom: 0px;
+			
+			img {
+				transform: translateX(-70px);
+			}
+			
+			p {
+				width: 50%;
+				position: absolute;
+				bottom: 90px;
+				right: 0px;
+			}
 		}
 	}
 }
