@@ -1182,21 +1182,7 @@
 			max-width: 100%;
 		}
 	}
-	
-	.subhead {
-		color: var(--primary);
-		margin: 0px;
-		font-size: 30px;
 		
-		@media (min-width:$tablet) {
-			font-size: 34px;
-		}
-	}
-	
-	.subhead + p {
-		padding-bottom: 20px;
-	}
-	
 	#solution a {
 		color: var(--background);
 		padding: 10px 20px;
@@ -1832,6 +1818,24 @@
 		}
 	}
 }
+
+.kohab {
+	--background: #FFFFFF;
+	--background-dark: #F4F4F4;
+	--primary: #0B324B;
+	--highlight: #2EB68C;
+	
+	nav {
+		border-color: rgba(#0B324B,0.2);
+	}
+	
+	.coverimage {
+		background-image: url(../images/portfolio/kohab/header-background.jpg);
+		opacity: 0.1;
+		background-position: center top;
+	}
+}
+
 
 @-moz-document url-prefix() { 
   .portfolio .flexwrapper div {
