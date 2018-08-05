@@ -1834,6 +1834,35 @@
 		opacity: 0.1;
 		background-position: center top;
 	}
+	
+	.row {
+		margin-bottom: 60px;
+		display: flex;
+		flex-direction: column;
+		
+		@media (min-width:$tablet) {
+			flex-direction: row;
+			align-items: center;
+		}
+	}
+	
+	#boards {
+		@media (min-width:$tablet) {
+			flex-direction: row-reverse;
+			
+			.panel {
+				margin-right: 40px;
+			}
+		}
+	}
+	
+	#inspections {
+		@media (min-width:$tablet) {
+			.panel {
+				margin-left: 40px;
+			}
+		}
+	}
 }
 
 
