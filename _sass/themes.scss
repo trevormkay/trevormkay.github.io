@@ -1910,6 +1910,22 @@
 			margin-bottom: 10px;
 		}
 	}
+	
+	.components {
+		display: flex;
+		flex-direction: column;
+		
+		@media (min-width:$tablet-landscape) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		img {
+			max-width: 100%;
+			align-self: center;
+			margin-bottom: 40px;
+		}
+	}
 }
 
 
