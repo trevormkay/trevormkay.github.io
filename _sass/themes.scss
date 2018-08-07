@@ -1840,14 +1840,23 @@
 		display: flex;
 		flex-direction: column;
 		
-		@media (min-width:$tablet) {
+		@media (min-width:$tablet-landscape) {
 			flex-direction: row;
 			align-items: center;
+			
+			p:last-child {
+				padding-bottom: 0px;
+			}
 		}
 	}
 	
+	#today img {
+		max-width: 70%;
+		align-self: center;
+	}
+	
 	#boards {
-		@media (min-width:$tablet) {
+		@media (min-width:$tablet-landscape) {
 			flex-direction: row-reverse;
 			
 			.panel {
@@ -1857,10 +1866,48 @@
 	}
 	
 	#inspections {
-		@media (min-width:$tablet) {
+		@media (min-width:$tablet-landscape) {
 			.panel {
 				margin-left: 40px;
 			}
+		}
+	}
+	
+	#chat {
+		.panel {
+			border: 1px solid rgba(0,0,0,0.1);
+		}
+		
+		@media (min-width:$tablet-landscape) {
+			flex-direction: row-reverse;
+			
+			.panel {
+				margin-right: 40px;
+			}
+		}
+	}
+	
+	#notifications {
+		margin-bottom: 0px;
+		
+		.panel {
+			border-radius: 13px;
+		}
+		
+		@media (min-width:$tablet-landscape) {
+			.panel {
+				margin-left: 40px;
+			}
+		}
+	}
+	
+	h2 {
+		display: flex;
+		align-items: center;
+		
+		img {
+			margin-right: 10px;
+			margin-bottom: 10px;
 		}
 	}
 }

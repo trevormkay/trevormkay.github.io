@@ -10,7 +10,7 @@
 	--highlight: #F78A60;
 	--font-body: 'Circular Std Book', helvetica, arial, sans-serif;
 	--font-header: 'Circular Std', helvetica, arial, sans-serif;
-	--radius: 12px;
+	--radius: 6px;
 }
 
 $phone-landscape: 569px;
@@ -29,3 +29,9 @@ $desktop-lrg: 1800px;
 	"components",
 	"themes"
 ;
+
+@media (min-width:$tablet) {
+	:root {
+		--radius: 12px;
+	}
+}
