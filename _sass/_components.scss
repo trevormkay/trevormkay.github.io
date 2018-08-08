@@ -24,6 +24,21 @@ h1, h2, h3 {
 	margin-bottom: 20px;
 }
 
+.subhead {
+	color: var(--primary);
+	margin: 0px;
+	font-size: 30px;
+	
+	@media (min-width:$tablet) {
+		font-size: 34px;
+	}
+}
+
+.subhead + p {
+	padding-bottom: 20px;
+}
+
+
 p, caption, .type, .caption {
 	color: var(--primary);
 }
@@ -581,6 +596,14 @@ header {
 	max-width: 100%;
 	width: 100%;
 	height: 100px;
+	margin-bottom: 30px;
+}
+
+.panel {
+	border-radius: 8px;
+	box-shadow:  0px 2px 34px rgba(0,0,0,0.1);
+	align-self: center;
+	max-width: 100%;
 }
 
 #otherworks {

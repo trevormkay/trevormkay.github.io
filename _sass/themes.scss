@@ -1182,21 +1182,7 @@
 			max-width: 100%;
 		}
 	}
-	
-	.subhead {
-		color: var(--primary);
-		margin: 0px;
-		font-size: 30px;
 		
-		@media (min-width:$tablet) {
-			font-size: 34px;
-		}
-	}
-	
-	.subhead + p {
-		padding-bottom: 20px;
-	}
-	
 	#solution a {
 		color: var(--background);
 		padding: 10px 20px;
@@ -1832,6 +1818,134 @@
 		}
 	}
 }
+
+.kohab {
+	--background: #FFFFFF;
+	--background-dark: #F4F4F4;
+	--primary: #0B324B;
+	--highlight: #2EB68C;
+	
+	nav {
+		border-color: rgba(#0B324B,0.2);
+	}
+	
+	.coverimage {
+		background-image: url(../images/portfolio/kohab/header-background.jpg);
+		opacity: 0.1;
+		background-position: center top;
+	}
+	
+	.row {
+		margin-bottom: 60px;
+		display: flex;
+		flex-direction: column;
+		
+		@media (min-width:$tablet-landscape) {
+			flex-direction: row;
+			align-items: center;
+			
+			p:last-child {
+				padding-bottom: 0px;
+			}
+		}
+	}
+	
+	#today img {
+		max-width: 70%;
+		align-self: center;
+	}
+	
+	#boards {
+		@media (min-width:$tablet-landscape) {
+			flex-direction: row-reverse;
+			
+			.panel {
+				margin-right: 40px;
+			}
+		}
+	}
+	
+	#inspections {
+		@media (min-width:$tablet-landscape) {
+			.panel {
+				margin-left: 40px;
+			}
+		}
+	}
+	
+	#chat {
+		.panel {
+			border: 1px solid rgba(0,0,0,0.1);
+		}
+		
+		@media (min-width:$tablet-landscape) {
+			flex-direction: row-reverse;
+			
+			.panel {
+				margin-right: 40px;
+			}
+		}
+	}
+	
+	#notifications {
+		margin-bottom: 0px;
+		
+		.panel {
+			border-radius: 13px;
+		}
+		
+		@media (min-width:$tablet-landscape) {
+			.panel {
+				margin-left: 40px;
+			}
+		}
+	}
+	
+	h2 {
+		display: flex;
+		align-items: center;
+		
+		img {
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+	}
+	
+	.components {
+		display: flex;
+		flex-direction: column;
+		
+		img {
+			max-width: 100%;
+			align-self: center;
+			margin-bottom: 20px;
+			
+			&:nth-child(2) {
+				display: none;
+			}
+		}
+		
+		@media (min-width:$tablet) {
+			flex-direction: row;
+			justify-content: space-around;
+			
+			img {
+				margin-bottom: 10px;
+			}
+		}
+		
+		@media (min-width:$desktop) {
+			justify-content: space-between;
+			
+			img {
+				&:nth-child(2) {
+					display: inherit;
+				}
+			}
+		}
+	}
+}
+
 
 @-moz-document url-prefix() { 
   .portfolio .flexwrapper div {
