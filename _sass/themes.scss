@@ -1183,26 +1183,15 @@
 		}
 	}
 		
-	#solution a {
-		color: var(--background);
-		padding: 10px 20px;
-		border-radius: var(--radius);
-		font-family: var(--font-header);
-		font-size: 16px;
+	#solution .button {
 		margin-right: 15px;
 		margin-bottom: 20px;
 		width: 100%;
 		text-align: center;
 		display: inline-block;
-		background: var(--highlight);
-		transition: 0.3s opacity ease;
 		
 		@media (min-width:$phone-landscape) {
 			width: auto;
-		}
-		
-		&:hover {
-			opacity: 0.8;
 		}
 	}
 	
