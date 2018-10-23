@@ -74,7 +74,7 @@
 		grid-template-rows: repeat(9, 150px);
 		grid-template-areas: 	"eastland"
 								"simplescales"
-								"neutron"
+								"kohab"
 								"nightlight"
 								"epoch"
 								"mediaportal"
@@ -171,7 +171,7 @@
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(7, 150px);
 			grid-template-areas: 	"eastland eastland"
-									"simplescales neutron"
+									"simplescales kohab"
 									"simplescales nightlight"
 									"epoch nightlight"
 									"mediaportal mediaportal"
@@ -196,7 +196,7 @@
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(5, 415px);
 			grid-template-areas: 	"eastland eastland simplescales"
-									"nightlight neutron simplescales"
+									"nightlight kohab simplescales"
 									"nightlight mediaportal mediaportal"
 									"epoch aptapro karinourish"
 									"retailerportal retailerportal karinourish";										
@@ -299,10 +299,39 @@
 			top: 28px;
 			right: 20%;
 			width: 100px;
-			
+						
 			@media (min-width:$tablet) {
 				width: 190px;
 				top: 70px;
+			}
+			
+			@media (min-width:$desktop) {
+				width: auto;
+				bottom: 55px;
+				right: 73px;
+			}
+		}
+	}
+	
+	.kohab {
+		grid-area: kohab;
+		background: url(../images/portfolio/background-kohab.png);
+		background-size: cover;
+		
+		.promo {
+			position: absolute;
+			top: 16px;
+			right: 20%;
+			width: 140px;
+			
+			@media (min-width:$phone-landscape) {
+				right: 5%;
+			}
+			
+			@media (min-width:$tablet) {
+				width: 240px;
+				top: 70px;
+				right: 10%;
 			}
 			
 			@media (min-width:$desktop) {
