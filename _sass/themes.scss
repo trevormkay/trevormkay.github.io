@@ -984,7 +984,7 @@
 	}
 	
 	.styleguide {
-		margin: 0px;
+		margin-bottom: 60px;
 	}
 }
 
@@ -1042,6 +1042,10 @@
 				right: 0px;
 			}
 		}
+	}
+	
+	.appgrid {
+		margin-bottom: 100px;
 	}
 }
 
@@ -1497,6 +1501,7 @@
 	.artdirection {
 		height: 1249px;
 		position: relative;
+		margin-bottom: 60px;
 		
 		.baseline {
 			width: 100%;
