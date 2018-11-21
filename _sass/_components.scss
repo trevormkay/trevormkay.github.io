@@ -21,7 +21,11 @@ body {
 h1, h2, h3 {
 	font-family: var(--font-header);
 	color: var(--highlight);
-	margin-bottom: 20px;
+	margin-bottom: 5px;
+	
+	@media (min-width:$tablet) {
+		margin-bottom: 10px;
+	}
 }
 
 .subhead {
