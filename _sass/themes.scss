@@ -1969,6 +1969,23 @@
 	}
 }
 
+.marketplace {
+	--background: #FFFFFF;
+	--background-dark: #EFF0F2;
+	--primary: #212529;
+	--highlight: #007ACC;
+	
+	nav {
+		border-color: rgba(#0B324B,0.2);
+	}
+	
+	.coverimage {
+		background-image: url(../images/portfolio/kohab/header-background.jpg);
+		opacity: 0.1;
+		background-position: center top;
+	}
+}
+
 
 @-moz-document url-prefix() { 
   .portfolio .flexwrapper div {
