@@ -283,7 +283,7 @@
 			bottom: 0px;
 			left: 0px;
 			
-			@media (max-width:766px) {
+			@media (max-width:1119px) {
 				display: none;
 			}
 		}
@@ -476,7 +476,6 @@
 	
 	.karinourish {
 		grid-area: karinourish;
-		//background: #F3EDE0;
 		background: url(../images/portfolio/background-karinourish.jpg);
 		background-size: cover;		
 		
@@ -556,8 +555,36 @@
 	
 	.marketplace {
 		grid-area: marketplace;
-		background: url(../images/portfolio/background-retailerportal.png);
+		background: url(../images/portfolio/background-marketplace.png);
 		background-size: cover;
+		
+		h2, h3 {
+			color: white !important;
+		}
+		
+		h3 {
+			opacity: 0.5;
+		}
+		
+		.flexwrapper {
+			margin-top: -30px;
+			
+			@media (min-width:$desktop) {
+				margin-top: -70px;
+			}
+		}
+		
+		.promo {
+			width: 250px;
+			
+			@media (min-width:$tablet) {
+				width: 420px;
+			}
+			
+			@media (min-width:$desktop) {
+				width: auto;
+			}
+		}
 	}
 }
 
