@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1056px" height="47px" viewBox="0 0 1056 47" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.4 (67378) - http://www.bohemiancoding.com/sketch -->
+    <title>colours</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Case-Studies" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Ticketek" transform="translate(-170.000000, -7024.000000)">
+            <g id="Process" transform="translate(170.000000, 5455.000000)">
+                <g id="Group-19" transform="translate(0.000000, 1372.000000)">
+                    <g id="colours" transform="translate(0.000000, 197.000000)">
+                        <path d="M23.5,0 L132,0 L132,47 L23.5,47 C10.5213084,47 1.58943132e-15,36.4786916 0,23.5 L0,23.5 C-1.58943132e-15,10.5213084 10.5213084,2.38414697e-15 23.5,0 Z" id="Rectangle" fill="#DFE2E6"></path>
+                        <rect id="Rectangle-Copy-3" fill="#B7BDC4" x="132" y="0" width="132" height="47"></rect>
+                        <rect id="Rectangle-Copy-4" fill="#808387" x="264" y="0" width="132" height="47"></rect>
+                        <rect id="Rectangle-Copy-5" fill="#212529" x="396" y="0" width="132" height="47"></rect>
+                        <rect id="Rectangle-Copy-6" fill="#007ACC" x="528" y="0" width="132" height="47"></rect>
+                        <rect id="Rectangle-Copy-7" fill="#53A451" x="660" y="0" width="132" height="47"></rect>
+                        <rect id="Rectangle-Copy-8" fill="#DE7615" x="792" y="0" width="132" height="47"></rect>
+                        <path d="M924,0 L1032.5,0 C1045.47869,-2.38414697e-15 1056,10.5213084 1056,23.5 L1056,23.5 C1056,36.4786916 1045.47869,47 1032.5,47 L924,47 L924,0 Z" id="Rectangle-Copy-9" fill="#DE1515"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
