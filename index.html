@@ -37,10 +37,10 @@ description: "Interactive Designer from Sydney"
 		</div>
 
 	
-		<div class="tile nightlight">
-			<a href="/nightlight/">
-				<h2>Nightlight</h2>
-				<h3>Chatroom</h3>
+		<div class="tile marketplace">
+			<a href="/marketplace/">
+				<h2>Marketplace</h2>
+				<h3>Ticket resale platform</h3>
 				<img src="../images/portfolio/promo-nightlight.png" srcset="../images/portfolio/promo-nightlight.png, ../images/portfolio/promo-nightlight@2x.png 2x" class="promo">
 				<img src="../images/portfolio/chatbar.png" srcset="../images/portfolio/chatbar.png, ../images/portfolio/chatbar@2x.png 2x" class="chatbar">
 			</a>
@@ -65,32 +65,12 @@ description: "Interactive Designer from Sydney"
 		</div>
 
 	
-		<div class="tile epoch">
-			<a href="/epoch/">
-				<h2>Epoch</h2>
-				<h3>Countdown app</h3>
-				<div  class="promo">
-					<div id="random" class="countdown">
-						<div class="time">
-							<span class="days largetext"></span>
-							<div class="smalltext">Days</div>
-						</div>
-						<div class="time">
-							<span class="hours largetext"></span>
-							<div class="smalltext">Hours</div>
-						</div>
-						<div class="time">
-							<span class="minutes largetext"></span>
-							<div class="smalltext">Mins</div>
-						</div>
-						<div class="time">
-							<span class="seconds largetext"></span>
-							<div class="smalltext">Secs</div>
-						</div>
-					</div>	
-					
-					<img src="../images/portfolio/promo-epoch.png" srcset="../images/portfolio/promo-epoch.png, ../images/portfolio/promo-epoch@2x.png 2x">
-				</div>
+		<div class="tile nightlight">
+			<a href="/nightlight/">
+				<h2>Nightlight</h2>
+				<h3>Chatroom</h3>
+				<img src="../images/portfolio/promo-nightlight.png" srcset="../images/portfolio/promo-nightlight.png, ../images/portfolio/promo-nightlight@2x.png 2x" class="promo">
+				<img src="../images/portfolio/chatbar.png" srcset="../images/portfolio/chatbar.png, ../images/portfolio/chatbar@2x.png 2x" class="chatbar">
 			</a>
 		</div>
 
@@ -126,72 +106,3 @@ description: "Interactive Designer from Sydney"
 		</div>
 
 </div>
-
-<script>
-	$(document).ready(function(){
-		//COUNTDOWN
-		function getTimeRemaining(endtime) {
-	      var t = Date.parse(endtime) - Date.parse(new Date());
-	      var seconds = Math.floor((t / 1000) % 60);
-	      var minutes = Math.floor((t / 1000 / 60) % 60);
-	      var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
-	      var days = Math.floor(t / (1000 * 60 * 60 * 24));
-	      return {
-	        'total': t,
-	        'days': days,
-	        'hours': hours,
-	        'minutes': minutes,
-	        'seconds': seconds
-	      };
-	    }
-	    
-	    function initializeClock(id, endtime) {
-	      var clock = document.getElementById(id);
-	      var daysSpan = clock.querySelector('.days');
-	      var hoursSpan = clock.querySelector('.hours');
-	      var minutesSpan = clock.querySelector('.minutes');
-	      var secondsSpan = clock.querySelector('.seconds');
-	    
-	      function updateClock() {
-	        var t = getTimeRemaining(endtime);
-	    
-	        daysSpan.innerHTML = t.days;
-	        hoursSpan.innerHTML = ('0' + t.hours).slice(-2);
-	        minutesSpan.innerHTML = ('0' + t.minutes).slice(-2);
-	        secondsSpan.innerHTML = ('0' + t.seconds).slice(-2);
-	    
-	        if (t.total <= 0) {
-	          clearInterval(timeinterval);
-	        }
-	      }
-	    
-	      updateClock();
-	      var timeinterval = setInterval(updateClock, 1000);
-	    }
-	
-	    function getDeadline(month, day) {
-	
-	        var monthNames = ["January", "February", "March", "April", "May", "June",
-	          "July", "August", "September", "October", "November", "December"
-	        ];
-	
-	        var currentDate = new Date();
-	        var targetYear = currentDate.getFullYear();
-	        
-	        var targetDate = new Date(targetYear + '/' + month + '/' + day);
-	        
-	        if (Number(currentDate) >= Number(targetDate)) {
-	            targetYear += 1;
-	        }
-	        
-	        return monthNames[targetDate.getMonth()] + ' ' + day + ' ' + targetYear;
-	
-	    }
-	
-	    var randomDeadline = getDeadline('03', '18') // Dec 25th
-	        
-	    initializeClock('random', randomDeadline);  
-		
-					
-	});	
-</script>

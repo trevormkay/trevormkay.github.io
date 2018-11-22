@@ -75,9 +75,9 @@
 		grid-template-areas: 	"eastland"
 								"simplescales"
 								"kohab"
-								"nightlight"
-								"epoch"
+								"marketplace"
 								"mediaportal"
+								"nightlight"
 								"aptapro"
 								"karinourish"
 								"retailerportal";										
@@ -172,8 +172,8 @@
 			grid-template-rows: repeat(7, 150px);
 			grid-template-areas: 	"eastland eastland"
 									"simplescales kohab"
-									"simplescales nightlight"
-									"epoch nightlight"
+									"simplescales marketplace"
+									"nightlight marketplace"
 									"mediaportal mediaportal"
 									"aptapro karinourish"
 									"retailerportal retailerportal";										
@@ -196,9 +196,9 @@
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(5, 415px);
 			grid-template-areas: 	"eastland eastland simplescales"
-									"nightlight kohab simplescales"
-									"nightlight mediaportal mediaportal"
-									"epoch aptapro karinourish"
+									"marketplace kohab simplescales"
+									"marketplace mediaportal mediaportal"
+									"nightlight aptapro karinourish"
 									"retailerportal retailerportal karinourish";										
 		}
 	}
@@ -552,6 +552,12 @@
 				left: 60px;
 			}
 		}
+	}
+	
+	.marketplace {
+		grid-area: marketplace;
+		background: url(../images/portfolio/background-retailerportal.png);
+		background-size: cover;
 	}
 }
 
