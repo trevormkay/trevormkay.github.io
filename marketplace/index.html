@@ -66,6 +66,39 @@ theme: "#FFFFFF"
 			<img src="admin.png" srcset="admin.png, admin@2x.png 2x" alt="Screenshot of the Manage Listings section of the Admin Portal" class="screenshot sunken">
 		</div>
 	</div>
+	
+	<script>
+		var videos = document.getElementsByTagName("video");
+		
+		function checkScroll() {
+		
+		    for(var i = 0; i < videos.length; i++) {
+		
+		        var video = videos[i];
+		
+		        var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+		            b = y + h, //bottom
+		            visibleX, visibleY, visible;
+		
+		            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+		            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+		
+		            visible = visibleX * visibleY / (w * h);
+		
+		            if (visible > fraction) {
+		                video.play();
+		            } else {
+		                video.pause();
+		            }
+		
+		    }
+		
+		}
+		
+		window.addEventListener('scroll', checkScroll, false);
+		window.addEventListener('resize', checkScroll, false);
+	</script>	
+	
 </section>
 <section id="process">
 	<div class="constrained">
@@ -83,35 +116,3 @@ theme: "#FFFFFF"
 		<p class="center">One of the issues on the project was design handoff. Previously developers were being given designs from Axure printed out on paper which is not feasible. I introduced Sketch and Zeplin to the workflow which helped developers quickly rebuild the frontend to the new designs.</p>
 	</div>
 </section>
-
-<script>
-	var videos = document.getElementsByTagName("video");
-	
-	function checkScroll() {
-	
-	    for(var i = 0; i < videos.length; i++) {
-	
-	        var video = videos[i];
-	
-	        var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
-	            b = y + h, //bottom
-	            visibleX, visibleY, visible;
-	
-	            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-	            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
-	
-	            visible = visibleX * visibleY / (w * h);
-	
-	            if (visible > fraction) {
-	                video.play();
-	            } else {
-	                video.pause();
-	            }
-	
-	    }
-	
-	}
-	
-	window.addEventListener('scroll', checkScroll, false);
-	window.addEventListener('resize', checkScroll, false);
-</script>
