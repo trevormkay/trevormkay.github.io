@@ -245,7 +245,7 @@
 	
 	.simplescales {
 		grid-area: simplescales;
-		background: url(../images/portfolio/background-simplescales.jpg);
+		background: url(../portfolio/background-simplescales.jpg);
 		background-size: cover;
 		
 		.promo {
@@ -315,7 +315,7 @@
 	
 	.kohab {
 		grid-area: kohab;
-		background: url(../images/portfolio/background-kohab.png);
+		background: url(../portfolio/background-kohab.png);
 		background-size: cover;
 		
 		.promo {
@@ -344,7 +344,7 @@
 	
 	.mediaportal {
 		grid-area: mediaportal;
-		background: url(../images/portfolio/background-mediaportal.png);
+		background: url(../portfolio/background-mediaportal.png);
 		background-size: cover;
 		
 		.promo {
@@ -380,7 +380,7 @@
 	
 	.epoch {
 		grid-area: epoch;
-		background: url(../images/portfolio/background-epoch.png);
+		background: url(../portfolio/background-epoch.png);
 		background-size: cover;
 		
 		.promo {
@@ -435,7 +435,7 @@
 	.aptapro {
 		grid-area: aptapro;
 		background: #F7F9FB;
-		background: url(../images/portfolio/background-aptapro.png);
+		background: url(../portfolio/background-aptapro.png);
 		background-size: cover;
 		
 		.promo {
@@ -476,7 +476,7 @@
 	
 	.karinourish {
 		grid-area: karinourish;
-		background: url(../images/portfolio/background-karinourish.jpg);
+		background: url(../portfolio/background-karinourish.jpg);
 		background-size: cover;		
 		
 		.promo {
@@ -519,7 +519,7 @@
 	
 	.retailerportal {
 		grid-area: retailerportal;
-		background: url(../images/portfolio/background-retailerportal.png);
+		background: url(../portfolio/background-retailerportal.png);
 		background-size: cover;
 		
 		.promo {
@@ -555,7 +555,7 @@
 	
 	.marketplace {
 		grid-area: marketplace;
-		background: url(../images/portfolio/background-marketplace.png);
+		background: url(../portfolio/background-marketplace.png);
 		background-size: cover;
 		
 		h2, h3 {
@@ -972,7 +972,7 @@
 	
 	header {
 		.coverimage {
-			background-image: url(../images/portfolio/aptapro/header-background.jpg);
+			background-image: url(../aptapro/header-background.jpg);
 			background-position: center bottom;
 		}
 		
@@ -1032,7 +1032,7 @@
 	}
 	
 	.coverimage {
-		background-image: url(../images/portfolio/eastland/header-background.jpg);
+		background-image: url(../eastland/header-background.jpg);
 		opacity: 0.07;
 		background-position: center bottom;
 	}
@@ -1094,7 +1094,7 @@
 	
 	header {
 		.coverimage {
-			background-image: url(../images/portfolio/epoch/header-background.jpg);
+			background-image: url(../epoch/header-background.jpg);
 		}
 	}
 	
@@ -1213,7 +1213,7 @@
 	}
 	
 	.coverimage {
-		background-image: url(../images/portfolio/karinourish/header-background.jpg);
+		background-image: url(../karinourish/header-background.jpg);
 		opacity: 0.5;
 		background-position: center bottom;
 	}
@@ -1234,7 +1234,7 @@
 	}
 	
 	.coverimage {
-		background-image: url(../images/portfolio/mediaportal/header-background.jpg);
+		background-image: url(../mediaportal/header-background.jpg);
 		opacity: 0.3;
 		background-position: right center;
 	}
@@ -1311,7 +1311,7 @@
 			content: "";
 			width: 100%;
 			height: 100%;
-			background-image: url(../images/portfolio/neutron/pattern.svg);
+			background-image: url(../neutron/pattern.svg);
 			position: absolute;
 			top: 0px;
 			animation: slide 70s linear infinite;
@@ -1336,7 +1336,7 @@
 		}
 		
 		@media (min-width:$tablet) {
-			background-image: url(../images/portfolio/neutron/results.png);
+			background-image: url(../neutron/results.png);
 			height: 850px;
 			background-position: center top;
 			background-repeat: no-repeat;
@@ -1346,7 +1346,7 @@
 			}
 			
 			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-				background-image: url(../images/portfolio/neutron/results@2x.png);
+				background-image: url(../neutron/results@2x.png);
 				background-size: 1015px;
 			}
 		}
@@ -1364,7 +1364,7 @@
 	}
 	
 	.coverimage {
-		background-image: url(../images/portfolio/nightlight/header-background.jpg);
+		background-image: url(../nightlight/header-background.jpg);
 		opacity: 1;
 	}
 	
@@ -1519,7 +1519,7 @@
 	}
 	
 	.coverimage {
-		background-image: url(../images/portfolio/retailerportal/header-background.jpg);
+		background-image: url(../retailerportal/header-background.jpg);
 	}
 	
 	.card {
@@ -1540,12 +1540,12 @@
 			width: 100%;
 			height: 100%;
 			position: absolute;
-			background: url(../images/portfolio/retailerportal/lines.png);
+			background: url(../retailerportal/lines.png);
 			z-index: 2;
 		}
 				
 		.image {
-			background: url(../images/portfolio/retailerportal/styleguide-mobile.png);
+			background: url(../retailerportal/styleguide-mobile.png);
 			width: 303px;
 			height: 1197px;
 			margin: 26px auto;
@@ -1560,7 +1560,7 @@
 			height: 1015px;
 			
 			.image {
-				background: url(../images/portfolio/retailerportal/styleguide-tablet.png);
+				background: url(../retailerportal/styleguide-tablet.png);
 				width: 492px;
 				height: 911px;
 				margin: 52px auto;
@@ -1571,7 +1571,7 @@
 			height: 573px;
 			
 			.image {
-				background: url(../images/portfolio/retailerportal/styleguide-desktop.png);
+				background: url(../retailerportal/styleguide-desktop.png);
 				width: 1054px;
 				height: 469px;
 				margin: 52px auto;
@@ -1580,20 +1580,20 @@
 		
 		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
 			.image {
-				background: url(../images/portfolio/retailerportal/styleguide-mobile@2x.png);
+				background: url(../retailerportal/styleguide-mobile@2x.png);
 				background-size: 303px 1197px;
 			}
 			
 			@media (min-width:$tablet) {
 				.image {
-					background: url(../images/portfolio/retailerportal/styleguide-tablet@2x.png);
+					background: url(../retailerportal/styleguide-tablet@2x.png);
 					background-size: 492px 911px;
 				}
 			}
 			
 			@media (min-width:$desktop) {
 				.image {
-					background: url(../images/portfolio/retailerportal/styleguide-desktop@2x.png);
+					background: url(../retailerportal/styleguide-desktop@2x.png);
 					background-size: 1054px 469px;
 				}
 			}
@@ -1612,7 +1612,7 @@
 	}
 	
 	.coverimage {
-		background-image: url(../images/portfolio/simplescales/header.jpg);
+		background-image: url(../simplescales/header.jpg);
 		opacity: 0.2;
 		background-position: right top;
 	}
@@ -1796,7 +1796,7 @@
 	header {
 		
 		.coverimage {
-			background-image: url(../images/portfolio/tolq/header-background.jpg);
+			background-image: url(../tolq/header-background.jpg);
 			background-position: center bottom;
 		}
 	}
@@ -1886,7 +1886,7 @@
 	}
 	
 	.coverimage {
-		background-image: url(../images/portfolio/kohab/header-background.jpg);
+		background-image: url(../kohab/header-background.jpg);
 		opacity: 0.1;
 		background-position: center top;
 	}

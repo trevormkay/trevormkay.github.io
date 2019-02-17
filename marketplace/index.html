@@ -45,21 +45,9 @@ theme: "#FFFFFF"
 		<h4 class="type">The Solution</h4>
 		<h2>Real fans, real tickets</h2>
 		<p>Marketplace is the premiere destination for Ticketek ticket holders to resell their tickets if they are unable to attend an event. Their ticket information is already present within their account so putting a ticket up for sale is as simple as selecting the tickets and then setting a price whereas other platforms require users to fill out a lengthy form.</p>
-		<div class="videoWrapper screenrecording">
-			<video autoplay loop muted playsinline>
-			  <source src="listing.mov" type="video/mp4">
-			  <img src="listing.png">
-			  Your browser does not support the video tag.
-			</video>		
-		</div>	
+		{% include silentvideo.html videoname='listing' %}
 		<p>On the purchasing side of things Ticketek wanted to ensure two things, that tickets purchased are genuine and that pricing is ethical. All resold tickets are issued a new barcode so that only the new ticket holder can enter the venue. For ethical pricing because all listed Tickets are from Ticketek originally, the face value is already know so the 10% cap can not be exceeded.</p>
-		<div class="videoWrapper screenrecording">
-			<video autoplay loop muted playsinline>
-			  <source src="purchasing.mov" type="video/mp4">
-			  <img src="purchasing.png">
-			  Your browser does not support the video tag.
-			</video>		
-		</div>	
+		{% include silentvideo.html videoname='purchasing' %}	
 		<h3 class="subhead">Admin Portal</h3>
 		<p>Ticketek wanted a custom backend to manage Marketplace. This backend was to be designed from the ground up to be purpose fit for the needs of the frontend as well as integrating with the current systems at Ticketek. The areas Admin Portal needed to be able to manage included: products and listings, customer and broker details, and financial matters like settlements and fees applied to listings.</p>
 		<div class="screenshotWrapper">
