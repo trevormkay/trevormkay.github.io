@@ -1311,7 +1311,7 @@
 			content: "";
 			width: 100%;
 			height: 100%;
-			background-image: url(../images/portfolio/neutron/pattern.svg);
+			background-image: url(../neutron/pattern.svg);
 			position: absolute;
 			top: 0px;
 			animation: slide 70s linear infinite;
@@ -1336,7 +1336,7 @@
 		}
 		
 		@media (min-width:$tablet) {
-			background-image: url(../images/portfolio/neutron/results.png);
+			background-image: url(../neutron/results.png);
 			height: 850px;
 			background-position: center top;
 			background-repeat: no-repeat;
@@ -1346,7 +1346,7 @@
 			}
 			
 			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-				background-image: url(../images/portfolio/neutron/results@2x.png);
+				background-image: url(../neutron/results@2x.png);
 				background-size: 1015px;
 			}
 		}
