@@ -40,13 +40,7 @@ theme: "#F2F2F2"
 		<div class="elnn">
 			<img src="elnn-logo.svg" alt="Early Life Nutrition Navigator logo" />
 			<p>The Early Life Nutrition Navigator presents the user with a series of questions. Depending on the answers selected, an appropriate set of formulas will be presented. These formulas can then be loaded in to the Product Comparison tool and be compared with each other so the right one for the patient can be recommended.</p>
-			<div class="videoWrapper">
-				<video controls poster="preview.jpg">
-				  <source src="preview.mp4" type="video/mp4">
-				  <img src="preview.jpg">
-				  Your browser does not support the video tag.
-				</video>		
-			</div>	
+			{% include video.html videoname='preview' %}
 		</div>
 	</div>
 </section>
