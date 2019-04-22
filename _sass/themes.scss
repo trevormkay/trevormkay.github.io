@@ -1643,16 +1643,13 @@
 			}
 			
 			@media (min-width:414px) {
-				top:50px;
+				top:51px;
 			}
 			
-			@media (min-width:568px) {
+			@media (min-width:450px) {
 				top: 55px;
 			}
 			
-			@media (min-width:$tablet) {
-				top: 54px;
-			}
 			
 			@media (min-width: $tablet-landscape) {
 				width: 259px;
