@@ -2108,14 +2108,7 @@
 
 
 @-moz-document url-prefix() { 
-	.portfolio .flexwrapper div {
-		width: 100%;
-	}
-  
-	.simplescales .phone {
-		@media (min-width:$tablet-landscape) {
-			display: grid;
-			grid-template-columns: 1fr 444px;
-		}
-	}
+  .portfolio .flexwrapper div {
+     width: 100%;
+  }
 }
