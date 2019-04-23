@@ -545,15 +545,6 @@ header {
 	}
 }
 
-.phoneVideo {
-	width: 350px;
-	max-width: 100%;
-	
-	@media (min-width:$desktop) {
-		width: 444px;
-	}
-}
-
 .appgrid {
 	display: grid;
 	grid-template-columns: repeat(16, 250px);
