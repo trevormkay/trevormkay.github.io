@@ -594,6 +594,12 @@
 	--primary: #7B7B7B;
 	--highlight: #F78A60;
 	
+	@media (prefers-color-scheme: dark) {	
+		--background: #2d2d2d;
+		--primary: #C0C0C0;
+		--highlight: #f5a162;
+	}
+	
 	nav {
 		border: none;
 		padding-left: 20px;
