@@ -17,9 +17,6 @@
 }
 
 .portfolio {
-	--background: #F8F8F8;
-	--background-dark: #F3F3F3;
-	--primary: #7B7B7B;
 	--highlight: #F78A60;
 		
 	nav {
@@ -967,11 +964,8 @@
 }
 
 .aptapro {
-	--background: #F5F6F6;
-	--background-dark: #F2F2F2;
-	--primary: #20419A;
 	--highlight: #00B5DC;
-	
+		
 	nav {
 		border-color: rgba(#20419A,0.2);
 	}
@@ -1028,10 +1022,11 @@
 }
 
 .eastland {
-	--background: #F9F9F9;
-	--background-dark: #F2F0EE;
-	--primary: #9F9D9A;
 	--highlight: #BC441C;
+	
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #e05c30;
+	}
 	
 	nav {
 		border-color: rgba(#9F9D9A,0.2);
@@ -1089,10 +1084,11 @@
 }
 
 .epoch {
-	--background: #4B4740;
-	--background-dark: #37332C;
-	--primary: #ACA8A2;
-	--highlight: #FFD56F;
+	--highlight: #fea000;
+	
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #FFD56F;
+	}
 	
 	nav {
 		border-color: rgba(#ACA8A2,0.2);
@@ -1209,10 +1205,11 @@
 }
 
 .karinourish {
-	--background: #FFFEFB;
-	--background-dark: #F7F3E9;
-	--primary: #755F1F;
 	--highlight: #005B9F;
+	
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #1A8BCC;
+	}
 	
 	nav {
 		border-color: rgba(#755F1F,0.2);
@@ -1230,9 +1227,6 @@
 }
 
 .mediaportal {
-	--background: #F6F8F8;
-	--background-dark: #EDF0F0;
-	--primary: #212121;
 	--highlight: #2196F3;
 	
 	nav {
@@ -1296,10 +1290,11 @@
 }
 
 .neutron {
-	--background: #243739;
-	--background-dark: #182D2F;
-	--primary: #EAE4CA;
-	--highlight: #A2DFA8;
+	--highlight: #29383A;
+	
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #A2DFA8;
+	}
 	
 	nav {
 		border-color: rgba(#EAE4CA,0.2);
@@ -1360,26 +1355,23 @@
 }
 
 .nightlight {
-	--background: #373038;
-	--background-dark: #2D2731;
-	--primary: #9B9CA6;
-	--highlight: #D7B48D;
+	--highlight: #373038;
 	
 	nav {
 		border-color: rgba(#9B9CA6,0.2);
 	}
 	
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #D7B48D;
+		
+		nav {
+			border-color: rgba(#C0C0C0,0.2);
+		}
+	}
+		
 	.coverimage {
 		background-image: url(../nightlight/header-background.jpg);
 		opacity: 1;
-	}
-	
-	.screenshotWrapper {
-		box-shadow: inset 0px 0px 0px 1px rgba(255,255,255, 0.05), 0px 0px 0px 1px rgba(0,0,0,0.2), 0px 20px 80px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
-	}
-	
-	.videoWrapper::before {
-		box-shadow: inset 0px 0px 0px 1px rgba(255,255,255, 0.05), 0px 0px 0px 1px rgba(0,0,0,0.2);
 	}
 	
 	.like {
@@ -1515,9 +1507,6 @@
 }
 
 .retailerportal {
-	--background: #181818;
-	--background-dark: #000000;
-	--primary: #6A6A6A;
 	--highlight: #CA4750;
 	
 	nav {
@@ -1608,9 +1597,6 @@
 }
 
 .simplescales {
-	--background: #ECEBEB;
-	--background-dark: #E1E1E1;
-	--primary: #665B49;
 	--highlight: #FF9E2A;
 	
 	nav {
@@ -1787,9 +1773,6 @@
 }
 
 .tolq {
-	--background: #173541;
-	--background-dark: #122E39;
-	--primary: #8D999D;
 	--highlight: #00AF5B;
 	
 	nav {
@@ -1879,9 +1862,6 @@
 }
 
 .kohab {
-	--background: #FFFFFF;
-	--background-dark: #F4F4F4;
-	--primary: #0B324B;
 	--highlight: #2EB68C;
 	
 	nav {
@@ -2006,10 +1986,11 @@
 }
 
 .marketplace {
-	--background: #FFFFFF;
-	--background-dark: #EFF0F2;
-	--primary: #212529;
 	--highlight: #007ACC;
+	
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #32adff;
+	}
 	
 	nav {
 		border-color: rgba(white,0.2);
