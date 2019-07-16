@@ -38,7 +38,10 @@ theme: "#F2F2F2"
 		<p class="center">The Product Comparison tool allows HCPs to select up to five formulas and compare their nutritional value. The challenge with designing this table was creating a fully responsive table so HCPs could make easy comparisons no matter what device they were using.</p>
 		
 		<div class="elnn">
-			<img src="elnn-logo.svg" alt="Early Life Nutrition Navigator logo" />
+			<picture>
+				<source srcset="elnn-logo-dark.svg" media="(prefers-color-scheme: dark)">
+				<img src="elnn-logo.svg" alt="Early Life Nutrition Navigator" />
+			</picture>
 			<p>The Early Life Nutrition Navigator presents the user with a series of questions. Depending on the answers selected, an appropriate set of formulas will be presented. These formulas can then be loaded in to the Product Comparison tool and be compared with each other so the right one for the patient can be recommended.</p>
 			{% include video.html videoname='preview' %}
 		</div>

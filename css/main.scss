@@ -11,6 +11,12 @@
 	--font-body: 'Circular Std Book', helvetica, arial, sans-serif;
 	--font-header: 'Circular Std', helvetica, arial, sans-serif;
 	--radius: 6px;
+	
+	@media (prefers-color-scheme: dark) {	
+		--background: #2d2d2d;
+		--background-dark: #232323;
+		--primary: #C0C0C0;
+	}
 }
 
 $phone-landscape: 569px;

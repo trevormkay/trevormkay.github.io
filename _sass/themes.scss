@@ -17,9 +17,6 @@
 }
 
 .portfolio {
-	--background: #F8F8F8;
-	--background-dark: #F3F3F3;
-	--primary: #7B7B7B;
 	--highlight: #F78A60;
 		
 	nav {
@@ -207,6 +204,10 @@
 		grid-area: eastland;
 		background: #F2F0EE;
 		
+		@media (prefers-color-scheme: dark) {	
+			background: #3B3A3A;
+		}
+		
 		.promo {
 			position: absolute;
 			top: 40px;
@@ -248,6 +249,11 @@
 		background: url(../portfolio/background-simplescales.jpg);
 		background-size: cover;
 		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-simplescales-dark.jpg);
+			background-size: cover;
+		}
+		
 		.promo {
 			margin-top: -95px;
 			margin-left: 130px;
@@ -273,6 +279,10 @@
 	.nightlight {
 		grid-area: nightlight;
 		background: #4B444C;
+		
+		h2 {
+			color: #D7B48D !important;
+		}
 		
 		.promo {
 			margin-top: 10px;
@@ -318,6 +328,11 @@
 		background: url(../portfolio/background-kohab.png);
 		background-size: cover;
 		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-kohab-dark.jpg);
+			background-size: cover;
+		}
+		
 		.promo {
 			position: absolute;
 			top: 16px;
@@ -346,6 +361,11 @@
 		grid-area: mediaportal;
 		background: url(../portfolio/background-mediaportal.png);
 		background-size: cover;
+		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-mediaportal-dark.jpg);
+			background-size: cover;
+		}
 		
 		.promo {
 			position: absolute;
@@ -438,6 +458,11 @@
 		background: url(../portfolio/background-aptapro.png);
 		background-size: cover;
 		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-aptapro-dark.jpg);
+			background-size: cover;
+		}
+		
 		.promo {
 			width: 170px;
 			margin-left: 5px;
@@ -477,7 +502,12 @@
 	.karinourish {
 		grid-area: karinourish;
 		background: url(../portfolio/background-karinourish.jpg);
-		background-size: cover;		
+		background-size: cover;	
+		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-karinourish-dark.jpg);
+			background-size: cover;
+		}
 		
 		.promo {
 			position: absolute;
@@ -555,8 +585,13 @@
 	
 	.marketplace {
 		grid-area: marketplace;
-		background: url(../portfolio/background-marketplace.png);
+		background: url(../portfolio/background-marketplace.jpg);
 		background-size: cover;
+		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-marketplace-dark.jpg);
+			background-size: cover;
+		}
 		
 		h2, h3 {
 			color: white !important;
@@ -967,14 +1002,7 @@
 }
 
 .aptapro {
-	--background: #F5F6F6;
-	--background-dark: #F2F2F2;
-	--primary: #20419A;
 	--highlight: #00B5DC;
-	
-	nav {
-		border-color: rgba(#20419A,0.2);
-	}
 	
 	header {
 		.coverimage {
@@ -1024,17 +1052,18 @@
 	
 	.styleguide {
 		margin-bottom: 60px;
+		border-radius: var(--radius);
+		overflow: hidden;
+		background: #F5F6F6;
+		padding-left: 30px;
 	}
 }
 
 .eastland {
-	--background: #F9F9F9;
-	--background-dark: #F2F0EE;
-	--primary: #9F9D9A;
 	--highlight: #BC441C;
 	
-	nav {
-		border-color: rgba(#9F9D9A,0.2);
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #e05c30;
 	}
 	
 	.coverimage {
@@ -1089,13 +1118,10 @@
 }
 
 .epoch {
-	--background: #4B4740;
-	--background-dark: #37332C;
-	--primary: #ACA8A2;
-	--highlight: #FFD56F;
+	--highlight: #fea000;
 	
-	nav {
-		border-color: rgba(#ACA8A2,0.2);
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #FFD56F;
 	}
 	
 	header {
@@ -1114,10 +1140,6 @@
 	
 	.appgrid > div {
 		position: relative;
-	}
-	
-	.screenshotWrapper {
-		box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
 	}
 		
 	.countdown {
@@ -1209,35 +1231,34 @@
 }
 
 .karinourish {
-	--background: #FFFEFB;
-	--background-dark: #F7F3E9;
-	--primary: #755F1F;
 	--highlight: #005B9F;
 	
-	nav {
-		border-color: rgba(#755F1F,0.2);
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #1A8BCC;
 	}
 	
 	.coverimage {
 		background-image: url(../karinourish/header-background.jpg);
 		opacity: 0.5;
 		background-position: center bottom;
+		
+		@media (prefers-color-scheme: dark) {	
+			opacity: 0.1;
+		}
 	}
 	
 	.grid {
 		margin-bottom: 0px;
 	}
+	
+	.styleguide {
+		background: #F7F3E9;
+		padding: 40px;
+	}
 }
 
 .mediaportal {
-	--background: #F6F8F8;
-	--background-dark: #EDF0F0;
-	--primary: #212121;
 	--highlight: #2196F3;
-	
-	nav {
-		border-color: rgba(#212121,0.2);
-	}
 	
 	.coverimage {
 		background-image: url(../mediaportal/header-background.jpg);
@@ -1296,17 +1317,10 @@
 }
 
 .neutron {
-	--background: #243739;
-	--background-dark: #182D2F;
-	--primary: #EAE4CA;
-	--highlight: #A2DFA8;
+	--highlight: #29383A;
 	
-	nav {
-		border-color: rgba(#EAE4CA,0.2);
-	}
-	
-	.screenshotWrapper {
-		box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.3), 0px 2px 10px rgba(0, 0, 0, 0.3);
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #A2DFA8;
 	}
 	
 	.coverimage {
@@ -1342,7 +1356,7 @@
 		}
 		
 		@media (min-width:$tablet) {
-			background-image: url(../neutron/results.png);
+			background-image: url(../neutron/results_light.png);
 			height: 850px;
 			background-position: center top;
 			background-repeat: no-repeat;
@@ -1352,34 +1366,43 @@
 			}
 			
 			@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-				background-image: url(../neutron/results@2x.png);
+				background-image: url(../neutron/results_light@2x.png);
 				background-size: 1015px;
+			}
+			
+			@media (prefers-color-scheme: dark) {	
+				background-image: url(../neutron/results.png);
+				
+				@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+					background-image: url(../neutron/results@2x.png);
+				}
 			}
 		}
 	}
 }
 
 .nightlight {
-	--background: #373038;
-	--background-dark: #2D2731;
-	--primary: #9B9CA6;
-	--highlight: #D7B48D;
+	--highlight: #373038;
 	
-	nav {
-		border-color: rgba(#9B9CA6,0.2);
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #D7B48D;
 	}
 	
+	h1 {
+		color: #D7B48D !important;
+	}
+	
+	.description, .contact-link, .sitename {
+		color: #C0C0C0 !important;
+	}
+	
+	.sitename #logo {
+		stroke: #C0C0C0 !important;
+	}
+		
 	.coverimage {
 		background-image: url(../nightlight/header-background.jpg);
 		opacity: 1;
-	}
-	
-	.screenshotWrapper {
-		box-shadow: inset 0px 0px 0px 1px rgba(255,255,255, 0.05), 0px 0px 0px 1px rgba(0,0,0,0.2), 0px 20px 80px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1);
-	}
-	
-	.videoWrapper::before {
-		box-shadow: inset 0px 0px 0px 1px rgba(255,255,255, 0.05), 0px 0px 0px 1px rgba(0,0,0,0.2);
 	}
 	
 	.like {
@@ -1515,17 +1538,14 @@
 }
 
 .retailerportal {
-	--background: #181818;
-	--background-dark: #000000;
-	--primary: #6A6A6A;
 	--highlight: #CA4750;
-	
-	nav {
-		border-color: rgba(#6A6A6A,0.2);
-	}
 	
 	.coverimage {
 		background-image: url(../retailerportal/header-background.jpg);
+	}
+	
+	header {
+		background: black;
 	}
 	
 	.card {
@@ -1560,6 +1580,10 @@
 			left: 0px;
 			right: 0px;
 			z-index: 1;
+			
+			@media (prefers-color-scheme: dark) {	
+				background: url(../retailerportal/styleguide-mobile-dark.png);
+			}
 		}
 		
 		@media (min-width:$tablet) {
@@ -1570,6 +1594,10 @@
 				width: 492px;
 				height: 911px;
 				margin: 52px auto;
+				
+				@media (prefers-color-scheme: dark) {	
+					background: url(../retailerportal/styleguide-tablet-dark.png);
+				}
 			}
 		}
 		
@@ -1581,6 +1609,10 @@
 				width: 1054px;
 				height: 469px;
 				margin: 52px auto;
+				
+				@media (prefers-color-scheme: dark) {	
+					background: url(../retailerportal/styleguide-desktop-dark.png);
+				}
 			}
 		}
 		
@@ -1588,12 +1620,22 @@
 			.image {
 				background: url(../retailerportal/styleguide-mobile@2x.png);
 				background-size: 303px 1197px;
+				
+				@media (prefers-color-scheme: dark) {	
+					background: url(../retailerportal/styleguide-mobile-dark@2x.png);
+					background-size: 303px 1197px;
+				}
 			}
 			
 			@media (min-width:$tablet) {
 				.image {
 					background: url(../retailerportal/styleguide-tablet@2x.png);
 					background-size: 492px 911px;
+					
+					@media (prefers-color-scheme: dark) {	
+						background: url(../retailerportal/styleguide-tablet-dark@2x.png);
+						background-size: 492px 911px;
+					}
 				}
 			}
 			
@@ -1601,6 +1643,11 @@
 				.image {
 					background: url(../retailerportal/styleguide-desktop@2x.png);
 					background-size: 1054px 469px;
+					
+					@media (prefers-color-scheme: dark) {	
+						background: url(../retailerportal/styleguide-desktop-dark@2x.png);
+						background-size: 1054px 469px;
+					}
 				}
 			}
 		}
@@ -1608,14 +1655,7 @@
 }
 
 .simplescales {
-	--background: #ECEBEB;
-	--background-dark: #E1E1E1;
-	--primary: #665B49;
 	--highlight: #FF9E2A;
-	
-	nav {
-		border-color: rgba(#665B49,0.2);
-	}
 	
 	.coverimage {
 		background-image: url(../simplescales/header.jpg);
@@ -1787,14 +1827,7 @@
 }
 
 .tolq {
-	--background: #173541;
-	--background-dark: #122E39;
-	--primary: #8D999D;
 	--highlight: #00AF5B;
-	
-	nav {
-		border-color: rgba(#8D999D,0.2);
-	}
 	
 	header {
 		
@@ -1802,10 +1835,6 @@
 			background-image: url(../tolq/header-background.jpg);
 			background-position: center bottom;
 		}
-	}
-	
-	.screenshotWrapper {
-		box-shadow: 0px 20px 80px rgba(0, 0, 0, 0.1), 0px 2px 10px rgba(0, 0, 0, 0.1)
 	}
 	
 	#challenge img {
@@ -1879,14 +1908,7 @@
 }
 
 .kohab {
-	--background: #FFFFFF;
-	--background-dark: #F4F4F4;
-	--primary: #0B324B;
 	--highlight: #2EB68C;
-	
-	nav {
-		border-color: rgba(#0B324B,0.2);
-	}
 	
 	.coverimage {
 		background-image: url(../kohab/header-background.jpg);
@@ -2006,13 +2028,10 @@
 }
 
 .marketplace {
-	--background: #FFFFFF;
-	--background-dark: #EFF0F2;
-	--primary: #212529;
 	--highlight: #007ACC;
 	
-	nav {
-		border-color: rgba(white,0.2);
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #32adff;
 	}
 	
 	.coverimage {
