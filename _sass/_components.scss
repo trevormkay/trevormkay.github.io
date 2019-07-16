@@ -104,8 +104,12 @@ nav {
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	border-bottom: 2px solid black;
+	border-bottom: 2px solid rgba(#7B7B7B, 0.2);
 	font-weight: bold;
+	
+	@media (prefers-color-scheme: dark) {	
+		border-bottom: 2px solid rgba(#C0C0C0, 0.2);
+	}
 	
 	@supports(padding: max(0px)) {
 		padding-left: calc(20px + env(safe-area-inset-left));

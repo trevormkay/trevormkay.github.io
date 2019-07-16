@@ -1003,10 +1003,6 @@
 
 .aptapro {
 	--highlight: #00B5DC;
-		
-	nav {
-		border-color: rgba(#20419A,0.2);
-	}
 	
 	header {
 		.coverimage {
@@ -1070,10 +1066,6 @@
 		--highlight: #e05c30;
 	}
 	
-	nav {
-		border-color: rgba(#9F9D9A,0.2);
-	}
-	
 	.coverimage {
 		background-image: url(../eastland/header-background.jpg);
 		opacity: 0.07;
@@ -1130,10 +1122,6 @@
 	
 	@media (prefers-color-scheme: dark) {	
 		--highlight: #FFD56F;
-	}
-	
-	nav {
-		border-color: rgba(#ACA8A2,0.2);
 	}
 	
 	header {
@@ -1249,14 +1237,14 @@
 		--highlight: #1A8BCC;
 	}
 	
-	nav {
-		border-color: rgba(#755F1F,0.2);
-	}
-	
 	.coverimage {
 		background-image: url(../karinourish/header-background.jpg);
 		opacity: 0.5;
 		background-position: center bottom;
+		
+		@media (prefers-color-scheme: dark) {	
+			opacity: 0.1;
+		}
 	}
 	
 	.grid {
@@ -1271,10 +1259,6 @@
 
 .mediaportal {
 	--highlight: #2196F3;
-	
-	nav {
-		border-color: rgba(#212121,0.2);
-	}
 	
 	.coverimage {
 		background-image: url(../mediaportal/header-background.jpg);
@@ -1339,10 +1323,6 @@
 		--highlight: #A2DFA8;
 	}
 	
-	nav {
-		border-color: rgba(#EAE4CA,0.2);
-	}
-	
 	.coverimage {
 		opacity: 1;
 		background-image: linear-gradient(-30deg, rgba(#4DF1FF,0.15) 0%, rgba(#FFCE55,0.15) 100%);
@@ -1404,16 +1384,20 @@
 .nightlight {
 	--highlight: #373038;
 	
-	nav {
-		border-color: rgba(#9B9CA6,0.2);
-	}
-	
 	@media (prefers-color-scheme: dark) {	
 		--highlight: #D7B48D;
-		
-		nav {
-			border-color: rgba(#C0C0C0,0.2);
-		}
+	}
+	
+	h1 {
+		color: #D7B48D !important;
+	}
+	
+	.description, .contact-link, .sitename {
+		color: #C0C0C0 !important;
+	}
+	
+	.sitename #logo {
+		stroke: #C0C0C0 !important;
 	}
 		
 	.coverimage {
@@ -1556,12 +1540,12 @@
 .retailerportal {
 	--highlight: #CA4750;
 	
-	nav {
-		border-color: rgba(#6A6A6A,0.2);
-	}
-	
 	.coverimage {
 		background-image: url(../retailerportal/header-background.jpg);
+	}
+	
+	header {
+		background: black;
 	}
 	
 	.card {
@@ -1672,10 +1656,6 @@
 
 .simplescales {
 	--highlight: #FF9E2A;
-	
-	nav {
-		border-color: rgba(#665B49,0.2);
-	}
 	
 	.coverimage {
 		background-image: url(../simplescales/header.jpg);
@@ -1849,10 +1829,6 @@
 .tolq {
 	--highlight: #00AF5B;
 	
-	nav {
-		border-color: rgba(#8D999D,0.2);
-	}
-	
 	header {
 		
 		.coverimage {
@@ -1933,10 +1909,6 @@
 
 .kohab {
 	--highlight: #2EB68C;
-	
-	nav {
-		border-color: rgba(#0B324B,0.2);
-	}
 	
 	.coverimage {
 		background-image: url(../kohab/header-background.jpg);
@@ -2060,10 +2032,6 @@
 	
 	@media (prefers-color-scheme: dark) {	
 		--highlight: #32adff;
-	}
-	
-	nav {
-		border-color: rgba(white,0.2);
 	}
 	
 	.coverimage {
