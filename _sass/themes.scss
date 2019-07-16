@@ -204,6 +204,10 @@
 		grid-area: eastland;
 		background: #F2F0EE;
 		
+		@media (prefers-color-scheme: dark) {	
+			background: #3B3A3A;
+		}
+		
 		.promo {
 			position: absolute;
 			top: 40px;
@@ -245,6 +249,11 @@
 		background: url(../portfolio/background-simplescales.jpg);
 		background-size: cover;
 		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-simplescales-dark.jpg);
+			background-size: cover;
+		}
+		
 		.promo {
 			margin-top: -95px;
 			margin-left: 130px;
@@ -270,6 +279,10 @@
 	.nightlight {
 		grid-area: nightlight;
 		background: #4B444C;
+		
+		h2 {
+			color: #D7B48D !important;
+		}
 		
 		.promo {
 			margin-top: 10px;
@@ -315,6 +328,11 @@
 		background: url(../portfolio/background-kohab.png);
 		background-size: cover;
 		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-kohab-dark.jpg);
+			background-size: cover;
+		}
+		
 		.promo {
 			position: absolute;
 			top: 16px;
@@ -343,6 +361,11 @@
 		grid-area: mediaportal;
 		background: url(../portfolio/background-mediaportal.png);
 		background-size: cover;
+		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-mediaportal-dark.jpg);
+			background-size: cover;
+		}
 		
 		.promo {
 			position: absolute;
@@ -435,6 +458,11 @@
 		background: url(../portfolio/background-aptapro.png);
 		background-size: cover;
 		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-aptapro-dark.jpg);
+			background-size: cover;
+		}
+		
 		.promo {
 			width: 170px;
 			margin-left: 5px;
@@ -474,7 +502,12 @@
 	.karinourish {
 		grid-area: karinourish;
 		background: url(../portfolio/background-karinourish.jpg);
-		background-size: cover;		
+		background-size: cover;	
+		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-karinourish-dark.jpg);
+			background-size: cover;
+		}
 		
 		.promo {
 			position: absolute;
@@ -552,8 +585,13 @@
 	
 	.marketplace {
 		grid-area: marketplace;
-		background: url(../portfolio/background-marketplace.png);
+		background: url(../portfolio/background-marketplace.jpg);
 		background-size: cover;
+		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-marketplace-dark.jpg);
+			background-size: cover;
+		}
 		
 		h2, h3 {
 			color: white !important;
