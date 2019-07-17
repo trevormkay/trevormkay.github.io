@@ -932,25 +932,6 @@
 		}
 	}
 	
-	a {
-		font-family: var(--font-body);
-		font-size: 20px;
-		text-align: center;
-		border: 2px solid var(--highlight);
-		color: var(--highlight);
-		border-radius: 12px;
-		padding: 10px 20px;
-		
-		@media (min-width:$tablet) {
-			font-size: 30px;
-		}
-		
-		&:hover {
-			background: var(--highlight);
-			color: var(--background);
-		}
-	}
-	
 	nav {
 		display: none;
 	}

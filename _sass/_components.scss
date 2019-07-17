@@ -800,6 +800,10 @@ header {
 		grid-area: eastland;
 		background: #F2F0EE;
 		
+		@media (prefers-color-scheme: dark) {	
+			background: #3B3A3A;
+		}
+		
 		.promo {
 			position: absolute;
 			top: 40px;
@@ -842,6 +846,11 @@ header {
 		background: url(../portfolio/background-aptapro-alt.png);
 		background-size: cover;
 		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-aptapro-alt-dark.jpg);
+			background-size: cover;	
+		}
+		
 		.promo {
 			position: absolute;
 			top: -20px;
@@ -881,7 +890,12 @@ header {
 	&.karinourish {
 		grid-area: karinourish;
 		background: url(../portfolio/background-karinourish-alt.jpg);
-		background-size: cover;		
+		background-size: cover;	
+		
+		@media (prefers-color-scheme: dark) {	
+			background: url(../portfolio/background-karinourish-alt-dark.jpg);
+			background-size: cover;	
+		}
 		
 		.promo {
 			position: absolute;
