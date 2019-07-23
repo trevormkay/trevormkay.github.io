@@ -58,7 +58,10 @@ theme: "#FFFFFF"
 				<h2 class="subhead">Notifications</h2>
 				<p>Keeping users informed is important. That’s why there are several different notifications that the app can generate. All of them are rich notifications which allow a user to take action without even having to open the app.</p>
 			</aside>
-			<img src="notification.png" alt="Image of a notification about a board that has been shared with a user" srcset="notification.png, notification@2x.png 2x" class="panel">
+			<picture>
+				<source srcset="notification-dark.png, notification-dark@2x.png 2x" media="(prefers-color-scheme: dark)">
+				<img src="notification.png" alt="Image of a notification about a board that has been shared with a user" srcset="notification.png, notification@2x.png 2x" class="panel">
+			</picture>
 		</div>
 	</div>
 </section>
