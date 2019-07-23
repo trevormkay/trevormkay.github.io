@@ -1288,12 +1288,15 @@
 		
 		@media (min-width:$tablet-landscape) {
 			align-items: center;
-			flex-direction: row;
+			display: grid;
+			grid-template-columns: 1fr 460px;
 		}
 		
 		img {
 			margin-bottom: 0px;
 		}
+		
+		
 	}
 }
 
