@@ -18,6 +18,11 @@ body {
 	background-color: var(--background) !important;
 }
 
+::selection {
+  background: var(--highlight) !important;
+  color: white !important;
+}
+
 h1, h2, h3 {
 	font-family: var(--font-header);
 	color: var(--highlight);
