@@ -2112,6 +2112,18 @@
 			font-family: var(--font-header);
 		}
 	}
+	
+	#solution .button {
+		margin-right: 15px;
+		margin-bottom: 20px;
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+		
+		@media (min-width:$phone-landscape) {
+			width: auto;
+		}
+	}
 }
 
 
