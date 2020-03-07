@@ -2124,6 +2124,12 @@
 			width: auto;
 		}
 	}
+	
+	.mobileapp {
+		display: grid;
+		grid-template-columns: 1fr 503px;
+		grid-gap: 40px;
+	}
 }
 
 
