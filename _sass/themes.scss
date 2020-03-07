@@ -2053,6 +2053,14 @@
 	}
 }
 
+.ticketek {
+	--highlight: #00497A;
+	
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #32adff;
+	}
+}
+
 
 @-moz-document url-prefix() { 
   .portfolio .flexwrapper div {
