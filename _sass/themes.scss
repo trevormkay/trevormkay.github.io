@@ -2056,8 +2056,30 @@
 .ticketek {
 	--highlight: #00497A;
 	
+	header .button {
+		background: #007ACC;
+	}
+	
 	@media (prefers-color-scheme: dark) {	
 		--highlight: #32adff;
+		
+		header .button {
+			background: #007ACC;
+		}
+	}
+	
+	.coverimage {
+		background-image: url(../ticketek-site/header-background.jpg);
+		background-position: center center;
+		opacity: 1;
+	}
+	
+	h1, .description, .sitename, .contact-link {
+		color: white;
+	}
+	
+	.sitename #logo {
+		stroke: white;
 	}
 }
 
