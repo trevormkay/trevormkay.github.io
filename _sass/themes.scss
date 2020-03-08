@@ -2139,6 +2139,17 @@
 			padding-bottom: 20px;
 		}
 	}
+	
+	.posterlineup {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 10px;
+		
+		img {
+			border-radius: 5px;
+			max-width: 100%;
+		}
+	}
 }
 
 
