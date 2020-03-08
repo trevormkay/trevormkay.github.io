@@ -2152,6 +2152,15 @@
 			max-width: 100%;
 		}
 	}
+	
+	p a {
+		text-decoration: underline;
+		color: var(--primary);
+		
+		&:hover {
+			color: var(--highlight);
+		}
+	}
 }
 
 
