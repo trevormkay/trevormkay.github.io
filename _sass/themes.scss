@@ -2091,9 +2091,13 @@
 	
 	.screenshotpages {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 40px;
-		margin-bottom: 60px;
+		margin-bottom: 40px;
+		
+		div:nth-child(3), div:nth-child(4)  {
+			display: none;
+		}
 		
 		.screenshotWrapper {
 			position: relative;
@@ -2112,6 +2116,14 @@
 			text-transform: uppercase;
 			color: var(--primary);
 			font-family: var(--font-header);
+		}
+		
+		@media (min-width:$tablet) {
+			grid-template-columns: repeat(4, 1fr);
+			
+			div:nth-child(3), div:nth-child(4)  {
+				display: block !important;
+			}
 		}
 	}
 	
