@@ -35,8 +35,8 @@ h1, h2, h3 {
 
 .subhead {
 	color: var(--primary);
-	margin: 0px;
 	font-size: 30px;
+	margin: 0px;
 	
 	@media (min-width:$tablet) {
 		font-size: 34px;
@@ -387,6 +387,10 @@ header {
 		}
 	}
 	
+	.subhead {
+		font-size: 30px;
+	}
+	
 	.description {
 		font-size: 28px;
 		font-family: var(--font-body);
@@ -518,6 +522,7 @@ header {
 
 	img {
 		max-width: 100%;
+		border: 1px solid rgba(0,0,0,0.2);
 	}
 	
 	.caption, .center {

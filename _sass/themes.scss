@@ -1709,10 +1709,11 @@
 		}
 	}
 		
-	.grid {
+	.othergrid {
 		grid-template-columns: 1fr;
 		max-width: 600px;
 		margin: 0px auto;
+		display: grid;
 		
 		div {
 			display: flex;
@@ -1723,6 +1724,7 @@
 		img {
 			margin-bottom: 30px;
 			margin-top: 60px;
+			max-width: 100%;
 		}
 		
 		@media (min-width:$tablet-landscape) {
@@ -2049,6 +2051,137 @@
 		
 		@media (min-width:$tablet) {
 			margin-bottom: 60px;
+		}
+	}
+}
+
+.ticketek {
+	--highlight: #00497A;
+	
+	header .button {
+		background: #007ACC;
+	}
+	
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #32adff;
+		
+		header .button {
+			background: #007ACC;
+		}
+	}
+	
+	.coverimage {
+		background-image: url(../ticketek-site/header-background.jpg);
+		background-position: center center;
+		opacity: 1;
+	}
+	
+	h1, .description, .sitename, .contact-link {
+		color: white;
+	}
+	
+	.sitename #logo {
+		stroke: white;
+	}
+	
+	.map {
+		max-width: 100%;
+		margin-bottom: 50px;
+	}
+	
+	.screenshotpages {
+		display: grid;
+		grid-template-columns: repeat(2, 1fr);
+		grid-gap: 40px;
+		margin-bottom: 40px;
+		
+		div:nth-child(3), div:nth-child(4)  {
+			display: none;
+		}
+		
+		.screenshotWrapper {
+			position: relative;
+		}
+		
+		.screenshot {
+			margin-bottom: 0px;
+		}
+		
+		h4 {
+			text-align: center;
+			display: block;
+			position: absolute;
+			width: 100%;
+			padding-top: 10px;
+			text-transform: uppercase;
+			color: var(--primary);
+			font-family: var(--font-header);
+		}
+		
+		@media (min-width:$tablet) {
+			grid-template-columns: repeat(4, 1fr);
+			
+			div:nth-child(3), div:nth-child(4)  {
+				display: block !important;
+			}
+		}
+	}
+	
+	#solution .button {
+		margin-right: 15px;
+		margin-bottom: 20px;
+		width: 100%;
+		text-align: center;
+		display: inline-block;
+		
+		@media (min-width:$phone-landscape) {
+			width: auto;
+		}
+	}
+	
+	.mobileapp {
+		margin-top: 40px;
+		
+		img {
+			max-width: 100%;
+			margin: 0px auto;
+			display: block;
+		}
+		
+		@media (min-width:$tablet-landscape) {
+			display: grid;
+			grid-template-columns: 1fr 503px;
+			grid-gap: 40px;
+			align-items: center;
+		}
+	}
+	
+	.prototype {
+		margin-bottom: 20px;
+		padding-top: 40px;
+		
+		p {
+			padding-bottom: 20px;
+		}
+	}
+	
+	.posterlineup {
+		display: grid;
+		grid-template-columns: repeat(5, 1fr);
+		grid-gap: 10px;
+		
+		img {
+			border-radius: 5px;
+			max-width: 100%;
+		}
+	}
+	
+	p a {
+		text-decoration: underline;
+		color: var(--primary);
+		
+		&:hover {
+			color: var(--highlight);
 		}
 	}
 }
