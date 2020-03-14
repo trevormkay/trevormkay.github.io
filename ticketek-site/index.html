@@ -55,7 +55,7 @@ theme: "#FFFFFF"
 		</div>
 		<div class="screenshotWrapper">	
 			<picture>
-				<source media="(min-width: 568px)" srcset="homepage-desktop.png, homepage-desktop@2x.png 2x">
+				<source media="(min-width: 568px)" srcset="homepage-desktop.jpg, homepage-desktop@2x.jpg 2x">
 				<source media="(min-width: 0px)" srcset="homepage-mobile.png, homepage-mobile@2x.png 2x">
 				<img src="homepage-mobile.png" alt="Screenshot of the new homepage" class="screenshot">
 			</picture>
@@ -76,8 +76,22 @@ theme: "#FFFFFF"
 				<a href="https://apps.apple.com/au/app/ticketek/id454379421" target="_blank" class="button small">App Store</a>
 				<a href="https://play.google.com/store/apps/details?id=au.com.ticketek&hl=en_AU" target="_blank" class="button small">Play Store</a>
 			</div>
-			<img src="phones.png" srcset="phones.png, phones@2x.png 2x">
+				<img src="phones1.png" id="phones">
 		</div>
+        <script type = "text/javascript">
+            var image = document.getElementById("phones");
+            var currentPos = 0;
+            var images = ["phones1.png","phones2.png","phones3.png","phones4.png","phones5.png","phones6.png"]
+
+            function phoneswap() {
+                if (++currentPos >= images.length)
+                    currentPos = 0;
+
+                image.src = images[currentPos];
+            }
+
+            setInterval(phoneswap, 3000);
+        </script>		
 	</div>
 </section>
 <section id="process">
