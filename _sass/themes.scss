@@ -2215,6 +2215,29 @@
 			color: var(--highlight);
 		}
 	}
+	
+	.demo {
+		position: relative;
+		
+		img {
+			z-index: 2;
+			position: relative;
+			max-width: 100%;			
+		}
+		
+		video {
+			position: absolute;
+			top: 3%;
+			left: 13%;
+			width: 74.5%;
+			
+			@media (min-width: $tablet) {
+				top: 25px;
+				left: 58px;
+				width: 329px;
+			}
+		}
+	}
 }
 
 
