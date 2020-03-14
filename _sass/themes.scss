@@ -2216,6 +2216,14 @@
 		}
 	}
 	
+	.sharingprocess {
+		@media (min-width:$tablet) {
+			display: flex;
+			justify-content: space-around;
+			margin-top: 40px;
+		}
+	}
+	
 	.demo {
 		position: relative;
 		
@@ -2227,11 +2235,23 @@
 		
 		video {
 			position: absolute;
-			top: 3%;
-			left: 13%;
-			width: 74.5%;
-			
+				top: 3%;
+				left: 13%;
+				width: 74.5%;
+				
 			@media (min-width: 482px) {
+					top: 25px;
+					left: 58px;
+					width: 329px;
+				}
+			
+			@media (min-width: $tablet) {
+				top: 3%;
+				left: 13%;
+				width: 74.5%;
+			}
+			
+			@media (min-width: $tablet-landscape) {
 				top: 25px;
 				left: 58px;
 				width: 329px;
