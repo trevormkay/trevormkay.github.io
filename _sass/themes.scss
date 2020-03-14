@@ -2055,7 +2055,7 @@
 	}
 }
 
-.ticketek {
+.ticketek-site {
 	--highlight: #00497A;
 	
 	header .button {
@@ -2176,6 +2176,37 @@
 		}
 	}
 	
+	p a {
+		text-decoration: underline;
+		color: var(--primary);
+		
+		&:hover {
+			color: var(--highlight);
+		}
+	}
+}
+
+.ticket-sharing {
+	--highlight: #08B1BE;
+	
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #20e6f6;
+	}
+	
+	.coverimage {
+		background-image: url(../ticket-sharing/header-background.jpg);
+		background-position: center center;
+		opacity: 1;
+	}
+	
+	h1, .description, .sitename, .contact-link {
+		color: white;
+	}
+	
+	.sitename #logo {
+		stroke: white;
+	}
+
 	p a {
 		text-decoration: underline;
 		color: var(--primary);
