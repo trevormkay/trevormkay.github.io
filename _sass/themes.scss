@@ -2398,8 +2398,22 @@
 	}
 	
 	.linkpanel {
-		padding-top: 20px;
-		padding-bottom: 20px;
+		padding-top: 40px;
+		padding-bottom: 40px;
+		
+		.type {
+			color: white;
+		}
+		
+		.type::after {
+			background: white;
+		}
+		
+		@media (max-width: 766px) {
+			.type {
+				margin-top: 20px;
+			}
+		}
 		
 		h2 {
 			color: white;
