@@ -2347,6 +2347,106 @@
 	}
 }
 
+.ticketek {
+	--highlight: #00497A;
+	
+	header .button {
+		background: #007ACC;
+	}
+	
+	@media (prefers-color-scheme: dark) {	
+		--highlight: #32adff;
+		
+		header .button {
+			background: #007ACC;
+		}
+	}
+	
+	header {
+		.copy {
+			width: 100%;
+		}
+		
+		.description {
+			font-family: var(--font-body);
+			font-size: 16px;
+			line-height: 22px;
+			
+			@media (min-width: $tablet) {
+				font-size: 23px;
+				line-height: 33px;
+			}
+		}
+	}
+		
+	#panel-ticketeksite {
+		background-image: url(../ticketek/ticketeksite-background.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+	
+	#panel-ticketsharing {
+		background-image: url(../ticketek/ticketsharing-background.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+	
+	#panel-marketplace {
+		background-image: url(../ticketek/marketplace-background.jpg);
+		background-position: center center;
+		background-size: cover;
+	}
+	
+	.linkpanel {
+		padding-top: 20px;
+		padding-bottom: 20px;
+		
+		h2 {
+			color: white;
+		}
+		
+		p {
+			color: white;
+			opacity: 0.8;
+		}
+		
+		.button {
+			color: #00497A;
+			background: white;
+			display: inline-block;
+		}
+		
+		.constrained {
+			@media (min-width: $tablet-landscape) {
+				display: grid;
+				grid-template-columns: 349px 1fr;
+				align-items: center;
+				grid-gap: 40px;
+			}
+		}
+		
+		img {
+			@media (max-width: 766px) {
+				width: 200px;
+			}
+		}
+	}
+	
+	#panel-ticketsharing {
+		.constrained {
+			@media (min-width: $tablet-landscape) {
+				grid-template-columns: 1fr 349px;
+			}
+		}
+		
+		.copy {
+			@media (min-width: $tablet-landscape) {
+				grid-row: 1
+			}
+		}
+	}
+}
+
 
 @-moz-document url-prefix() { 
   .portfolio .flexwrapper div {
