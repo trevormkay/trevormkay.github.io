@@ -2294,6 +2294,8 @@
 	}
 	
 	.acceptedscreens {
+		margin-bottom: 60px;
+		
 		@media (min-width: $tablet-landscape) {
 			display: grid;
 			grid-template-columns: 400px 1fr;
@@ -2306,7 +2308,6 @@
 			grid-template-columns: 1fr 1fr;
 			grid-gap: 20px;
 			margin-bottom: 40px;
-			margin-top: 40px;
 		}
 		
 		.screenshotWrapper {
