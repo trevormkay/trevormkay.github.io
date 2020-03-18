@@ -210,36 +210,27 @@
 		
 		.promo {
 			position: absolute;
-			top: 40px;
-			left: -80px;
-			width: 460px;
+			top: -40px;
+			left: 160px;
+			width: 210px;
 			
-			@media (min-width:568px) {
-				top: 20px;
-				left: 0px;
-				width: 570px;
+			@media (min-width:$phone-landscape) {
+				top: 10px;
+				left: 130px;
+				width: 300px;
 			}
 			
 			@media (min-width:$tablet) {
-				top: 40px;
-				left: -300px;
-				width: 1030px;
+				left: 40px;
+				width: 580px;
 			}
 			
 			@media (min-width:$tablet-landscape) {
-				left: -120px;
+				left: 60px;
 			}
 			
 			@media (min-width:$desktop) {
 				width: auto;
-				top: 50px;
-				left: -400px;
-			}
-			
-			@media (min-width:$desktop-lrg) {
-				width: auto;
-				top: 50px;
-				right: 20px;
 			}
 		}
 	}
@@ -583,15 +574,10 @@
 		}
 	}
 	
-	.marketplace {
-		grid-area: marketplace;
-		background: url(../portfolio/background-marketplace.jpg);
+	.ticketek {
+		grid-area: ticketek;
+		background: url(../portfolio/background-ticketek.jpg);
 		background-size: cover;
-		
-		@media (prefers-color-scheme: dark) {	
-			background: url(../portfolio/background-marketplace-dark.jpg);
-			background-size: cover;
-		}
 		
 		h2, h3 {
 			color: white !important;
@@ -601,23 +587,26 @@
 			opacity: 0.5;
 		}
 		
-		.flexwrapper {
-			margin-top: -30px;
-			
-			@media (min-width:$desktop) {
-				margin-top: -70px;
-			}
-		}
-		
 		.promo {
-			width: 250px;
+			position: absolute;
+			top: 10px;
+			right: 20px;
+			width: 50%;
 			
 			@media (min-width:$tablet) {
-				width: 420px;
+				top: 20px;
+				right: 70px;
+				width: 400px;
+			}
+			
+			@media (min-width:$tablet-landscape) {
+				top: 30px;
+				right: 100px;
+				width: auto;
 			}
 			
 			@media (min-width:$desktop) {
-				width: auto;
+				right: 200px;
 			}
 		}
 	}
