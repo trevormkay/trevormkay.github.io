@@ -1843,9 +1843,18 @@
 		}
 	}
 	
-	#today img {
-		max-width: 70%;
-		align-self: center;
+	#today {
+		.panel {
+			max-width: 70%;
+			align-self: center;
+			max-height: 800px
+		}
+		
+		@media (min-width:$tablet-landscape) {
+			.panel {
+				margin-left: 40px;
+			}
+		}
 	}
 	
 	#boards {
