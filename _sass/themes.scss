@@ -252,18 +252,18 @@
 			margin-left: 130px;
 			
 			@media (min-width:$phone-landscape) {
-				width: 160px;
+				width: 180px;
 				margin-top: 10px;
 				margin-left: 0px;
 			}
 
 			@media (min-width:$tablet) {
-				width: 310px;
-				margin-top: 40px;
+				width: 390px;
+				margin-top: 10px;
 			}
 
 			@media (min-width:$desktop) {
-				margin-top: 50px;
+				margin-top: 10px;
 				width: auto;
 			}
 		}
