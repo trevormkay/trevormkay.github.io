@@ -1590,9 +1590,9 @@
 		
 		video {
 			position: absolute;
-			left: 13%;
+			left: 12.4%;
 			top: 46px;
-			width: 74%;
+			width: 74.4%;
 			
 			@media (min-width:375px) {
 				top: 49px;
@@ -1603,20 +1603,20 @@
 			}
 			
 			@media (min-width:450px) {
-				top: 55px;
+				top: 51px;
 			}
 			
 			
 			@media (min-width: $tablet-landscape) {
-				width: 259px;
-				left: 46px;
-				top: 20px;				
+				width: 260px;
+				left: 44px;
+				top: 17px;				
 			}
 			
 			@media (min-width:$desktop) {
-				width: 329px;
-				left: 58px;
-				top: 24px;	
+				width: 330px;
+				left: 56px;
+				top: 22px;	
 			}		
 		}
 	}
@@ -2461,7 +2461,6 @@
 		}
 	}
 }
-
 
 @-moz-document url-prefix() { 
   .portfolio .flexwrapper div {
