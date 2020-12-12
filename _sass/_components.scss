@@ -60,6 +60,44 @@ a {
     }
 }
 
+blockquote {
+	font-family: var(--font-body);
+	border: 1px solid rgba(var(--primary-rgb), 0.1);
+	text-align: center;
+	padding: 40px;
+	margin-top: 60px;
+	margin-bottom: 0px;
+	border-radius: var(--radius);
+	font-size: 16px;
+	color: var(--primary);
+	background: rgba(var(--primary-rgb), 0.05);
+	
+	@media (min-width:$tablet) {
+		font-size: 22px;
+	}
+	
+	@media (min-width:$desktop) {
+		font-size: 23px;
+	}
+	
+	a {
+		font-size: 14px;
+		text-decoration: underline;
+		color: var(--primary);
+		
+		&:hover {
+			color: var(--highlight);
+			text-decoration: underline;
+		}
+	}
+	
+	h5 {
+		font-size: 14px;
+		font-weight: 400;
+		margin-top: 5px;
+	}
+}
+
 .button {
 	font-family: var(--font-header);
 	font-size: 16px;
