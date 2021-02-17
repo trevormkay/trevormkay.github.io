@@ -459,7 +459,7 @@ header .button.second {
 	}
 }
 
-.case-study section: nth-child(even) {
+.case-study section:nth-child(even) {
 	background: var(--background-dark) 
 }
 

@@ -2123,7 +2123,7 @@
 	margin-bottom: 20px 
 }
 
-.kohab .components img: nth-child(2) {
+.kohab .components img:nth-child(2) {
 	display: none 
 }
 
@@ -2143,7 +2143,7 @@
 		justify-content: space-between 
 	}
 	
-	.kohab .components img: nth-child(2) {
+	.kohab .components img:nth-child(2) {
 		display: inherit 
 	}
 }
@@ -2301,7 +2301,7 @@
 	margin-bottom: 40px 
 }
 
-.ticketek-site .screenshotpages div: nth-child(3), .ticketek-site .screenshotpages div: nth-child(4) {
+.ticketek-site .screenshotpages div:nth-child(3), .ticketek-site .screenshotpages div:nth-child(4) {
 	display: none 
 }
 
@@ -2328,7 +2328,7 @@
 	.ticketek-site .screenshotpages {
 		grid-template-columns: repeat(4, 1fr) 
 	}
-	.ticketek-site .screenshotpages div: nth-child(3), .ticketek-site .screenshotpages div: nth-child(4) {
+	.ticketek-site .screenshotpages div:nth-child(3), .ticketek-site .screenshotpages div:nth-child(4) {
 		display: block !important 
 	}
 }
