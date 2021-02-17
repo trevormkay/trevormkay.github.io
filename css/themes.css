@@ -116,12 +116,12 @@
 	transition: 0.5s transform ease 
 }
 
-.portfolio .constrained .tile: hover .promo {
+.portfolio .constrained .tile:hover .promo {
 	transition: 0.8s transform ease;
 	transform: scale(1.1) 
 }
 
-.portfolio .constrained .tile: hover a {
+.portfolio .constrained .tile:hover a {
 	text-decoration: none !important 
 }
 
@@ -735,7 +735,7 @@
 	color: var(--primary) 
 }
 
-.resume nav a: hover {
+.resume nav a:hover {
 	text-decoration: none 
 }
 
@@ -842,7 +842,7 @@
 	color: var(--highlight) 
 }
 
-.resume a: hover {
+.resume a:hover {
 	text-decoration: underline 
 }
 
@@ -881,7 +881,7 @@
 	color: var(--primary) 
 }
 
-.resume .details ul li a: hover {
+.resume .details ul li a:hover {
 	color: var(--highlight) 
 }
 
@@ -2391,7 +2391,7 @@
 	color: var(--primary) 
 }
 
-.ticketek-site p a: hover {
+.ticketek-site p a:hover {
 	color: var(--highlight) 
 }
 
@@ -2425,7 +2425,7 @@
 	color: var(--primary) 
 }
 
-.ticket-sharing p a: hover {
+.ticket-sharing p a:hover {
 	color: var(--highlight) 
 }
 
