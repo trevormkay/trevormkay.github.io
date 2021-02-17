@@ -47,7 +47,7 @@ h1, h2, h3 {
 	}
 }
 
-.subhead+p {
+.subhead + p {
 	padding-bottom: 20px 
 }
 
@@ -565,7 +565,7 @@ header .button.second {
 	position: relative 
 }
 
-.screenshotWrapper+.center {
+.screenshotWrapper + .center {
 	margin-top: -40px 
 }
 
