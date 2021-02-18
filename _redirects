@@ -1,3 +1,2 @@
-https://cv.trevorkay.me/* /resume/index.html:splat 200!
-https://resume.trevorkay.me/* /resume/index.html:splat 200!
-https://start.trevorkay.me/* /start/main/index.html:splat 200!
+https://cv.trevorkay.me/* /resume/:splat 200!
+https://resume.trevorkay.me/* /resume/:splat 200!
