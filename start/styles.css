@@ -3,7 +3,7 @@
 	--tint: 3, 114, 255;
 	--main: #6d6d6d;
 	--sidebar: black;
-	--backing: #ECECEC;
+	--backing: #F9F9F9;
 }
 
 .light {
@@ -71,13 +71,6 @@ main a::after {
 	background: var(--backing);
 	border-radius: 5px;
 }
-
-@media (prefers-color-scheme: light) {
-	main a::after {
-		opacity: 0.3;
-	}
-}
-
 
 main .imagegrid a::after {
 	background: none;
