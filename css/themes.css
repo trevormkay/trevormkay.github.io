@@ -2691,11 +2691,33 @@
 
 /* MIMEZZ */
 .mimezz {
-	--highlight: #2F80F0 
+	--highlight: #2F80F0;
 }
 
 .mimezz .coverimage {
 	background-image: url(../mimezz/header-background.jpg);
+	opacity: 0.1;
+	background-position: center top 
+}
+
+/* CUBIT ESTIMATING */
+.cubit-estimating {
+	--highlight: #0173C7;
+}
+
+.cubit-estimating .coverimage {
+	background-image: url(../cubit-estimating/header-background.jpg);
+	opacity: 0.1;
+	background-position: center top 
+}
+
+/* CUBIT SELECT */
+.cubit-select {
+	--highlight: #009688;
+}
+
+.cubit-select .coverimage {
+	background-image: url(../cubit-select/header-background.jpg);
 	opacity: 0.1;
 	background-position: center top 
 }
