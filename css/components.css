@@ -38,13 +38,26 @@ h1, h2, h3 {
 .subhead {
 	color: var(--primary);
 	font-size: 30px;
-	margin: 0px 
+	margin: 0px;
+	margin-bottom: 10px;
+	display: flex;
+	align-items: center;
 }
 
 @media (min-width:  740px) {
 	.subhead {
 		font-size: 34px 
 	}
+}
+
+.subhead svg {
+	width: 30px;
+	height: 34px;
+	margin-right: 5px;
+}
+
+.subhead path {
+	fill: var(--primary);
 }
 
 .subhead + p {
