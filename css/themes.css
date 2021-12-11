@@ -2700,6 +2700,20 @@
 	background-position: center top 
 }
 
+.cubit-estimating p a {
+	color: var(--primary);
+	text-decoration: underline;
+}
+
+.cubit-estimating p a:hover {
+	color: var(--highlight);
+}
+
+.cubit-estimating .example {
+	width: 100%;
+	margin-bottom: 40px;
+}
+
 /* CUBIT SELECT */
 .cubit-select {
 	--highlight: #009688;
