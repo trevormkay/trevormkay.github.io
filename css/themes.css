@@ -2689,17 +2689,6 @@
 	}
 }
 
-/* MIMEZZ */
-.mimezz {
-	--highlight: #2F80F0;
-}
-
-.mimezz .coverimage {
-	background-image: url(../mimezz/header-background.jpg);
-	opacity: 0.1;
-	background-position: center top 
-}
-
 /* CUBIT ESTIMATING */
 .cubit-estimating {
 	--highlight: #0173C7;
@@ -2720,4 +2709,34 @@
 	background-image: url(../cubit-select/header-background.jpg);
 	opacity: 0.1;
 	background-position: center top 
+}
+
+/* MIMEZZ */
+.mimezz {
+	--highlight: #2F80F0;
+}
+
+.mimezz .coverimage {
+	background-image: url(../mimezz/header-background.jpg);
+	opacity: 0.1;
+	background-position: center top 
+}
+
+.mimezz .iteration {
+	display: grid;
+	gap: 20px;
+	margin-bottom: 40px;
+}
+
+@media (min-width: 766px) {
+	.mimezz .iteration {
+		grid-template-columns: min(450px, 30vw) 1fr;
+		align-items: center;
+	}
+}
+
+
+.mimezz .iteration img {
+	width: 100%;
+	border: 1px solid rgba(0, 0, 0, 0.2);
 }

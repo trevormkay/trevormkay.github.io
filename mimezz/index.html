@@ -73,6 +73,7 @@
 		<p>Although MiMezz can help you design a Mezzanine from the ground up, my focus on the project was Zone Framing. To effectively design a mezzanine in a cost efficient manner the system needs to be told by the user in what way to divide the mezzanine up, which we call Zones, and what properties each Zone should have.</p>
 		<p>For MiMezz’s intended audience (Sales Associates) there is a balancing act between providing them with enough flexibility to create any mezzanine their client desires and subtly guiding them in ways so they avoid creating mezzanines that might be uneconomical or have invalid properties.</p>
 		<p>To handle this balance I came up with a drawing system with similar properties to Microsoft Excel’s cell selection tool. When you create a mezzanine MiMezz will automatically create Build Lines from the frame of the mezzanine. These Build Lines just so happen to make a grid with cells. When you want to add a new Zone you can simply click and drag to select the number of cells you need for your Zone and then adjust its’ properties. When comparing this drawing method to something more freeform this feels much more intuitive, like the system knows what you want.</p>
+		<h4 class="type">Prototypes</h4>
 	</div>
 </section>
 <section id="process">
@@ -81,29 +82,47 @@
 		<h2>Getting the right feel</h2>
 		<p>The Zone Framing feature went through many iterations to come up with a solution that felt intuitive to use. It was important to get this right</p>
 		<div class="iteration">
-			<h3 class="subhead">Iteration 1</h3>
-			<p>Focused on the idea of using the auto-generated zones and connecting them together. While this would have been really simple it lacked the flexibility that users needed.</p>
+			<img src="iteration1.jpg" />
+			<div>
+				<h3 class="subhead">Iteration 1</h3>
+				<p>Focused on the idea of using the auto-generated zones and connecting them together. While this would have been really simple it lacked the flexibility that users needed.</p>
+			</div>
 		</div>
 		<div class="iteration">
-			<h3 class="subhead">Iteration 2</h3>
-			<p>If users needed flexibility then how about letting them draw any arbitrary zone? While this enabled flexibility it could have easily resulted in sub-optimal zone layouts.</p>
+			<img src="iteration2.jpg" />
+			<div>
+				<h3 class="subhead">Iteration 2</h3>
+				<p>If users needed flexibility then how about letting them draw any arbitrary zone? While this enabled flexibility it could have easily resulted in sub-optimal zone layouts.</p>
+			</div>
 		</div>
 		<div class="iteration">
-			<h3 class="subhead">Iteration 3</h3>
-			<p>This idea builds on iteration 2 by allowing the draw tool to snap to build lines that the system has determined would be valid. It also introduces the idea of grouped zones where the properties of one zone flow in to another contiguous zone.</p>
+			<img src="iteration3.jpg" />
+			<div>
+				<h3 class="subhead">Iteration 3</h3>
+				<p>This idea builds on iteration 2 by allowing the draw tool to snap to build lines that the system has determined would be valid. It also introduces the idea of grouped zones where the properties of one zone flow in to another contiguous zone.</p>
+			</div>
 		</div>
 		<div class="iteration">
-			<h3 class="subhead">Iteration 4</h3>
-			<p>We start getting closer here. Zones now show their number of bays in a way that links them across with other zones. The dotted lines are intended to show how everything flows together but it became quite complex.</p>
+			<img src="iteration4.jpg" />
+			<div>
+				<h3 class="subhead">Iteration 4</h3>
+				<p>We start getting closer here. Zones now show their number of bays in a way that links them across with other zones. The dotted lines are intended to show how everything flows together but it became quite complex.</p>
+			</div>
 		</div>
 		<div class="iteration">
-			<h3 class="subhead">Iteration 5</h3>
-			<p>A concern was having bays line up and what happens when they don’t. Here I introduced a complex locking and directionality system that allowed the user to determine what zones are considered part of the same group and in what ways the number of bays should flow.</p>
-			<p>There was also a concern we were asking users to draw their mezzanine twice so I had to go back to the drawing board. I came up with the idea of using the cell selection method from Excel since we already had build lines that are generated. This method not only felt right it made it incredibly quick to mark out your zones.</p>
+			<img src="iteration5.jpg" />
+			<div>
+				<h3 class="subhead">Iteration 5</h3>
+				<p>A concern was having bays line up and what happens when they don’t. Here I introduced a complex locking and directionality system that allowed the user to determine what zones are considered part of the same group and in what ways the number of bays should flow.</p>
+				<p>There was also a concern we were asking users to draw their mezzanine twice so I had to go back to the drawing board. I came up with the idea of using the cell selection method from Excel since we already had build lines that are generated. This method not only felt right it made it incredibly quick to mark out your zones.</p>
+			</div>
 		</div>
 		<div class="iteration">
-			<h3 class="subhead">Iteration 6</h3>
-			<p>We realised that the locking and orientation system isn’t needed if instead we have the concept of a “Key Zone” and all contiguous zones inherit the properties of the Key Zone. If a contiguous bay is modified it becomes it’s on Key Zone and any subsequent bays will inherit the properties of the new Key Zone.</p>
+			<img src="iteration6.jpg" />
+			<div>
+				<h3 class="subhead">Iteration 6</h3>
+				<p>We realised that the locking and orientation system isn’t needed if instead we have the concept of a “Key Zone” and all contiguous zones inherit the properties of the Key Zone. If a contiguous bay is modified it becomes it’s on Key Zone and any subsequent bays will inherit the properties of the new Key Zone.</p>
+			</div>
 		</div>
 	</div>
 	
