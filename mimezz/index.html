@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FFFFFF">
+  <meta name="format-detection" content="telephone=no">
+
+  <title>Trevor Kay - MiMezz</title>
+  <meta name="description" content="Enabling Mezzanine design for everyone">
+  <meta name='viewport' content='initial-scale=1, viewport-fit=cover'>
+
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="canonical" href="https://www.trevorkay.me/ticketek-site/">
+  <link rel="icon" href="/favicon.ico">
+  <link rel="mask-icon" href="/tab.svg" color="#FFFFFF">
+  
+  <meta property="og:site_name" content="Trevor Kay">
+  <meta property="og:title" content="Ticketek">
+  <meta property="og:image" content="og-ticketek-site.png">
+  <meta property="og:description" content="Responding to a changing ticketing landscape">
+  <meta property="og:url" content="https://www.trevorkay.me/ticketek-site/">
+  <meta property="og:type" content="website">
+  <meta property="og:logo" content="../logo.png" />
+  
+ </head>
+
+
+  <body class="mimezz">
+	  
+    <nav>
+	<a class="sitename" href="/">
+		<svg xmlns="http://www.w3.org/2000/svg" width="62" height="62" viewBox="0 0 124 124">
+		  <g fill="none" fill-rule="evenodd" stroke="#000000" stroke-width="4" transform="rotate(30 86.793 47.744)" id="logo">
+		    <ellipse cx="72.5" cy="72.5" rx="40" ry="61.166"/>
+		    <ellipse cx="72.5" cy="72.5" transform="rotate(45 72.5 72.5)" rx="40" ry="61.166"/>
+		    <ellipse cx="72.5" cy="72.5" transform="scale(-1 1) rotate(45 0 -102.53)" rx="40" ry="61.166"/>
+		    <ellipse cx="72.5" cy="72.5" transform="rotate(90 72.5 72.5)" rx="40" ry="61.166"/>
+		  </g>
+		</svg>
+		Trevor Kay
+	</a>	
+	
+	<a href="mailto:hello@trevorkay.me" class="contact-link">Contact</a>
+</nav>
+    
+    <header>
+	<div class="constrained">
+		<div class="content">
+			<div class="copy">
+				<h1>MiMezz</h1>
+				<p class="description">Enabling Mezzanine design for everyone</p>
+			</div>
+		</div>
+	</div>
+	<div class="coverimage"></div>
+</header>
+<div class="case-study">
+	<section id="challenge">
+	<div class="constrained">
+		<h4 class="type">The Challenge</h4>
+		<h2>Make the complex simple</h2>
+		<p>MiMezz is a tool to help Sales Associates design preliminary mezzanine layouts for clients to obtain an initial costing. Since Sales Associates are not Architects this means MiMezz needs to be as simple as possible so that it’s easy for Sales Associates to achieve their goals.</p>
+		<p>A mezzanine is an elevated structure that is installed inside a warehouse which allows warehouse operators to increase their storage in a cost efficient manner.</p>	
+	</div>
+</section>
+<section id="solution">
+	<div class="constrained">
+		<h4 class="type">The Solution</h4>
+		<h2>Select to draw</h2>
+		<p>Although MiMezz can help you design a Mezzanine from the ground up, my focus on the project was Zone Framing. To effectively design a mezzanine in a cost efficient manner the system needs to be told by the user in what way to divide the mezzanine up, which we call Zones, and what properties each Zone should have.</p>
+		<p>For MiMezz’s intended audience (Sales Associates) there is a balancing act between providing them with enough flexibility to create any mezzanine their client desires and subtly guiding them in ways so they avoid creating mezzanines that might be uneconomical or have invalid properties.</p>
+		<p>To handle this balance I came up with a drawing system with similar properties to Microsoft Excel’s cell selection tool. When you create a mezzanine MiMezz will automatically create Build Lines from the frame of the mezzanine. These Build Lines just so happen to make a grid with cells. When you want to add a new Zone you can simply click and drag to select the number of cells you need for your Zone and then adjust its’ properties. When comparing this drawing method to something more freeform this feels much more intuitive, like the system knows what you want.</p>
+	</div>
+</section>
+<section id="process">
+	<div class="constrained">
+		<h4 class="type">The Process</h4>
+		<h2>Getting the right feel</h2>
+		<p>The Zone Framing feature went through many iterations to come up with a solution that felt intuitive to use. It was important to get this right</p>
+		<div class="iteration">
+			<h3 class="subhead">Iteration 1</h3>
+			<p>Focused on the idea of using the auto-generated zones and connecting them together. While this would have been really simple it lacked the flexibility that users needed.</p>
+		</div>
+		<div class="iteration">
+			<h3 class="subhead">Iteration 2</h3>
+			<p>If users needed flexibility then how about letting them draw any arbitrary zone? While this enabled flexibility it could have easily resulted in sub-optimal zone layouts.</p>
+		</div>
+		<div class="iteration">
+			<h3 class="subhead">Iteration 3</h3>
+			<p>This idea builds on iteration 2 by allowing the draw tool to snap to build lines that the system has determined would be valid. It also introduces the idea of grouped zones where the properties of one zone flow in to another contiguous zone.</p>
+		</div>
+		<div class="iteration">
+			<h3 class="subhead">Iteration 4</h3>
+			<p>We start getting closer here. Zones now show their number of bays in a way that links them across with other zones. The dotted lines are intended to show how everything flows together but it became quite complex.</p>
+		</div>
+		<div class="iteration">
+			<h3 class="subhead">Iteration 5</h3>
+			<p>A concern was having bays line up and what happens when they don’t. Here I introduced a complex locking and directionality system that allowed the user to determine what zones are considered part of the same group and in what ways the number of bays should flow.</p>
+			<p>There was also a concern we were asking users to draw their mezzanine twice so I had to go back to the drawing board. I came up with the idea of using the cell selection method from Excel since we already had build lines that are generated. This method not only felt right it made it incredibly quick to mark out your zones.</p>
+		</div>
+		<div class="iteration">
+			<h3 class="subhead">Iteration 6</h3>
+			<p>We realised that the locking and orientation system isn’t needed if instead we have the concept of a “Key Zone” and all contiguous zones inherit the properties of the Key Zone. If a contiguous bay is modified it becomes it’s on Key Zone and any subsequent bays will inherit the properties of the new Key Zone.</p>
+		</div>
+	</div>
+	
+	<div class="constrained">
+		<h4 class="type">Related Project</h4>
+		<div class="relatedproject ticketek">
+			<a href="/ticketek/">
+				<h2>Ticketek</h2>
+				<h3>Multiple projects</h3>
+				<img src="../portfolio/promo-ticketek.png" srcset="../portfolio/promo-ticketek.png, ../portfolio/promo-ticketek@2x.png 2x" class="promo">
+			</a>
+		</div>
+	</div>
+</section>
+	<section id="otherworks">
+	<div class="constrained">
+		<a href="/">← All Projects</a>
+		<a href="mailto:trevormkay@me.com" class="contact-link">Contact</a>
+	</div>
+</section>
+</div>
+
+
+  </body>
+
+</html>

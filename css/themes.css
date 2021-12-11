@@ -2688,3 +2688,14 @@
 		width: 100% 
 	}
 }
+
+/* MIMEZZ */
+.mimezz {
+	--highlight: #2F80F0 
+}
+
+.mimezz .coverimage {
+	background-image: url(../mimezz/header-background.jpg);
+	opacity: 0.1;
+	background-position: center top 
+}
