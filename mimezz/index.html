@@ -74,6 +74,47 @@
 		<p>For MiMezz’s intended audience (Sales Associates) there is a balancing act between providing them with enough flexibility to create any mezzanine their client desires and subtly guiding them in ways so they avoid creating mezzanines that might be uneconomical or have invalid properties.</p>
 		<p>To handle this balance I came up with a drawing system with similar properties to Microsoft Excel’s cell selection tool. When you create a mezzanine MiMezz will automatically create Build Lines from the frame of the mezzanine. These Build Lines just so happen to make a grid with cells. When you want to add a new Zone you can simply click and drag to select the number of cells you need for your Zone and then adjust its’ properties. When comparing this drawing method to something more freeform this feels much more intuitive, like the system knows what you want.</p>
 		<h4 class="type">Prototypes</h4>
+		<div class="gridPrototypes">
+			<a href="prototype-stairs" target="_blank" class="containerPrototype">
+				<div class="tile">
+					<div class="play">
+						<svg height="32px" viewBox="0 0 55 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<path d="M35.1449576,10.5749293 L60.5478153,52.9130255 C62.2527042,55.7545071 61.3313139,59.4400686 58.4898323,61.1449576 C57.5573398,61.704453 56.4903214,62 55.4028577,62 L4.59714227,62 C1.28343377,62 -1.40285773,59.3137085 -1.40285773,56 C-1.40285773,54.9125363 -1.10731073,53.8455179 -0.54781528,52.9130255 L24.8550424,10.5749293 C26.5599314,7.73344766 30.2454929,6.81205728 33.0869745,8.51694624 C33.9314722,9.02364481 34.638259,9.73043163 35.1449576,10.5749293 Z" fill="#000000" transform="translate(30.000000, 32.000000) rotate(-270.000000) translate(-30.000000, -32.000000) "></path>
+							</g>
+						</svg>
+					</div>
+					<img src="prototype-drawing.jpg" />
+				</div>
+				<div class="label">Drawing Zones</div>
+			</a>
+			<a href="prototype-stairs" target="_blank" class="containerPrototype">
+				<div class="tile">
+					<div class="play">
+						<svg height="32px" viewBox="0 0 55 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<path d="M35.1449576,10.5749293 L60.5478153,52.9130255 C62.2527042,55.7545071 61.3313139,59.4400686 58.4898323,61.1449576 C57.5573398,61.704453 56.4903214,62 55.4028577,62 L4.59714227,62 C1.28343377,62 -1.40285773,59.3137085 -1.40285773,56 C-1.40285773,54.9125363 -1.10731073,53.8455179 -0.54781528,52.9130255 L24.8550424,10.5749293 C26.5599314,7.73344766 30.2454929,6.81205728 33.0869745,8.51694624 C33.9314722,9.02364481 34.638259,9.73043163 35.1449576,10.5749293 Z" fill="#000000" transform="translate(30.000000, 32.000000) rotate(-270.000000) translate(-30.000000, -32.000000) "></path>
+							</g>
+						</svg>
+					</div>
+					<img src="prototype-stairs.jpg" />
+				</div>
+				<div class="label">Adding Stairs</div>
+			</a>
+			<a href="prototype-stairs" target="_blank" class="containerPrototype">
+				<div class="tile">
+					<div class="play">
+						<svg height="32px" viewBox="0 0 55 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+							<g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+								<path d="M35.1449576,10.5749293 L60.5478153,52.9130255 C62.2527042,55.7545071 61.3313139,59.4400686 58.4898323,61.1449576 C57.5573398,61.704453 56.4903214,62 55.4028577,62 L4.59714227,62 C1.28343377,62 -1.40285773,59.3137085 -1.40285773,56 C-1.40285773,54.9125363 -1.10731073,53.8455179 -0.54781528,52.9130255 L24.8550424,10.5749293 C26.5599314,7.73344766 30.2454929,6.81205728 33.0869745,8.51694624 C33.9314722,9.02364481 34.638259,9.73043163 35.1449576,10.5749293 Z" fill="#000000" transform="translate(30.000000, 32.000000) rotate(-270.000000) translate(-30.000000, -32.000000) "></path>
+							</g>
+						</svg>
+					</div>
+					<img src="prototype-columns.jpg" />
+				</div>
+				<div class="label">Managing Columns and Beams</div>
+			</a>
+		</div>
 	</div>
 </section>
 <section id="process">
@@ -115,13 +156,6 @@
 				<h3 class="subhead">Iteration 5</h3>
 				<p>A concern was having bays line up and what happens when they don’t. Here I introduced a complex locking and directionality system that allowed the user to determine what zones are considered part of the same group and in what ways the number of bays should flow.</p>
 				<p>There was also a concern we were asking users to draw their mezzanine twice so I had to go back to the drawing board. I came up with the idea of using the cell selection method from Excel since we already had build lines that are generated. This method not only felt right it made it incredibly quick to mark out your zones.</p>
-			</div>
-		</div>
-		<div class="iteration">
-			<img src="iteration6.jpg" />
-			<div>
-				<h3 class="subhead">Iteration 6</h3>
-				<p>We realised that the locking and orientation system isn’t needed if instead we have the concept of a “Key Zone” and all contiguous zones inherit the properties of the Key Zone. If a contiguous bay is modified it becomes it’s on Key Zone and any subsequent bays will inherit the properties of the new Key Zone.</p>
 			</div>
 		</div>
 	</div>

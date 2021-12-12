@@ -801,6 +801,81 @@ header .button.second {
 	max-width: 100% 
 }
 
+/* PROTOTYPE TILES */
+.gridPrototypes {
+	display: grid;
+	grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+	gap: 20px;
+}
+
+.gridPrototypes .containerPrototype {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 10px;
+}
+
+.gridPrototypes .tile {
+	aspect-ratio: 16 / 10;
+	border-radius: var(--radius);
+	overflow: hidden;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	-webkit-mask-image: -webkit-radial-gradient(white, black);
+	position: relative;
+}
+
+.gridPrototypes .tile::before {
+	box-shadow: inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2);
+	content: "";
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 2;
+	border-radius: var(--radius);
+}
+
+@media (prefers-color-scheme:  dark) {
+	.gridPrototypes .tile::before {
+		box-shadow: inset 0px 0px 0px 1px rgba(255, 255, 255, 0.1), 0px 0px 0px 1px rgba(0, 0, 0, 0.4) 
+	}
+}
+
+.gridPrototypes .tile .play {
+	width: 70px;
+	height: 70px;
+	border-radius: 40px;
+	background: rgba(255,255,255,0.5);
+	z-index: 2;
+	position: absolute;
+	backdrop-filter: blur(10px);
+	-webkit-backdrop-filter: blur(10px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.gridPrototypes .tile .play svg {
+	transform: translateX(3px);
+}
+
+.gridPrototypes .tile img {
+	width: 100%;
+	transition: 0.3s transform ease;
+}
+
+.gridPrototypes .containerPrototype:hover .tile img {
+	transform: scale(1.3);
+	transition: 0.3s transform ease;
+}
+
+.gridPrototypes .label {
+	text-align: center;
+	font-family: var(--font-body);
+	color: var(--primary);
+}
+
 /* OTHER WORKS SECTION */
 #otherworks {
 	padding: 40px 0px 
