@@ -846,7 +846,6 @@ header .button.second {
 	width: 70px;
 	height: 70px;
 	border-radius: 40px;
-	background: rgba(255,255,255,0.5);
 	z-index: 2;
 	position: absolute;
 	backdrop-filter: blur(10px);
@@ -854,6 +853,22 @@ header .button.second {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.gridPrototypes .tile.light .play {
+	background: rgba(0,0,0,0.6);
+}
+
+.gridPrototypes .tile.light svg path {
+	fill: white !important;
+}
+
+.gridPrototypes .tile.dark .play {
+	background: rgba(255,255,255,0.4);
+}
+
+.gridPrototypes .tile.dark svg path {
+	fill: black !important;
 }
 
 .gridPrototypes .tile .play svg {
