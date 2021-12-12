@@ -2772,9 +2772,14 @@
 	align-items: center;
 	margin-top: 40px;
 }
+
+.mimezz .containerIllustration picture {
+	display: flex;
+	justify-content: center;
+}
+
 .mimezz .illustration {
 	max-width: 80%;
-	
 }
 
 .mimezz .containerIllustration p {
