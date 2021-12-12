@@ -72,6 +72,15 @@
 		<h2>Select to draw</h2>
 		<p>Although MiMezz can help you design a Mezzanine from the ground up, my focus on the project was Zone Framing. To effectively design a mezzanine in a cost efficient manner the system needs to be told by the user in what way to divide the mezzanine up, which we call Zones, and what properties each Zone should have.</p>
 		<p>For MiMezz’s intended audience (Sales Associates) there is a balancing act between providing them with enough flexibility to create any mezzanine their client desires and subtly guiding them in ways so they avoid creating mezzanines that might be uneconomical or have invalid properties.</p>
+		<div class="centerVideo">
+			<div class="videoWrapper" style="margin-bottom: 40px;">
+				<video autoplay loop muted playsinline poster="preview.jpg">
+					<source src="preview.mov" type="video/mp4">
+					<img src="preview.jpg">
+					Your browser does not support the video tag.
+				</video>	
+			</div>
+		</div>
 		<p>To handle this balance I came up with a drawing system with similar properties to Microsoft Excel’s cell selection tool. When you create a mezzanine MiMezz will automatically create Build Lines from the frame of the mezzanine. These Build Lines just so happen to make a grid with cells. When you want to add a new Zone you can simply click and drag to select the number of cells you need for your Zone and then adjust its’ properties. When comparing this drawing method to something more freeform this feels much more intuitive, like the system knows what you want.</p>
 		<h4 class="type">Prototypes</h4>
 		<div class="gridPrototypes">
@@ -179,6 +188,37 @@
 </section>
 </div>
 
+<script>
+	var videos = document.getElementsByTagName("video");
+	
+	function checkScroll() {
+	
+		for(var i = 0; i < videos.length; i++) {
+	
+			var video = videos[i];
+	
+			var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+				b = y + h, //bottom
+				visibleX, visibleY, visible;
+	
+				visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+				visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+	
+				visible = visibleX * visibleY / (w * h);
+	
+				if (visible > fraction) {
+					video.play();
+				} else {
+					video.pause();
+				}
+	
+		}
+	
+	}
+	
+	window.addEventListener('scroll', checkScroll, false);
+	window.addEventListener('resize', checkScroll, false);
+</script>
 
   </body>
 

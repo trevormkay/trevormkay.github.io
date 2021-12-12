@@ -2753,3 +2753,14 @@
 	width: 100%;
 	border: 1px solid rgba(0, 0, 0, 0.2);
 }
+
+.mimezz .videoWrapper {
+	width: 89.9%;
+}
+
+.mimezz .centerVideo {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
