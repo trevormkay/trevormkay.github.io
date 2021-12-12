@@ -2764,3 +2764,20 @@
 	justify-content: center;
 	align-items: center;
 }
+
+.mimezz .containerIllustration {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-top: 40px;
+}
+.mimezz .illustration {
+	max-width: 80%;
+	
+}
+
+.mimezz .containerIllustration p {
+	max-width: 80%;
+	text-align: center;
+}
