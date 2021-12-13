@@ -740,6 +740,36 @@
 	}
 }
 
+.portfolio .mitek .promo {
+	position: absolute;
+	top: -20px;
+	right: 10px;
+	width: 300px;
+}
+
+@media (min-width: 569px) {
+	.portfolio .mitek .promo {
+		top: 60px;
+		right: 20px;
+		width: 400px 
+	}
+}
+
+@media (min-width: 740px) {
+	.portfolio .mitek .promo {
+		top: 70px;
+		right: -90px;
+		width: 900px 
+	}
+}
+
+@media (min-width: 1120px) {
+	.portfolio .mitek .promo {
+		width: auto;
+		top: 70px;
+	}
+}
+
 /* RESUME */
 .resume {
 	--background: #F8F8F8;
