@@ -82,7 +82,7 @@
 	grid-template-rows: repeat(9, 150px);
 	grid-template-areas: 	"ticketek"
 							"eastland"
-							"karinourish"
+							"mitek"
 							"simplescales"
 							"kohab"
 							"mediaportal"
@@ -184,8 +184,8 @@
 		grid-template-rows: repeat(7, 150px);
 		grid-template-areas: 	"ticketek ticketek"
 								"eastland kohab"
-								"eastland karinourish"
-								"nightlight karinourish"
+								"eastland mitek"
+								"nightlight mitek"
 								"mediaportal mediaportal"
 								"aptapro simplescales"
 								"retailerportal retailerportal";
@@ -214,8 +214,8 @@
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(5, 415px);
 		grid-template-areas: 	"ticketek ticketek eastland"
-								"karinourish kohab eastland"
-								"karinourish mediaportal mediaportal"
+								"mitek kohab eastland"
+								"mitek mediaportal mediaportal"
 								"nightlight aptapro simplescales"
 								"retailerportal retailerportal simplescales";
 	}
@@ -2803,4 +2803,9 @@
 .mimezz .containerIllustration p {
 	max-width: 80%;
 	text-align: center;
+}
+
+/* MITEK */
+.mitek {
+	--highlight: #0033a1;
 }
