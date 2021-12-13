@@ -287,22 +287,31 @@
 
 @media (min-width: 569px) {
 	.portfolio .simplescales .promo {
-		width: 180px;
-		margin-top: 10px;
-		margin-left: 0px 
+		width: 200px;
+		margin-top: -80px;
+		margin-left: 130px;
 	}
 }
 
 @media (min-width: 740px) {
 	.portfolio .simplescales .promo {
-		width: 390px;
-		margin-top: 10px 
+		width: 290px;
+		margin-top: -50px;
+		margin-left: 100px;
 	}
 }
 
 @media (min-width: 1120px) {
 	.portfolio .simplescales .promo {
+		width: 390px;
+		margin-top: -70px;
+	}
+}
+
+@media (min-width: 1800px) {
+	.portfolio .simplescales .promo {
 		margin-top: 10px;
+		margin-left: 0px;
 		width: auto 
 	}
 }
