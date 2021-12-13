@@ -82,12 +82,12 @@
 	grid-template-rows: repeat(9, 150px);
 	grid-template-areas: 	"ticketek"
 							"eastland"
+							"karinourish"
 							"simplescales"
 							"kohab"
 							"mediaportal"
 							"nightlight"
 							"aptapro"
-							"karinourish"
 							"retailerportal";
 }
 
@@ -184,10 +184,10 @@
 		grid-template-rows: repeat(7, 150px);
 		grid-template-areas: 	"ticketek ticketek"
 								"eastland kohab"
-								"eastland simplescales"
-								"nightlight simplescales"
+								"eastland karinourish"
+								"nightlight karinourish"
 								"mediaportal mediaportal"
-								"aptapro karinourish"
+								"aptapro simplescales"
 								"retailerportal retailerportal";
 	}
 }
@@ -214,10 +214,10 @@
 		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(5, 415px);
 		grid-template-areas: 	"ticketek ticketek eastland"
-								"simplescales kohab eastland"
-								"simplescales mediaportal mediaportal"
-								"nightlight aptapro karinourish"
-								"retailerportal retailerportal karinourish";
+								"karinourish kohab eastland"
+								"karinourish mediaportal mediaportal"
+								"nightlight aptapro simplescales"
+								"retailerportal retailerportal simplescales";
 	}
 }
 
