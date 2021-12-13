@@ -727,6 +727,19 @@
 	}
 }
 
+.portfolio .mitek {
+	grid-area: mitek;
+	background: url(../portfolio/background-mitek.jpg);
+	background-size: cover 
+}
+
+@media (prefers-color-scheme: dark) {
+	.portfolio .mitek {
+		background: url(../portfolio/background-mitek-dark.jpg);
+		background-size: cover 
+	}
+}
+
 /* RESUME */
 .resume {
 	--background: #F8F8F8;
@@ -2808,4 +2821,11 @@
 /* MITEK */
 .mitek {
 	--highlight: #0033a1;
+}
+
+
+@media (prefers-color-scheme: dark) {
+	.mitek {
+		--highlight: #00aeef;
+	}
 }
