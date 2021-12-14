@@ -885,7 +885,8 @@
 	font-size: 25px;
 	margin: 0px;
 	margin-bottom: 5px;
-	line-height: 26px 
+	line-height: 26px;
+	color: var(--primary);
 }
 
 @media (min-width: 740px) {
