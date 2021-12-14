@@ -2899,11 +2899,6 @@
 	background-size: cover;
 }
 
-.mitek .linkpanel {
-	padding-top: 40px;
-	padding-bottom: 40px 
-}
-
 @media (max-width: 766px) {
 	.mitek .linkpanel .type {
 		margin-top: 20px 
@@ -2919,12 +2914,6 @@
 	}
 }
 
-@media (max-width: 766px) {
-	.mitek .linkpanel img {
-		width: 200px 
-	}
-}
-
 @media (min-width: 1023px) {
 	.mitek #panel-cubitselect .constrained {
 		grid-template-columns: 1fr 349px 
@@ -2933,6 +2922,11 @@
 	.mitek #panel-cubitselect .copy {
 		grid-row: 1 
 	}
+}
+
+.mitek img {
+	width: 100%;
+	max-width: 500px;
 }
 
 /* OTHER */
