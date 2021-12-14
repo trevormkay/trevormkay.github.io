@@ -2754,12 +2754,6 @@
 	}
 }
 
-@-moz-document url-prefix() {
-	.portfolio .flexwrapper div {
-		width: 100% 
-	}
-}
-
 /* CUBIT ESTIMATING */
 .cubit-estimating {
 	--highlight: #0173C7;
@@ -2867,5 +2861,84 @@
 @media (prefers-color-scheme: dark) {
 	.mitek {
 		--highlight: #00aeef;
+	}
+}
+
+.mitek header .copy {
+	width: 100% 
+}
+
+.mitek header .description {
+	font-family: var(--font-body);
+	font-size: 16px;
+	line-height: 22px 
+}
+
+@media (min-width: 740px) {
+	.mitek header .description {
+		font-size: 23px;
+		line-height: 33px 
+	}
+}
+
+.mitek #panel-cubitestimating {
+	background-image: url(../mitek/estimating-background.png);
+	background-position: center center;
+	background-size: cover;
+}
+
+.mitek #panel-cubitselect {
+	background-image: url(../mitek/select-background.png);
+	background-position: center center;
+	background-size: cover;
+}
+
+.mitek #panel-mimezz {
+	background-image: url(../mitek/mimezz-background.png);
+	background-position: center center;
+	background-size: cover;
+}
+
+.mitek .linkpanel {
+	padding-top: 40px;
+	padding-bottom: 40px 
+}
+
+@media (max-width: 766px) {
+	.mitek .linkpanel .type {
+		margin-top: 20px 
+	}
+}
+
+@media (min-width: 1023px) {
+	.mitek .linkpanel .constrained {
+		display: grid;
+		grid-template-columns: 349px 1fr;
+		align-items: center;
+		grid-gap: 40px 
+	}
+}
+
+@media (max-width: 766px) {
+	.mitek .linkpanel img {
+		width: 200px 
+	}
+}
+
+@media (min-width: 1023px) {
+	.mitek #panel-cubitselect .constrained {
+		grid-template-columns: 1fr 349px 
+	}
+	
+	.mitek #panel-cubitselect .copy {
+		grid-row: 1 
+	}
+}
+
+/* OTHER */
+
+@-moz-document url-prefix() {
+	.portfolio .flexwrapper div {
+		width: 100% 
 	}
 }
