@@ -2899,6 +2899,11 @@
 	background-size: cover;
 }
 
+.mitek #panel-cubitestimating img, .mitek #panel-cubitselect img, .mitek #panel-mimezz img {
+	width: 100%;
+	max-width: 500px !important;
+}
+
 @media (max-width: 766px) {
 	.mitek .linkpanel .type {
 		margin-top: 20px 
@@ -2924,13 +2929,7 @@
 	}
 }
 
-.mitek:not(.relatedproject) img {
-	width: 100%;
-	max-width: 500px;
-}
-
 /* OTHER */
-
 @-moz-document url-prefix() {
 	.portfolio .flexwrapper div {
 		width: 100% 
