@@ -1258,3 +1258,37 @@ header .button.second {
 		right: 200px 
 	}
 }
+
+.relatedproject.mitek {
+	grid-area: mitek;
+	background: url(../portfolio/background-mitek-alt.jpg);
+	background-size: contain;
+}
+
+@media (prefers-color-scheme: dark) {
+	.relatedproject.mitek {
+		background: url(../portfolio/background-mitek-alt-dark.jpg);
+		background-size: contain;
+	}
+}
+
+.relatedproject.mitek .promo {
+	position: absolute;
+	top: -10px;
+	right: 20px;
+	width: 250px;
+}
+
+@media (min-width:  740px) {
+	.relatedproject.mitek .promo {
+		right: 150px;
+		width: 500px;
+	}
+}
+
+@media (min-width:  1120px) {
+	.relatedproject.mitek .promo {
+		right: 200px;
+		width: 700px;
+	}
+}
