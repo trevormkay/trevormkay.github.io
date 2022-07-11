@@ -1226,12 +1226,18 @@
 
 /* EASTLAND */
 	.eastland {
-		--highlight: #BC441C 
+		--accentPrimary: #BC441C;
+		--secondaryAccent: #E37652;
+		--tertiaryAccent: #FFCDAF;
+		--body: #210901;
 	}
 	
 	@media (prefers-color-scheme: dark) {
 		.eastland {
-			--highlight: #e05c30 
+			--accentPrimary: #E37652;
+			--secondaryAccent: #C75E3C;
+			--tertiaryAccent: #43322E;
+			--body: #E3C9C1;
 		}
 	}
 	
