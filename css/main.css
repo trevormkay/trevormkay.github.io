@@ -9,8 +9,9 @@
 	--highlight: #F78A60;
 	--font-body: 'Inter', helvetica, arial, sans-serif;
 	--font-header: 'Crimson Pro', 'Times New Roman', serif;
-	--radius: 6px
+	--radius: 6px;
 }
+
 @media (prefers-color-scheme: dark){
 	:root{
 		--background: #2d2d2d;
