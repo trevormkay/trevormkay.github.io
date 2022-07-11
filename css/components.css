@@ -164,7 +164,7 @@ nav {
 	align-items: center;
 	justify-content: space-between;
 	z-index: 4;
-	position: fixed;
+	position: absolute;
 	top: 0px;
 	left: 0px;
 	right: 0px;
@@ -188,7 +188,7 @@ nav {
 
 @media (min-width:  740px) {
 	nav {
-		height: 90px 
+		height: 100px 
 	}
 }
 
@@ -198,7 +198,7 @@ nav .sitename {
 	display: flex;
 	align-items: center;
 	z-index: 20;
-	color: var(--primary);
+	color: var(--accentPrimary);
 	transform: scale(0.6);
 	transform-origin: left 
 }
@@ -207,22 +207,22 @@ nav .sitename svg {
 	margin-right: 10px 
 }
 
-nav .sitename #logo {
-	stroke: var(--primary) 
+nav .sitename svg path {
+	fill: var(--accentPrimary) 
 }
 
 nav .sitename:hover {
-	color: var(--highlight) 
+	color: var(--accentSecondary) 
 }
 
-nav .sitename:hover #logo {
-	stroke: var(--highlight) 
+nav .sitename:hover svg path {
+	fill: var(--accentSecondary) 
 }
 
 @media (min-width:  740px) {
 	nav .sitename {
 		transform: none;
-		font-size: 32px 
+		font-size: 40px 
 	}
 	
 	nav .sitename svg {
@@ -231,9 +231,10 @@ nav .sitename:hover #logo {
 }
 
 nav .contact-link {
-	font-family: var(--font-header);
-	color: var(--primary);
-	font-size: 17px 
+	font-family: var(--font-body);
+	color: var(--accentPrimary);
+	font-size: 17px;
+	font-weight: 600;
 }
 
 nav .contact-link:hover {
@@ -242,7 +243,7 @@ nav .contact-link:hover {
 
 @media (min-width:  740px) {
 	nav .contact-link {
-		font-size: 20px 
+		font-size: 24px;
 	}
 }
 
