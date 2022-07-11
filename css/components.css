@@ -160,23 +160,13 @@ nav {
 	padding-right: 20px;
 	margin: 0px auto;
 	height: 70px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
 	z-index: 4;
 	position: absolute;
 	top: 0px;
 	left: 0px;
 	right: 0px;
-	border-bottom: 2px solid rgba(123, 123, 123, 0.2);
 	font-weight: bold;
 	background: var(--accentTertiary);
-}
-
-@media (prefers-color-scheme:  dark) {
-	nav {
-		border-bottom: 2px solid rgba(192, 192, 192, 0.2) 
-	}
 }
 
 @supports (padding:  max(0px)) {
@@ -190,6 +180,24 @@ nav {
 	nav {
 		height: 100px 
 	}
+}
+
+nav .constrained {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 100%;
+}
+
+nav .constrained::after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	background: var(--accentPrimary);
+	opacity: 0.2;
 }
 
 nav .sitename {
@@ -238,7 +246,7 @@ nav .contact-link {
 }
 
 nav .contact-link:hover {
-	color: var(--highlight) 
+	color: var(--accentSecondary) 
 }
 
 @media (min-width:  740px) {
