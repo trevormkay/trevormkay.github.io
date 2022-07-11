@@ -18,9 +18,8 @@ body {
 	background-color: var(--background) !important 
 }
 
-: : selection {
-	background: var(--highlight) !important;
-	color: white !important 
+::selection {
+	background: var(--accentSecondary) !important;
 }
 
 h1, h2, h3 {
@@ -65,7 +64,7 @@ h1, h2, h3 {
 }
 
 p, caption, .type, .caption {
-	color: var(--primary) 
+	color: var(--body) 
 }
 
 a {
@@ -265,19 +264,20 @@ nav .contact-link:hover {
 
 @media (min-width:  1120px) {
 	.constrained {
-		width: 1100px 
+		width: 1280px 
 	}
 }
 
 .type {
-	font-family: var(--font-header);
-	text-transform: uppercase;
+	font-family: var(--font-body);
+	color: var(--accentSecondary);
 	font-size: 15px;
-	margin-bottom: 20px 
+	margin-bottom: 20px
 }
 
 .caption {
-	font-family: var(--font-header);
+	font-family: var(--font-body);
+	color: var(--accentSecondary);
 	font-size: 15px;
 	margin-top: 10px;
 	text-transform: uppercase 
