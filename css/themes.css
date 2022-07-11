@@ -1241,16 +1241,6 @@
 		}
 	}
 	
-	.eastland .coverimage {
-		background-image: url(../eastland/header-background.jpg);
-		opacity: 0.07;
-		background-position: center bottom 
-	}
-	
-	.eastland .center {
-		padding: 0px 
-	}
-	
 	.eastland #solution img {
 		max-width: 100%;
 		margin-bottom: -20px;
@@ -1304,14 +1294,6 @@
 		.epoch {
 			--highlight: #FFD56F 
 		}
-	}
-	
-	.epoch header .coverimage {
-		background-image: url(../epoch/header-background.jpg) 
-	}
-	
-	.epoch .center {
-		padding: 0px 
 	}
 	
 	.epoch .appgrid {
@@ -1430,18 +1412,6 @@
 		}
 	}
 	
-	.karinourish .coverimage {
-		background-image: url(../karinourish/header-background.jpg);
-		opacity: 0.5;
-		background-position: center bottom 
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		.karinourish .coverimage {
-			opacity: 0.1 
-		}
-	}
-	
 	.karinourish .grid {
 		margin-bottom: 0px 
 	}
@@ -1454,12 +1424,6 @@
 /* MEDIAPORTAL */
 	.mediaportal {
 		--highlight: #2196F3 
-	}
-	
-	.mediaportal .coverimage {
-		background-image: url(../mediaportal/header-background.jpg);
-		opacity: 0.3;
-		background-position: right center 
 	}
 	
 	.mediaportal .cards {
@@ -1537,11 +1501,6 @@
 	
 	.nightlight .sitename #logo {
 		stroke: #C0C0C0 !important 
-	}
-	
-	.nightlight .coverimage {
-		background-image: url(../nightlight/header-background.jpg);
-		opacity: 1 
 	}
 	
 	@media (max-width: 740px) {
@@ -1689,14 +1648,6 @@
 		--highlight: #CA4750 
 	}
 	
-	.retailerportal .coverimage {
-		background-image: url(../retailerportal/header-background.jpg) 
-	}
-	
-	.retailerportal header {
-		background: black 
-	}
-	
 	.retailerportal .card {
 		margin: 30px auto;
 		max-width: 940px 
@@ -1820,12 +1771,6 @@
 /* SIMPLE SCALES */
 	.simplescales {
 		--highlight: #FF9E2A 
-	}
-	
-	.simplescales .coverimage {
-		background-image: url(../simplescales/header.jpg);
-		opacity: 0.2;
-		background-position: right top 
 	}
 	
 	@media (min-width: 1023px) {
@@ -2014,11 +1959,6 @@
 		--highlight: #00AF5B 
 	}
 	
-	.tolq header .coverimage {
-		background-image: url(../tolq/header-background.jpg);
-		background-position: center bottom 
-	}
-	
 	.tolq #challenge img {
 		max-width: 100% 
 	}
@@ -2094,12 +2034,6 @@
 /* KOHAB */
 	.kohab {
 		--highlight: #2EB68C 
-	}
-	
-	.kohab .coverimage {
-		background-image: url(../kohab/header-background.jpg);
-		opacity: 0.1;
-		background-position: center top 
 	}
 	
 	.kohab .row {
@@ -2237,20 +2171,6 @@
 		}
 	}
 	
-	.marketplace .coverimage {
-		background-image: url(../marketplace/header-background.jpg);
-		background-position: center center;
-		opacity: 1 
-	}
-	
-	.marketplace h1, .marketplace .description, .marketplace .sitename, .marketplace .contact-link {
-		color: white;
-	}
-	
-	.marketplace .sitename #logo {
-		stroke: white;
-	}
-	
 	@media (max-width: 767px) {
 		.marketplace .pillars .item {
 			display: grid;
@@ -2340,31 +2260,10 @@
 		--highlight: #00497A 
 	}
 	
-	.ticketek-site header .button {
-		background: #007ACC 
-	}
-	
 	@media (prefers-color-scheme: dark) {
 		.ticketek-site {
 			--highlight: #32adff 
 		}
-		.ticketek-site header .button {
-			background: #007ACC 
-		}
-	}
-	
-	.ticketek-site .coverimage {
-		background-image: url(../ticketek-site/header-background.jpg);
-		background-position: center center;
-		opacity: 1 
-	}
-	
-	.ticketek-site h1, .ticketek-site .description, .ticketek-site .sitename, .ticketek-site .contact-link {
-		color: white 
-	}
-	
-	.ticketek-site .sitename #logo {
-		stroke: white 
 	}
 	
 	.ticketek-site .map {
@@ -2482,20 +2381,6 @@
 		.ticket-sharing {
 			--highlight: #20e6f6 
 		}
-	}
-	
-	.ticket-sharing .coverimage {
-		background-image: url(../ticket-sharing/header-background.jpg);
-		background-position: center center;
-		opacity: 1 
-	}
-	
-	.ticket-sharing h1, .ticket-sharing .description, .ticket-sharing .sitename, .ticket-sharing .contact-link {
-		color: white 
-	}
-	
-	.ticket-sharing .sitename #logo {
-		stroke: white 
 	}
 	
 	.ticket-sharing p a {
@@ -2651,17 +2536,9 @@
 		--highlight: #00497A 
 	}
 	
-	.ticketek header .button {
-		background: #007ACC 
-	}
-	
 	@media (prefers-color-scheme: dark) {
 		.ticketek {
 			--highlight: #32adff 
-		}
-		
-		.ticketek header .button {
-			background: #007ACC 
 		}
 	}
 	
@@ -2766,12 +2643,6 @@
 		--highlight: #0173C7;
 	}
 	
-	.cubit-estimating .coverimage {
-		background-image: url(../cubit-estimating/header-background.jpg);
-		opacity: 0.1;
-		background-position: center top 
-	}
-	
 	.cubit-estimating p a {
 		color: var(--primary);
 		text-decoration: underline;
@@ -2790,22 +2661,10 @@
 	.cubit-select {
 		--highlight: #009688;
 	}
-	
-	.cubit-select .coverimage {
-		background-image: url(../cubit-select/header-background.jpg);
-		opacity: 0.1;
-		background-position: center top 
-	}
 
 /* MIMEZZ */
 	.mimezz {
 		--highlight: #2F80F0;
-	}
-	
-	.mimezz .coverimage {
-		background-image: url(../mimezz/header-background.jpg);
-		opacity: 0.1;
-		background-position: center top 
 	}
 	
 	.mimezz .iteration {
@@ -2863,7 +2722,6 @@
 	.mitek {
 		--highlight: #0033a1;
 	}
-	
 	
 	@media (prefers-color-scheme: dark) {
 		.mitek {
