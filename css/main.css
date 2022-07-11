@@ -7,8 +7,8 @@
 	--primary: #7B7B7B;
 	--primary-rgb: 123, 123, 123;
 	--highlight: #F78A60;
-	--font-body: 'Circular Std Book', helvetica, arial, sans-serif;
-	--font-header: 'Circular Std', helvetica, arial, sans-serif;
+	--font-body: 'Inter', helvetica, arial, sans-serif;
+	--font-header: 'Crimson Pro', 'Times New Roman', serif;
 	--radius: 6px
 }
 @media (prefers-color-scheme: dark){

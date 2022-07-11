@@ -25,7 +25,7 @@ body {
 
 h1, h2, h3 {
 	font-family: var(--font-header);
-	color: var(--highlight);
+	color: var(--accentPrimary);
 	margin-bottom: 5px 
 }
 
@@ -298,7 +298,7 @@ header {
 	width: 100%;
 	height: auto;
 	height: 350px;
-	background: var(--background-dark) 
+	background: var(--accentTertiary) 
 }
 
 @media (min-width:  740px) {
