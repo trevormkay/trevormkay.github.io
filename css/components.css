@@ -402,10 +402,6 @@ header .button.second {
 	}
 }
 
-.case-study section:nth-child(even) {
-	background: var(--background-dark) 
-}
-
 .case-study h2 {
 	font-size: 30px;
 	line-height: 34px 
