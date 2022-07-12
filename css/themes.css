@@ -882,7 +882,7 @@
 	
 	.resume h3 {
 		text-transform: none;
-		font-family: var(--font-header);
+		font-family: var(--fontHeader);
 		font-size: 25px;
 		margin: 0px;
 		margin-bottom: 5px;
@@ -897,14 +897,14 @@
 	}
 	
 	.resume h4 {
-		font-family: var(--font-header);
+		font-family: var(--fontHeader);
 		font-size: 16px;
 		color: var(--primary);
 		margin-bottom: 10px 
 	}
 	
 	.resume p {
-		font-family: var(--font-body);
+		font-family: var(--fontBody);
 		font-size: 16px;
 		line-height: 24px;
 		padding-bottom: 30px 
@@ -943,7 +943,7 @@
 	
 	.resume .details ul li {
 		float: left;
-		font-family: var(--font-header);
+		font-family: var(--fontHeader);
 		margin-right: 40px;
 		font-size: 22px;
 		color: var(--primary) 
@@ -1086,7 +1086,7 @@
 	}
 	
 	.notfound h1 {
-		font-family: var(--font-body);
+		font-family: var(--fontBody);
 		text-transform: none;
 		font-size: 31px;
 		line-height: 39px;
@@ -1218,7 +1218,7 @@
 	
 	.aptapro .styleguide {
 		margin-bottom: 60px;
-		border-radius: var(--radius);
+		border-radius: var(--spacer);
 		overflow: hidden;
 		background: #F5F6F6;
 		padding-left: 30px 
@@ -1423,7 +1423,19 @@
 
 /* MEDIAPORTAL */
 	.mediaportal {
-		--highlight: #2196F3 
+		--accentPrimary: #004277;
+		--accentSecondary: #469BDE;
+		--accentTertiary: #BEEBF1;
+		--body: #001A2F;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.mediaportal {
+			--accentPrimary: #80BEEF;
+			--accentSecondary: #C7E7FF;
+			--accentTertiary: #213643;
+			--body: #E6EEF4;
+		}
 	}
 	
 	.mediaportal .cards {
@@ -2298,7 +2310,7 @@
 		padding-top: 10px;
 		text-transform: uppercase;
 		color: var(--primary);
-		font-family: var(--font-header) 
+		font-family: var(--fontHeader) 
 	}
 	
 	@media (min-width: 740px) {
@@ -2477,7 +2489,7 @@
 		padding-top: 10px;
 		text-transform: uppercase;
 		color: var(--primary);
-		font-family: var(--font-header) 
+		font-family: var(--fontHeader) 
 	}
 	
 	@media (max-width: 414px) {
@@ -2522,7 +2534,7 @@
 		padding-top: 10px;
 		text-transform: uppercase;
 		color: var(--primary);
-		font-family: var(--font-header) 
+		font-family: var(--fontHeader) 
 	}
 	
 	@media (max-width: 414px) {
@@ -2547,7 +2559,7 @@
 	}
 	
 	.ticketek header .description {
-		font-family: var(--font-body);
+		font-family: var(--fontBody);
 		font-size: 16px;
 		line-height: 22px 
 	}
@@ -2734,7 +2746,7 @@
 	}
 	
 	.mitek header .description {
-		font-family: var(--font-body);
+		font-family: var(--fontBody);
 		font-size: 16px;
 		line-height: 22px 
 	}

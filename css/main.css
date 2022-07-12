@@ -7,9 +7,10 @@
 	--primary: #7B7B7B;
 	--primary-rgb: 123, 123, 123;
 	--highlight: #F78A60;
-	--font-body: 'Inter', helvetica, arial, sans-serif;
-	--font-header: 'Crimson Pro', 'Times New Roman', serif;
-	--radius: 6px;
+	--fontBody: 'Inter', helvetica, arial, sans-serif;
+	--fontHeader: 'Crimson Pro', 'Times New Roman', serif;
+	--fontSize: 16px;
+	--spacer: 12px;
 }
 
 @media (prefers-color-scheme: dark){
@@ -21,8 +22,9 @@
 	}
 }
 
-@media (min-width: 740px){
+@media (min-width: 1280px){
 	 :root{
-		 --radius: 12px 
+			--fontSize: 28px;
+			--spacer: 24px;
 	}
 }
