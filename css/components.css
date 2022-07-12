@@ -135,7 +135,8 @@ blockquote a:hover {
 	background: var(--accentSecondary);
 	border-radius: var(--spacer);
 	padding: var(--spacer);
-	transition: 0.2s ease transform 
+	transition: 0.2s ease transform;
+	display: inline-block;
 }
 
 .button:hover {
