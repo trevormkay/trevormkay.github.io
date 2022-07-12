@@ -128,30 +128,19 @@ blockquote a:hover {
 } */
 
 .button {
-	font-family: var(--fontHeader);
-	font-size: 16px;
-	color: white;
-	background: var(--highlight);
+	font-family: var(--fontBody);
+	font-size: var(--fontSize);
+	font-weight: 600;
+	color: var(--accentTertiary);
+	background: var(--accentSecondary);
 	border-radius: var(--spacer);
-	padding: 10px 20px;
+	padding: var(--spacer);
 	transition: 0.2s ease transform 
 }
 
-@media (min-width:  740px) {
-	.button {
-		font-size: 25px;
-		padding: 20px 40px 
-	}
-}
-
 .button:hover {
-	transform: scale(1.06);
-	transition: 0.4s ease transform 
-}
-
-.button: active {
-	transform: scale(0.97);
-	transition: 0.4s ease transform 
+	background: var(--accentPrimary);
+	transition: 0.4s background ease; 
 }
 
 .button.small {
