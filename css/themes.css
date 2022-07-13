@@ -78,12 +78,12 @@
 		padding-bottom: 40px;
 		width: calc(100% - 20px);
 		display: grid;
-		grid-gap: 10px;
+		grid-gap: var(--spacer);
 		grid-template-columns: 1fr;
 		grid-template-rows: repeat(9, 150px);
 		grid-template-areas: 	"ticketek"
 								"eastland"
-								"mitek"
+								"mimezz"
 								"simplescales"
 								"kohab"
 								"mediaportal"
@@ -93,10 +93,11 @@
 	}
 	
 	.portfolio .constrained .tile {
-		border-radius: 10px;
+		border-radius: var(--spacer);
 		position: relative;
 		overflow: hidden;
-		-webkit-mask-image: -webkit-radial-gradient(#fff, #000) 
+		-webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+		background: var(--accentTertiary);
 	}
 	
 	.portfolio .constrained .tile a {
@@ -135,16 +136,14 @@
 	}
 	
 	.portfolio .constrained .tile h2 {
-		font-size: 22px;
-		margin-bottom: -5px;
-		z-index: 2;
-		color: var(--highlight) 
+		font-size: calc(var(--fontSize) * 2);
+		line-height: calc(var(--fontSize) * 2);
 	}
 	
-	.portfolio .constrained .tile h3 {
-		font-size: 13px;
-		z-index: 2;
-		color: var(--primary) 
+	.portfolio .constrained .tile h5 {
+		font-size: calc(var(--fontSize) * 0.6);
+		font-weight: 800;
+		line-height: calc(var(--fontSize) * 0.6);
 	}
 	
 	.portfolio .constrained .tile .flexwrapper {
@@ -154,39 +153,16 @@
 		justify-content: center 
 	}
 	
-	@media (min-width: 740px) {
-		.portfolio .constrained .tile h2 {
-			font-size: 30px;
-			margin-bottom: -5px 
-		}
-	}
-	
-	@media (min-width: 1800px) {
-		.portfolio .constrained .tile {
-			border-radius: 20px 
-		}
-		
-		.portfolio .constrained .tile h2 {
-			font-size: 35px;
-			margin-bottom: -5px 
-		}
-		
-		.portfolio .constrained .tile h3 {
-			font-size: 15px 
-		}
-	}
-	
 	@media (min-width: 569px) {
 		.portfolio .constrained {
 			width: calc(100% - 40px);
-			max-width: 1200px;
-			grid-gap: 20px;
+			max-width: 1280px;
 			grid-template-columns: repeat(2, 1fr);
 			grid-template-rows: repeat(7, 150px);
 			grid-template-areas: 	"ticketek ticketek"
 									"eastland kohab"
-									"eastland mitek"
-									"nightlight mitek"
+									"eastland mimezz"
+									"nightlight mimezz"
 									"mediaportal mediaportal"
 									"aptapro simplescales"
 									"retailerportal retailerportal";
@@ -215,8 +191,8 @@
 			grid-template-columns: repeat(3, 1fr);
 			grid-template-rows: repeat(5, 415px);
 			grid-template-areas: 	"ticketek ticketek eastland"
-									"mitek kohab eastland"
-									"mitek mediaportal mediaportal"
+									"mimezz kohab eastland"
+									"mimezz mediaportal mediaportal"
 									"nightlight aptapro simplescales"
 									"retailerportal retailerportal simplescales";
 		}
@@ -224,15 +200,6 @@
 	
 	.portfolio .eastland {
 		grid-area: eastland;
-		background: url(../portfolio/background-eastland.jpg);
-		background-size: cover 
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		.portfolio .eastland {
-			background: url(../portfolio/background-eastland-dark.jpg);
-			background-size: cover 
-		}
 	}
 	
 	.portfolio .eastland .promo {
@@ -270,15 +237,6 @@
 	
 	.portfolio .simplescales {
 		grid-area: simplescales;
-		background: url(../portfolio/background-simplescales.jpg);
-		background-size: cover 
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		.portfolio .simplescales {
-			background: url(../portfolio/background-simplescales-dark.jpg);
-			background-size: cover 
-		}
 	}
 	
 	.portfolio .simplescales .promo {
@@ -319,13 +277,8 @@
 	
 	.portfolio .nightlight {
 		grid-area: nightlight;
-		background: #4B444C 
 	}
-	
-	.portfolio .nightlight h2 {
-		color: #D7B48D !important 
-	}
-	
+		
 	.portfolio .nightlight .promo {
 		margin-top: 10px 
 	}
@@ -342,45 +295,8 @@
 		}
 	}
 	
-	.portfolio .neutron {
-		grid-area: neutron;
-		background-image: linear-gradient(-30deg, rgba(77, 241, 255, 0.25) 0%, rgba(255, 206, 85, 0.25) 100%);
-		background-color: #243739 
-	}
-	
-	.portfolio .neutron .promo {
-		position: absolute;
-		top: 28px;
-		right: 20%;
-		width: 100px 
-	}
-	
-	@media (min-width: 740px) {
-		.portfolio .neutron .promo {
-			width: 190px;
-			top: 70px 
-		}
-	}
-	
-	@media (min-width: 1120px) {
-		.portfolio .neutron .promo {
-			width: auto;
-			bottom: 55px;
-			right: 73px 
-		}
-	}
-	
 	.portfolio .kohab {
 		grid-area: kohab;
-		background: url(../portfolio/background-kohab.png);
-		background-size: cover 
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		.portfolio .kohab {
-			background: url(../portfolio/background-kohab-dark.jpg);
-			background-size: cover 
-		}
 	}
 	
 	.portfolio .kohab .promo {
@@ -414,15 +330,6 @@
 	
 	.portfolio .mediaportal {
 		grid-area: mediaportal;
-		background: url(../portfolio/background-mediaportal.png);
-		background-size: cover 
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		.portfolio .mediaportal {
-			background: url(../portfolio/background-mediaportal-dark.jpg);
-			background-size: cover 
-		}
 	}
 	
 	.portfolio .mediaportal .promo {
@@ -463,84 +370,8 @@
 		}
 	}
 	
-	.portfolio .epoch {
-		grid-area: epoch;
-		background: url(../portfolio/background-epoch.png);
-		background-size: cover 
-	}
-	
-	.portfolio .epoch .promo {
-		position: absolute;
-		bottom: -80px;
-		left: 30px 
-	}
-	
-	@media (min-width: 568px) {
-		.portfolio .epoch .promo {
-			left: 50px 
-		}
-	}
-	
-	@media (min-width: 740px) {
-		.portfolio .epoch .promo {
-			bottom: -120px;
-			left: 20px 
-		}
-	}
-	
-	@media (min-width: 1120px) {
-		.portfolio .epoch .promo {
-			bottom: -40px;
-			left: 30px 
-		}
-	}
-	
-	.portfolio .epoch .promo img {
-		width: 580px 
-	}
-	
-	@media (min-width: 740px) {
-		.portfolio .epoch .promo img {
-			width: auto 
-		}
-	}
-	
-	.portfolio .epoch .countdown {
-		z-index: 10;
-		position: absolute;
-		transform: rotate(23deg) scale(0.7) skew(-40deg);
-		bottom: 95px;
-		left: 60px;
-		margin: 0px 
-	}
-	
-	@media (min-width: 740px) {
-		.portfolio .epoch .countdown {
-			transform: rotate(23deg) scale(1.35) skew(-40deg);
-			bottom: 195px;
-			left: 200px !important 
-		}
-	}
-	
-	@media (min-width: 1120px) {
-		.portfolio .epoch .countdown {
-			bottom: 195px;
-			left: -391px !important 
-		}
-	}
-	
 	.portfolio .aptapro {
 		grid-area: aptapro;
-		background: #F7F9FB;
-		background: url(../portfolio/background-aptapro.png);
-		background-size: cover 
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		.portfolio .aptapro {
-			background: url(../portfolio/background-aptapro-dark.jpg);
-			background-size: cover 
-		}
 	}
 	
 	.portfolio .aptapro .promo {
@@ -590,15 +421,6 @@
 	
 	.portfolio .karinourish {
 		grid-area: karinourish;
-		background: url(../portfolio/background-karinourish.jpg);
-		background-size: cover 
-	}
-	
-	@media (prefers-color-scheme: dark) {
-		.portfolio .karinourish {
-			background: url(../portfolio/background-karinourish-dark.jpg);
-			background-size: cover 
-		}
 	}
 	
 	.portfolio .karinourish .promo {
@@ -652,8 +474,6 @@
 	
 	.portfolio .retailerportal {
 		grid-area: retailerportal;
-		background: url(../portfolio/background-retailerportal.png);
-		background-size: cover 
 	}
 	
 	.portfolio .retailerportal .promo {
@@ -694,21 +514,15 @@
 		}
 	}
 	
-	.portfolio .ticketek {
+	.portfolio .ticketek-site {
 		grid-area: ticketek;
-		background: url(../portfolio/background-ticketek.jpg);
-		background-size: cover 
 	}
 	
-	.portfolio .ticketek h2, .portfolio .ticketek h3 {
-		color: white !important 
-	}
-	
-	.portfolio .ticketek h3 {
+	.portfolio .ticketek-site h3 {
 		opacity: 0.5 
 	}
 	
-	.portfolio .ticketek .promo {
+	.portfolio .ticketek-site .promo {
 		position: absolute;
 		top: 10px;
 		right: 20px;
@@ -716,7 +530,7 @@
 	}
 	
 	@media (min-width: 740px) {
-		.portfolio .ticketek .promo {
+		.portfolio .ticketek-site .promo {
 			top: 20px;
 			right: 70px;
 			width: 400px 
@@ -724,7 +538,7 @@
 	}
 	
 	@media (min-width: 1023px) {
-		.portfolio .ticketek .promo {
+		.portfolio .ticketek-site .promo {
 			top: 30px;
 			right: 100px;
 			width: auto 
@@ -732,25 +546,16 @@
 	}
 	
 	@media (min-width: 1120px) {
-		.portfolio .ticketek .promo {
+		.portfolio .ticketek-site .promo {
 			right: 200px 
 		}
 	}
 	
-	.portfolio .mitek {
-		grid-area: mitek;
-		background: url(../portfolio/background-mitek.jpg);
-		background-size: cover 
+	.portfolio .mimezz {
+		grid-area: mimezz;
 	}
 	
-	@media (prefers-color-scheme: dark) {
-		.portfolio .mitek {
-			background: url(../portfolio/background-mitek-dark.jpg);
-			background-size: cover 
-		}
-	}
-	
-	.portfolio .mitek .promo {
+	.portfolio .mimezz .promo {
 		position: absolute;
 		top: -20px;
 		right: 10px;
@@ -758,7 +563,7 @@
 	}
 	
 	@media (min-width: 569px) {
-		.portfolio .mitek .promo {
+		.portfolio .mimezz .promo {
 			top: 60px;
 			right: 20px;
 			width: 400px 
@@ -766,7 +571,7 @@
 	}
 	
 	@media (min-width: 740px) {
-		.portfolio .mitek .promo {
+		.portfolio .mimezz .promo {
 			top: 70px;
 			right: -90px;
 			width: 900px 
@@ -774,7 +579,7 @@
 	}
 	
 	@media (min-width: 1120px) {
-		.portfolio .mitek .promo {
+		.portfolio .mimezz .promo {
 			width: auto;
 			top: 70px;
 		}
