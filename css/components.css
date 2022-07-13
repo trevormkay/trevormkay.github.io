@@ -154,128 +154,84 @@ blockquote a:hover {
 	text-align: center 
 }
 
-nav {
-	width: 100%;
-	padding-left: 20px;
-	padding-right: 20px;
-	margin: 0px auto;
-	height: 70px;
-	z-index: 4;
-	position: absolute;
-	top: 0px;
-	left: 0px;
-	right: 0px;
-	font-weight: bold;
-	background: var(--accentTertiary);
-}
-
-@supports (padding:  max(0px)) {
+/* NAVBAR */
 	nav {
-		padding-left: calc(20px + env(safe-area-inset-left));
-		padding-right: calc(20px + env(safe-area-inset-right)) 
+		width: 100%;
+		padding-left: 20px;
+		padding-right: 20px;
+		margin: 0px auto;
+		height: 80px;
+		z-index: 4;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		font-weight: bold;
+		background: var(--accentTertiary);
 	}
-}
-
-@media (min-width:  740px) {
-	nav {
-		height: 100px 
+	
+	@supports (padding:  max(0px)) {
+		nav {
+			padding-left: calc(20px + env(safe-area-inset-left));
+			padding-right: calc(20px + env(safe-area-inset-right)) 
+		}
 	}
-}
-
-nav .constrained {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 100%;
-}
-
-nav .constrained::after {
-	content: '';
-	width: 100%;
-	height: 2px;
-	position: absolute;
-	bottom: 0px;
-	left: 0px;
-	background: var(--accentPrimary);
-	opacity: 0.2;
-}
-
-nav .sitename {
-	font-family: var(--fontHeader);
-	font-size: 26px;
-	display: flex;
-	align-items: center;
-	z-index: 20;
-	color: var(--accentPrimary);
-	transform: scale(0.6);
-	transform-origin: left 
-}
-
-nav .sitename svg {
-	margin-right: 10px 
-}
-
-nav .sitename svg path {
-	fill: var(--accentPrimary) 
-}
-
-nav .sitename:hover {
-	color: var(--accentSecondary) 
-}
-
-nav .sitename:hover svg path {
-	fill: var(--accentSecondary) 
-}
-
-@media (min-width:  740px) {
+	
+	nav .constrained {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+		height: 100%;
+	}
+	
+	nav .constrained::after {
+		content: '';
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		background: var(--accentPrimary);
+		opacity: 0.2;
+	}
+	
 	nav .sitename {
-		transform: none;
-		font-size: 40px 
+		font-family: var(--fontHeader);
+		font-size: calc(var(--fontSize) * 1.8);
+		display: flex;
+		align-items: center;
+		z-index: 20;
+		color: var(--accentSecondary);
+		transform: scale(0.6);
+		transform-origin: left 
 	}
 	
 	nav .sitename svg {
-		margin-right: 20px 
+		margin-right: 10px 
 	}
-}
-
-nav .contact-link {
-	font-family: var(--fontBody);
-	color: var(--accentPrimary);
-	font-size: 17px;
-	font-weight: 600;
-}
-
-nav .contact-link:hover {
-	color: var(--accentSecondary) 
-}
-
-@media (min-width:  740px) {
+	
+	nav .sitename svg path {
+		fill: var(--accentSecondary) 
+	}
+	
+	nav .sitename:hover {
+		color: var(--accentPrimary) 
+	}
+	
+	nav .sitename:hover svg path {
+		fill: var(--accentPrimary) 
+	}
+	
 	nav .contact-link {
-		font-size: 24px;
+		font-family: var(--fontBody);
+		color: var(--accentSecondary);
+		font-size: calc(var(--fontSize) / 1.5);
+		font-weight: 600;
 	}
-}
-
-.constrained {
-	width: calc(100% - 40px);
-	padding-left: env(safe-area-inset-left);
-	padding-right: env(safe-area-inset-right);
-	margin: 0px auto;
-	display: block;
-	z-index: 1;
-	position: relative 
-}
-
-@media (min-width:  740px) {
-	.constrained {
-		width: calc(100% - 60px) 
+	
+	nav .contact-link:hover {
+		color: var(--accentPrimary) 
 	}
-}
-
-@media (min-width:  1120px) {
-	.constrained {
-		width: 1280px 
-	}
-}
 
 /* HEADER */
 	header {
@@ -285,7 +241,30 @@ nav .contact-link:hover {
 		height: auto;
 		background: var(--accentTertiary);
 		padding-block: calc(var(--spacer) * 6);
-		margin-block-start: 100px;
+		margin-block-start: 80px;
+	}
+
+/* CONSTRAINED CONTAINER */
+	.constrained {
+		width: calc(100% - 40px);
+		padding-left: env(safe-area-inset-left);
+		padding-right: env(safe-area-inset-right);
+		margin: 0px auto;
+		display: block;
+		z-index: 1;
+		position: relative 
+	}
+	
+	@media (min-width:  740px) {
+		.constrained {
+			width: calc(100% - 60px) 
+		}
+	}
+	
+	@media (min-width:  1120px) {
+		.constrained {
+			width: 1280px 
+		}
 	}
 
 /* CASE STUDY */
