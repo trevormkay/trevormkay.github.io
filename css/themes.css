@@ -1169,41 +1169,19 @@
 
 /* APTAPRO */
 	.aptapro {
-		--highlight: #00B5DC 
+		--accentPrimary: #20419A;
+		--accentSecondary: #CF9D44;
+		--accentTertiary: #E0EDFC;
+		--body: #06153F;
 	}
 	
-	.aptapro header .coverimage {
-		background-image: url(../aptapro/header-background.jpg);
-		background-position: center bottom 
-	}
-	
-	@media (min-width: 740px) and (max-width: 1300px) {
-		.aptapro header .copy {
-			width: 100% 
+	@media (prefers-color-scheme: dark) {
+		.aptapro {
+			--accentPrimary: #7096FC;
+			--accentSecondary: #FFDEA1;
+			--accentTertiary: #353A4A;
+			--body: #EEF3F7;
 		}
-		
-		.aptapro header .visit-link {
-			margin-top: 30px 
-		}
-		
-		.aptapro header .logo img {
-			max-height: 100px;
-			margin: 0px 
-		}
-	}
-	
-	@media (min-width: 1300px) {
-		.aptapro header .copy {
-			width: 75% 
-		}
-		
-		.aptapro header .logo {
-			width: 45% 
-		}
-	}
-	
-	.aptapro .center {
-		margin-top: -30px 
 	}
 	
 	.aptapro .elnn {
@@ -1287,12 +1265,18 @@
 
 /* EPOCH */
 	.epoch {
-		--highlight: #fea000 
+		--accentPrimary: #E08C00;
+		--accentSecondary: #A43414;
+		--accentTertiary: #F7F1E9;
+		--body: #5D3A00;
 	}
 	
 	@media (prefers-color-scheme: dark) {
 		.epoch {
-			--highlight: #FFD56F 
+			--accentPrimary: #FFC25C;
+			--accentSecondary: #F89246;
+			--accentTertiary: #3D3431;
+			--body: #FFE9C5;
 		}
 	}
 	
@@ -1403,12 +1387,18 @@
 
 /* KARINOURISH */
 	.karinourish {
-		--highlight: #005B9F 
+		--accentPrimary: #0D549F;
+		--accentSecondary: #198BCC;
+		--accentTertiary: #F7F3E9;
+		--body: #403104;
 	}
 	
 	@media (prefers-color-scheme: dark) {
 		.karinourish {
-			--highlight: #1A8BCC 
+			--accentPrimary: #F9D275;
+			--accentSecondary: #FFF2B7;
+			--accentTertiary: #2A3B45;
+			--body: #F7F3E9;
 		}
 	}
 	
@@ -1494,25 +1484,19 @@
 
 /* NIGHT LIGHT */
 	.nightlight {
-		--highlight: #373038 
+		--accentPrimary: #564263;
+		--accentSecondary: #DBA260;
+		--accentTertiary: #DFE0E7;
+		--body: #373036;
 	}
 	
 	@media (prefers-color-scheme: dark) {
 		.nightlight {
-			--highlight: #D7B48D 
+			--accentPrimary: #FFD2A0;
+			--accentSecondary: #DFE0E7;
+			--accentTertiary: #463E45;
+			--body: #FFF2E4;
 		}
-	}
-	
-	.nightlight h1 {
-		color: #D7B48D !important 
-	}
-	
-	.nightlight .description, .nightlight nav .contact-link, .nightlight .sitename {
-		color: #C0C0C0 !important 
-	}
-	
-	.nightlight .sitename #logo {
-		stroke: #C0C0C0 !important 
 	}
 	
 	@media (max-width: 740px) {
@@ -1657,7 +1641,19 @@
 
 /* RETAILER PORTAL */
 	.retailerportal {
-		--highlight: #CA4750 
+		--accentPrimary: #CA4750;
+		--accentSecondary: #FF3D4A;
+		--accentTertiary: #E3E3E3;
+		--body: #32070A;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.retailerportal {
+			--accentPrimary: #E15F68;
+			--accentSecondary: #FF949C;
+			--accentTertiary: #3A3A3A;
+			--body: #EED7D0;
+		}
 	}
 	
 	.retailerportal .card {
@@ -1968,7 +1964,19 @@
 
 /* TOLQ */
 	.tolq {
-		--highlight: #00AF5B 
+		--accentPrimary: #158E52;
+		--accentSecondary: #19197C;
+		--accentTertiary: #E6F5E6;
+		--body: #034022;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.tolq {
+			--accentPrimary: #2BD480;
+			--accentSecondary: #96C8FA;
+			--accentTertiary: #2D2D40;
+			--body: #E6F5E6;
+		}
 	}
 	
 	.tolq #challenge img {
@@ -2045,7 +2053,19 @@
 
 /* KOHAB */
 	.kohab {
-		--highlight: #2EB68C 
+		--accentPrimary: #0C324B;
+		--accentSecondary: #2EB68C;
+		--accentTertiary: #C7F3E5;
+		--body: #001523;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.kohab {
+			--accentPrimary: #71D0B2;
+			--accentSecondary: #C7F3E5;
+			--accentTertiary: #0C324B;
+			--body: #D3DDE3;
+		}
 	}
 	
 	.kohab .row {
@@ -2174,12 +2194,18 @@
 
 /* MARKETPLACE */
 	.marketplace {
-		--highlight: #007ACC 
+		--accentPrimary: #015289;
+		--accentSecondary: #370D16;
+		--accentTertiary: #F6DAC7;
+		--body: #001E33;
 	}
 	
 	@media (prefers-color-scheme: dark) {
 		.marketplace {
-			--highlight: #32adff 
+			--accentPrimary: #69C3FF;
+			--accentSecondary: #FEA88A;
+			--accentTertiary: #422E2D;
+			--body: #E9F2F8;
 		}
 	}
 	
@@ -2269,12 +2295,18 @@
 
 /* TICKETEK SITE */
 	.ticketek-site {
-		--highlight: #00497A 
+		--accentPrimary: #004673;
+		--accentSecondary: #0773B7;
+		--accentTertiary: #CCD7F7;
+		--body: #001C2E;
 	}
 	
 	@media (prefers-color-scheme: dark) {
 		.ticketek-site {
-			--highlight: #32adff 
+			--accentPrimary: #71C8FF;
+			--accentSecondary: #1A97E5;
+			--accentTertiary: #303A59;
+			--body: #CCD7F7;
 		}
 	}
 	
@@ -2386,12 +2418,18 @@
 
 /* TICKET SHARING */
 	.ticket-sharing {
-		--highlight: #08B1BE 
+		--accentPrimary: #007A95;
+		--accentSecondary: #0AB1BE;
+		--accentTertiary: #E1EDF1;
+		--body: #043945;
 	}
 	
 	@media (prefers-color-scheme: dark) {
 		.ticket-sharing {
-			--highlight: #20e6f6 
+			--accentPrimary: #7BF5FF;
+			--accentSecondary: #9CDBFC;
+			--accentTertiary: #043945;
+			--body: #E1EDF1;
 		}
 	}
 	
@@ -2652,7 +2690,19 @@
 
 /* CUBIT ESTIMATING */
 	.cubit-estimating {
-		--highlight: #0173C7;
+		--accentPrimary: #0273C7;
+		--accentSecondary: #44ABF7;
+		--accentTertiary: #DBFBFF;
+		--body: #001D32;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.cubit-estimating {
+			--accentPrimary: #6BC0FF;
+			--accentSecondary: #B4DFFF;
+			--accentTertiary: #001D32;
+			--body: #EEFDFF;
+		}
 	}
 	
 	.cubit-estimating p a {
@@ -2671,12 +2721,36 @@
 
 /* CUBIT SELECT */
 	.cubit-select {
-		--highlight: #009688;
+		--accentPrimary: #009687;
+		--accentSecondary: #0DC9B6;
+		--accentTertiary: #D9FBED;
+		--body: #003832;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.cubit-select {
+			--accentPrimary: #00CEBA;
+			--accentSecondary: #90FFF4;
+			--accentTertiary: #193431;
+			--body: #D6F4F1;
+		}
 	}
 
 /* MIMEZZ */
 	.mimezz {
-		--highlight: #2F80F0;
+		--accentPrimary: #0F56B9;
+		--accentSecondary: #B67ADE;
+		--accentTertiary: #DAE4F3;
+		--body: #002B67;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.mimezz {
+			--accentPrimary: #67A6FF;
+			--accentSecondary: #DFB0FE;
+			--accentTertiary: #162035;
+			--body: #DAE4F3;
+		}
 	}
 	
 	.mimezz .iteration {
