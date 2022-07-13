@@ -52,141 +52,141 @@
 			<a href="https://marketplace.ticketek.com.au" class="button" target="_blank">Visit the site</a>
 		</div>
 	</header>
-<div class="case-study">
-<section id="solution">
-	<div class="constrained">
-		<div class="pillars">
-			<div class="item">
-				<picture>
-					<source srcset="calendar-dark.svg" media="(prefers-color-scheme: dark)" />
-					<img src="calendar.svg" />
-				</picture>
-				<article>
-					<h3>Buy and sell</h3>
-					<p>Buy tickets to events, including those that may be sold out in the primary market with a few simple clicks</p>
-				</article>
+	<div class="case-study">
+		<section id="solution">
+			<div class="constrained">
+				<div class="pillars">
+					<div class="item">
+						<picture>
+							<source srcset="calendar-dark.svg" media="(prefers-color-scheme: dark)" />
+							<img src="calendar.svg" />
+						</picture>
+						<article>
+							<h3>Buy and sell</h3>
+							<p>Buy tickets to events, including those that may be sold out in the primary market with a few simple clicks</p>
+						</article>
+					</div>
+					<div class="item">
+						<picture>
+							<source srcset="money-dark.svg" media="(prefers-color-scheme: dark)" />
+							<img src="money.svg" />
+						</picture>
+						<article>
+							<h3>Get paid</h3>
+							<p>Once tickets have sold, users can feel secure in getting paid. They will receive payment shortly after the event</p>
+						</article>
+					</div>
+					<div class="item">
+						<picture>
+							<source srcset="shield-dark.svg" media="(prefers-color-scheme: dark)" />
+							<img src="shield.svg" />
+						</picture>
+						<article>
+							<h3>Verified tickets</h3>
+							<p>Marketplace is the official resale site for Ticketek which means all resold tickets are issued a new genuine barcode</p>
+						</article>
+					</div>
+				</div>
+				<h5>Solution</h5>
+				<h2>Real fans, real tickets</h2>
+				<p>Marketplace is the premiere destination for Ticketek ticket holders to resell their tickets if they are unable to attend an event. Their ticket information is already present within their account so putting a ticket up for sale is as simple as selecting the tickets and then setting a price whereas other platforms require users to fill out a lengthy form.</p>
+				<div class="videoWrapper screenrecording">
+					<video autoplay loop muted playsinline poster="listing.jpg">
+						<source src="listing.mp4" type="video/mp4">
+						<img src="listing.jpg">
+						Your browser does not support the video tag.
+					</video>		
+				</div>	
+				<p>On the purchasing side of things Ticketek wanted to ensure two things, that tickets purchased are genuine and that pricing is ethical. All resold tickets are issued a new barcode so that only the new ticket holder can enter the venue. For ethical pricing because all listed Tickets are from Ticketek originally, the face value is already know so the 10% cap can not be exceeded.</p>
+				<div class="videoWrapper screenrecording">
+					<video autoplay loop muted playsinline poster="purchasing.jpg">
+						<source src="purchasing.mp4" type="video/mp4">
+						<img src="purchasing.jpg">
+						Your browser does not support the video tag.
+					</video>		
+				</div>		
+				<h3 class="subhead">Admin Portal</h3>
+				<p>Ticketek wanted a custom backend to manage Marketplace. This backend was to be designed from the ground up to be purpose fit for the needs of the frontend as well as integrating with the current systems at Ticketek. The areas Admin Portal needed to be able to manage included: products and listings, customer and broker details, and financial matters like settlements and fees applied to listings.</p>
+				<div class="screenshotWrapper">
+					<img src="admin.png" srcset="admin.png, admin@2x.png 2x" alt="Screenshot of the Manage Listings section of the Admin Portal" class="screenshot sunken">
+				</div>
 			</div>
-			<div class="item">
-				<picture>
-					<source srcset="money-dark.svg" media="(prefers-color-scheme: dark)" />
-					<img src="money.svg" />
-				</picture>
-				<article>
-					<h3>Get paid</h3>
-					<p>Once tickets have sold, users can feel secure in getting paid. They will receive payment shortly after the event</p>
-				</article>
+			
+			<script>
+				var videos = document.getElementsByTagName("video");
+				
+				function checkScroll() {
+				
+		    		for(var i = 0; i < videos.length; i++) {
+				
+		        		var video = videos[i];
+				
+		        		var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
+		            		b = y + h, //bottom
+		            		visibleX, visibleY, visible;
+				
+		            		visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
+		            		visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
+				
+		            		visible = visibleX * visibleY / (w * h);
+				
+		            		if (visible > fraction) {
+		                		video.play();
+		            		} else {
+		                		video.pause();
+		            		}
+				
+		    		}
+				
+				}
+				
+				window.addEventListener('scroll', checkScroll, false);
+				window.addEventListener('resize', checkScroll, false);
+			</script>	
+			
+		</section>
+		<section id="process">
+			<div class="constrained">
+				<h5>Process</h5>
+				<h2>Streamlined</h2>
+				<p>When I joined the Marketplace the project was already under development but it was at a point where stakeholders realised the designs weren’t working well. There were issues with how the designs worked on mobile as well as the general flow of how users listed and purchased tickets.</p>
+				<div class="grid">
+					<img src="original1.png" alt="">
+					<img src="original2.png" alt="">
+					<img src="original3.png" alt="">
+					<img src="original4.png" alt="">
+					<h4 class="caption">The original design for Marketplace</h4>
+				</div>
+				<div class="grid">
+					<img src="sketch1.jpg" alt="Written down thoughts about the original designs for Marketplace">
+					<img src="sketch2.jpg" alt="Sketches of different layouts and how they would flow">
+					<h4 class="caption">Process sketches and thoughts</h4>
+				</div>
+				<img class="colours" src="colours.svg" alt="Brand colours">
+				<p class="center">With no design files or style guide in hand my first task was to create a new design system from scratch. The original design had hair-thin lines with unclear calls to action. My new system features bold lines, bold colours, and larger typography for easier reading. For Admin Portal it was decided to instead use an off the shelf bootstrap theme to speed up development</p>
+				<img src="tools.png" srcset="tools.png, tools@2x.png 2x" alt="A diagram illustrating the flow of design to code using different tools explained below" class="tools">
+				<p class="center" style="margin-bottom: 20px;">One of the issues on the project was design handoff. Previously developers were being given designs from Axure printed out on paper which is not feasible. I introduced Sketch and Zeplin to the workflow which helped developers quickly rebuild the frontend to the new designs.</p>
 			</div>
-			<div class="item">
-				<picture>
-					<source srcset="shield-dark.svg" media="(prefers-color-scheme: dark)" />
-					<img src="shield.svg" />
-				</picture>
-				<article>
-					<h3>Verified tickets</h3>
-					<p>Marketplace is the official resale site for Ticketek which means all resold tickets are issued a new genuine barcode</p>
-				</article>
+			
+			<div class="constrained">
+				<h4 class="type">Related Projects</h4>
+				<div class="relatedproject ticketek">
+					<a href="/ticketek/">
+						<h2>Ticketek</h2>
+						<h3>Ticketing software</h3>
+						<img src="../portfolio/promo-ticketek.png" srcset="../portfolio/promo-ticketek.png, ../portfolio/promo-ticketek@2x.png 2x" class="promo">
+					</a>
+				</div>
 			</div>
-		</div>
-		<h4 class="type">The Solution</h4>
-		<h2>Real fans, real tickets</h2>
-		<p>Marketplace is the premiere destination for Ticketek ticket holders to resell their tickets if they are unable to attend an event. Their ticket information is already present within their account so putting a ticket up for sale is as simple as selecting the tickets and then setting a price whereas other platforms require users to fill out a lengthy form.</p>
-		<div class="videoWrapper screenrecording">
-	<video autoplay loop muted playsinline poster="listing.jpg">
-	  <source src="listing.mp4" type="video/mp4">
-	  <img src="listing.jpg">
-	  Your browser does not support the video tag.
-	</video>		
-</div>	
-		<p>On the purchasing side of things Ticketek wanted to ensure two things, that tickets purchased are genuine and that pricing is ethical. All resold tickets are issued a new barcode so that only the new ticket holder can enter the venue. For ethical pricing because all listed Tickets are from Ticketek originally, the face value is already know so the 10% cap can not be exceeded.</p>
-		<div class="videoWrapper screenrecording">
-	<video autoplay loop muted playsinline poster="purchasing.jpg">
-	  <source src="purchasing.mp4" type="video/mp4">
-	  <img src="purchasing.jpg">
-	  Your browser does not support the video tag.
-	</video>		
-</div>		
-		<h3 class="subhead">Admin Portal</h3>
-		<p>Ticketek wanted a custom backend to manage Marketplace. This backend was to be designed from the ground up to be purpose fit for the needs of the frontend as well as integrating with the current systems at Ticketek. The areas Admin Portal needed to be able to manage included: products and listings, customer and broker details, and financial matters like settlements and fees applied to listings.</p>
-		<div class="screenshotWrapper">
-			<img src="admin.png" srcset="admin.png, admin@2x.png 2x" alt="Screenshot of the Manage Listings section of the Admin Portal" class="screenshot sunken">
-		</div>
+			
+		</section>
+			<section id="otherworks">
+			<div class="constrained">
+				<a href="/">← All Projects</a>
+				<a href="mailto:trevormkay@me.com" class="contact-link">Contact</a>
+			</div>
+		</section>
 	</div>
-	
-	<script>
-		var videos = document.getElementsByTagName("video");
-		
-		function checkScroll() {
-		
-		    for(var i = 0; i < videos.length; i++) {
-		
-		        var video = videos[i];
-		
-		        var x = video.offsetLeft, y = video.offsetTop, w = video.offsetWidth, h = video.offsetHeight, r = x + w, //right
-		            b = y + h, //bottom
-		            visibleX, visibleY, visible;
-		
-		            visibleX = Math.max(0, Math.min(w, window.pageXOffset + window.innerWidth - x, r - window.pageXOffset));
-		            visibleY = Math.max(0, Math.min(h, window.pageYOffset + window.innerHeight - y, b - window.pageYOffset));
-		
-		            visible = visibleX * visibleY / (w * h);
-		
-		            if (visible > fraction) {
-		                video.play();
-		            } else {
-		                video.pause();
-		            }
-		
-		    }
-		
-		}
-		
-		window.addEventListener('scroll', checkScroll, false);
-		window.addEventListener('resize', checkScroll, false);
-	</script>	
-	
-</section>
-<section id="process">
-	<div class="constrained">
-		<h4 class="type">The Process</h4>
-		<h2>Streamlined</h2>
-		<p>When I joined the Marketplace the project was already under development but it was at a point where stakeholders realised the designs weren’t working well. There were issues with how the designs worked on mobile as well as the general flow of how users listed and purchased tickets.</p>
-		<div class="grid">
-			<img src="original1.png" alt="">
-			<img src="original2.png" alt="">
-			<img src="original3.png" alt="">
-			<img src="original4.png" alt="">
-			<h4 class="caption">The original design for Marketplace</h4>
-		</div>
-		<div class="grid">
-			<img src="sketch1.jpg" alt="Written down thoughts about the original designs for Marketplace">
-			<img src="sketch2.jpg" alt="Sketches of different layouts and how they would flow">
-			<h4 class="caption">Process sketches and thoughts</h4>
-		</div>
-		<img class="colours" src="colours.svg" alt="Brand colours">
-		<p class="center">With no design files or style guide in hand my first task was to create a new design system from scratch. The original design had hair-thin lines with unclear calls to action. My new system features bold lines, bold colours, and larger typography for easier reading. For Admin Portal it was decided to instead use an off the shelf bootstrap theme to speed up development</p>
-		<img src="tools.png" srcset="tools.png, tools@2x.png 2x" alt="A diagram illustrating the flow of design to code using different tools explained below" class="tools">
-		<p class="center" style="margin-bottom: 20px;">One of the issues on the project was design handoff. Previously developers were being given designs from Axure printed out on paper which is not feasible. I introduced Sketch and Zeplin to the workflow which helped developers quickly rebuild the frontend to the new designs.</p>
-	</div>
-	
-	<div class="constrained">
-		<h4 class="type">Related Projects</h4>
-		<div class="relatedproject ticketek">
-			<a href="/ticketek/">
-				<h2>Ticketek</h2>
-				<h3>Ticketing software</h3>
-				<img src="../portfolio/promo-ticketek.png" srcset="../portfolio/promo-ticketek.png, ../portfolio/promo-ticketek@2x.png 2x" class="promo">
-			</a>
-		</div>
-	</div>
-	
-</section>
-	<section id="otherworks">
-	<div class="constrained">
-		<a href="/">← All Projects</a>
-		<a href="mailto:trevormkay@me.com" class="contact-link">Contact</a>
-	</div>
-</section>
-</div>
 
 
   </body>
