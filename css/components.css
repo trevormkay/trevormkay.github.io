@@ -345,7 +345,11 @@ blockquote a:hover {
 			0px 0px 0px 6px #1D1D1D,
 			0px 0px 0px 8px var(--accentSecondary),
 			0px calc(var(--spacer) * 0.8) calc(var(--spacer) * 1.6) rgba(0, 0, 0, 0.6);
-		border-radius: 24px;
+		border-radius: 12%/6%;
+	}
+	
+	.device.landscape {
+		border-radius: 6%/12%;
 	}
 	
 	@media (min-width: 723px) {
@@ -354,13 +358,6 @@ blockquote a:hover {
 				0px 0px 0px 12px #1D1D1D,
 				0px 0px 0px 16px var(--accentSecondary),
 				0px calc(var(--spacer) * 0.8) calc(var(--spacer) * 1.6) rgba(0, 0, 0, 0.6);
-			border-radius: 32px;
-		}
-	}
-	
-	@media (min-width: 1000px) {
-		.device {
-			border-radius: 48px;
 		}
 	}
 
