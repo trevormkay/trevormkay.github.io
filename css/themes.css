@@ -1085,12 +1085,30 @@
 		}
 	}
 	
-	.epoch .appgrid {
-		margin-top: 0px 
+	.epoch .gridDevices {
+		display: grid;
+		gap: -100px;
+		grid-template-columns: repeat(4, 1fr);
 	}
 	
-	.epoch .appgrid>div {
-		position: relative 
+	.epoch .gridDevices .device:not(:first-child) {
+		margin-inline-start: -190px;
+	}
+	
+	.epoch .gridDevices .device:nth-child(1) {
+		--accentSecondary: #7DAFBA;
+	}
+	
+	.epoch .gridDevices .device:nth-child(2) {
+		--accentSecondary: #C3E6B2;
+	}
+	
+	.epoch .gridDevices .device:nth-child(3) {
+		--accentSecondary: #A26998;
+	}
+	
+	.epoch .gridDevices .device:nth-child(4) {
+		--accentSecondary: #DF943A;
 	}
 	
 	.epoch .countdown {
