@@ -1085,6 +1085,18 @@
 		}
 	}
 	
+	.epoch #intro {
+		display: grid;
+		grid-template-columns: 1fr 378px;
+		gap: var(--spacer);
+		margin-block-end: calc(var(--spacer) * 4);
+	}
+	
+	.epoch #intro img + .caption {
+		margin-block-start: -40px;
+		font-size: calc(var(--fontSize) / 1.5);
+	}
+	
 	.epoch .gridDevices {
 		display: grid;
 		gap: calc(var(--spacer) * 4);
@@ -1098,116 +1110,11 @@
 	}
 	
 	.epoch .gridDevices .device:nth-child(1) {
-		--accentSecondary: #7DAFBA;
+		--accentSecondary: #C593E7;
 	}
 	
 	.epoch .gridDevices .device:nth-child(2) {
-		--accentSecondary: #C3E6B2;
-	}
-	
-	.epoch .gridDevices .device:nth-child(3) {
-		--accentSecondary: #A26998;
-	}
-	
-	.epoch .gridDevices .device:nth-child(4) {
-		--accentSecondary: #DF943A;
-	}
-	
-	.epoch .countdown {
-		bottom: 100px 
-	}
-	
-	@media (min-width: 1120px) {
-		.epoch .countdown {
-			right: 0px !important;
-			left: 0px !important;
-			position: absolute;
-			margin: 0px auto !important 
-		}
-	}
-	
-	.epoch .row {
-		display: flex;
-		flex-flow: column;
-		justify-content: center 
-	}
-	
-	.epoch .row .image {
-		position: relative;
-		width: 378px;
-		transform: scale(0.75);
-		transform-origin: left top;
-		margin-bottom: -100px 
-	}
-	
-	@media (min-width: 740px) {
-		.epoch .row .image {
-			transform: none;
-			margin-bottom: 0px 
-		}
-	}
-	
-	@media (min-width: 1120px) {
-		.epoch .row .image {
-			transform: translateY(26px) 
-		}
-	}
-	
-	@media (min-width: 740px) and (max-width: 1022px) {
-		.epoch .row {
-			align-items: center 
-		}
-	}
-	
-	@media (min-width: 1023px) {
-		.epoch .row {
-			flex-flow: row 
-		}
-	}
-	
-	.epoch .widget {
-		flex-flow: row;
-		margin-bottom: 60px;
-		align-items: center 
-	}
-	
-	.epoch .widget .copy {
-		width: 60% 
-	}
-	
-	.epoch .widget .image {
-		width: 40% 
-	}
-	
-	.epoch .widget .image {
-		position: relative 
-	}
-	
-	.epoch .widget img {
-		max-width: 100%;
-		width: 378px;
-		margin: 0px auto;
-		display: block 
-	}
-	
-	@media (min-width: 740px) {
-		.epoch .widget .time p {
-			font-size: 18px;
-			line-height: 20px 
-		}
-	}
-	
-	.epoch .minicountdown {
-		position: absolute;
-		left: 0px;
-		right: 0px;
-		bottom: 60px 
-	}
-	
-	.epoch .minicountdown p {
-		color: white !important;
-		font-family: -apple-system, helvetica, arial, sans-serif;
-		text-align: center 
+		--accentSecondary: #B4E393;
 	}
 
 /* KARINOURISH */

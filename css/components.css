@@ -341,47 +341,6 @@ blockquote a:hover {
 		border-radius: calc(var(--spacer) * 2);
 	}
 
-/* COUNTDOWN */
-	.countdown {
-		display: flex;
-		flex-direction: row;
-		width: calc(60px * 4);
-		position: absolute;
-		margin: 0px auto;
-		left: 0px;
-		right: 0px 
-	}
-	
-	@media (min-width:  1120px) {
-		.countdown {
-			margin: 0px;
-			left: auto 
-		}
-	}
-	
-	.countdown .time {
-		width: 60px;
-		align-items: center;
-		display: flex;
-		flex-direction: column;
-		font-family: -apple-system, helvetica, arial, sans-serif 
-	}
-	
-	.countdown .smalltext {
-		color: white;
-		opacity: 0.5;
-		text-transform: uppercase;
-		font-size: 10px 
-	}
-	
-	.countdown .largetext {
-		color: white;
-		opacity: 0.8;
-		font-size: 30px;
-		font-weight: bold;
-		margin-bottom: 5px 
-	}
-
 /* IMAGE GRID */
 	.grid {
 		margin-bottom: calc(var(--spacer) * 2);
