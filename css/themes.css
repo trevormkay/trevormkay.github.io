@@ -1979,7 +1979,7 @@
 		align-items: center;
 	}
 	
-	.marketplace .pillars .icon::before {
+	.marketplace .pillars .icon::after {
 		content: '';
 		width: 100%;
 		height: 100%;
@@ -2015,7 +2015,7 @@
 		.marketplace .pillars .item {
 			display: flex;
 			flex-direction: column;
-			justify-content: center;
+			align-items: center;
 		}
 	}
 	
