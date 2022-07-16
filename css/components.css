@@ -387,6 +387,10 @@ blockquote a:hover {
 		box-shadow: 0px calc(var(--spacer) * 0.8) calc(var(--spacer) * 1.6) rgba(0, 0, 0, 0.1);
 	}
 	
+	h5 + .videoWrapper {
+		margin-block-start: var(--spacer);
+	}
+	
 	.videoWrapper.screenrecording {
 		padding-bottom: 62.5% 
 	}
