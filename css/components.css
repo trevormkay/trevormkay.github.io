@@ -19,8 +19,15 @@ body {
 }
 
 ::selection {
-	background: var(--accentSecondary) !important;
+	background: var(--accentTertiary) !important;
 	color: var(--body) !important;
+}
+
+@media (prefers-color-scheme: dark) {
+	::selection {
+		background: var(--accentSecondary) !important;
+		color: var(--body) !important;
+	}
 }
 
 h1, h2, h3, h4, h5, p {
@@ -371,7 +378,7 @@ blockquote a:hover {
 
 /* IMAGE GRID */
 	.grid {
-		margin-bottom: var(--spacer);
+		margin-bottom: calc(var(--spacer) * 2);
 		display: grid;
 		grid-gap: var(--spacer);
 		grid-template-columns: 1fr 1fr;
