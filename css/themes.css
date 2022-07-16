@@ -1101,17 +1101,23 @@
 		}
 	}
 	
-	
 	.epoch #intro img + .caption {
 		margin-block-start: -40px;
 		font-size: calc(var(--fontSize) / 1.2);
 	}
 	
 	.epoch .gridDevices {
-		display: grid;
+		display: flex;
+		flex-direction: column;
 		gap: calc(var(--spacer) * 4);
-		grid-template-columns: repeat(2, 1fr);
-		padding-inline: calc(var(--spacer) * 4);
+	}
+	
+	@media (min-width: 430px) {
+		.epoch .gridDevices {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			padding-inline: calc(var(--spacer) * 4);
+		}
 	}
 	
 	.epoch .gridDevices .device {
