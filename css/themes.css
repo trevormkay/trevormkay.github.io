@@ -1087,12 +1087,14 @@
 	
 	.epoch .gridDevices {
 		display: grid;
-		gap: -100px;
-		grid-template-columns: repeat(4, 1fr);
+		gap: calc(var(--spacer) * 4);
+		grid-template-columns: repeat(2, 1fr);
+		padding-inline: calc(var(--spacer) * 4);
 	}
 	
-	.epoch .gridDevices .device:not(:first-child) {
-		margin-inline-start: -190px;
+	.epoch .gridDevices .device {
+		aspect: 1;
+		width: 100%;
 	}
 	
 	.epoch .gridDevices .device:nth-child(1) {
