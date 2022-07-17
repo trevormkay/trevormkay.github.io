@@ -1087,7 +1087,7 @@
 		}
 	}
 	
-	.eastland #cards div {
+	.eastland #cards div:not(#containerScreenshot) {
 		background: var(--accentTertiary);
 		border-radius: var(--spacer);
 		padding: var(--spacer);
