@@ -1076,9 +1076,15 @@
 	
 	.eastland #cards {
 		display: grid;
-		grid-template-columns: 1fr 1fr;
+		grid-template-columns: 1fr;
 		gap: var(--spacer);
 		margin-block-end: calc(var(--spacer) * 4);
+	}
+	
+	@media (min-width: 763px) {
+		.eastland #cards {
+			grid-template-columns: 1fr 1fr;
+		}
 	}
 	
 	.eastland #cards div {
@@ -1093,14 +1099,10 @@
 	}
 	
 	.eastland #cards .device {
-		max-width: 50%;
-		margin-block: var(--spacer);
-	}
-	
-	.eastland #containerScreenshot {
 		width: 245px;
 		height: 530px;
-		position: relative
+		margin-block: var(--spacer);
+		position: relative;
 	}
 	
 	.eastland #containerScreenshot::after {
