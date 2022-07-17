@@ -1089,6 +1089,7 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
+		transition: 1s background ease;
 	}
 	
 	.eastland #cards .device {
@@ -1099,6 +1100,11 @@
 	.eastland #containerScreenshot {
 		width: 245px;
 		height: 530px;
+	}
+	
+	.eastland h4,
+	.eastland p {
+		transition: 1s color ease;
 	}
 	
 	.eastland .canberra {
@@ -1113,13 +1119,79 @@
 	}
 	
 	.eastland .castle {
-		--accentSecondary: #2E3031;
-		--accentTertiary: #C9C9C9;
-		--body: #4D4D4D;
+		--accentSecondary: #C9C9C9;
+		--accentTertiary: #2E3031;
+		--body: #FFFFFF;
 	}
 	
 	.eastland .castle #containerScreenshot {
 		background: url("../eastland/screenshot-castle@2x.png");
+		background-size: contain;
+	}	
+	
+	.eastland .grand {
+		--accentSecondary: #E66847;
+		--accentTertiary: #EAEAEA;
+		--body: #6F737B;
+	}
+	
+	.eastland .grand #containerScreenshot {
+		background: url("../eastland/screenshot-grand@2x.png");
+		background-size: contain;
+	}
+	
+	.eastland .hyperdome {
+		--accentSecondary: #C9C9C9;
+		--accentTertiary: #2E3031;
+		--body: #FFFFFF;
+	}
+	
+	.eastland .hyperdome #containerScreenshot {
+		background: url("../eastland/screenshot-hyperdome@2x.png");
+		background-size: contain;
+	}
+
+	.eastland .robina {
+		--accentSecondary: #B9F9F3;
+		--accentTertiary: #62C0B8;
+		--body: #FFFFFF;
+	}
+	
+	.eastland .robina #containerScreenshot {
+		background: url("../eastland/screenshot-robina@2x.png");
+		background-size: contain;
+	}
+	
+	.eastland .watergardens {
+		--accentSecondary: #01A38A;
+		--accentTertiary: #EAEAEA;
+		--body: #4B4B4B;
+	}
+	
+	.eastland .watergardens #containerScreenshot {
+		background: url("../eastland/screenshot-watergardens@2x.png");
+		background-size: contain;
+	}
+	
+	.eastland .westpoint {
+		--accentSecondary: #00A38B;
+		--accentTertiary: #2E3031;
+		--body: #FFFFFF;
+	}
+	
+	.eastland .westpoint #containerScreenshot {
+		background: url("../eastland/screenshot-westpoint@2x.png");
+		background-size: contain;
+	}
+	
+	.eastland .woodgrove {
+		--accentSecondary: #E76118;
+		--accentTertiary: #2E3031;
+		--body: #FFFFFF;
+	}
+	
+	.eastland .woodgrove #containerScreenshot {
+		background: url("../eastland/screenshot-woodgrove@2x.png");
 		background-size: contain;
 	}
 

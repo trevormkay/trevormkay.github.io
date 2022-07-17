@@ -139,18 +139,24 @@
 		var image = document.getElementById("whitelabel");
 		var currentPos = 0;
 		var images = [
-				"canberra",
-				"castle",
-		  ]
+			"canberra",
+			"castle",
+			"grand",
+			"hyperdome",
+			"robina",
+			"watergardens",
+			"westpoint",
+			"woodgrove"
+		]
 	
 		function phoneswap() {
 			if (++currentPos >= images.length)
 				currentPos = 0;
-	
+				
 			image.className = (images[currentPos]);
 		}
 	
-		setInterval(phoneswap, 2000);
+		setInterval(phoneswap, 3000);
 	</script>	
 
 </html>
