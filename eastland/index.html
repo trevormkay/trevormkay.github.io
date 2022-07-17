@@ -92,8 +92,9 @@
 						<h4>Baseline grids</h4>
 						<p>A baseline grid was introduced to keep a visual rhythm, the baseline grid helps to keep all platforms consistent.</p>
 					</div>
-					<div id="whitelabel">
-						<img src="screenshot-canberra@2x.png" class="device" id="screenshots">
+					<div class="canberra" id="whitelabel">
+						<!-- <img src="screenshot-canberra@2x.png" class="device" id="screenshots"> -->
+						<div class="device" id="containerScreenshot"></div>
 						<h4>Just the beginning</h4>
 						<p>The Eastland app is a template for the other centres in QIC’s portfolio, applying each brand to the Eastland wireframes.</p>
 					</div>
@@ -133,29 +134,23 @@
 	
 
   </body>
-  
+
   <script type = "text/javascript">
-	  var image = document.getElementById("screenshots");
-	  var currentPos = 0;
-	  var images = [
-	  		"screenshot-canberra@2x.png",
-	  		"screenshot-castle@2x.png",
-	  		"screenshot-grand@2x.png",
-	  		"screenshot-hyperdome@2x.png",
-	  		"screenshot-robina@2x.png",
-	  		"screenshot-watergardens@2x.png",
-			"screenshot-westpoint@2x.png",
-			"screenshot-woodgrove@2x.png",
-		]
-  
-	  function phoneswap() {
-		  if (++currentPos >= images.length)
-			  currentPos = 0;
-  
-		  image.src = images[currentPos];
-	  }
-  
-	  setInterval(phoneswap, 1000);
-  </script>	
+		var image = document.getElementById("whitelabel");
+		var currentPos = 0;
+		var images = [
+				"canberra",
+				"castle",
+		  ]
+	
+		function phoneswap() {
+			if (++currentPos >= images.length)
+				currentPos = 0;
+	
+			image.className = (images[currentPos]);
+		}
+	
+		setInterval(phoneswap, 2000);
+	</script>	
 
 </html>

@@ -1095,6 +1095,33 @@
 		max-width: 50%;
 		margin-block: var(--spacer);
 	}
+	
+	.eastland #containerScreenshot {
+		width: 245px;
+		height: 530px;
+	}
+	
+	.eastland .canberra {
+		--accentSecondary: #BD4C33;
+		--accentTertiary: #E2C4BD;
+		--body: #000000;
+	}
+	
+	.eastland .canberra #containerScreenshot {
+		background: url("../eastland/screenshot-canberra@2x.png");
+		background-size: contain;
+	}
+	
+	.eastland .castle {
+		--accentSecondary: #2E3031;
+		--accentTertiary: #C9C9C9;
+		--body: #4D4D4D;
+	}
+	
+	.eastland .castle #containerScreenshot {
+		background: url("../eastland/screenshot-castle@2x.png");
+		background-size: contain;
+	}
 
 /* EPOCH */
 	.epoch {
