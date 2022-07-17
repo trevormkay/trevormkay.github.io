@@ -1100,6 +1100,18 @@
 	.eastland #containerScreenshot {
 		width: 245px;
 		height: 530px;
+		position: relative
+	}
+	
+	.eastland #containerScreenshot::after {
+		position: absolute;
+		bottom: -20px;
+		right: -30px;
+		width: 128px;
+		height: 128px;
+		box-shadow: 0 23px 46px 0 rgba(0,0,0,0.24);
+		border-radius: 34px;
+		transition: 1s background ease;
 	}
 	
 	.eastland h4,
@@ -1118,6 +1130,12 @@
 		background-size: contain;
 	}
 	
+	.eastland .canberra #containerScreenshot::after {
+		content: '';
+		background: url("../eastland/icon-Canberra@2x.png");
+		background-size: contain;
+	}
+	
 	.eastland .castle {
 		--accentSecondary: #C9C9C9;
 		--accentTertiary: #2E3031;
@@ -1127,7 +1145,13 @@
 	.eastland .castle #containerScreenshot {
 		background: url("../eastland/screenshot-castle@2x.png");
 		background-size: contain;
-	}	
+	}
+	
+	.eastland .castle #containerScreenshot::after {
+		content: '';
+		background: url("../eastland/icon-CastleTowers@2x.png");
+		background-size: contain;
+	}
 	
 	.eastland .grand {
 		--accentSecondary: #E66847;
@@ -1140,6 +1164,12 @@
 		background-size: contain;
 	}
 	
+	.eastland .grand #containerScreenshot::after {
+		content: '';
+		background: url("../eastland/icon-Grandcentral@2x.png");
+		background-size: contain;
+	}
+	
 	.eastland .hyperdome {
 		--accentSecondary: #C9C9C9;
 		--accentTertiary: #2E3031;
@@ -1148,6 +1178,12 @@
 	
 	.eastland .hyperdome #containerScreenshot {
 		background: url("../eastland/screenshot-hyperdome@2x.png");
+		background-size: contain;
+	}
+	
+	.eastland .hyperdome #containerScreenshot::after {
+		content: '';
+		background: url("../eastland/icon-Hyperdome@2x.png");
 		background-size: contain;
 	}
 
@@ -1162,6 +1198,12 @@
 		background-size: contain;
 	}
 	
+	.eastland .robina #containerScreenshot::after {
+		content: '';
+		background: url("../eastland/icon-Robina@2x.png");
+		background-size: contain;
+	}
+	
 	.eastland .watergardens {
 		--accentSecondary: #01A38A;
 		--accentTertiary: #EAEAEA;
@@ -1170,6 +1212,12 @@
 	
 	.eastland .watergardens #containerScreenshot {
 		background: url("../eastland/screenshot-watergardens@2x.png");
+		background-size: contain;
+	}
+	
+	.eastland .watergardens #containerScreenshot::after {
+		content: '';
+		background: url("../eastland/icon-Watergardens@2x.png");
 		background-size: contain;
 	}
 	
@@ -1184,6 +1232,12 @@
 		background-size: contain;
 	}
 	
+	.eastland .westpoint #containerScreenshot::after {
+		content: '';
+		background: url("../eastland/icon-Westpoint@2x.png");
+		background-size: contain;
+	}
+	
 	.eastland .woodgrove {
 		--accentSecondary: #E76118;
 		--accentTertiary: #2E3031;
@@ -1192,6 +1246,12 @@
 	
 	.eastland .woodgrove #containerScreenshot {
 		background: url("../eastland/screenshot-woodgrove@2x.png");
+		background-size: contain;
+	}
+	
+	.eastland .woodgrove #containerScreenshot::after {
+		content: '';
+		background: url("../eastland/icon-Woodgrove@2x.png");
 		background-size: contain;
 	}
 
