@@ -81,7 +81,7 @@ p {
 .caption {
 	font-family: var(--fontBody);
 	color: var(--accentSecondary);
-	font-size: var(--fontSize);
+	font-size: calc(var(--fontSize) / 1.3);
 	line-height: var(--fontSize);
 	margin-block-end: var(--spacer);
 }

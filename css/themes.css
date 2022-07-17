@@ -1200,6 +1200,10 @@
 		}
 	}
 	
+	.mediaportal .report {
+		padding-block: calc(var(--spacer) * 3);
+	}
+	
 	@media (min-width: 1023px) {
 		.mediaportal .report {
 			position: relative 
