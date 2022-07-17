@@ -1118,6 +1118,17 @@
 	.eastland p {
 		transition: 1s color ease;
 	}
+		
+	.eastland .eastland-app #containerScreenshot {
+		background: url("../eastland/example-handoff@2x.png");
+		background-size: contain;
+	}
+	
+	.eastland .eastland-app #containerScreenshot::after {
+		content: '';
+		background: url("../eastland/icon-Eastland@2x.png");
+		background-size: contain;
+	}
 	
 	.eastland .canberra {
 		--accentSecondary: #BD4C33;
