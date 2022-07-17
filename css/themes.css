@@ -1018,24 +1018,56 @@
 	@media (prefers-color-scheme: dark) {
 		.eastland {
 			--accentPrimary: #E37652;
-			--accentSecondary: #C75E3C;
+			--accentSecondary: #FCA386;
 			--accentTertiary: #43322E;
 			--body: #E3C9C1;
 		}
 	}
 	
-	.eastland #solution img {
+	.eastland #solution #kiosk {
 		max-width: 100%;
-		margin-bottom: -20px;
-		margin-left: auto;
-		margin-right: auto;
+		margin-inline: auto;
 		display: block 
 	}
 	
-	@media (min-width: 740px) {
-		.eastland #solution img {
-			margin-bottom: -80px 
+	#captionKiosk {
+		margin-block-start: calc(var(--spacer) / 2);
+	}
+	
+	.eastland #exampleScreens {
+		display: grid;
+		grid-template-columns: 1fr;
+		gap: calc(var(--spacer) * 6);
+		padding-block: calc(var(--spacer) * 3);
+		padding-inline: calc(var(--spacer) * 3);
+	}
+	
+	@media (min-width: 569px) {
+		.eastland #exampleScreens {
+			grid-template-columns: repeat(2, 1fr);
 		}
+	}
+	
+	@media (min-width: 1200px) {
+		.eastland #exampleScreens {
+			grid-template-columns: repeat(3, 1fr);
+			gap: calc(var(--spacer) * 2);
+		}
+	}
+	
+	@media (max-width: 1199px) {
+		.eastland #exampleScreens img:nth-child(2) {
+			display: none;
+		}
+	}
+	
+	.eastland #exampleScreens .device {
+		max-width: 100%;
+		width: 100%;
+		box-shadow: 
+		0px 0px 0px 6px #1D1D1D,
+		0px 0px 0px 10px var(--accentSecondary),
+		0px calc(var(--spacer) * 0.4) calc(var(--spacer) * 1) rgba(0, 0, 0, 0.6);
 	}
 	
 	.eastland .row {
