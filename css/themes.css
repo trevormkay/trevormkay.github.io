@@ -1095,7 +1095,6 @@
 		flex-direction: column;
 		align-items: center;
 		text-align: center;
-		transition: 1s background ease;
 	}
 	
 	.eastland #cards .device {
@@ -1104,7 +1103,7 @@
 		margin-block: var(--spacer);
 		position: relative;
 	}
-	
+		
 	.eastland #containerScreenshot::after {
 		position: absolute;
 		bottom: -20px;
@@ -1113,14 +1112,14 @@
 		height: 128px;
 		box-shadow: 0 23px 46px 0 rgba(0,0,0,0.24);
 		border-radius: 34px;
-		transition: 1s background ease;
 	}
 	
-	.eastland h4,
-	.eastland p {
-		transition: 1s color ease;
+	.eastland .eastland-app {
+		--accentSecondary: #BC441C;
+		--accentTertiary: #EAEAEA;
+		--body: #4B4B4B;
 	}
-		
+	
 	.eastland .eastland-app #containerScreenshot {
 		background: url("../eastland/example-handoff@2x.png");
 		background-size: contain;
@@ -1133,9 +1132,9 @@
 	}
 	
 	.eastland .canberra {
-		--accentSecondary: #BD4C33;
-		--accentTertiary: #E2C4BD;
-		--body: #000000;
+		--accentSecondary: #bd4d36;
+		--accentTertiary: #EAEAEA;
+		--body: #4B4B4B;
 	}
 	
 	.eastland .canberra #containerScreenshot {
@@ -1150,9 +1149,9 @@
 	}
 	
 	.eastland .castle {
-		--accentSecondary: #C9C9C9;
-		--accentTertiary: #2E3031;
-		--body: #FFFFFF;
+		--accentSecondary: #df805e;
+		--accentTertiary: #EAEAEA;
+		--body: #4B4B4B;
 	}
 	
 	.eastland .castle #containerScreenshot {
@@ -1167,9 +1166,9 @@
 	}
 	
 	.eastland .grand {
-		--accentSecondary: #E66847;
+		--accentSecondary: #ee5b22;
 		--accentTertiary: #EAEAEA;
-		--body: #6F737B;
+		--body: #4B4B4B;
 	}
 	
 	.eastland .grand #containerScreenshot {
@@ -1184,9 +1183,9 @@
 	}
 	
 	.eastland .hyperdome {
-		--accentSecondary: #C9C9C9;
-		--accentTertiary: #2E3031;
-		--body: #FFFFFF;
+		--accentSecondary: #325caa;
+		--accentTertiary: #EAEAEA;
+		--body: #4B4B4B;
 	}
 	
 	.eastland .hyperdome #containerScreenshot {
@@ -1201,9 +1200,9 @@
 	}
 
 	.eastland .robina {
-		--accentSecondary: #B9F9F3;
-		--accentTertiary: #62C0B8;
-		--body: #FFFFFF;
+		--accentSecondary: #005a43;
+		--accentTertiary: #EAEAEA;
+		--body: #4B4B4B;
 	}
 	
 	.eastland .robina #containerScreenshot {
@@ -1218,7 +1217,7 @@
 	}
 	
 	.eastland .watergardens {
-		--accentSecondary: #01A38A;
+		--accentSecondary: #5b6f32;
 		--accentTertiary: #EAEAEA;
 		--body: #4B4B4B;
 	}
@@ -1235,9 +1234,9 @@
 	}
 	
 	.eastland .westpoint {
-		--accentSecondary: #00A38B;
-		--accentTertiary: #2E3031;
-		--body: #FFFFFF;
+		--accentSecondary: #7fd2e9;
+		--accentTertiary: #EAEAEA;
+		--body: #4B4B4B;
 	}
 	
 	.eastland .westpoint #containerScreenshot {
@@ -1252,9 +1251,9 @@
 	}
 	
 	.eastland .woodgrove {
-		--accentSecondary: #E76118;
-		--accentTertiary: #2E3031;
-		--body: #FFFFFF;
+		--accentSecondary: #584cba;
+		--accentTertiary: #EAEAEA;
+		--body: #4B4B4B;
 	}
 	
 	.eastland .woodgrove #containerScreenshot {
