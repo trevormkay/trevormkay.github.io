@@ -2327,7 +2327,6 @@
 		display: grid;
 		grid-template-columns: repeat(2, 1fr);
 		grid-gap: 40px;
-		margin-bottom: 40px 
 	}
 	
 	.ticketek-site .screenshotpages div:nth-child(3), .ticketek-site .screenshotpages div:nth-child(4) {
@@ -2347,10 +2346,7 @@
 		display: block;
 		position: absolute;
 		width: 100%;
-		padding-top: 10px;
-		text-transform: uppercase;
-		color: var(--primary);
-		font-family: var(--fontHeader) 
+		padding-top: var(--spacer);
 	}
 	
 	@media (min-width: 740px) {
@@ -2417,11 +2413,11 @@
 	
 	.ticketek-site p a {
 		text-decoration: underline;
-		color: var(--primary) 
+		color: var(--body) 
 	}
 	
 	.ticketek-site p a:hover {
-		color: var(--highlight) 
+		color: var(--accentSecondary) 
 	}
 
 /* TICKET SHARING */
