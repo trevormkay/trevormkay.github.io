@@ -1354,13 +1354,9 @@
 		}
 	}
 	
-	.karinourish .grid {
-		margin-bottom: 0px 
-	}
-	
 	.karinourish .styleguide {
 		background: #F7F3E9;
-		padding: 40px 
+		padding: var(--spacer) !important;
 	}
 
 /* MEDIAPORTAL */
