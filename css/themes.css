@@ -2800,24 +2800,40 @@
 	
 	.mimezz .containerIllustration {
 		width: 100%;
-		display: flex;
+		/* display: flex;
 		flex-direction: column;
 		align-items: center;
-		margin-top: 40px;
+		margin-top: 40px; */
+		margin-block-end: calc(var(--spacer) * 6);
+		position: relative;
+		padding: var(--spacer);
 	}
 	
-	.mimezz .containerIllustration picture {
+	.mimezz .containerIllustration::after {
+		content: '';
+		background: var(--accentSecondary);
+		width: 100%;
+		height: 80%;
+		position: absolute;
+		bottom: 0px;
+		left: 0px;
+		opacity: 0.2;
+		border-radius: var(--spacer);
+		z-index: -1;
+	}
+	
+	.mimezz .containerIllustration #containerImage {
 		display: flex;
-		justify-content: center;
+		justify-content: flex-end;
+		margin-block-end: -50px;
 	}
 	
-	.mimezz .illustration {
-		max-width: 80%;
+	.mimezz .containerIllustration #containerImage img {
+		max-width: 100%;
 	}
 	
-	.mimezz .containerIllustration p {
-		max-width: 80%;
-		text-align: center;
+	.mimezz .containerIllustration #containerCopy p {
+		padding: 0px;
 	}
 
 /* MITEK */
