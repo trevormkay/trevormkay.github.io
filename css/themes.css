@@ -2784,6 +2784,7 @@
 	.mimezz .iteration img {
 		width: 100%;
 		border: 1px solid rgba(0, 0, 0, 0.2);
+		border-radius: calc(var(--spacer) / 2);
 	}
 	
 	.mimezz .videoWrapper {
