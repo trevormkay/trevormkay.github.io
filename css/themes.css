@@ -2036,13 +2036,19 @@
 	
 	@media (min-width: 1023px) {
 		.kohab .row {
-			flex-direction: row;
-			align-items: center 
+			display: grid;
+			grid-template-columns: 280px 1fr;
+			gap: calc(var(--spacer) * 3);
+			align-items: center;
 		}
 		
 		.kohab .row p: last-child {
 			padding-bottom: 0px 
 		}
+	}
+	
+	.kohab .device {
+		max-width: 100%;
 	}
 	
 	.kohab #today .panel {
