@@ -2378,16 +2378,27 @@
 	
 	.ticketek-site .mobileapp img {
 		max-width: 100%;
-		margin: 0px auto;
+		margin: calc(var(--spacer) * 2) auto 0px auto;
 		display: block 
+	}
+	
+	@media (min-width: 569px) {
+		.ticketek-site .mobileapp img {
+			max-width: 50%;
+		}
 	}
 	
 	@media (min-width: 1023px) {
 		.ticketek-site .mobileapp {
 			display: grid;
-			grid-template-columns: 1fr 503px;
-			grid-gap: 40px;
+			grid-template-columns: 1fr 320px;
+			grid-gap: calc(var(--spacer) * 3);
 			align-items: center 
+		}
+		
+		.ticketek-site .mobileapp img {
+			max-width: 100%;
+			margin: 0px auto;
 		}
 	}
 	
