@@ -2795,6 +2795,7 @@
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
+		margin-block-end: calc(var(--spacer) * 2);
 	}
 	
 	.mimezz .containerIllustration {

@@ -57,6 +57,15 @@ h3 {
 	line-height: calc(var(--fontSize) * (2.1 + 1.5));
 }
 
+h3 svg {
+	width: calc(var(--fontSize) * 1.5);
+	height: calc(var(--fontSize) * 1.5);
+}
+
+h3 path {
+	fill: var(--body)
+}
+
 h4 {
 	font-size: calc(var(--fontSize) * 1.8);
 	font-weight: 600;
@@ -304,6 +313,10 @@ blockquote a:hover {
 			0px calc(var(--spacer) * 0.8) calc(var(--spacer) * 1.6) rgba(0, 0, 0, 0.1);
 		border-radius: calc(var(--spacer) / 2);
 		margin-block-end: calc(var(--spacer) * 2);
+	}
+	
+	.screenshotWrapper:has(+ .caption) {
+		margin-block-end: 0px;
 	}
 	
 	@media (max-width:  567px) {
