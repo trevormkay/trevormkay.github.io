@@ -636,14 +636,27 @@
 		--fontSize: 14px;
 	}
 		
-	.resume .job a {
+	.resume .job a:not(.button) {
 		text-decoration: underline;
 		color: var(--body); 
 	}
 	
-	.resume a:hover {
+	.resume .job a.linkCollection {
+		color: var(--accentSecondary);
+		font-family: var(--fontBody);
+		font-size: var(--fontSize);
+		font-weight: 600;
+		text-decoration: none;
+	}
+	
+	.resume a:not(.button):hover {
 		text-decoration: underline;
 		color: var(--accentPrimary);  
+	}
+	
+	.resume .job a.linkCollection:hover {
+		color: var(--accentPrimary);
+		text-decoration: none;
 	}
 	
 	.resume .job {
