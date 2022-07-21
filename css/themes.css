@@ -2433,11 +2433,11 @@
 	
 	.ticket-sharing p a {
 		text-decoration: underline;
-		color: var(--primary) 
+		color: var(--body) 
 	}
 	
 	.ticket-sharing p a:hover {
-		color: var(--highlight) 
+		color: var(--accentSecondary) 
 	}
 	
 	.ticket-sharing .shareticket {
@@ -2450,26 +2450,27 @@
 	@media (min-width: 1023px) {
 		.ticket-sharing .shareticket {
 			display: grid;
-			grid-template-columns: 1fr 444px;
-			align-items: center 
-		}
-		
-		.ticket-sharing .shareticket .copy {
-			margin-top: -40px 
+			grid-template-columns: 1fr 320px;
+			align-items: flex-start;
+			gap: calc(var(--spacer) * 3);
 		}
 	}
 	
 	.ticket-sharing .receiveticket {
 		display: flex;
 		align-items: center;
-		flex-direction: column 
+		flex-direction: column;
+		margin-block-start: calc(var(--spacer) * 3);
+		margin-block-end: calc(var(--spacer) * 3);
 	}
 	
 	@media (min-width: 1023px) {
 		.ticket-sharing .receiveticket {
 			display: grid;
-			grid-template-columns: 444px 1fr;
-			align-items: center 
+			grid-template-columns: 320px 1fr;
+			align-items: flex-end;
+			gap: calc(var(--spacer) * 3);
+			margin-block-start: -260px;
 		}
 		
 		.ticket-sharing .receiveticket .demo {
@@ -2488,17 +2489,14 @@
 	}
 	
 	.ticket-sharing .demo video {
-		position: absolute;
-		top: 2.7%;
-		left: 12.7%;
-		width: 74.5% 
+		width: 50%;
+		margin-inline: auto;
+		display: block;
 	}
 	
-	@media (min-width: 482px) {
+	@media (min-width: 1023px) {
 		.ticket-sharing .demo video {
-			top: 24px;
-			left: 56px;
-			width: 330px 
+			width: 100%;
 		}
 	}
 	
@@ -2523,9 +2521,6 @@
 		position: absolute;
 		width: 100%;
 		padding-top: 10px;
-		text-transform: uppercase;
-		color: var(--primary);
-		font-family: var(--fontHeader) 
 	}
 	
 	@media (max-width: 414px) {
@@ -2568,9 +2563,6 @@
 		position: absolute;
 		width: 100%;
 		padding-top: 10px;
-		text-transform: uppercase;
-		color: var(--primary);
-		font-family: var(--fontHeader) 
 	}
 	
 	@media (max-width: 414px) {
