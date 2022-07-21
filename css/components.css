@@ -236,7 +236,7 @@ blockquote a:hover {
 	nav .contact-link {
 		font-family: var(--fontBody);
 		color: var(--accentSecondary);
-		font-size: calc(var(--fontSize) * 1);
+		font-size: var(--fontSize);
 		font-weight: 600;
 	}
 	
@@ -693,30 +693,27 @@ blockquote a:hover {
 	}
 
 /* OTHER WORKS SECTION */
-/* #otherworks {
-	padding: 40px 0px 
-}
-
-#otherworks div {
-	display: flex;
-	justify-content: space-between 
-}
-
-#otherworks a {
-	color: var(--primary);
-	font-family: var(--fontHeader);
-	font-size: 17px 
-}
-
-@media (min-width:  740px) {
-	#otherworks a {
-		font-size: 20px 
+	#otherworks {
+		padding-block: calc(var(--spacer) * 1.5);
+		background: var(--accentTertiary);
 	}
-}
-
-#otherworks a:hover {
-	color: var(--highlight) 
-} */
+	
+	#otherworks .constrained {
+		display: flex;
+		justify-content: space-between;
+		padding: 0px;
+	}
+	
+	#otherworks a {
+		color: var(--accentSecondary);
+		font-family: var(--fontBody);
+		font-size: var(--fontSize);
+		font-weight: 600;
+	}
+	
+	#otherworks a:hover {
+		color: var(--accentPrimary) 
+	}
 
 /* RELATED PROJECT SECTION */
 /* .relatedproject {
