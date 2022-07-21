@@ -3,10 +3,10 @@
 
 :root{
 	--background: #F8F8F8;
-	--background-dark: #F3F3F3;
-	--primary: #7B7B7B;
-	--primary-rgb: 123, 123, 123;
-	--highlight: #F78A60;
+	--accentPrimary: #CB4507;
+	--accentSecondary: #E86634;
+	--accentTertiary: #EEE8E2;
+	--body: #3C1201;
 	--fontBody: 'Inter', helvetica, arial, sans-serif;
 	--fontHeader: 'Crimson Pro', 'Times New Roman', serif;
 	--fontSize: 16px;
@@ -16,9 +16,10 @@
 @media (prefers-color-scheme: dark) {
 	:root{
 		--background: #2d2d2d;
-		--background-dark: #232323;
-		--primary: #C0C0C0;
-		--primary-rgb: 192, 192, 192
+		--accentPrimary: #FF8F63;
+		--accentSecondary: #E86634;
+		--accentTertiary: #444240;
+		--body: #EEE8E2;
 	}
 }
 
