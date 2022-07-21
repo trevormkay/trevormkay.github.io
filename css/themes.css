@@ -2034,12 +2034,23 @@
 		flex-direction: column 
 	}
 	
+	@media (max-width: 1022px) {
+		.kohab .row:nth-child(odd) {
+			flex-direction: column-reverse;
+		}
+	}
+	
 	@media (min-width: 1023px) {
 		.kohab .row {
 			display: grid;
 			grid-template-columns: 280px 1fr;
 			gap: calc(var(--spacer) * 3);
 			align-items: center;
+			margin-block-end: -80px;
+		}
+		
+		.kohab .row:nth-child(even) {
+			grid-template-columns: 1fr 280px;
 		}
 		
 		.kohab .row p: last-child {
@@ -2047,8 +2058,15 @@
 		}
 	}
 	
+	@media (max-width: 1022px) {
+		.kohab .device {
+			margin-block: calc(var(--spacer) * 2);
+		}
+	}
+	
 	.kohab .device {
-		max-width: 100%;
+		max-width: 50%;
+		margin-inline: auto;
 	}
 	
 	.kohab #today .panel {
@@ -2058,68 +2076,27 @@
 	}
 	
 	@media (min-width: 1023px) {
+		.kohab .device {
+			max-width: 100%;
+		}
+		
 		.kohab #today .panel {
 			margin-left: 40px 
 		}
 	}
-	
-	@media (min-width: 1023px) {
-		.kohab #boards {
-			flex-direction: row-reverse 
-		}
 		
-		.kohab #boards .panel {
-			margin-right: 40px 
-		}
-	}
-	
-	@media (min-width: 1023px) {
-		.kohab #inspections .panel {
-			margin-left: 40px 
-		}
-	}
-	
-	.kohab #chat .panel {
-		border: 1px solid rgba(0, 0, 0, 0.1) 
-	}
-	
-	@media (min-width: 1023px) {
-		.kohab #chat {
-			flex-direction: row-reverse 
-		}
-		
-		.kohab #chat .panel {
-			margin-right: 40px 
-		}
-	}
-	
-	.kohab #notifications {
-		margin-bottom: 0px 
-	}
-	
 	.kohab #notifications .panel {
 		border-radius: 13px 
 	}
 	
 	@media (min-width: 1023px) {
 		.kohab #notifications {
-			display: grid;
-			grid-template-columns: 1fr 392px 
+			grid-template-columns: 392px 1fr;
 		}
 		
 		.kohab #notifications .panel {
 			margin-left: 40px 
 		}
-	}
-	
-	.kohab h2 {
-		display: flex;
-		align-items: center 
-	}
-	
-	.kohab h2 img {
-		margin-right: 10px;
-		margin-bottom: 10px 
 	}
 	
 	.kohab .components {
