@@ -243,6 +243,19 @@ blockquote a:hover {
 	nav .contact-link:hover {
 		color: var(--accentPrimary) 
 	}
+	
+	nav #links {
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+		gap: var(--spacer);
+	}
+	
+	@media (min-width: 1023px) {
+		nav #links {
+			flex-direction: row;
+		}
+	}
 
 /* HEADER */
 	header {

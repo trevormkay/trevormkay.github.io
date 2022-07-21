@@ -589,85 +589,38 @@
 	.resume {
 		--fontSize: 18px;
 	}
-
-	.resume nav {
-		border: none;
-		padding-left: 20px;
-		padding-right: 20px 
-	}
 	
-	.resume nav a {
-		color: var(--primary) 
-	}
-	
-	.resume nav a:hover {
-		text-decoration: none 
-	}
-	
-	.resume nav .contact-link {
-		display: none 
-	}
-	
-	@media (min-width: 569px) {
+	@media (max-width: 569px) {
 		.resume nav {
-			max-width: 900px;
-			padding-left: calc(20px + env(safe-area-inset-left));
-			padding-right: calc(20px + env(safe-area-inset-right)) 
-		}
-	}
-	
-	@media (min-width: 740px) {
-		.resume nav {
-			height: 120px;
-			padding-left: calc(30px + env(safe-area-inset-left));
-			padding-right: calc(30px + env(safe-area-inset-right)) 
-		}
-	}
-	
-	@media (min-width: 1023px) {
-		.resume nav {
-			padding-left: calc(0px + env(safe-area-inset-left));
-			padding-right: calc(0px + env(safe-area-inset-right)) 
-		}
-	}
-	
-	@media (min-width: 1120px) {
-		.resume nav {
-			height: 212px 
+			height: 140px;
 		}
 		
-		.resume nav .sitename {
-			transform: scale(1.3) 
+		.resume nav .constrained {
+			display: block;
 		}
 		
-		.resume nav .contact-link {
-			font-size: 30px 
+		.resume nav #links {
+			align-items: flex-start;
 		}
 	}
 	
-	@media (min-width: 1224px) {
-		.resume nav {
-			padding-left: 0px;
-			padding-right: 0px 
+	.resume nav .constrained::after {
+		background: none;
+	} 
+	
+	.resume #content {
+		margin-block-start: calc(var(--spacer) * 14);
+	}
+	
+	@media (min-width: 560px) {
+		.resume #content {
+			margin-block-start: calc(var(--spacer) * 10);
 		}
 	}
 	
-	.resume .constrained {
-		max-width: 900px;
-		z-index: 2;
-		position: relative;
-		padding-top: 70px;
-	}
-	
-	@media (min-width: 740px) {
-		.resume .constrained {
-			padding-top: 120px;
-		}
-	}
-	
-	@media (min-width: 1120px) {
-		.resume .constrained {
-			padding-top: 212px 
+	@media (min-width: 1100px) {
+		.resume #content {
+			margin-block-start: calc(var(--spacer) * 6);
 		}
 	}
 	
@@ -679,7 +632,7 @@
 		--fontSize: 14px;
 	}
 		
-	.resume a {
+	.resume .job a {
 		text-decoration: underline;
 		color: var(--body); 
 	}
@@ -687,44 +640,6 @@
 	.resume a:hover {
 		text-decoration: underline;
 		color: var(--accentPrimary);  
-	}
-	
-	.resume .details {
-		margin-bottom: 40px;
-		margin-left: 10px 
-	}
-	
-	.resume .details ul {
-		list-style: none;
-		overflow: auto;
-		zoom: 1;
-		margin: 0px 
-	}
-	
-	.resume .details ul li {
-		float: left;
-		font-family: var(--fontHeader);
-		margin-right: 40px;
-		font-size: 22px;
-		color: var(--primary) 
-	}
-	
-	.resume .details ul li a {
-		color: var(--primary) 
-	}
-	
-	.resume .details ul li a:hover {
-		color: var(--highlight) 
-	}
-	
-	.resume .details ul li:first-child {
-		display: none 
-	}
-	
-	@media (min-width: 1120px) {
-		.resume .details {
-			margin-left: 18px 
-		}
 	}
 	
 	.resume .job {
