@@ -606,7 +606,11 @@
 	
 	.resume nav .constrained::after {
 		background: none;
-	} 
+	}
+	
+	.resume nav a:hover {
+		text-decoration: none;
+	}
 	
 	.resume #content {
 		margin-block-start: calc(var(--spacer) * 14);
