@@ -647,6 +647,8 @@
 		font-size: var(--fontSize);
 		font-weight: 600;
 		text-decoration: none;
+		margin-block-end: calc(var(--spacer) * 2) !important;
+		display: inline-block;
 	}
 	
 	.resume a:not(.button):hover {

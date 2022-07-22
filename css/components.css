@@ -295,7 +295,8 @@ blockquote a:hover {
 		.button, 
 		.styleguide.screenshot,
 		.screenshotpages .screenshotWrapper,
-		.acceptedscreens .screenshotWrapper
+		.acceptedscreens .screenshotWrapper,
+		.linkCollection
 	) {
 		margin-block-end: 0px !important;
 	}
