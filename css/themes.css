@@ -687,79 +687,48 @@
 			--accentSecondary: black;
 			--accentTertiary: black;
 			--body: black;
+			--fontHeader: helvetica, arial, sans-serif;
+			--fontBody: helvetica, arial, sans-serif;
+			--fontSize: 16px;
 		}
 		
 		.resume nav {
-			height: 40px 
+			background: none;
 		}
 		
 		.resume nav .sitename {
 			transform: scale(1);
-			margin-left: 20px 
 		}
 		
 		.resume nav svg {
 			display: none 
 		}
 		
-		.resume .constrained {
-			padding-top: 40px 
+		.resume nav #links {
+			transform: translateX(-30px);
 		}
 		
-		.resume .details ul li:first-child {
-			display: block 
+		.resume a {
+			text-decoration: none !important;
 		}
 		
-		.resume h1 {
-			margin-left: 10px 
+		.resume p {
+			padding-block-end: var(--spacer);
 		}
 		
-		.resume .details {
-			padding-top: 20px 
-		}
-		
-		.resume .type {
-			margin-bottom: 15px;
-			margin-top: 30px;
-			border-bottom: 1px solid var(--primary) 
+		.resume .linkCollection {
+			display: none;
 		}
 		
 		.resume .job {
-			margin-bottom: 0px 
+			margin-block-start: 0px;
+			margin-block-end: calc(var(--spacer) * 2);
+			padding: 0px !important;
+			break-inside: avoid;
 		}
 		
-		.resume .job h3 {
-			font-size: 20px 
-		}
-		
-		.resume .job h4 {
-			font-size: 12px;
-			margin-bottom: 0px 
-		}
-		
-		.resume .job p {
-			font-size: 12px;
-			line-height: 18px 
-		}
-		
-		.resume .education {
-			margin-bottom: 0px 
-		}
-		
-		.resume .education h3 {
-			font-size: 20px;
-			margin-bottom: 0px 
-		}
-		
-		.resume .education h4 {
-			font-size: 12px;
-			margin-bottom: 0px 
-		}
-		
-		.resume .education p {
-			font-size: 12px;
-			line-height: 18px;
-			padding-bottom: 20px 
+		.resume .job::after {
+			background: none;
 		}
 	}
 
