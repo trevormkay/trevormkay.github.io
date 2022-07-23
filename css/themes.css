@@ -53,7 +53,7 @@
 			"ticketek"
 			"eastland"
 			"mimezz"
-			"simplescales"
+			"marketplace"
 			"kohab"
 			"mediaportal"
 			"nightlight"
@@ -77,7 +77,7 @@
 				"eastland mimezz"
 				"nightlight mimezz"
 				"mediaportal mediaportal"
-				"aptapro simplescales"
+				"aptapro marketplace"
 				"retailerportal retailerportal";
 		}
 	}
@@ -115,8 +115,8 @@
 				"ticketek ticketek eastland"
 				"mimezz kohab eastland"
 				"mimezz mediaportal mediaportal"
-				"nightlight aptapro simplescales"
-				"retailerportal retailerportal simplescales";
+				"nightlight aptapro marketplace"
+				"retailerportal retailerportal marketplace";
 		}
 	}
 	
@@ -124,6 +124,7 @@
 		position: relative;
 		overflow: hidden;
 		-webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+		border-radius: var(--spacer);
 	}
 	
 	.portfolio .tile::after {
