@@ -182,10 +182,6 @@
 		grid-area: eastland;
 	}
 	
-	.portfolio .simplescales {
-		grid-area: simplescales;
-	}
-	
 	.portfolio .nightlight {
 		grid-area: nightlight;
 	}
@@ -212,6 +208,10 @@
 	
 	.portfolio .ticketek-site {
 		grid-area: ticketek;
+	}
+	
+	.portfolio .marketplace {
+		grid-area: marketplace;
 	}
 	
 	.portfolio .mimezz {
