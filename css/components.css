@@ -181,13 +181,6 @@ blockquote a:hover {
 		background: var(--accentTertiary);
 	}
 	
-	@supports (padding:  max(0px)) {
-		nav {
-			padding-left: calc(20px + env(safe-area-inset-left));
-			padding-right: calc(20px + env(safe-area-inset-right)) 
-		}
-	}
-	
 	nav .constrained {
 		display: flex;
 		align-items: center;
@@ -219,6 +212,8 @@ blockquote a:hover {
 	
 	nav .sitename svg {
 		margin-right: var(--spacer); 
+		width: calc(var(--fontSize) * 3.5);
+		height: calc(var(--fontSize) * 3.5);
 	}
 	
 	nav .sitename svg path {
