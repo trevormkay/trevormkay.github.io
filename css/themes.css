@@ -73,11 +73,11 @@
 			grid-template-rows: repeat(7, 150px);
 			grid-template-areas: 
 				"ticketek ticketek"
-				"eastland kohab"
+				"eastland marketplace"
 				"eastland mimezz"
-				"nightlight mimezz"
+				"kohab mimezz"
 				"mediaportal mediaportal"
-				"aptapro marketplace"
+				"aptapro nightlight"
 				"retailerportal retailerportal";
 		}
 	}
@@ -228,7 +228,7 @@
 		
 		@media (min-width: 569px) {
 			.portfolio .eastland img {
-				left: -160px;
+				left: -170px;
 				top: -130px;
 			}
 		}
@@ -245,6 +245,13 @@
 			grid-area: nightlight;
 		}
 		
+		@media (min-width: 569px) {
+			.portfolio .nightlight img {
+				left: -170px;
+				top: -20px;
+			}
+		}
+		
 		@media (min-width: 740px) {
 			.portfolio .nightlight img {
 				left: 0px;
@@ -257,6 +264,13 @@
 			grid-area: kohab;
 		}
 		
+		@media (min-width: 569px) {
+			.portfolio .kohab img {
+				left: -20px;
+				top: -320px;
+			}
+		}
+		
 		@media (min-width: 740px) {
 			.portfolio .kohab img {
 				right: -200px;
@@ -267,6 +281,13 @@
 	/* MEDIAPORTAL */
 		.portfolio .mediaportal {
 			grid-area: mediaportal;
+		}
+		
+		@media (min-width: 569px) {
+			.portfolio .mediaportal img {
+				left: -80px;
+				top: -320px;
+			}
 		}
 		
 		@media (min-width: 740px) {
@@ -291,6 +312,13 @@
 	/* RETAILER PORTAL */
 		.portfolio .retailerportal {
 			grid-area: retailerportal;
+		}
+		
+		@media (min-width: 569px) {
+			.portfolio .mediaportal img {
+				left: -80px;
+				top: -320px;
+			}
 		}
 		
 		@media (min-width: 740px) {
@@ -327,6 +355,13 @@
 	/* MIMEZZ */
 		.portfolio .mimezz {
 			grid-area: mimezz;
+		}
+		
+		@media (min-width: 569px) {
+			.portfolio .mimezz img {
+				left: -330px;
+				top: -100px;
+			}
 		}
 		
 		@media (min-width: 740px) {
