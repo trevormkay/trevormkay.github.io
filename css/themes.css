@@ -139,7 +139,7 @@
 	}
 	
 	.portfolio .tile:hover .cover {
-		opacity: 0.2;
+		opacity: 0.5;
 		transition: 0.4s opacity ease;
 	}
 	
@@ -150,6 +150,14 @@
 		width: 100%;
 		height: 100%;
 		padding: calc(var(--spacer) * 1.5);
+	}
+	
+	.portfolio .tile aside {
+		position: absolute;
+	}
+	
+	.portfolio .tile.bottom aside {
+		bottom: calc(var(--spacer) * 1.5);
 	}
 	
 	.portfolio .tile img {
@@ -173,14 +181,13 @@
 	}
 	
 	.portfolio .tile h2 {
-		font-size: calc(var(--fontSize) * 2);
+		font-size: calc(var(--fontSize) * 2.6);
 		line-height: calc(var(--fontSize) * 2);
 	}
 	
 	.portfolio .tile h5 {
-		font-size: calc(var(--fontSize) * 0.6);
-		font-weight: 800;
-		line-height: calc(var(--fontSize) * 0.6);
+		font-size: calc(var(--fontSize) * 0.8);
+		line-height: calc(var(--fontSize) * 1.6);
 	}
 	
 	/* EASTLAND */
@@ -200,6 +207,7 @@
 		
 		.portfolio .nightlight img {
 			left: 0px;
+			top: 150px;
 		}
 	
 	/* KOHAB */
@@ -218,7 +226,7 @@
 		}
 		
 		.portfolio .mediaportal img {
-			right: -500px;
+			right: -550px;
 			top: 20px;
 		}
 		
@@ -239,6 +247,7 @@
 		
 		.portfolio .retailerportal img {
 			left: 0px;
+			top: 130px;
 		}
 	
 	/* TICKETEK */
@@ -258,7 +267,7 @@
 		
 		.portfolio .marketplace img {
 			left: 0px;
-			top: 100px;
+			top: 150px;
 		}
 	
 	/* MIMEZZ */
