@@ -154,10 +154,17 @@
 	
 	.portfolio .tile img {
 		transition: 0.4s transform ease;
+		position: absolute;
 	}
 	
+	/* @media (max-width: 739px) {
+		.portfolio .tile img {
+			transform: scale(0.5);
+		}
+	} */
+	
 	.portfolio .tile:hover img {
-		transform: scale(1.1);
+		transform: scale(1.05);
 		transition: 0.4s transform ease;
 	}
 	
@@ -176,45 +183,93 @@
 		line-height: calc(var(--fontSize) * 0.6);
 	}
 	
-	.portfolio .eastland {
-		grid-area: eastland;
-	}
-	
-	.portfolio .nightlight {
-		grid-area: nightlight;
-	}
-	
-	.portfolio .kohab {
-		grid-area: kohab;
-	}
-	
-	.portfolio .mediaportal {
-		grid-area: mediaportal;
-	}
+	/* EASTLAND */
+		.portfolio .eastland {
+			grid-area: eastland;
+		}
 		
-	.portfolio .aptapro {
-		grid-area: aptapro;
-	}
+		.portfolio .eastland img {
+			left: 0px;
+			top: 150px;
+		}
 	
-	.portfolio .karinourish {
-		grid-area: karinourish;
-	}
+	/* NIGHT LIGHT */
+		.portfolio .nightlight {
+			grid-area: nightlight;
+		}
+		
+		.portfolio .nightlight img {
+			left: 0px;
+		}
 	
-	.portfolio .retailerportal {
-		grid-area: retailerportal;
-	}
+	/* KOHAB */
+		.portfolio .kohab {
+			grid-area: kohab;
+		}
+		
+		.portfolio .kohab img {
+			right: -200px;
+			top: 0px;
+		}
 	
-	.portfolio .ticketek-site {
-		grid-area: ticketek;
-	}
+	/* MEDIAPORTAL */
+		.portfolio .mediaportal {
+			grid-area: mediaportal;
+		}
+		
+		.portfolio .mediaportal img {
+			right: -500px;
+			top: 20px;
+		}
+		
+	/* APTAPRO */
+		.portfolio .aptapro {
+			grid-area: aptapro;
+		}
+		
+		.portfolio .aptapro img {
+			bottom: 100px;
+			margin-inline: auto;
+		}
 	
-	.portfolio .marketplace {
-		grid-area: marketplace;
-	}
+	/* RETAILER PORTAL */
+		.portfolio .retailerportal {
+			grid-area: retailerportal;
+		}
+		
+		.portfolio .retailerportal img {
+			left: 0px;
+		}
 	
-	.portfolio .mimezz {
-		grid-area: mimezz;
-	}
+	/* TICKETEK */
+		.portfolio .ticketek-site {
+			grid-area: ticketek;
+		}
+		
+		.portfolio .ticketek-site img {
+			right: 0px;
+			top: 20px;
+		}
+	
+	/* MARKETPLACE */
+		.portfolio .marketplace {
+			grid-area: marketplace;
+		}
+		
+		.portfolio .marketplace img {
+			left: 0px;
+			top: 100px;
+		}
+	
+	/* MIMEZZ */
+		.portfolio .mimezz {
+			grid-area: mimezz;
+		}
+		
+		.portfolio .mimezz img {
+			left: 0px;
+			top: 150px;
+		}
 
 /* RESUME */
 	.resume {
