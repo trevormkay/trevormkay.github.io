@@ -121,11 +121,26 @@
 	}
 	
 	.portfolio .tile {
-		border-radius: var(--spacer);
 		position: relative;
 		overflow: hidden;
 		-webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+	}
+	
+	.portfolio .tile::after {
+		content: '';
 		background: var(--accentTertiary);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		border-radius: var(--spacer);
+		top: 0px;
+		left: 0px;
+		z-index: -1;
+		opacity: 1;
+	}
+	
+	.portfolio .tile:hover::after {
+		opacity: 0.5;
 	}
 	
 	.portfolio .tile a {
