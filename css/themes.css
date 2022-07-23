@@ -127,21 +127,20 @@
 		border-radius: var(--spacer);
 	}
 	
-	.portfolio .tile::after {
-		content: '';
+	.portfolio .tile .cover {
 		background: var(--accentTertiary);
 		position: absolute;
 		width: 100%;
 		height: 100%;
-		border-radius: var(--spacer);
 		top: 0px;
 		left: 0px;
 		z-index: -1;
-		opacity: 1;
+		transition: 0.6s opacity ease;
 	}
 	
-	.portfolio .tile:hover::after {
-		opacity: 0.5;
+	.portfolio .tile:hover .cover {
+		opacity: 0.2;
+		transition: 0.6s opacity ease;
 	}
 	
 	.portfolio .tile a {
