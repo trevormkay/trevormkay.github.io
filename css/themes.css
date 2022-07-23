@@ -302,6 +302,13 @@
 			grid-area: aptapro;
 		}
 		
+		@media (min-width: 569px) {
+			.portfolio .aptapro img {
+				right: -180px;
+				bottom: -150px;
+			}
+		}
+		
 		@media (min-width: 740px) {
 			.portfolio .aptapro img {
 				bottom: 100px;
@@ -315,9 +322,9 @@
 		}
 		
 		@media (min-width: 569px) {
-			.portfolio .mediaportal img {
-				left: -80px;
-				top: -320px;
+			.portfolio .retailerportal img {
+				left: 40px;
+				top: -200px;
 			}
 		}
 		
@@ -333,6 +340,13 @@
 			grid-area: ticketek;
 		}
 		
+		@media (min-width: 569px) {
+			.portfolio .ticketek-site img {
+				right: -190px;
+				top: -240px;
+			}
+		}
+		
 		@media (min-width: 740px) {
 			.portfolio .ticketek-site img {
 				right: 0px;
@@ -343,6 +357,13 @@
 	/* MARKETPLACE */
 		.portfolio .marketplace {
 			grid-area: marketplace;
+		}
+		
+		@media (min-width: 569px) {
+			.portfolio .marketplace img {
+				right: -120px;
+				top: -200px;
+			}
 		}
 		
 		@media (min-width: 740px) {
