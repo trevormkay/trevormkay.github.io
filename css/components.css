@@ -220,13 +220,16 @@ blockquote a:hover {
 	}
 	
 	nav .sitename svg {
-		margin-right: var(--spacer); 
-		width: calc(var(--fontSize) * 3.5);
-		height: calc(var(--fontSize) * 3.5);
+		width: calc(var(--fontSize) * 4.5);
+		height: calc(var(--fontSize) * 4.5);
 	}
 	
-	nav .sitename svg path {
-		fill: var(--accentSecondary) 
+	nav .sitename svg .primary {
+		fill: var(--accentPrimary) 
+	}
+	
+	nav .sitename svg .secondary {
+		fill: var(--accentSecondary)
 	}
 	
 	nav .sitename:hover {
