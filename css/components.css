@@ -274,6 +274,26 @@ blockquote a:hover {
 		padding-block: calc(var(--spacer) * 6);
 		margin-block-start: 80px;
 	}
+	
+	header svg {
+		aspect-ratio: 1 / 1;
+		max-width: 100%;
+	}
+	
+	header path {
+		fill: var(--accentPrimary);
+	}
+	
+	header.collection .constrained {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: var(--spacer);
+	}
+	
+	header.collection p {
+		text-align: center;
+	}
 
 /* CONSTRAINED CONTAINER */
 	.constrained {
