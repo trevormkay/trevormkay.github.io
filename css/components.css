@@ -330,12 +330,31 @@ blockquote a:hover {
 	}
 
 /* CASE STUDY */
-	.case-study {
+	.case-study .constrained {
+		padding-block: calc(var(--spacer) * 6);
+	}
+	
+	.case-study #process .constrained {
+		position: relative;
+	}
+	
+	.case-study #process .constrained::before {
+		content: '';
+		width: 100%;
+		height: 2px;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		background: var(--accentPrimary);
+		opacity: 0.2;
+	}
+	
+	.case-study.collection {
 		margin-block-start: var(--spacer);
 		--fontSize: 16px;
 	}
 
-	.case-study .linkpanel {
+	.case-study.collection .linkpanel {
 		border-radius: var(--spacer);
 		margin-block-end: var(--spacer);
 		padding: var(--spacer);
@@ -343,7 +362,7 @@ blockquote a:hover {
 		overflow: hidden;
 	}
 	
-	.case-study .linkpanel .cover {
+	.case-study.collection .linkpanel .cover {
 		background: var(--accentTertiary);
 		width: 100%;
 		height: 100%;
@@ -355,12 +374,12 @@ blockquote a:hover {
 		transition: 0.4s opacity ease;
 	}
 	
-	.case-study .linkpanel:hover .cover {
+	.case-study.collection .linkpanel:hover .cover {
 		opacity: 0.5;
 		transition: 0.4s opacity ease;
 	}
 	
-	.case-study .learnmore {
+	.case-study.collection .learnmore {
 		padding: 0px;
 	}
 
