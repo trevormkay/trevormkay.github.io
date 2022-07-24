@@ -323,29 +323,45 @@ blockquote a:hover {
 		.styleguide.screenshot,
 		.screenshotpages .screenshotWrapper,
 		.acceptedscreens .screenshotWrapper,
-		.linkCollection
+		.linkCollection,
+		.linkpanel
 	) {
 		margin-block-end: 0px !important;
 	}
 
 /* CASE STUDY */
-	.case-study .constrained {
-		padding-block: calc(var(--spacer) * 6);
+	.case-study {
+		margin-block-start: var(--spacer);
+		--fontSize: 16px;
 	}
-	
-	.case-study #process .constrained {
+
+	.case-study .linkpanel {
+		border-radius: var(--spacer);
+		margin-block-end: var(--spacer);
+		padding: var(--spacer);
 		position: relative;
+		overflow: hidden;
 	}
 	
-	.case-study #process .constrained::before {
-		content: '';
+	.case-study .linkpanel .cover {
+		background: var(--accentTertiary);
 		width: 100%;
-		height: 2px;
+		height: 100%;
 		position: absolute;
 		top: 0px;
 		left: 0px;
-		background: var(--accentPrimary);
-		opacity: 0.2;
+		z-index: -1;
+		border-radius: var(--spacer);
+		transition: 0.4s opacity ease;
+	}
+	
+	.case-study .linkpanel:hover .cover {
+		opacity: 0.5;
+		transition: 0.4s opacity ease;
+	}
+	
+	.case-study .learnmore {
+		padding: 0px;
 	}
 
 /* SCREENSHOTS */

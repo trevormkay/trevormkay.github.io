@@ -549,7 +549,8 @@
 		color: var(--body); 
 	}
 	
-	.resume .job a.linkCollection {
+	.resume .job a.linkCollection,
+	.case-study .learnmore {
 		color: var(--accentSecondary);
 		font-family: var(--fontBody);
 		font-size: var(--fontSize);
