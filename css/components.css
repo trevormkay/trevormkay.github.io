@@ -357,9 +357,24 @@ blockquote a:hover {
 	.case-study.collection .linkpanel {
 		border-radius: var(--spacer);
 		margin-block-end: var(--spacer);
-		padding: var(--spacer);
+		padding: calc(var(--spacer) * 2);
 		position: relative;
 		overflow: hidden;
+	}
+	
+	@media (min-width: 1100px) {
+		.case-study.collection .linkpanel {
+			padding: var(--spacer);
+		}
+		
+		.case-study.collection .linkpanel a {
+			display: grid;
+			grid-template-columns: 1fr 600px;
+		}
+		
+		.case-study.collection .linkpanel img {
+			position: absolute;
+		}
 	}
 	
 	.case-study.collection .linkpanel .cover {
@@ -379,9 +394,18 @@ blockquote a:hover {
 		transition: 0.4s opacity ease;
 	}
 	
-	.case-study.collection .learnmore {
+	.case-study.collection .linkpanel p {
 		padding: 0px;
 	}
+	
+	@media (max-width: 1099px) {
+		.case-study.collection .linkpanel .promo {
+			display: none;
+		}
+	}
+	
+	
+	
 
 /* SCREENSHOTS */
 	.screenshotWrapper {
