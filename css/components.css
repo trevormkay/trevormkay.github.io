@@ -365,6 +365,7 @@ blockquote a:hover {
 	@media (min-width: 1100px) {
 		.case-study.collection .linkpanel {
 			padding: var(--spacer);
+			min-height: 400px;
 		}
 		
 		.case-study.collection .linkpanel a {
