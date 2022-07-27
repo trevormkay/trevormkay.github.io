@@ -338,7 +338,8 @@ blockquote a:hover {
 		position: relative;
 	}
 	
-	.case-study #process .constrained::before {
+	.case-study #process .constrained::before,
+	.case-study .containerRelatedProject::before {
 		content: '';
 		width: 100%;
 		height: 2px;
@@ -818,12 +819,44 @@ blockquote a:hover {
 	}
 
 /* RELATED PROJECT SECTION */
-/* .relatedproject {
-	height: 150px;
+.relatedproject {
+	height: 200px;
 	overflow: hidden;
 	border-radius: var(--spacer);
 	position: relative;
-	-webkit-mask-image: -webkit-radial-gradient(#fff, #000) 
+	-webkit-mask-image: -webkit-radial-gradient(#fff, #000);
+	padding: var(--spacer);
+}
+
+@media (min-width: 1100px) {
+	.relatedproject {
+		height: 330px;
+	}
+}
+
+.relatedproject .cover {
+	position: absolute;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+	background: var(--accentTertiary);
+	border-radius: var(--spacer);
+	z-index: -1;
+	transition: 0.4s opacity ease;
+}
+
+.relatedproject:hover .cover {
+	opacity: 0.5;
+	transition: 0.4s opacity ease;
+}
+
+.relatedproject svg {
+	max-width: 100%;
+}
+
+.relatedproject path {
+	fill: var(--accentPrimary);
 }
 
 .relatedproject a {
@@ -832,342 +865,35 @@ blockquote a:hover {
 	left: 0px;
 	width: 100%;
 	height: 100%;
-	padding: 10px 15px 
+	display: grid;
+	grid-template-columns: 1fr;
 }
 
-@media (min-width:  740px) {
+@media (min-width: 1100px) {
 	.relatedproject a {
-		padding: 10px 20px 
+		display: grid;
+		grid-template-columns: 1fr 600px;
 	}
 }
 
-@media (min-width:  1800px) {
-	.relatedproject a {
-		padding: 15px 30px 
-	}
+.relatedproject .logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	padding: var(--spacer);
 }
 
 .relatedproject .promo {
-	z-index: 1;
-	transition: 0.5s transform ease 
+	display: none;
 }
 
-.relatedproject:hover .promo {
-	transition: 0.8s transform ease;
-	transform: scale(1.1) 
-}
-
-.relatedproject:hover a {
-	text-decoration: none !important 
-}
-
-.relatedproject h3 {
-	font-size: 13px;
-	z-index: 2;
-	color: var(--primary) 
-}
-
-@media (min-width:  740px) {
-	.relatedproject {
-		height: 300px 
-	}
-}
-
-@media (min-width:  1120px) {
-	.relatedproject {
-		height: 415px 
-	}
-}
-
-@media (min-width:  1800px) {
-	.relatedproject {
-		border-radius: 20px 
-	}
-}
-
-.relatedproject.retailerportal {
-	background: url(../portfolio/background-retailerportal.png);
-	background-size: cover 
-}
-
-.relatedproject.retailerportal .promo {
+.relatedproject img {
 	position: absolute;
-	width: 420px;
-	top: 30px;
-	left: 60px 
 }
 
-@media (min-width:  568px) {
-	.relatedproject.retailerportal .promo {
-		width: 510px;
-		top: -10px;
-		left: 150px 
+@media (min-width: 1100px) {
+	.relatedproject .promo {
+		display: block;
 	}
 }
-
-@media (min-width:  740px) {
-	.relatedproject.retailerportal .promo {
-		width: 880px;
-		top: 30px;
-		left: 20px 
-	}
-}
-
-@media (min-width:  1023px) {
-	.relatedproject.retailerportal .promo {
-		left: 150px;
-		top: 30px 
-	}
-}
-
-@media (min-width:  1120px) {
-	.relatedproject.retailerportal .promo {
-		width: auto;
-		top: 30px;
-		left: 60px 
-	}
-}
-
-.relatedproject.eastland {
-	grid-area: eastland;
-	background: url(../portfolio/background-eastland-alt.jpg);
-	background-size: cover 
-}
-
-@media (prefers-color-scheme:  dark) {
-	.relatedproject.eastland {
-		background: url(../portfolio/background-eastland-alt-dark.jpg);
-		background-size: cover 
-	}
-}
-
-.relatedproject.eastland .promo {
-	position: absolute;
-	top: -40px;
-	left: 160px;
-	width: 210px 
-}
-
-@media (min-width:  569px) {
-	.relatedproject.eastland .promo {
-		top: -80px;
-		left: 280px;
-		width: 300px 
-	}
-}
-
-@media (min-width:  740px) {
-	.relatedproject.eastland .promo {
-		left: 180px;
-		top: -140px;
-		width: 500px 
-	}
-}
-
-@media (min-width:  1023px) {
-	.relatedproject.eastland .promo {
-		left: 300px 
-	}
-}
-
-@media (min-width:  1120px) {
-	.relatedproject.eastland .promo {
-		width: auto;
-		top: -180px;
-		left: 210px 
-	}
-}
-
-.relatedproject.aptapro {
-	grid-area: aptapro;
-	background: #F7F9FB;
-	background: url(../portfolio/background-aptapro-alt.png);
-	background-size: cover 
-}
-
-@media (prefers-color-scheme:  dark) {
-	.relatedproject.aptapro {
-		background: url(../portfolio/background-aptapro-alt-dark.jpg);
-		background-size: cover 
-	}
-}
-
-.relatedproject.aptapro .promo {
-	position: absolute;
-	top: -20px;
-	left: 110px;
-	width: 420px 
-}
-
-@media (min-width:  568px) {
-	.relatedproject.aptapro .promo {
-		top: -90px;
-		left: 150px 
-	}
-}
-
-@media (min-width:  667px) {
-	.relatedproject.aptapro .promo {
-		top: -20px;
-		left: 190px 
-	}
-}
-
-@media (min-width:  740px) {
-	.relatedproject.aptapro .promo {
-		width: 720px;
-		left: 190px;
-		top: -100px 
-	}
-}
-
-@media (min-width:  1023px) {
-	.relatedproject.aptapro .promo {
-		width: 820px;
-		left: 320px;
-		top: -150px 
-	}
-}
-
-@media (min-width:  1120px) {
-	.relatedproject.aptapro .promo {
-		width: 980px;
-		left: 290px;
-		top: -160px 
-	}
-}
-
-.relatedproject.karinourish {
-	grid-area: karinourish;
-	background: url(../portfolio/background-karinourish-alt.jpg);
-	background-size: cover 
-}
-
-@media (prefers-color-scheme:  dark) {
-	.relatedproject.karinourish {
-		background: url(../portfolio/background-karinourish-alt-dark.jpg);
-		background-size: cover 
-	}
-}
-
-.relatedproject.karinourish .promo {
-	position: absolute;
-	top: -20px;
-	left: 110px;
-	width: 420px 
-}
-
-@media (min-width:  568px) {
-	.relatedproject.karinourish .promo {
-		top: -90px;
-		left: 150px 
-	}
-}
-
-@media (min-width:  667px) {
-	.relatedproject.karinourish .promo {
-		top: -20px;
-		left: 190px 
-	}
-}
-
-@media (min-width:  740px) {
-	.relatedproject.karinourish .promo {
-		width: 720px;
-		left: 190px;
-		top: -100px 
-	}
-}
-
-@media (min-width:  1023px) {
-	.relatedproject.karinourish .promo {
-		width: 820px;
-		left: 320px;
-		top: -150px 
-	}
-}
-
-@media (min-width:  1120px) {
-	.relatedproject.karinourish .promo {
-		width: 980px;
-		left: 290px;
-		top: -160px 
-	}
-}
-
-.relatedproject.ticketek {
-	grid-area: ticketek;
-	background: url(../portfolio/background-ticketek.jpg);
-	background-size: cover 
-}
-
-.relatedproject.ticketek h2, .relatedproject.ticketek h3 {
-	color: white !important 
-}
-
-.relatedproject.ticketek h3 {
-	opacity: 0.5 
-}
-
-.relatedproject.ticketek .promo {
-	position: absolute;
-	top: 10px;
-	right: 20px;
-	width: 50% 
-}
-
-@media (min-width:  740px) {
-	.relatedproject.ticketek .promo {
-		top: 20px;
-		right: 70px;
-		width: 400px 
-	}
-}
-
-@media (min-width:  1023px) {
-	.relatedproject.ticketek .promo {
-		top: 30px;
-		right: 100px;
-		width: auto 
-	}
-}
-
-@media (min-width:  1120px) {
-	.relatedproject.ticketek .promo {
-		right: 200px 
-	}
-}
-
-.relatedproject.mitek {
-	grid-area: mitek;
-	background: url(../portfolio/background-mitek-alt.jpg);
-	background-size: contain;
-}
-
-@media (prefers-color-scheme: dark) {
-	.relatedproject.mitek {
-		background: url(../portfolio/background-mitek-alt-dark.jpg);
-		background-size: contain;
-	}
-}
-
-.relatedproject.mitek .promo {
-	position: absolute;
-	top: -10px;
-	right: 20px;
-	width: 250px;
-}
-
-@media (min-width:  740px) {
-	.relatedproject.mitek .promo {
-		right: 150px;
-		width: 500px;
-	}
-}
-
-@media (min-width:  1120px) {
-	.relatedproject.mitek .promo {
-		right: 200px;
-		width: 700px;
-	}
-} */
