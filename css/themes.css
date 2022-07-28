@@ -234,31 +234,6 @@
 			line-height: calc(var(--fontSize) * 1.6);
 		}
 	
-	/* COLLECTIONS */
-		.portfolio #collections {
-			display: grid;
-			grid-template-columns: repeat(auto-fill,minmax(500px,1fr));
-			gap: var(--spacer);
-			display: none;
-		}
-		
-		.portfolio #collections .tile {
-			background: var(--accentTertiary);
-			padding: var(--spacer);
-			border-radius: var(--spacer);
-			min-height: 415px;
-		}
-		
-		.portfolio #collections .tile a {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-		}
-				
-		.portfolio #collections .tile path {
-			fill: var(--accentPrimary);
-		}
-	
 	/* EASTLAND */
 		.portfolio .eastland {
 			grid-area: eastland;
