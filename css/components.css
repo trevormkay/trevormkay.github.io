@@ -294,6 +294,16 @@ blockquote a:hover {
 	header.collection p {
 		text-align: center;
 	}
+	
+	header a {
+		color: var(--body);
+		text-decoration: underline;
+	}
+	
+	header a:hover {
+		color: var(--accentSecondary);
+		text-decoration: underline;
+	}
 
 /* CONSTRAINED CONTAINER */
 	.constrained {
