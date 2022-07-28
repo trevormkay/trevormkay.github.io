@@ -78,9 +78,9 @@
 					"ticketek ticketek"
 					"eastland marketplace"
 					"eastland mimezz"
-					"kohab mimezz"
+					"nightlight mimezz"
 					"mediaportal mediaportal"
-					"aptapro nightlight"
+					"aptapro kohab"
 					"retailerportal retailerportal";
 			}
 		}
@@ -115,9 +115,9 @@
 				grid-template-rows: repeat(5, 415px);
 				grid-template-areas: 
 					"ticketek ticketek eastland"
-					"mimezz kohab eastland"
+					"mimezz nightlight eastland"
 					"mimezz mediaportal mediaportal"
-					"nightlight aptapro marketplace"
+					"kohab aptapro marketplace"
 					"retailerportal retailerportal marketplace";
 			}
 		}
@@ -152,17 +152,32 @@
 			width: 100%;
 			height: 100%;
 			padding-inline: calc(var(--spacer) * 1.5);
+			display: grid;
+			gap: var(--spacer);
 		}
 		
 		.portfolio #content .tile aside {
-			position: absolute;
 			height: 100%;
 			display: flex;
 			flex-direction: column;
 			justify-content: center;
+			width: 100%;
+		}
+		
+		.portfolio #content .tile .promo {
+			display: none;
 		}
 		
 		@media (min-width: 569px) {
+			.portfolio #content .tile.horizontal a {
+				grid-template-columns: auto 1fr;
+			}
+			
+			.portfolio #content .tile.vertical a {
+				grid-template-columns: 1fr;
+				grid-template-rows: auto 1fr !important;
+			}
+			
 			.portfolio #content .tile a {
 				padding: calc(var(--spacer) * 1.5);
 			}
@@ -172,12 +187,17 @@
 			}
 			
 			.portfolio #content .tile.bottom aside {
-				bottom: calc(var(--spacer) * 1.5);
+				justify-content: flex-end;
+			}
+			
+			.portfolio #content .tile .promo {
+				width: 100%;
+				height: 100%;
+				display: block;
 			}
 		}
 		
 		.portfolio #content .tile img {
-			transition: 0.4s transform ease;
 			position: absolute;
 		}
 		
@@ -190,11 +210,7 @@
 		@media (min-width: 569px) {
 			.portfolio #content .tile img {
 				transform: scale(0.5);
-			}
-			
-			.portfolio #content .tile:hover img {
-				transform: scale(0.55);
-				transition: 0.4s transform ease;
+				transform-origin: top left;
 			}
 		}
 		
@@ -202,21 +218,11 @@
 			.portfolio #content .tile img {
 				transform: scale(0.8);
 			}
-			
-			.portfolio #content .tile:hover img {
-				transform: scale(0.9);
-				transition: 0.4s transform ease;
-			}
 		}
 		
 		@media (min-width: 1100px) {
 			.portfolio #content .tile img {
 				transform: none;
-			}
-			
-			.portfolio #content .tile:hover img {
-				transform: scale(1.05);
-				transition: 0.4s transform ease;
 			}
 		}
 		
@@ -239,7 +245,7 @@
 			grid-area: eastland;
 		}
 		
-		@media (min-width: 569px) {
+		/* @media (min-width: 569px) {
 			.portfolio .eastland img {
 				left: -170px;
 				top: -130px;
@@ -258,14 +264,14 @@
 				left: 0px;
 				top: 150px;
 			}
-		}		
+		}		 */
 	
 	/* NIGHT LIGHT */
 		.portfolio .nightlight {
 			grid-area: nightlight;
 		}
 		
-		@media (min-width: 569px) {
+		/* @media (min-width: 569px) {
 			.portfolio .nightlight img {
 				left: -170px;
 				top: -20px;
@@ -284,14 +290,14 @@
 				left: 0px;
 				top: 150px;
 			}
-		}
+		} */
 	
 	/* KOHAB */
 		.portfolio .kohab {
 			grid-area: kohab;
 		}
 		
-		@media (min-width: 569px) {
+		/* @media (min-width: 569px) {
 			.portfolio .kohab img {
 				left: -20px;
 				top: -320px;
@@ -310,14 +316,14 @@
 				left: 200px;
 				top: 0px;
 			}
-		}
+		} */
 	
 	/* MEDIAPORTAL */
 		.portfolio .mediaportal {
 			grid-area: mediaportal;
 		}
 		
-		@media (min-width: 569px) {
+		/* @media (min-width: 569px) {
 			.portfolio .mediaportal img {
 				left: -80px;
 				top: -320px;
@@ -336,14 +342,14 @@
 				left: 350px;
 				top: 20px;
 			}
-		}
+		} */
 		
 	/* APTAPRO */
 		.portfolio .aptapro {
 			grid-area: aptapro;
 		}
 		
-		@media (min-width: 569px) {
+		/* @media (min-width: 569px) {
 			.portfolio .aptapro img {
 				right: -180px;
 				bottom: -150px;
@@ -362,14 +368,14 @@
 				bottom: 100px;
 				right: 30px;
 			}
-		}
+		} */
 	
 	/* RETAILER PORTAL */
 		.portfolio .retailerportal {
 			grid-area: retailerportal;
 		}
 		
-		@media (min-width: 569px) {
+		/* @media (min-width: 569px) {
 			.portfolio .retailerportal img {
 				left: 40px;
 				top: -200px;
@@ -388,14 +394,14 @@
 				left: 0px;
 				top: 130px;
 			}
-		}
+		} */
 	
 	/* TICKETEK */
 		.portfolio .ticketek-site {
 			grid-area: ticketek;
 		}
 		
-		@media (min-width: 569px) {
+		/* @media (min-width: 569px) {
 			.portfolio .ticketek-site img {
 				left: 0px;
 				top: -240px;
@@ -414,14 +420,14 @@
 				left: 300px;
 				top: 20px;
 			}
-		}
+		} */
 	
 	/* MARKETPLACE */
 		.portfolio .marketplace {
 			grid-area: marketplace;
 		}
 		
-		@media (min-width: 569px) {
+		/* @media (min-width: 569px) {
 			.portfolio .marketplace img {
 				right: -120px;
 				top: -200px;
@@ -440,14 +446,14 @@
 				left: 0px;
 				top: 150px;
 			}
-		}
+		} */
 	
 	/* MIMEZZ */
 		.portfolio .mimezz {
 			grid-area: mimezz;
 		}
 		
-		@media (min-width: 569px) {
+		/* @media (min-width: 569px) {
 			.portfolio .mimezz img {
 				left: -330px;
 				top: -100px;
@@ -466,7 +472,7 @@
 				left: 0px;
 				top: 150px;
 			}
-		}
+		} */
 
 /* RESUME */
 	.resume {
