@@ -366,6 +366,10 @@
 		display: inline-block;
 	}
 	
+	.case-study .learnmore {
+		margin-block-start: var(--spacer);
+	}
+	
 	.resume a:not(.button):hover {
 		text-decoration: underline;
 		color: var(--accentPrimary);  
