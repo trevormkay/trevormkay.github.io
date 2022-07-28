@@ -645,56 +645,19 @@
 
 /* 404 */
 	.notfound {
-		--background: #13222D;
-		--primary: #9bbad8;
-		--highlight: #BABCEA;
-		overflow: hidden 
+		overflow: hidden;
+		background: var(--accentTertiary) !important;
 	}
 	
 	.notfound h1 {
-		font-family: var(--fontBody);
-		text-transform: none;
-		font-size: 31px;
-		line-height: 39px;
 		text-align: center;
-		margin-bottom: 50px 
-	}
-	
-	@media (min-width: 740px) {
-		.notfound h1 {
-			font-size: 50px;
-			line-height: 60px 
-		}
+		margin-block-end: var(--spacer);
 	}
 	
 	@media (min-width: 1023px) {
-		.notfound h1 {
-			font-size: 50px;
-			line-height: 60px 
-		}
 		.notfound h1 br {
 			display: none 
 		}
-	}
-	
-	@media (min-width: 1120px) {
-		.notfound h1 {
-			font-size: 70px;
-			line-height: 80px 
-		}
-	}
-	
-	.notfound nav {
-		display: none 
-	}
-	
-	.notfound .backing {
-		background: linear-gradient(-180deg, #0C1F26 0%, #3E3252 100%);
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		z-index: 1;
-		top: 0px 
 	}
 	
 	.notfound .flex {
@@ -716,7 +679,7 @@
 	}
 	
 	.notfound svg g {
-		stroke: var(--highlight);
+		stroke: var(--accentSecondary);
 		stroke-width: 2 
 	}
 	
