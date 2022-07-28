@@ -244,235 +244,60 @@
 		.portfolio .eastland {
 			grid-area: eastland;
 		}
-		
-		/* @media (min-width: 569px) {
-			.portfolio .eastland img {
-				left: -170px;
-				top: -130px;
-			}
-		}
-		
-		@media (min-width: 740px) {
-			.portfolio .eastland img {
-				left: -50px;
-				top: -20px;
-			}
-		}
-		
-		@media (min-width: 1100px) {
-			.portfolio .eastland img {
-				left: 0px;
-				top: 150px;
-			}
-		}		 */
 	
 	/* NIGHT LIGHT */
 		.portfolio .nightlight {
 			grid-area: nightlight;
 		}
-		
-		/* @media (min-width: 569px) {
-			.portfolio .nightlight img {
-				left: -170px;
-				top: -20px;
-			}
-		}
-		
-		@media (min-width: 740px) {
-			.portfolio .nightlight img {
-				left: -70px;
-				top: 40px;
-			}
-		}
-		
-		@media (min-width: 1100px) {
-			.portfolio .nightlight img {
-				left: 0px;
-				top: 150px;
-			}
-		} */
 	
 	/* KOHAB */
 		.portfolio .kohab {
 			grid-area: kohab;
 		}
-		
-		/* @media (min-width: 569px) {
-			.portfolio .kohab img {
-				left: -20px;
-				top: -320px;
-			}
-		}
-		
-		@media (min-width: 740px) {
-			.portfolio .kohab img {
-				left: 80px;
-				top: -100px;
-			}
-		}
-		
-		@media (min-width: 1100px) {
-			.portfolio .kohab img {
-				left: 200px;
-				top: 0px;
-			}
-		} */
 	
 	/* MEDIAPORTAL */
 		.portfolio .mediaportal {
 			grid-area: mediaportal;
 		}
 		
-		/* @media (min-width: 569px) {
-			.portfolio .mediaportal img {
-				left: -80px;
-				top: -320px;
-			}
-		}
-		
-		@media (min-width: 740px) {
-			.portfolio .mediaportal img {
-				left: 180px;
-				top: -80px;
-			}
-		}
-		
-		@media (min-width: 1100px) {
-			.portfolio .mediaportal img {
-				left: 350px;
-				top: 20px;
-			}
-		} */
-		
 	/* APTAPRO */
 		.portfolio .aptapro {
 			grid-area: aptapro;
 		}
 		
-		/* @media (min-width: 569px) {
-			.portfolio .aptapro img {
-				right: -180px;
-				bottom: -150px;
-			}
+		.portfolio #content .tile.vertical.aptapro a {
+			grid-template-columns: 1fr;
+			grid-template-rows: 1fr auto !important;
 		}
 		
-		@media (min-width: 740px) {
-			.portfolio .aptapro img {
-				bottom: 0px;
-				right: 0px;
-			}
+		.portfolio .aptapro .promo {
+			position: relative;
 		}
-		
-		@media (min-width: 1100px) {
-			.portfolio .aptapro img {
-				bottom: 100px;
-				right: 30px;
-			}
-		} */
+
+		.portfolio .aptapro .promo img {
+			bottom: 0px;
+			position: absolute;
+		}
 	
 	/* RETAILER PORTAL */
 		.portfolio .retailerportal {
 			grid-area: retailerportal;
 		}
-		
-		/* @media (min-width: 569px) {
-			.portfolio .retailerportal img {
-				left: 40px;
-				top: -200px;
-			}
-		}
-		
-		@media (min-width: 740px) {
-			.portfolio .retailerportal img {
-				left: -60px;
-				top: 30px;
-			}
-		}
-		
-		@media (min-width: 1100px) {
-			.portfolio .retailerportal img {
-				left: 0px;
-				top: 130px;
-			}
-		} */
 	
 	/* TICKETEK */
 		.portfolio .ticketek-site {
 			grid-area: ticketek;
 		}
-		
-		/* @media (min-width: 569px) {
-			.portfolio .ticketek-site img {
-				left: 0px;
-				top: -240px;
-			}
-		}
-		
-		@media (min-width: 740px) {
-			.portfolio .ticketek-site img {
-				left: 150px;
-				top: -80px;
-			}
-		}
-		
-		@media (min-width: 1100px) {
-			.portfolio .ticketek-site img {
-				left: 300px;
-				top: 20px;
-			}
-		} */
 	
 	/* MARKETPLACE */
 		.portfolio .marketplace {
 			grid-area: marketplace;
 		}
-		
-		/* @media (min-width: 569px) {
-			.portfolio .marketplace img {
-				right: -120px;
-				top: -200px;
-			}
-		}
-		
-		@media (min-width: 740px) {
-			.portfolio .marketplace img {
-				left: -30px;
-				top: -20px;
-			}
-		}
-		
-		@media (min-width: 1100px) {
-			.portfolio .marketplace img {
-				left: 0px;
-				top: 150px;
-			}
-		} */
 	
 	/* MIMEZZ */
 		.portfolio .mimezz {
 			grid-area: mimezz;
 		}
-		
-		/* @media (min-width: 569px) {
-			.portfolio .mimezz img {
-				left: -330px;
-				top: -100px;
-			}
-		}
-		
-		@media (min-width: 740px) {
-			.portfolio .mimezz img {
-				left: -100px;
-				top: 20px;
-			}
-		}
-		
-		@media (min-width: 1100px) {
-			.portfolio .mimezz img {
-				left: 0px;
-				top: 150px;
-			}
-		} */
 
 /* RESUME */
 	.resume {
