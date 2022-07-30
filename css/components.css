@@ -148,10 +148,12 @@ blockquote a:hover {
 	padding: calc(var(--spacer) /1.5) var(--spacer);
 	transition: 0.2s ease transform;
 	display: inline-block;
+	text-decoration: none !important;
 }
 
 .button:hover {
 	background: var(--accentPrimary);
+	color: var(--accentTertiary);
 	transition: 0.4s background ease; 
 }
 
