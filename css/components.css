@@ -333,7 +333,8 @@ blockquote a:hover {
 		.acceptedscreens .screenshotWrapper,
 		.linkCollection,
 		.linkpanel,
-		.earlygrid .screenshotWrapper
+		.earlygrid .screenshotWrapper,
+		.screenshotWrapper
 	) {
 		margin-block-end: 0px !important;
 	}
@@ -428,11 +429,7 @@ blockquote a:hover {
 			inset 0px 0px 0px 1px rgba(0, 0, 0, 0.2),
 			0px calc(var(--spacer) * 0.8) calc(var(--spacer) * 1.6) rgba(0, 0, 0, 0.1);
 		border-radius: calc(var(--spacer) / 2);
-		margin-block-end: calc(var(--spacer) * 2);
-	}
-	
-	.screenshotWrapper:has(+ .caption) {
-		margin-block-end: 0px;
+		margin-block-end: var(--spacer);
 	}
 	
 	@media (max-width:  567px) {
