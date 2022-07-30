@@ -210,18 +210,16 @@ blockquote a:hover {
 	
 	nav .sitename {
 		font-family: var(--fontBody);
-		font-size: calc(var(--fontSize) * 1.8);
+		font-size: calc(var(--fontSize) * 1);
 		display: flex;
 		align-items: center;
 		z-index: 20;
 		color: var(--accentSecondary);
-		transform: scale(0.6);
-		transform-origin: left 
 	}
 	
 	nav .sitename svg {
-		width: calc(var(--fontSize) * 4.5);
-		height: calc(var(--fontSize) * 4.5);
+		width: calc(var(--fontSize) * 2.5);
+		height: calc(var(--fontSize) * 2.5);
 	}
 	
 	nav .sitename svg .primary {
