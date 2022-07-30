@@ -9,8 +9,8 @@
 	--body: #3C1201;
 	--fontBody: 'Inter', helvetica, arial, sans-serif;
 	--fontHeader: 'Crimson Pro', 'Times New Roman', serif;
-	--fontSize: 16px;
-	--spacer: 12px;
+	--fontSize: 14px;
+	--spacer: 6px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -20,6 +20,13 @@
 		--accentSecondary: #E86634;
 		--accentTertiary: #444240;
 		--body: #EEE8E2;
+	}
+}
+
+@media (min-width: 414px) {
+	:root {
+		--fontSize: 16px;
+		--spacer: 12px;
 	}
 }
 

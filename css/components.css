@@ -304,6 +304,12 @@ blockquote a:hover {
 		color: var(--accentSecondary);
 		text-decoration: underline;
 	}
+	
+	@media (max-width: 414px) {
+		header h1 {
+			--fontSize: 12px;
+		}
+	}
 
 /* CONSTRAINED CONTAINER */
 	.constrained {
@@ -364,7 +370,13 @@ blockquote a:hover {
 	
 	.case-study.collection {
 		margin-block-start: var(--spacer);
-		--fontSize: 16px;
+		--fontSize: 12px;
+	}
+	
+	@media (min-width: 414px) {
+		.case-study.collection {
+			--fontSize: 16px;
+		}
 	}
 
 	.case-study.collection .linkpanel {
