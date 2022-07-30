@@ -277,6 +277,7 @@
 		.portfolio .aptapro .promo img {
 			bottom: 0px;
 			position: absolute;
+			transform-origin: bottom left !important;
 		}
 	
 	/* RETAILER PORTAL */
