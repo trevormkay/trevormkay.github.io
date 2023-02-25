@@ -2421,6 +2421,27 @@
 			--body: #CFEFD2;
 		}
 	}
+	
+/* START PAGE REDIRECT */
+	.startpageredirect {
+		--accentPrimary: #1F1F1F;
+		--accentSecondary: #FFB300;
+		--accentTertiary: #FFF3B9;
+		--body: #1F1F1F;
+	}
+	
+	@media (prefers-color-scheme: dark) {
+		.startpageredirect {
+			--accentPrimary: #FDE469;
+			--accentSecondary: #FFD997;
+			--accentTertiary: #575549;
+			--body: #F5E7D8;
+		}
+	}
+	
+	.startpageredirect .promo {
+		transform: translateY(-24px);
+	}
 
 /* OTHER */
 	@-moz-document url-prefix() {
