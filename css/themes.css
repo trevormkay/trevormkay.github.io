@@ -461,6 +461,10 @@
 		gap: 20px;
 		padding-inline: 0px;
 		
+		@media (width >= 414px) {
+			grid-template-columns: 1fr 1fr 1fr;
+		}
+		
 		@media (width >= 600px) {
 			grid-template-columns: 1fr 1fr 1fr;
 			padding-inline: 10%;
