@@ -224,6 +224,20 @@ blockquote a:hover {
 		height: calc(var(--fontSize) * 2.5);
 	}
 	
+	nav .sitename .avatar-light {
+		@media (prefers-color-scheme: dark) {
+			display: none;
+		}
+	}
+	
+	nav .sitename .avatar-dark {
+		display: none;
+		
+		@media (prefers-color-scheme: dark) {
+			display: block;
+		}
+	}
+	
 	nav .sitename svg .primary {
 		fill: var(--accentPrimary) 
 	}
